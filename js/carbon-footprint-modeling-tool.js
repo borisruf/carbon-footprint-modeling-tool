@@ -113,8 +113,16 @@ function calculateScopeEmissions(scope) {
             request.setRequestHeader('Cache-Control', 'no-cache');
             request.send(null)
             let json = JSON.parse(request.responseText);
-            emissions[j] = totalEmissions(json);
+            let linkedEmissions = totalEmissions(json);
+            
+            // consider quantity parameter if any
+            if (Number(element.quantity)) {
+                Object.keys(linkedEmissions).map(function(key, index) {
+                    linkedEmissions[key] *= element.quantity;
+                });
+            }
 
+            emissions[j] = linkedEmissions;
         }
     }
 

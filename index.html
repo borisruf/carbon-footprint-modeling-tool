@@ -98,6 +98,13 @@
                         linkDiv.querySelector("[name='url']").setAttribute("href", "index.html?id=" + element.scenario_id);
                         linkDiv.querySelector("[name='title']").innerHTML = element.scenario_id;
 
+                        if (Number(element.quantity)) {
+                            linkDiv.querySelector("[name='quantity']").value = element.quantity;
+                        } else {
+                            let usageDiv = linkDiv.querySelector("div.usage");
+                            usageDiv.parentNode.removeChild(usageDiv)
+                        }
+
                         scopeDiv.querySelector("[name='list']").appendChild(linkDiv);
 
                         updateLink(element.scenario_id, linkDiv);
@@ -427,9 +434,17 @@
         </div>
         <!------------------------------------------------------------------------------------------------->
         <div class="data template" name="link" data-type="object">
-            <a name="url"><h2 name="title"></h2></a>
-            <span class="data" name="scenario_id"></span> 
-            <span class="data" name="type"></span> 
+            <div class="row">
+                <div class="usage">
+                    <span>
+                        <input type="number" name="quantity" class="data" onchange="updateData()">
+                        <label for="quantity">X</label>
+                    </span>
+                </div>
+                <a name="url"><h2 name="title"></h2></a>
+                <span class="data" name="scenario_id"></span> 
+                <span class="data" name="type"></span> 
+            </div>
             <div><span class="emission_sub_total"></span></div>
         </div>
         <!------------------------------------------------------------------------------------------------->

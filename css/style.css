@@ -43,11 +43,11 @@ span[name="type"], div[name="link"] span[name="scenario_id"] {
     display: none;
 }
 
-div[name="component"] div.row div {
+div[name="component"] div.row div, div[name="link"] div.row div {
     padding:  5px 10px 10px 10px;
 }
 
-div[name="component"] div.row {
+div[name="component"] div.row, div[name="link"] div.row {
     clear:  right;
     display: flex;
     margin-bottom:  4px;
@@ -77,9 +77,13 @@ div[name="consumptions"], div[name="emissions"] {
     padding-top:  15px !important;
 }
 
-div[name="component"] div[name="consumer"], div[name="component"] div[name="source"], div[name="component"] div.usage {
+div[name="component"] div[name="consumer"], div[name="component"] div[name="source"], div[name="component"] div.usage, div[name="link"] div.usage {
     border:  solid;
     overflow: hidden;
+}
+
+div[name="link"] div.usage {
+    margin-right:  20px;
 }
 
 div[name="component"] div[name="consumer"], div[name="component"] div[name="source"] {
@@ -87,11 +91,12 @@ div[name="component"] div[name="consumer"], div[name="component"] div[name="sour
     position: relative;
 }
 
-div[name="component"] div.usage {
+div[name="component"] div.usage, div[name="link"] div.usage {
     height:  27px;
+    min-width: 110px;
 }
 
-div[name="component"] div.usage input {
+div[name="component"] div.usage input, div[name="link"] div.usage input {
     width:  60px;
     margin:  5px;
 }
