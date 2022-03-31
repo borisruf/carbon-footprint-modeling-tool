@@ -1,0 +1,100 @@
+{
+  "title": "Streaming a 30-minute video (IEA updated, Laptop and HD)",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0.5,
+          "quantity_unit": "hr",
+          "consumer": {
+            "name": "Device (Laptop)",
+            "consumptions": {
+              "electricity": {
+                "value": 0.022,
+                "unit": "kWh",
+                "base_unit": "hr",
+                "reference_url": "https://www.researchgate.net/publication/335911295_Residential_Consumer_Electronics_Energy_Consumption_in_the_United_States_in_2017"
+              }
+            }
+          },
+          "source": {
+            "name": "Global average electricity mix",
+            "type": "electricity",
+            "emissions": {
+              "co2": {
+                "base_unit": "kWh",
+                "value": 0.463,
+                "unit": "kg",
+                "reference_url": "https://www.iea.org/reports/tracking-power-2020"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 3",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0.5,
+          "quantity_unit": "hr",
+          "consumer": {
+            "name": "Data centres",
+            "type": "electricity",
+            "consumptions": {
+              "electricity": {
+                "value": 0.003691247642,
+                "unit": "kWh",
+                "base_unit": "hr",
+                "reference_url": "https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"
+              }
+            }
+          },
+          "source": {
+            "name": "Global average electricity mix",
+            "type": "electricity",
+            "emissions": {
+              "co2": {
+                "base_unit": "kWh",
+                "value": 0.463,
+                "unit": "kg",
+                "reference_url": "https://www.iea.org/reports/tracking-power-2020"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 0.5,
+          "quantity_unit": "hr",
+          "consumer": {
+            "name": "Data transmission (HD)",
+            "consumptions": {
+              "electricity": {
+                "value": 0.0183,
+                "unit": "kWh",
+                "base_unit": "hr",
+                "reference_url": "https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"
+              }
+            }
+          },
+          "source": {
+            "name": "Global average electricity mix",
+            "type": "electricity",
+            "emissions": {
+              "co2": {
+                "base_unit": "kWh",
+                "value": 0.463,
+                "unit": "kg",
+                "reference_url": "https://www.iea.org/reports/tracking-power-2020"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

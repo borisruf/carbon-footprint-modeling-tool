@@ -1,0 +1,22 @@
+{
+  "title": "Personal carbon footprint",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "list": [
+        {
+          "type": "link",
+          "scenario_id": "scenario-98346938-bc01-4240-a256-20306e818745"
+        },
+        {
+          "type": "link",
+          "scenario_id": "scenario-1b7dd417-5ac9-4be4-af6a-f2bb3bdae1a5"
+        },
+        {
+          "type": "link",
+          "scenario_id": "scenario-bde03cd0-3f02-4431-9dca-9741f1753e67"
+        }
+      ]
+    }
+  ]
+}

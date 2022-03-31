@@ -1,0 +1,143 @@
+{
+  "title": "Car pool 2021",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "description": "'on-site' direct emissions",
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Volkswagen Golf (2014)",
+            "description": "Engine ID 45, 4 cylinders, Manual 6-spd",
+            "consumptions": {
+              "diesel": {
+                "value": "0.0735046875",
+                "unit": "l",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              }
+            }
+          },
+          "quantity": "10000",
+          "quantity_unit": "km",
+          "source": {
+            "name": "Gas/Diesel oil",
+            "type": "diesel",
+            "description": "",
+            "emissions": {
+              "co2e": {
+                "value": "3.25",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "https://bilans-ges.ademe.fr/documentation/UPLOAD_DOC_EN/index.htm?new_liquides.htm"
+              },
+              "co2": {
+                "value": "2.676492",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "ch4": {
+                "value": "0.0003612",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "n2o": {
+                "value": "0.000021672",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Mitsubishi Eclipse (2001)",
+            "description": "Engine ID 0, 4 cylinders, Automatic 4-spd, Front-Wheel Drive",
+            "consumptions": {
+              "regular gasoline": {
+                "value": "0.11200714285714286",
+                "unit": "l",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              }
+            }
+          },
+          "quantity": "10000",
+          "quantity_unit": "km",
+          "source": {
+            "name": "Motor gasoline",
+            "type": "regular gasoline",
+            "description": "",
+            "emissions": {
+              "co2e": {
+                "value": "2.93",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "https://bilans-ges.ademe.fr/documentation/UPLOAD_DOC_EN/index.htm?new_liquides.htm"
+              },
+              "co2": {
+                "value": "2.2717926",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "ch4": {
+                "value": "0.00032782",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "n2o": {
+                "value": "0.0000196692",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Mercedes-Benz C63 AMG (2010)",
+            "description": "Engine ID 19 PR, 8 cylinders, Automatic 7-spd, Rear-Wheel Drive",
+            "consumptions": {
+              "premium gasoline": {
+                "value": "0.15681",
+                "unit": "l",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              }
+            }
+          },
+          "quantity": "10000",
+          "quantity_unit": "km",
+          "source": {
+            "name": "Premium motor gasoline",
+            "type": "premium gasoline",
+            "description": "",
+            "emissions": {
+              "co2e": {
+                "value": "2.8",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "https://bilans-ges.ademe.fr/documentation/UPLOAD_DOC_EN/index.htm?new_liquides.htm"
+              },
+              "co2": {
+                "value": "2.71",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "https://bilans-ges.ademe.fr/documentation/UPLOAD_DOC_EN/index.htm?new_liquides.htm"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Food",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0,
+          "quantity_unit": "kg",
+          "consumer": {
+            "name": "Steak"
+          },
+          "source": {
+            "name": "Beef",
+            "emissions": {
+              "co2": {
+                "base_unit": "kg",
+                "value": 60,
+                "unit": "kg",
+                "reference_url": "https://ourworldindata.org/food-choice-vs-eating-local"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "title": "Mobility",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Volkswagen Golf (2014)",
+            "description": "Engine ID 45, 4 cylinders, Manual 6-spd",
+            "consumptions": {
+              "diesel": {
+                "value": "0.0735046875",
+                "unit": "l",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              }
+            }
+          },
+          "quantity": "10000",
+          "quantity_unit": "km",
+          "source": {
+            "name": "Gas/Diesel oil",
+            "description": "",
+            "type": "diesel",
+            "emissions": {
+              "co2": {
+                "value": "2.676492",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "ch4": {
+                "value": "0.0003612",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "n2o": {
+                "value": "0.000021672",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Boeing 747",
+            "description": "",
+            "consumptions": {
+              "oil": {
+                "value": "0.02352146",
+                "unit": "l",
+                "base_unit": "km",
+                "reference_url": "https://science.howstuffworks.com/transport/flight/modern/question192.htm"
+              }
+            }
+          },
+          "quantity": "5849",
+          "quantity_unit": "km",
+          "source": {
+            "name": "Jet kerosene",
+            "description": "",
+            "type": "oil",
+            "emissions": {
+              "co2": {
+                "value": "2.4909885",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "ch4": {
+                "value": "0.00034839",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "n2o": {
+                "value": "0.0000209034",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Tesla Model X 100D (2019)",
+            "description": "Engine ID 17, Automatic (A1)",
+            "consumptions": {
+              "electricity": {
+                "value": "0.24025379284975742",
+                "unit": "kWh",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              }
+            }
+          },
+          "quantity": "10000",
+          "quantity_unit": "km",
+          "source": {
+            "name": "France electricity grid",
+            "description": "(2020)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "value": "0.0511",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.0573",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

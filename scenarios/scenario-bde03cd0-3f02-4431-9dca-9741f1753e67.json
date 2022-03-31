@@ -1,0 +1,147 @@
+{
+  "title": "Housing",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "description": "'on-site' direct emissions",
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Oil heating",
+            "description": {}
+          },
+          "quantity": "0",
+          "quantity_unit": "l",
+          "source": {
+            "name": "Other kerosene",
+            "type": "oil",
+            "description": "",
+            "emissions": {
+              "co2": {
+                "value": "2.519376",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "ch4": {
+                "value": "0.0003504",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "n2o": {
+                "value": "0.000021024",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Gas heating",
+            "description": {}
+          },
+          "quantity": "0",
+          "quantity_unit": "m3",
+          "source": {
+            "name": "Natural gas",
+            "type": "natural gas",
+            "description": "",
+            "emissions": {
+              "co2": {
+                "value": "1.88496",
+                "unit": "kg",
+                "base_unit": "m3",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "ch4": {
+                "value": "0.000168",
+                "unit": "kg",
+                "base_unit": "m3",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "n2o": {
+                "value": "0.00000336",
+                "unit": "kg",
+                "base_unit": "m3",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Chimney",
+            "description": {}
+          },
+          "quantity": "160",
+          "quantity_unit": "kg",
+          "source": {
+            "name": "Wood or Wood waste",
+            "type": "biomass",
+            "description": "",
+            "emissions": {
+              "co2": {
+                "value": "1.7472",
+                "unit": "kg",
+                "base_unit": "kg",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "ch4": {
+                "value": "0.00468",
+                "unit": "kg",
+                "base_unit": "kg",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "n2o": {
+                "value": "0.0000624",
+                "unit": "kg",
+                "base_unit": "kg",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 2",
+      "description": "emissions related to the purchase of power",
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Electricity",
+            "description": {}
+          },
+          "quantity": "16000",
+          "quantity_unit": "kWh",
+          "source": {
+            "name": "France electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.0511",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.0573",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

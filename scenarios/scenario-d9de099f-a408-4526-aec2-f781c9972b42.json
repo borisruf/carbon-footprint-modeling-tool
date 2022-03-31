@@ -1,0 +1,98 @@
+{
+  "title": "Cargo ship emissions portfolio 2021",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "description": "Direct emissions from owned or controlled sources",
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "MAN-B&amp;W 6S46MC-C",
+            "description": "9789 hp – Bulk Carrier",
+            "consumptions": {"bunker fuel": {
+              "value": "25.5",
+              "unit": "t",
+              "base_unit": "d",
+              "reference_url": "https://ihsmarkit.com/"
+            }}
+          },
+          "quantity": "300",
+          "quantity_unit": "d",
+          "source": {
+            "name": "Light fuel oil",
+            "description": "",
+                        "type": "bunker fuel",
+            "emissions": {
+              "co2": {
+                "value": "3.151",
+                "unit": "kg",
+                "base_unit": "kg",
+                "reference_url": "https://www.mdpi.com/1996-1073/14/14/4311"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Caterpillar 3408TA",
+            "description": "1020 hp – Bunkering Tanker (Oil)",
+            "consumptions": {"bunker fuel":{
+              "value": "4.8",
+              "unit": "t",
+              "base_unit": "d",
+              "reference_url": "https://ihsmarkit.com/"
+            }
+            }
+          },
+          "quantity": "150",
+          "quantity_unit": "d",
+          "source": {
+            "name": "Marine diesel oil",
+                        "type": "bunker fuel",
+            "description": "",
+            "emissions": {
+              "co2": {
+                "value": "3.206",
+                "unit": "kg",
+                "base_unit": "kg",
+                "reference_url": "https://www.mdpi.com/1996-1073/14/14/4311"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Wartsila 5RT-flex50D",
+            
+            "description": "8701 hp – Asphalt/Bitumen Tanker",
+            "consumptions": {"bunker fuel": {
+              "value": "17",
+              "unit": "t",
+              "base_unit": "d",
+              "reference_url": "https://ihsmarkit.com/"
+            }
+          }
+          },
+          "quantity": "150",
+          "quantity_unit": "d",
+          "source": {
+            "name": "Marine gas oil",
+            "type": "bunker fuel",
+            "description": "",
+            "emissions": {
+              "co2": {
+                "value": "3.206",
+                "unit": "kg",
+                "base_unit": "kg",
+                "reference_url": "https://www.mdpi.com/1996-1073/14/14/4311"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

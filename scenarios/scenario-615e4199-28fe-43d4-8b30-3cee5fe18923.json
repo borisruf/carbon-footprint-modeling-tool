@@ -1,0 +1,191 @@
+{
+  "title": "Car pool 2022",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "description": "'on-site' direct emissions",
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Volkswagen Golf (2014)",
+            "description": "Engine ID 45, 4 cylinders, Manual 6-spd",
+            "consumptions": {
+              "diesel": {
+                "value": "0.0735046875",
+                "unit": "l",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              }
+            }
+          },
+          "quantity": "10000",
+          "quantity_unit": "km",
+          "source": {
+            "name": "Gas/Diesel oil",
+            "type": "diesel",
+            "description": "",
+            "emissions": {
+              "co2": {
+                "value": "2.676492",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "ch4": {
+                "value": "0.0003612",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "n2o": {
+                "value": "0.000021672",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Subaru Crosstrek Hybrid AWD (2020)",
+            "description": "Engine ID 35 SIDI; PHEV, 4 cylinders, Automatic (variable gear ratios), All-Wheel Drive",
+            "consumptions": {
+              "electricity": {
+                "value": "0.23612105305018688",
+                "unit": "kWh",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              },
+              "regular gasoline": {
+                "value": "0.06720428571428572",
+                "unit": "l",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              }
+            }
+          },
+          "quantity": "3000",
+          "quantity_unit": "km",
+          "source": {
+            "name": "Motor gasoline",
+            "type": "regular gasoline",
+            "description": "",
+            "emissions": {
+              "co2e": {
+                "value": "2.93",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "https://bilans-ges.ademe.fr/documentation/UPLOAD_DOC_EN/index.htm?new_liquides.htm"
+              },
+              "co2": {
+                "value": "2.2717926",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "ch4": {
+                "value": "0.00032782",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "n2o": {
+                "value": "0.0000196692",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 2",
+      "description": "emissions related to the purchase of power",
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Tesla Model X 100D (2019)",
+            "description": "Engine ID 17, Automatic (A1)",
+            "consumptions": {
+              "electricity": {
+                "value": "0.24025379284975742",
+                "unit": "kWh",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              }
+            }
+          },
+          "quantity": "10000",
+          "quantity_unit": "km",
+          "source": {
+            "name": "France electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.0511",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.0573",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Subaru Crosstrek Hybrid AWD (2020)",
+            "description": "Engine ID 35 SIDI; PHEV, 4 cylinders, Automatic (variable gear ratios), All-Wheel Drive",
+            "consumptions": {
+              "electricity": {
+                "value": "0.23612105305018688",
+                "unit": "kWh",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              },
+              "regular gasoline": {
+                "value": "0.06720428571428572",
+                "unit": "l",
+                "base_unit": "km",
+                "reference_url": "https://www.fueleconomy.gov/"
+              }
+            }
+          },
+          "quantity": "7000",
+          "quantity_unit": "km",
+          "source": {
+            "name": "France electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.0511",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.0573",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

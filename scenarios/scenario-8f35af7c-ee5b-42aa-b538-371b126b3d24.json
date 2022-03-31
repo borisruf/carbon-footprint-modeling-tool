@@ -1,0 +1,125 @@
+{
+  "title": "Streaming a 30-minute video (IEA updated, UK)",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Device",
+            "description": {},
+            "consumptions": {
+              "electricity": {
+                "value": "0.0555",
+                "unit": "kWh",
+                "base_unit": "hr",
+                "reference_url": "http://www/"
+              }
+            }
+          },
+          "quantity": "0.5",
+          "quantity_unit": "hr",
+          "source": {
+            "name": "United Kingdom electricity grid",
+            "type": "electricity",
+            "description": "(2018)",
+            "emissions": {
+              "co2e": {
+                "value": "0.242",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.207",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://interactive.carbonbrief.org/how-uk-transformed-electricity-supply-decade/"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 3",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Data centres",
+            "description": {},
+            "consumptions": {
+              "electricity": {
+                "value": "0.003691247642",
+                "unit": "kWh",
+                "base_unit": "hr",
+                "reference_url": "https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"
+              }
+            }
+          },
+          "quantity": "0.5",
+          "quantity_unit": "hr",
+          "source": {
+            "name": "United Kingdom electricity grid",
+            "type": "electricity",
+            "description": "(2018)",
+            "emissions": {
+              "co2e": {
+                "value": "0.242",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.207",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://interactive.carbonbrief.org/how-uk-transformed-electricity-supply-decade/"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Data transmission",
+            "description": {},
+            "consumptions": {
+              "electricity": {
+                "value": "0.018",
+                "unit": "kWh",
+                "base_unit": "hr",
+                "reference_url": "http://www/"
+              }
+            }
+          },
+          "quantity": "0.5",
+          "quantity_unit": "hr",
+          "source": {
+            "name": "United Kingdom electricity grid",
+            "type": "electricity",
+            "description": "(2018)",
+            "emissions": {
+              "co2e": {
+                "value": "0.242",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.207",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://interactive.carbonbrief.org/how-uk-transformed-electricity-supply-decade/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
