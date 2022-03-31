@@ -1,0 +1,53 @@
+{
+  "title": "Singapore (SIN) to Paris (CDG) round-trip ",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Boeing 747",
+            "description": "",
+            "consumptions": {
+              "oil": {
+                "value": "0.02352146",
+                "unit": "l",
+                "base_unit": "km",
+                "reference_url": "https://science.howstuffworks.com/transport/flight/modern/question192.htm"
+              }
+            }
+          },
+          "quantity": "21444",
+          "quantity_unit": "km",
+          "source": {
+            "name": "Jet kerosene",
+            "type": "oil",
+            "description": "",
+            "emissions": {
+              "co2": {
+                "value": "2.4909885",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "ch4": {
+                "value": "0.00034839",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              },
+              "n2o": {
+                "value": "0.0000209034",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
