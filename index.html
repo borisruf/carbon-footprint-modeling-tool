@@ -19,11 +19,6 @@
         let url = new URL(location.href);
         let id = url.searchParams.get("id");
 
-        // fallback to sample scenario if no id parameter 
-        if (!id) {
-            id = "scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc"
-        }
-
         // optional parameter to override emission type
         var emission_type_parameter = url.searchParams.get("emission_type");
 
@@ -53,12 +48,28 @@
             }
             consumptionsUl.removeChild(consumptionsUl.querySelector("li"));
 
-            // fetch JSON file
-            let request = new XMLHttpRequest();
-            request.open("GET", "./scenarios/" + id + ".json", false);
-            request.setRequestHeader('Cache-Control', 'no-cache');
-            request.send(null)
-            scenario = JSON.parse(request.responseText);
+            // no id parameter, test for base64 encoded 
+            if (!id) {
+                let base64 = url.hash;
+
+                // hash detected
+                if (base64) {
+                    scenario = JSON.parse(atob(base64.substring(1)));
+
+                // fallback to sample scenario
+                } else {
+                    id = "scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc"
+                }
+            }
+
+            if (!scenario) {
+                // fetch JSON file
+                let request = new XMLHttpRequest();
+                request.open("GET", "./scenarios/" + id + ".json", false);
+                request.setRequestHeader('Cache-Control', 'no-cache');
+                request.send(null)
+                scenario = JSON.parse(request.responseText);
+            }
 
             document.getElementById("title").innerHTML = scenario.title;
             document.title = scenario.title + " – " + document.title;
@@ -409,6 +420,7 @@
     <div id="footer">
         <a href="#" onclick="saveJSON()">Save JSON</a>
         | <a href="#" onclick="copyJSON()">Copy JSON</a>
+        | <a href="#" onclick="makeUrl()">Make URL</a>
     </div>
 
     <div id="searchConsumerOverlay">

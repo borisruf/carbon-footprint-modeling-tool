@@ -27,6 +27,12 @@ function downloadJSON(filename) {
     a.click();
 }
 
+function makeUrl() {
+    var fileContent = JSON.stringify(scenario);
+    let url = location.protocol + '//' + location.host + location.pathname + '?#' + btoa(unescape(encodeURIComponent(fileContent)))
+    window.open(url, '_blank').focus();
+}
+
 function formatTotalEmissions(value_in_kg, emission_type) {
 
     let value = value_in_kg;
