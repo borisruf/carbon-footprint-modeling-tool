@@ -23,11 +23,11 @@
         var emission_type_parameter = url.searchParams.get("emission_type");
 
         // TODO: replace data source of autocompletejs with API call
-        let request = new XMLHttpRequest();
-        request.open("GET", "./data/consumers.json", false);
-        request.setRequestHeader('Cache-Control', 'no-cache');
-        request.send(null)
-        let consumers_json = JSON.parse(request.responseText);
+        async function fetchConsumersJSON() {
+            const response = await fetch("./data/consumers.json");
+            return await response.json();
+        }
+        let consumers_json = fetchConsumersJSON();
 
         // TODO: replace data source of autocompletejs with API call
         let request2 = new XMLHttpRequest();
