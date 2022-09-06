@@ -107,6 +107,10 @@ div[name="component"] div[name="consumer"] div[name="consumptions"] span[name="d
     padding-bottom: 10px;
 }
 
+div[name="consumer"], div.usage, div[name="source"] {
+    border-width: 1.5px !important;
+}
+
 div[name="scope"] div.total_emission {
     position: absolute;
     float: right;
