@@ -107,7 +107,7 @@ div[name="component"] div[name="consumer"] div[name="consumptions"] span[name="d
     padding-bottom: 10px;
 }
 
-div[name="consumer"], div.usage, div[name="source"] {
+div[name="consumer"], div.usage, div[name="source"], div[name="bar"] {
     border-width: 1.5px !important;
 }
 
