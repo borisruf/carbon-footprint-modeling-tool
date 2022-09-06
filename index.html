@@ -71,7 +71,17 @@
                 scenario = JSON.parse(request.responseText);
             }
 
-            document.getElementById("title").innerHTML = scenario.title;
+            let titleSpan = document.querySelector("h1 span[name='title']");
+            titleSpan.innerHTML = scenario.title;
+
+            let titleSup = document.querySelector("h1 sup");
+
+            if (scenario.reference_url) {
+                titleSup.querySelector("a[name='reference_url']").href = scenario.reference_url;
+            } else {
+                titleSup.parentNode.removeChild(titleSup);
+            }
+            
             document.title = scenario.title + " – " + document.title;
 
             for (const [i, scope] of scenario.scopes.entries()){
@@ -414,7 +424,7 @@
 
 <body>
     <div id="container">
-        <h1 class="data" name="title" data-type="string" id="title"></h1>
+        <h1><span class="data" name="title" data-type="string" id="title"></span><sup>[<a class="data" name="reference_url" target="_blank" onclick="event.stopPropagation()">i</a>]</sup></h1>
         <div class="data" name="scopes" data-type="array" id="scopes"></div>
     </div>
     <div id="footer">

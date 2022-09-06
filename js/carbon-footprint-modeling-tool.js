@@ -102,8 +102,8 @@ function calculateScopeEmissions(scope) {
                         if (consumption && element.source.emissions[emission_type].base_unit != consumption.unit) {
                             usage_factor = convertValue(usage_factor, consumption.unit, element.source.emissions[emission_type].base_unit)
                         }
-
-                        emissions[j][emission_type] = Number(element.quantity)*Number(usage_factor)*Number(element.source.emissions[emission_type]["value"]);
+                        
+                        emissions[j][emission_type] = convertValue(Number(element.quantity), element.quantity_unit, element.source.emissions[emission_type].base_unit)*Number(usage_factor)*Number(element.source.emissions[emission_type]["value"]);
 
                     } else {
                         console.warn("Consumer unit (" + element.consumer.name +  ") and source base unit (" + element.source.name + ") do not match: " + consumption.unit + " <--> " + element.source.emissions[emission_type].base_unit)
