@@ -88,4 +88,8 @@ Example: [index.html?id=scenario-95e1ade0-033c-40de-b30d-4e62f4723254](https://b
 ### Compare scenarios
 The benchmark view takes two or more identifiers of hosted scenarios as parameters and renders a bar chart. 
 
-[benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923)
+<img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/benchmark.png" width="650"/>
+  
+Example: [benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923)
+
+
