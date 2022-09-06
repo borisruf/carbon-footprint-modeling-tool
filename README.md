@@ -27,13 +27,13 @@ or energy sources can be changed by clicking the pencil icon. Nested scenarios c
 ### Create a scenario
 There are two ways to compose new scenarios. 
 
-#### Extend an existing scenario (easy)
+#### 1. Extend an existing scenario (easy)
 Use an existing scenario and update the quantities, consumer components and energy sources (as described above). When done, export the scenario using one of the links on the bottom of the page:
   - "Save JSON" downloads the scenario as JSON file with a new random identifier to your computer
   - "Copy JSON" temporarily stores the scenario in your memory so you can paste it wherever you want
   - "Make URL" encodes the scenario within a URL you can use to share publicly publish it
 
-#### Create a new scenario (advanced)
+#### 2. Create a new scenario (advanced)
 Create a new JSON file following the data scheme. For example:
 ```json
 {
