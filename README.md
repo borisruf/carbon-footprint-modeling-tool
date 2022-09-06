@@ -29,8 +29,8 @@ There are two ways to compose new scenarios.
 
 #### 1. Extend an existing scenario (easy)
 Use an existing scenario and update the quantities, consumer components and energy sources (as described above). When done, export the scenario using one of the links on the bottom of the page:
-  - "Save JSON" downloads the scenario as JSON file with a new random identifier to your computer
-  - "Copy JSON" temporarily stores the scenario in your memory so you can paste it wherever you want
+  - "Save JSON" downloads the scenario as JSON file to your computer
+  - "Copy JSON" downloads the scenario with a new random identifier to your computer
   - "Make URL" encodes the scenario within a URL you can use to share publicly publish it
 
 #### 2. Create a new scenario (advanced)
