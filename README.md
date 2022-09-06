@@ -24,6 +24,10 @@ The viewer renders the scenario data which is either stored in a JSON file that 
 Details on consumption and emissions can be toggled by clicking on the respective title. If a data source was included, consumer components 
 or energy sources can be changed by clicking the pencil icon. Nested scenarios can be zoomed into by clicking on their links.
 
+Examples:
+- [Streaming a 30-minute video (IEA updated, UK)](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24)
+- [Streaming a 30-minute video (IEA updated, Laptop and HD)](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc)
+
 ### Create a scenario
 There are two ways to compose new scenarios. 
 
