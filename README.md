@@ -24,9 +24,12 @@ The viewer renders the scenario data which is either stored in a JSON file that 
 Details on consumption and emissions can be toggled by clicking on the respective title. If a data source was included, consumer components 
 or energy sources can be changed by clicking the pencil icon. Nested scenarios can be zoomed into by clicking on their links.
 
-Examples:
+Example scenarios:
 - [Streaming a 30-minute video (IEA updated, UK)](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24)
 - [Streaming a 30-minute video (IEA updated, Laptop and HD)](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc)
+- [Singapore (SIN) to Paris (CDG) round-trip](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-0065da59-7785-4eed-8a11-c73b70cf798e)
+- [Sample personal carbon footprint (nested)](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-265789b8-d7d1-442f-ba79-e627b9226c86)
+- [Cargo ship emissions portfolio](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-d9de099f-a408-4526-aec2-f781c9972b42)
 
 ### Create a scenario
 There are two ways to compose new scenarios. 
@@ -86,10 +89,10 @@ Assign a random identifier as file name and upload it to the "scenarios" folder 
 Example: [index.html?id=scenario-95e1ade0-033c-40de-b30d-4e62f4723254](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-95e1ade0-033c-40de-b30d-4e62f4723254)
 
 ### Compare scenarios
-The benchmark view takes two or more identifiers of hosted scenarios as parameters and renders a bar chart. 
+The benchmark view renders a bar chart for two or more hosted scenarios identified in the URL by their ids, like `benchmark.html?ids[]=scenario-1&ids[]=scenario-2`.
 
 <img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/benchmark.png" width="650"/>
-  
-Example: [benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923)
+
+Benchmark example: [2021 vs. 2022 car pool comparison](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923)
 
 
