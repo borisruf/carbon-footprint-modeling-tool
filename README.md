@@ -12,7 +12,7 @@ The main features of the [**_data model_**](https://raw.githubusercontent.com/bo
 - A modular structure which allows for **nested scenarios** that can be explored and modified at different levels of detail
 - Support to back consumption and emission details with **reference sources** for better transparency
 
-The main features of the **_viewer_** are:
+The main features of the [**_viewer_**](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24) are:
 - Automated **unit conversion** and **common emission type detection** to avoid data conversion errors
 - Editable input fields for quantities to quickly **test the effect** of different settings
 - Possibility to include different **data sources** for consumer components and energy sources
@@ -91,7 +91,7 @@ Create a new JSON file following the [data scheme](https://raw.githubusercontent
   ]
 }
 ``` 
-Assign a random identifier as file name and upload it to the "scenarios" folder of the application. Load the scenario by providing the identifier (without the .json file extension) as id parameter in the URL.
+Assign a random identifier as file name and upload it to the "scenarios" folder of the application. Load the scenario by providing the identifier (without the .json file extension) as *id* parameter in the URL.
 Example: [index.html?id=scenario-95e1ade0-033c-40de-b30d-4e62f4723254](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-95e1ade0-033c-40de-b30d-4e62f4723254)
 
 ---
