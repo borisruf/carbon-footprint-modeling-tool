@@ -1,6 +1,6 @@
 # Carbon footprint modeling tool
 
-A **data model** and a **viewer** for carbon footprint scenarios. This toolkit makes it easy to create, share and compare emission scenarios. Its purpose is to improve data quality and transparency in the field of carbon footprint quantification.
+A data model and a viewer for carbon footprint scenarios. This toolkit makes it easy to create, share and compare emission scenarios. Its purpose is to improve data quality and transparency in the field of carbon footprint quantification.
 
 ## Data model
 
