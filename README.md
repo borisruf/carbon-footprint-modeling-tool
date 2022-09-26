@@ -47,7 +47,7 @@ Use an existing scenario and update the quantities, consumer components and ener
   - "Make URL" encodes the scenario within a URL you can use to share publicly publish it
 
 #### 2. Create a new scenario from scratch (advanced)
-Create a new JSON file following the [data scheme](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/class_diagram.png). For example:
+Create a new JSON file following the [data scheme](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.png). For example:
 ```json
 {
   "title": "Mobility",
