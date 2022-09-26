@@ -4,7 +4,7 @@ A data model and a viewer for carbon footprint scenarios. This toolkit makes it 
 
 ## Data model
 
-The main features of the [**_data model_**](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.svg) are:
+The main features of the [data model](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.svg) are:
 - A universal data scheme to model carbon emission scenarios, split by **scopes**, **consumer components** and **energy sources**
 - A modular structure which allows for **nested scenarios** that can be explored and modified at different levels of detail
 - Support to back consumption and emission details with **reference sources** for better transparency
@@ -13,7 +13,7 @@ The main features of the [**_data model_**](https://raw.githubusercontent.com/bo
 
 ## Viewer
 
-The main features of the [**_viewer_**](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24) are:
+The main features of the [viewer](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24) are:
 - Automated **unit conversion** and **common emission type detection** to avoid data conversion errors
 - Editable input fields for quantities to quickly **test the effect** of different settings
 - Possibility to include different **data sources** for consumer components and energy sources
