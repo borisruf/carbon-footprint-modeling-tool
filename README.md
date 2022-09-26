@@ -1,22 +1,23 @@
 # Carbon footprint modeling tool
 
-A **data model** and a **viewer** for carbon footprint scenarios.
+A data model and a viewer for carbon footprint scenarios. This toolkit makes it easy to create, share and compare emission scenarios. Its purpose is to improve data quality and transparency in the field of carbon footprint quantification.
 
-## Description
+## Data model
 
-This toolkit makes it easy to **create**, **share** and **compare** emission scenarios. Its purpose is to improve data quality and transparency in the field of carbon footprint quantification.
-
-
-The main features of the [**_data model_**](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/class_diagram.png) are:
+The main features of the [data model](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.svg) are:
 - A universal data scheme to model carbon emission scenarios, split by **scopes**, **consumer components** and **energy sources**
 - A modular structure which allows for **nested scenarios** that can be explored and modified at different levels of detail
 - Support to back consumption and emission details with **reference sources** for better transparency
 
-The main features of the [**_viewer_**](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24) are:
+![Carbon footprint scenario data model](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.svg)
+
+## Viewer
+
+The main features of the [viewer](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24) are:
 - Automated **unit conversion** and **common emission type detection** to avoid data conversion errors
 - Editable input fields for quantities to quickly **test the effect** of different settings
 - Possibility to include different **data sources** for consumer components and energy sources
-- One-click **data export** in the form of file download, copy-and-paste or encoded URL
+- One-click **data export** in the form of file download and **scenario sharing** via encoded URL
 - **Easy deployment**: No-deployment using encoded URLs, or as serverless application (i.e. on GitHub)
 
 <a href="https://borisruf.github.io/carbon-footprint-modeling-tool/?#eyJ0aXRsZSI6IlN0cmVhbWluZyBhIDMwLW1pbnV0ZSB2aWRlbyAoSUVBIHVwZGF0ZWQsIExhcHRvcCBhbmQgSEQpIiwicmVmZXJlbmNlX3VybCI6e30sInNjb3BlcyI6W3sibGV2ZWwiOiJTY29wZSAyIiwiZGVzY3JpcHRpb24iOnt9LCJsaXN0IjpbeyJ0eXBlIjoiY29tcG9uZW50IiwiY29uc3VtZXIiOnsibmFtZSI6IkRldmljZSAoTGFwdG9wKSIsImRlc2NyaXB0aW9uIjp7fSwiY29uc3VtcHRpb25zIjp7ImVsZWN0cmljaXR5Ijp7InZhbHVlIjoiMC4wMjIiLCJ1bml0Ijoia1doIiwiYmFzZV91bml0IjoiaHIiLCJyZWZlcmVuY2VfdXJsIjoiaHR0cHM6Ly93d3cucmVzZWFyY2hnYXRlLm5ldC9wdWJsaWNhdGlvbi8zMzU5MTEyOTVfUmVzaWRlbnRpYWxfQ29uc3VtZXJfRWxlY3Ryb25pY3NfRW5lcmd5X0NvbnN1bXB0aW9uX2luX3RoZV9Vbml0ZWRfU3RhdGVzX2luXzIwMTcifX19LCJxdWFudGl0eSI6IjAuNSIsInF1YW50aXR5X3VuaXQiOiJociIsInNvdXJjZSI6eyJuYW1lIjoiRnJhbmNlIGVsZWN0cmljaXR5IGdyaWQiLCJ0eXBlIjoiZWxlY3RyaWNpdHkiLCJkZXNjcmlwdGlvbiI6IigyMDIwKSIsImVtaXNzaW9ucyI6eyJjbzJlIjp7InZhbHVlIjoiMC4wNTExIiwidW5pdCI6ImtnIiwiYmFzZV91bml0Ijoia1doIiwicmVmZXJlbmNlX3VybCI6Imh0dHBzOi8vd3d3LmVlYS5ldXJvcGEuZXUvaW1zL2dyZWVuaG91c2UtZ2FzLWVtaXNzaW9uLWludGVuc2l0eS1vZi0xIn0sImNvMiI6eyJ2YWx1ZSI6IjAuMDU3MyIsInVuaXQiOiJrZyIsImJhc2VfdW5pdCI6ImtXaCIsInJlZmVyZW5jZV91cmwiOiJodHRwczovL3d3dy5zdGF0aXN0YS5jb20vc3RhdGlzdGljcy8xMTkwMDY3L2NhcmJvbi1pbnRlbnNpdHktb3V0bG9vay1vZi1mcmFuY2UvIn19fX1dfSx7ImxldmVsIjoiU2NvcGUgMyIsImRlc2NyaXB0aW9uIjp7fSwibGlzdCI6W3sidHlwZSI6ImNvbXBvbmVudCIsImNvbnN1bWVyIjp7Im5hbWUiOiJEYXRhIGNlbnRyZXMiLCJkZXNjcmlwdGlvbiI6e30sImNvbnN1bXB0aW9ucyI6eyJlbGVjdHJpY2l0eSI6eyJ2YWx1ZSI6IjAuMDAzNjkxMjQ3NjQyIiwidW5pdCI6ImtXaCIsImJhc2VfdW5pdCI6ImhyIiwicmVmZXJlbmNlX3VybCI6Imh0dHBzOi8vd3d3LmNhcmJvbmJyaWVmLm9yZy9mYWN0Y2hlY2std2hhdC1pcy10aGUtY2FyYm9uLWZvb3RwcmludC1vZi1zdHJlYW1pbmctdmlkZW8tb24tbmV0ZmxpeCJ9fX0sInF1YW50aXR5IjoiMC41IiwicXVhbnRpdHlfdW5pdCI6ImhyIiwic291cmNlIjp7Im5hbWUiOiJGcmFuY2UgZWxlY3RyaWNpdHkgZ3JpZCIsInR5cGUiOiJlbGVjdHJpY2l0eSIsImRlc2NyaXB0aW9uIjoiKDIwMjApIiwiZW1pc3Npb25zIjp7ImNvMmUiOnsidmFsdWUiOiIwLjA1MTEiLCJ1bml0Ijoia2ciLCJiYXNlX3VuaXQiOiJrV2giLCJyZWZlcmVuY2VfdXJsIjoiaHR0cHM6Ly93d3cuZWVhLmV1cm9wYS5ldS9pbXMvZ3JlZW5ob3VzZS1nYXMtZW1pc3Npb24taW50ZW5zaXR5LW9mLTEifSwiY28yIjp7InZhbHVlIjoiMC4wNTczIiwidW5pdCI6ImtnIiwiYmFzZV91bml0Ijoia1doIiwicmVmZXJlbmNlX3VybCI6Imh0dHBzOi8vd3d3LnN0YXRpc3RhLmNvbS9zdGF0aXN0aWNzLzExOTAwNjcvY2FyYm9uLWludGVuc2l0eS1vdXRsb29rLW9mLWZyYW5jZS8ifX19fSx7InR5cGUiOiJjb21wb25lbnQiLCJjb25zdW1lciI6eyJuYW1lIjoiRGF0YSB0cmFuc21pc3Npb24gKEhEKSIsImRlc2NyaXB0aW9uIjp7fSwiY29uc3VtcHRpb25zIjp7ImVsZWN0cmljaXR5Ijp7InZhbHVlIjoiMC4wMTgzIiwidW5pdCI6ImtXaCIsImJhc2VfdW5pdCI6ImhyIiwicmVmZXJlbmNlX3VybCI6Imh0dHBzOi8vd3d3LmNhcmJvbmJyaWVmLm9yZy9mYWN0Y2hlY2std2hhdC1pcy10aGUtY2FyYm9uLWZvb3RwcmludC1vZi1zdHJlYW1pbmctdmlkZW8tb24tbmV0ZmxpeCJ9fX0sInF1YW50aXR5IjoiMC41IiwicXVhbnRpdHlfdW5pdCI6ImhyIiwic291cmNlIjp7Im5hbWUiOiJGcmFuY2UgZWxlY3RyaWNpdHkgZ3JpZCIsInR5cGUiOiJlbGVjdHJpY2l0eSIsImRlc2NyaXB0aW9uIjoiKDIwMjApIiwiZW1pc3Npb25zIjp7ImNvMmUiOnsidmFsdWUiOiIwLjA1MTEiLCJ1bml0Ijoia2ciLCJiYXNlX3VuaXQiOiJrV2giLCJyZWZlcmVuY2VfdXJsIjoiaHR0cHM6Ly93d3cuZWVhLmV1cm9wYS5ldS9pbXMvZ3JlZW5ob3VzZS1nYXMtZW1pc3Npb24taW50ZW5zaXR5LW9mLTEifSwiY28yIjp7InZhbHVlIjoiMC4wNTczIiwidW5pdCI6ImtnIiwiYmFzZV91bml0Ijoia1doIiwicmVmZXJlbmNlX3VybCI6Imh0dHBzOi8vd3d3LnN0YXRpc3RhLmNvbS9zdGF0aXN0aWNzLzExOTAwNjcvY2FyYm9uLWludGVuc2l0eS1vdXRsb29rLW9mLWZyYW5jZS8ifX19fV19XX0="><img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/viewer.png" width="750" target="_blank"/></a>
@@ -47,7 +48,7 @@ Use an existing scenario and update the quantities, consumer components and ener
   - "Make URL" encodes the scenario within a URL you can use to share publicly publish it
 
 #### 2. Create a new scenario from scratch (advanced)
-Create a new JSON file following the [data scheme](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/class_diagram.png). For example:
+Create a new JSON file following the [data scheme](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.svg). For example:
 ```json
 {
   "title": "Mobility",
