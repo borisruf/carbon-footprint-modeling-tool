@@ -6,8 +6,9 @@ A **data model** and a **viewer** for carbon footprint scenarios.
 
 This toolkit makes it easy to **create**, **share** and **compare** emission scenarios. Its purpose is to improve data quality and transparency in the field of carbon footprint quantification.
 
+![Carbon footprint scenario data model]([https://myoctocat.com/assets/images/base-octocat.svg](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.png))
 
-The main features of the [**_data model_**](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/class_diagram.png) are:
+The main features of the [**_data model_**](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.png) are:
 - A universal data scheme to model carbon emission scenarios, split by **scopes**, **consumer components** and **energy sources**
 - A modular structure which allows for **nested scenarios** that can be explored and modified at different levels of detail
 - Support to back consumption and emission details with **reference sources** for better transparency
