@@ -103,7 +103,11 @@ function calculateScopeEmissions(scope) {
                             usage_factor = convertValue(usage_factor, consumption.unit, element.source.emissions[emission_type].base_unit)
                         }
                         
-                        emissions[j][emission_type] = convertValue(Number(element.quantity), element.quantity_unit, element.source.emissions[emission_type].base_unit)*Number(usage_factor)*Number(element.source.emissions[emission_type]["value"]);
+                        emissions[j][emission_type] = 
+                            convertValue(Number(element.quantity), element.quantity_unit, element.source.emissions[emission_type].base_unit)
+                            *Number(usage_factor)
+                            // convert emissions to kg
+                            *convertValue(Number(element.source.emissions[emission_type]["value"]), element.source.emissions[emission_type]["unit"], "kg");
 
                     } else {
                         console.warn("Consumer unit (" + element.consumer.name +  ") and source base unit (" + element.source.name + ") do not match: " + consumption.unit + " <--> " + element.source.emissions[emission_type].base_unit)
@@ -131,7 +135,6 @@ function calculateScopeEmissions(scope) {
             emissions[j] = linkedEmissions;
         }
     }
-
     return emissions;
 }
 
