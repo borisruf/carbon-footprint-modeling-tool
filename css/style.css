@@ -97,7 +97,7 @@ div[name="component"] div.usage, div[name="link"] div.usage {
 }
 
 div[name="component"] div.usage input, div[name="link"] div.usage input {
-    width:  64px;
+    width:  100px;
     margin:  5px;
 }
 
