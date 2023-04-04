@@ -1,6 +1,5 @@
 {
   "title": "Carbon footprint of ChatGPT, February 2023",
-  "reference_url": "",
   "scopes": [
     {
       "level": "Scope 3",
@@ -23,21 +22,15 @@
           "quantity": "1000000000",
           "quantity_unit": "requests",
           "source": {
-            "name": "United Kingdom electricity grid",
+            "name": "Germany electricity grid",
             "type": "electricity",
-            "description": "(2018)",
+            "description": "(2020)",
             "emissions": {
               "co2e": {
-                "value": "0.242",
+                "value": "0.311",
                 "unit": "kg",
                 "base_unit": "kWh",
                 "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
-              },
-              "co2": {
-                "value": "0.207",
-                "unit": "kg",
-                "base_unit": "kWh",
-                "reference_url": "https://interactive.carbonbrief.org/how-uk-transformed-electricity-supply-decade/"
               }
             }
           }
