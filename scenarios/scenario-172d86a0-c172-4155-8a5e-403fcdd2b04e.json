@@ -1,0 +1,17 @@
+{
+  "title": "GPT-3",
+  "description": "In the absence of reliable data on the energy consumption of GPT-3, this information is extrapolated from a freely available open source language model (<a href='https://huggingface.co/docs/transformers/model_doc/gptj' target='_blank'>GPT-J</a>). Scaling to GPT-3, the following factors are taken into account:<br/><br/>1. The number of parameters in GPT-J is <a href='https://huggingface.co/EleutherAI/gpt-j-6b' target='_blank'>6 billion</a>, whereas GPT-3 has a much larger parameter count of <a href='https://openai.com/research/language-models-are-few-shot-learners' target='_blank'>175 billion</a>. By a conservative estimate, the larger model could require <b>10x</b> additional GPUs.<br/><br/>2. To fit the test environment, the GPT-J model is initialized in half-precision. The overhead of running a full precision model compared to half precision is about <b>1.5x</b> more.<br/><br/>Therefore, it is assumed that submitting a query to GPT-3 requires <b>15x</b> more energy compared to submitting a query to GPT-J.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+            "list": [
+        {
+          "type": "link",
+          "quantity": 15,
+          "scenario_id": "scenario-a8e436f8-20d0-42c3-a291-76c265bcade0"
+        }
+      ]
+    }
+  ]
+}

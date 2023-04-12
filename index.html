@@ -84,6 +84,11 @@
             
             document.title = scenario.title + " – " + document.title;
 
+            if (scenario.description) {
+                let descriptionDiv = document.querySelector("div[name='description']");
+                descriptionDiv.innerHTML = scenario.description;
+            }
+
             for (const [i, scope] of scenario.scopes.entries()){
 
                 let scopeDiv = document.querySelector(".template[name='scope']").cloneNode(true);
@@ -425,6 +430,7 @@
 <body>
     <div id="container">
         <h1><span class="data" name="title" data-type="string" id="title"></span><sup>[<a class="data" name="reference_url" target="_blank" onclick="event.stopPropagation()">i</a>]</sup></h1>
+        <div class="data" data-type="string" name="description"></div>
         <div class="data" name="scopes" data-type="array" id="scopes"></div>
     </div>
     <div id="footer">

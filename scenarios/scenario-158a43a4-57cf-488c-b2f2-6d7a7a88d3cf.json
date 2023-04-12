@@ -1,39 +1,15 @@
 {
-  "title": "Carbon footprint of ChatGPT, February 2023",
+  "title": "Monthly carbon footprint of ChatGPT",
+  "description": "<a href='https://di.ku.dk/english/staff/?pure=en/persons/532407' target='_blank'>Raghavendra Selvan</a> from University of Copenhagen <a href='https://www.sueddeutsche.de/wissen/chat-gpt-energieverbrauch-ki-1.5780744' target='_blank'>approximated</a> the carbon footprint of ChatGPT. The calculation and the underlying assumptions he made are further illustrated in this <a href='https://github.com/borisruf/carbon-footprint-modeling-tool' target='_blank'>carbon footprint scenario</a>.<br/><br/>In January 2023, ChatGPT had about 100M unique users who made <a href='https://www.theguardian.com/technology/2023/feb/02/chatgpt-100-million-users-open-ai-fastest-growing-app' target='_blank'>590M</a> queries to GPT-3. The estimated emissions associated with these requests have been modeled below. To explore further, adjust the quantity in the input field or click on the link.",
   "scopes": [
     {
       "level": "Scope 3",
       "description": {},
-      "list": [
+        "list": [
         {
-          "type": "component",
-          "consumer": {
-            "name": "ChatGPT request",
-            "description": "(ca. 320 words)",
-            "consumptions": {
-              "electricity": {
-                "value": "0.581",
-                "unit": "kWh",
-                "base_unit": "request",
-                "reference_url": "https://www.sueddeutsche.de/wissen/chat-gpt-energieverbrauch-ki-1.5780744"
-              }
-            }
-          },
-          "quantity": "1000000000",
-          "quantity_unit": "requests",
-          "source": {
-            "name": "Germany electricity grid",
-            "type": "electricity",
-            "description": "(2020)",
-            "emissions": {
-              "co2e": {
-                "value": "0.311",
-                "unit": "kg",
-                "base_unit": "kWh",
-                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
-              }
-            }
-          }
+          "type": "link",
+          "quantity": 590000000,
+          "scenario_id": "scenario-172d86a0-c172-4155-8a5e-403fcdd2b04e"
         }
       ]
     }
