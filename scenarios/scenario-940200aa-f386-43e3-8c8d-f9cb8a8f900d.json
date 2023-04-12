@@ -1,0 +1,47 @@
+{
+  "title": "Monthly carbon footprint of Aarhus, Denmark",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Energy consumption",
+            "description": "Monthly, per capita in Denmark",
+            "consumptions": {
+              "electricity": {
+                "value": "470",
+                "unit": "kWh",
+                "base_unit": "month",
+                "reference_url": "https://www.worlddata.info/europe/denmark/energy-consumption.php"
+              }
+            }
+          },
+          "quantity": "243000",
+          "quantity_unit": "citizens",
+          "source": {
+            "name": "Denmark electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.109",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.117",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://en.energinet.dk/About-our-news/News/2021/06/22/Danish-electricity-generation-was-greener-than-ever-in-2020/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
