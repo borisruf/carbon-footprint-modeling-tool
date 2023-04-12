@@ -1,0 +1,42 @@
+{
+  "title": "Yearly carbon footprint of Oldenburg, Germany",
+  "description": "",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Energy consumption",
+            "description": "Yearly, per capita in Germany",
+            "consumptions": {
+              "electricity": {
+                "value": "6800",
+                "unit": "kWh",
+                "base_unit": "year",
+                "reference_url": "https://de.statista.com/statistik/daten/studie/240696/umfrage/pro-kopf-stromverbrauch-in-deutschland/"
+              }
+            }
+          },
+          "quantity": "170000",
+          "quantity_unit": "citizens",
+          "source": {
+            "name": "Germany electricity grid",
+            "type": "electricity",
+            "description": "(2021)",
+            "emissions": {
+              "co2": {
+                "value": "0.349",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1290224/carbon-intensity-power-sector-germany/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
