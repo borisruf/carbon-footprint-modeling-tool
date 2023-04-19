@@ -1,0 +1,16 @@
+{
+  "title": "Val's personal carbon footprint",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+      "list": [
+        {
+          "type": "link",
+          "quantity": 1.5,
+          "scenario_id": "scenario-0065da59-7785-4eed-8a11-c73b70cf798e"
+        }
+      ]
+    }
+  ]
+}

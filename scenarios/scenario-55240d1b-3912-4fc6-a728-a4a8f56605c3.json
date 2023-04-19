@@ -1,0 +1,224 @@
+{
+  "title": "Cultivation of 1 kg of barley (15% water)",
+  "reference_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959652614006490",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0.023265306122449,
+          "quantity_unit": "l",
+          "consumer": {
+            "name": "Field operations",
+            "description": "E.g.  plowing, harrowing, sowing, and harvesting"
+          },
+          "source": {
+            "name": "Diesel",
+            "type": "diesel",
+            "emissions": {
+              "co2e": {
+                "base_unit": "l",
+                "value": 3.0954,
+                "unit": "kg",
+                "reference_url": "https://journals.sagepub.com/doi/10.1177/0734242X09345276"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 0.00224489795918367,
+          "quantity_unit": "l",
+          "consumer": {
+            "name": "Field operations",
+            "description": "E.g.  plowing, harrowing, sowing, and harvesting"
+          },
+          "source": {
+            "name": "Lubricant Oil",
+            "type": "oil",
+            "emissions": {
+              "co2e": {
+                "base_unit": "l",
+                "value": 2.94666,
+                "unit": "kg",
+                "reference_url": "https://rralur.si/wp-content/uploads/2021/08/Guidebook-How-to-develop-a-Sustainable-Energy-and-Climate-Action-Plan-SECAP-part3.pdf"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 2",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0.00591836734693878,
+          "quantity_unit": "kWh",
+          "consumer": {
+            "name": "Utilities"
+          },
+          "source": {
+            "name": "Danish electricity grid mix",
+            "description": "(2012)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 0.318,
+                "unit": "kg",
+                "reference_url": "http://www.energinet.dk/DA/KLIMA-OG-MILJOE/Livscyklusvurdering/Sider/LCA-baseret-varedeklaration-for-el.aspx"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 3",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 42.8051001821494,
+          "quantity_unit": "g",
+          "consumer": {
+            "name": "Seeds"
+          },
+          "source": {
+            "name": "Barley seeds",
+            "type": "organic",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 0.66654,
+                "unit": "kg",
+                "reference_url": "https://pure.au.dk/portal/en/publications/farmghg-a-model-for-estimating-greenhouse-gas-emissions-from-livestock-farms(48509cd0-b779-11db-bd61-000ea68e967b).html"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 22.3861566484517,
+          "quantity_unit": "g",
+          "consumer": {
+            "name": "Fertilizer"
+          },
+          "source": {
+            "name": "Fertilizer N",
+            "type": "organic",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 5.917,
+                "unit": "kg",
+                "reference_url": "https://www.biograce.net/content/ghgcalculationtools/standardvalues"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 4.00728597449909,
+          "quantity_unit": "g",
+          "consumer": {
+            "name": "Fertilizer"
+          },
+          "source": {
+            "name": "Fertilizer P",
+            "type": "organic",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 1.014,
+                "unit": "kg",
+                "reference_url": "https://www.biograce.net/content/ghgcalculationtools/standardvalues"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 7.83242258652095,
+          "quantity_unit": "g",
+          "consumer": {
+            "name": "Fertilizer"
+          },
+          "source": {
+            "name": "Fertilizer K",
+            "type": "organic",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 0.579,
+                "unit": "kg",
+                "reference_url": "https://www.biograce.net/content/ghgcalculationtools/standardvalues"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 0.320582877959927,
+          "quantity_unit": "g",
+          "consumer": {
+            "name": "Pesticides"
+          },
+          "source": {
+            "name": "Pesticides",
+            "type": "organic",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 11.026,
+                "unit": "kg",
+                "reference_url": "https://www.biograce.net/content/ghgcalculationtools/standardvalues"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 268.475073313783,
+          "quantity_unit": "g",
+          "consumer": {
+            "name": "Fodder"
+          },
+          "source": {
+            "name": "Straw (for fodder)",
+            "type": "organic",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": -0.105,
+                "unit": "kg",
+                "reference_url": "https://www.infona.pl/resource/bwmeta1.element.springer-f8e61459-6a46-3fb8-ac5b-db1a50306def"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 127.038123167155,
+          "quantity_unit": "g",
+          "consumer": {
+            "name": "Incineration"
+          },
+          "source": {
+            "name": "Straw (for incineration)",
+            "type": "organic",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": -0.717,
+                "unit": "kg",
+                "reference_url": "https://www.infona.pl/resource/bwmeta1.element.springer-f8e61459-6a46-3fb8-ac5b-db1a50306def"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Monthly carbon footprint of ChatGPT",
+  "description": "<a href='https://di.ku.dk/english/staff/?pure=en/persons/532407' target='_blank'>Raghavendra Selvan</a> from University of Copenhagen <a href='https://www.sueddeutsche.de/wissen/chat-gpt-energieverbrauch-ki-1.5780744' target='_blank'>approximated</a> the carbon footprint of ChatGPT. The calculation and the underlying assumptions he made are further illustrated in this <a href='https://github.com/borisruf/carbon-footprint-modeling-tool' target='_blank'>carbon footprint scenario</a>.<br/><br/>In January 2023, ChatGPT had about 100M unique users who made <a href='https://www.theguardian.com/technology/2023/feb/02/chatgpt-100-million-users-open-ai-fastest-growing-app' target='_blank'>590M</a> queries to GPT-3. The estimated emissions associated with these requests have been modeled below. To explore further, adjust the quantity in the input field or click on the link.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+      "list": [
+        {
+          "type": "link",
+          "quantity": 590000000,
+          "scenario_id": "scenario-07ba767f-40e3-489c-8782-86f118957231"
+        }
+      ]
+    }
+  ]
+}

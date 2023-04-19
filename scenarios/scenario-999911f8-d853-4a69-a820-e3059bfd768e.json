@@ -1,0 +1,205 @@
+{
+  "title": "Baking 1 kg of rye bread",
+  "reference_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959652614006490",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0.0325,
+          "quantity_unit": "kWh",
+          "consumer": {
+            "name": "Oven"
+          },
+          "source": {
+            "name": "Natural gas",
+            "type": "gas",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 2.607,
+                "unit": "kg",
+                "reference_url": "https://rralur.si/wp-content/uploads/2021/08/Guidebook-How-to-develop-a-Sustainable-Energy-and-Climate-Action-Plan-SECAP-part3.pdf"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 2",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0.187239952396673,
+          "quantity_unit": "kWh",
+          "consumer": {
+            "name": "Utilities"
+          },
+          "source": {
+            "name": "Danish electricity grid mix",
+            "description": "(2012)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 0.318,
+                "unit": "kg",
+                "reference_url": "http://www.energinet.dk/DA/KLIMA-OG-MILJOE/Livscyklusvurdering/Sider/LCA-baseret-varedeklaration-for-el.aspx"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 0.00434,
+          "quantity_unit": "kWh",
+          "consumer": {
+            "name": "District heating"
+          },
+          "source": {
+            "name": "Danish electricity grid mix",
+            "description": "(2012)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 0.318,
+                "unit": "kg",
+                "reference_url": "http://www.energinet.dk/DA/KLIMA-OG-MILJOE/Livscyklusvurdering/Sider/LCA-baseret-varedeklaration-for-el.aspx"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 3",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0.585295563745638,
+          "quantity_unit": "l",
+          "consumer": {
+            "name": "Water"
+          },
+          "source": {
+            "name": "Water",
+            "type": "organic",
+            "emissions": {
+              "co2e": {
+                "base_unit": "l",
+                "value": 0,
+                "unit": "kg",
+                "reference_url": ""
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 0.645623507423836,
+          "quantity_unit": "kg",
+          "consumer": {
+            "name": "Transport flour from mill to bakery"
+          },
+          "source": {
+            "name": "Truck",
+            "type": "transportation",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 0.006423,
+                "unit": "kg",
+                "reference_url": ""
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 0.0146902593065841,
+          "quantity_unit": "kg",
+          "consumer": {
+            "name": "Transport salt to bakery"
+          },
+          "source": {
+            "name": "Truck",
+            "type": "transportation",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 0.019966,
+                "unit": "kg",
+                "reference_url": ""
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 0.0146902593065841,
+          "quantity_unit": "kg",
+          "consumer": {
+            "name": "Transport compressed yeast to bakery"
+          },
+          "source": {
+            "name": "Truck",
+            "type": "transportation",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 0.0224046,
+                "unit": "kg",
+                "reference_url": ""
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 0.00973378970314311,
+          "quantity_unit": "kg",
+          "consumer": {
+            "name": "Transport barley malt extract to bakery"
+          },
+          "source": {
+            "name": "Truck",
+            "type": "transportation",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 0.0130792,
+                "unit": "kg",
+                "reference_url": ""
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 1,
+          "quantity_unit": "kg",
+          "consumer": {
+            "name": "Packaging for bread",
+            "description": "Pack. one kg"
+          },
+          "source": {
+            "name": "Packaging",
+            "type": "packaging",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 0.028,
+                "unit": "kg",
+                "reference_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959652610003239"
+              }
+            }
+          }
+        }
+
+      ]
+    }
+  ]
+}

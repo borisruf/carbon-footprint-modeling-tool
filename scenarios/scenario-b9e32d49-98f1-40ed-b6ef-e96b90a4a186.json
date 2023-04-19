@@ -1,0 +1,78 @@
+{
+  "title": "Milling 1 kg of rye flour",
+  "reference_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959652614006490",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0.07441,
+          "quantity_unit": "kWh",
+          "consumer": {
+            "name": "Utilities"
+          },
+          "source": {
+            "name": "Danish electricity grid mix",
+            "description": "(2012)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 0.318,
+                "unit": "kg",
+                "reference_url": "http://www.energinet.dk/DA/KLIMA-OG-MILJOE/Livscyklusvurdering/Sider/LCA-baseret-varedeklaration-for-el.aspx"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 0.00434,
+          "quantity_unit": "kWh",
+          "consumer": {
+            "name": "District heating"
+          },
+          "source": {
+            "name": "Danish electricity grid mix",
+            "description": "(2012)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 0.318,
+                "unit": "kg",
+                "reference_url": "http://www.energinet.dk/DA/KLIMA-OG-MILJOE/Livscyklusvurdering/Sider/LCA-baseret-varedeklaration-for-el.aspx"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 3",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0.08872,
+          "quantity_unit": "l",
+          "consumer": {
+            "name": "Water"
+          },
+          "source": {
+            "name": "Water",
+            "type": "organic",
+            "emissions": {
+              "co2e": {
+                "base_unit": "l",
+                "value": 0,
+                "unit": "kg",
+                "reference_url": ""
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
