@@ -1,0 +1,49 @@
+{
+  "title": "Monthly carbon footprint of Santa Clara, CA",
+  "reference_url": "https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population",
+  "description": "",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Residential energy consumption",
+            "description": "Monthly, per capita in U.S. in 2021",
+            "consumptions": {
+              "electricity": {
+                "value": "886",
+                "unit": "kWh",
+                "base_unit": "month",
+                "reference_url": "https://www.eia.gov/tools/faqs/faq.php?id=97&t=3"
+              }
+            }
+          },
+          "quantity": "127151",
+          "quantity_unit": "citizens",
+          "source": {
+            "name": "USA electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.371",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://carbonfund.org/calculation-methods/"
+              },
+              "co2": {
+                "value": "0.3525",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.iea.org/data-and-statistics/charts/development-of-co2-emission-intensity-of-electricity-generation-in-selected-countries-2000-2020"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
