@@ -35,6 +35,7 @@ Example scenarios:
 - [Singapore (SIN) to Paris (CDG) round-trip](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-0065da59-7785-4eed-8a11-c73b70cf798e)
 - [Sample personal carbon footprint (nested)](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-265789b8-d7d1-442f-ba79-e627b9226c86)
 - [Cargo ship emissions portfolio](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-d9de099f-a408-4526-aec2-f781c9972b42)
+- [Monthly operation of ChatGPT](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=scenario-a5f20019-1f40-4f41-b2a7-f9db5346a23f)
 
 ---
 
