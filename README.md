@@ -30,12 +30,12 @@ Details on consumption and emissions can be toggled by clicking on the respectiv
 or energy sources can be changed by clicking the pencil icon <img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/pencil-square.svg" width="15"/>. The total of the emissions per scope is shown in the yellow circle on the bottom right. It is updated instantly when settings in the scenario change. The emissions of nested scenarios are calculated recursively. They can be zoomed into by clicking on their links.
 
 Example scenarios:
-- [Streaming a 30-minute video (IEA updated, UK)](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24)
-- [Streaming a 30-minute video (IEA updated, Laptop and HD)](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc)
-- [Singapore (SIN) to Paris (CDG) round-trip](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-0065da59-7785-4eed-8a11-c73b70cf798e)
-- [Sample personal carbon footprint (nested)](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-265789b8-d7d1-442f-ba79-e627b9226c86)
-- [Cargo ship emissions portfolio](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-d9de099f-a408-4526-aec2-f781c9972b42)
-- [Monthly operation of ChatGPT](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=scenario-a5f20019-1f40-4f41-b2a7-f9db5346a23f)
+- [Streaming a 30-minute video [IEA updated, UK]](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24.json)
+- [Streaming a 30-minute video [IEA updated, Laptop and HD]](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc.json)
+- [Singapore (SIN) to Paris (CDG) round-trip](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-0065da59-7785-4eed-8a11-c73b70cf798e)  ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-0065da59-7785-4eed-8a11-c73b70cf798e.json)
+- [Nested sample of personal carbon footprint](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-265789b8-d7d1-442f-ba79-e627b9226c86) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-265789b8-d7d1-442f-ba79-e627b9226c86.json)
+- [Cargo ship emissions portfolio](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-d9de099f-a408-4526-aec2-f781c9972b42) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-d9de099f-a408-4526-aec2-f781c9972b42.json)
+- [Monthly operation of ChatGPT](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=scenario-a5f20019-1f40-4f41-b2a7-f9db5346a23f) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-a5f20019-1f40-4f41-b2a7-f9db5346a23f.json)
 
 ---
 
