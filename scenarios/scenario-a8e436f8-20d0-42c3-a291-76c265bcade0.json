@@ -28,7 +28,7 @@
             "description": "(2020)",
             "emissions": {
               "co2e": {
-                "value": "0.109",
+                "value": "0.212",
                 "unit": "kg",
                 "base_unit": "kWh",
                 "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
