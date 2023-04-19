@@ -1,5 +1,43 @@
 [
     {
+        "name": "USA electricity grid",
+        "description": "(2020)",
+        "type": "electricity",
+        "emissions": {
+            "co2e": {
+                "base_unit": "kWh",
+                "value": 0.371,
+                "unit": "kg",
+                "reference_url": "https://carbonfund.org/calculation-methods/"
+            },
+            "co2": {
+                "base_unit": "kWh",
+                "value": 0.3525,
+                "unit": "kg",
+                "reference_url": "https://www.iea.org/data-and-statistics/charts/development-of-co2-emission-intensity-of-electricity-generation-in-selected-countries-2000-2020"
+            }
+        }
+    },
+    {
+        "name": "USA electricity grid",
+        "description": "(2021)",
+        "type": "electricity",
+        "emissions": {
+            "co2e": {
+                "base_unit": "kWh",
+                "value": 0.379,
+                "unit": "kg",
+                "reference_url": "https://ourworldindata.org/grapher/carbon-intensity-electricity"
+            },
+            "co2": {
+                "base_unit": "kWh",
+                "value": 0.3878,
+                "unit": "kg",
+                "reference_url": "https://www.eia.gov/tools/faqs/faq.php?id=74&t=11"
+            }
+        }
+    },
+    {
         "name": "Greece electricity grid",
         "description": "(2020)",
         "type": "electricity",
