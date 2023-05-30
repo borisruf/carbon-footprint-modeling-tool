@@ -339,8 +339,8 @@
                             let rowDiv = document.querySelector("div.row[data-active='true']");
                             let consumptionTypes = Array.from(rowDiv.querySelectorAll("div[name='consumer'] div[name='consumptions'] ul.list li")).map(li => li.getAttribute("name"));
 
-                            // only present source items of suitable consumption type(s)
-                            if (consumptionTypes.includes(itemType)) {
+                            // only present source items of suitable consumption type(s) if any consumption types defined
+                            if (consumptionTypes.includes(itemType) || consumptionTypes.length === 0) {
                                 return item.value;
                             }
                         });
