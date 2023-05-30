@@ -1,0 +1,2752 @@
+[
+    {
+        "name": "Andouille",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Andouille de Guéméné",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Andouille de Vire",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Andouille/réchauffée à la poêle",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Andouillette/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Andouillette de Troyes/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Andouillette/sautée/poêlée",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Boudin blanc truffé/cru",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Boudin noir/rayon frais",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 1.64,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Boudin noir/sauté/poêlé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 1.64,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Bresaola",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 14.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Canard/magret fumé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.58,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Cervelas",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.06,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Cervelas à l'ail/pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.23,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Cervelas obernois",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.23,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chair à saucisse/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.98,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chair à saucisse/porc et buf/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.09,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chair à saucisse/pur porc/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.09,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chipolata/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.09,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chipolata/cuite",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.83,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chorizo",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.17,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chorizo supérieur/doux ou fort/type charcuterie en tranches",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.17,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chorizo supérieur/doux ou fort/type saucisse sèche",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.08,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Confit de canard",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.54,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Confit de canard/viande (cuisse)/sans peau, réchauffé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.54,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Confit de foie de porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 2.12,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Confit de foie de volaille",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 1.86,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Coppa",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 17.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Dés/allumettes/râpé ou haché de jambon",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Dés/allumettes/râpé ou haché de jambon de volaille",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.82,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Diot/cru",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.09,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Épaule de porc/cuite/choix, découennée dégraissée",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Épaule de porc/cuite/standard, découennée dégraissée",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Filet de bacon",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.18,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Fromage de tête",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.94,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Haché de volaille",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.12,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon à l'os braisé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.96,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cru",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 14.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cru/fumé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 14.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cru/fumé/allégé en matière grasse",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 14.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/choix",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/choix/avec couenne",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/choix/découenné dégraissé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/de Paris/découenné dégraissé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/fumé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/supérieur",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/supérieur/à teneur réduite en sel",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/supérieur/avec couenne",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/supérieur/découenné",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/supérieur/découenné dégraissé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon de Bayonne",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 14.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon de dinde ou Blanc de dinde en tranche",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.82,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon de porc à cuire ou Jambon à rôtir/cuire au four",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon de poulet ou Blanc de poulet en tranche",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.82,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon en croûte",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.78,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambonneau/cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.96,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon sec",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 17.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon sec/découenné/dégraissé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 17.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon sec de Parme",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 17.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon sec Serrano",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 17.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Lardon fumé/cru",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.39,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Lardon fumé/cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.16,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Lardon nature/cru",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.39,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Lardon nature/cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.16,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/boeuf et mouton/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 39.5,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/boeuf et mouton/cuite",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 39.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/buf/mouton et porc, crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 32.3,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 25.0,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/porc et buf/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 25.0,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/pur buf/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 30.4,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Mortadelle",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.18,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Mortadelle pistachée pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.18,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Mortadelle/porc et boeuf",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.18,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Mortadelle/pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.18,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Mousse de canard",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.63,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Mousse de foie de porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.51,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Mousse de foie de porc supérieure ou Crème de foie",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.51,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Museau de boeuf en vinaigrette",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 22.3,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Museau de porc vinaigrette",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 2.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Oreille de porc demi-sel",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 2.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pancetta ou Poitrine roulée sèche",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 17.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté au poivre vert",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté breton",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de foie de porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de foie de porc/supérieur",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de foie de volaille",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de foie d'oie",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de gibier",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de lapin",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.93,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté en croûte",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 12.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté ou terrine aux champignons (forestier)",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 3.17,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté ou terrine de campagne",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pied de porc demi-sel",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 3.33,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Poitrine de porc demi-sel",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.16,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Poitrine de porc/fumée/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.28,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle de poisson/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.63,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle de poisson/en sauce",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.71,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle de veau/en sauce",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.07,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle de volaille/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle de volaille/en sauce",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.18,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle nature/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 2.62,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rillettes de canard",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rillettes de poulet",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rillettes de Tours",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rillettes d'oie",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rillettes du Mans",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rillettes pur oie",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rillettes pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rillettes traditionnelles de porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rond de jambon cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.96,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rosette ou Fuseau",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.08,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rôti de volaille en salaison/cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.12,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Roulade de porc pistachée",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 10.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Salami",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.08,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Salami porc et boeuf",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.14,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Salami pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.08,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Salami type danois",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.08,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse alsacienne fumée ou Gendarme",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.05,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse cocktail",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 12.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de bière",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.23,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de foie",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 10.8,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Francfort",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.23,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de jambon pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.23,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Montbéliard",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.05,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Morteau",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.05,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Morteau/bouillie/cuite à l'eau",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.05,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Strasbourg ou Knack",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 12.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Toulouse/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Toulouse/cuite",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.3,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de volaille/façon charcutière",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 13.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de volaille/type Knack",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 15.3,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse sèche",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.14,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse viennoise/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson à l'ail",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 11.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson brioché/cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.63,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson cuit pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.77,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson de Paris",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.17,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson de Paris/fumé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.17,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson sec",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.08,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson sec aux noix et/ou noisettes",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.14,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson sec pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.08,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson sec pur porc/qualité supérieure",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.08,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Terrine de canard",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.3,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Terrine de lapin",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.12,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Andouillette/Andouille",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.0,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Boudin blanc truffé/cru",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.0,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Boudin noir",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.62,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Bresaola",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 12.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Canard/magret fumé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.84,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Cervelas",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 11.7,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Cervelas à l'ail/pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.67,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Cervelas obernois",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.67,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chair à saucisse/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.09,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chipolata/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.51,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chipolata/cuite",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 11.3,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chorizo",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.46,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Chorizo supérieur/doux ou fort, type saucisse sèche",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.4,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Confit de canard",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.75,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Confit de foie de porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 1.92,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Confit de foie de volaille",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 1.58,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Coppa",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 15.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Dés/allumettes, râpé ou haché de jambon",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.34,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Dés/allumettes, râpé ou haché de jambon de volaille",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.47,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Diot/cru",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.51,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Épaule de porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.34,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Filet de bacon",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.36,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Fromage de tête",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.44,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Haché de volaille",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon à l'os braisé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.03,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cru",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 12.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.34,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon cuit/supérieur",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.34,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon de Bayonne",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 12.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon de dinde ou Blanc de dinde en tranche",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.47,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon de porc à cuire ou Jambon à rôtir/cuire au four",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.34,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon de poulet ou Blanc de poulet en tranche",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.47,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon en croûte",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.83,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambonneau/cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.03,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Jambon sec",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 15.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Lardon fumé/cru",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.66,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Lardon fumé/cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.21,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Lardon nature/cru",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.66,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Lardon nature/cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.21,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/boeuf et mouton, crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 47.7,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/boeuf et mouton, cuite",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 47.8,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/boeuf, mouton et porc, crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 38.3,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 28.7,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/porc et boeuf, crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 28.7,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Merguez/pur boeuf, crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 36.8,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Mortadelle",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.26,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Mousse de canard",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Mousse de foie de porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.91,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Museau de boeuf en vinaigrette",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 27.1,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Museau de porc vinaigrette",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 1.98,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Oreille de porc demi-sel",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 2.33,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pancetta ou Poitrine roulée sèche",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 15.9,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté au poivre vert",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.84,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté breton",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.84,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de foie de porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.84,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de foie de volaille",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.84,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de foie d'oie",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.84,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de gibier",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.84,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté de lapin",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.14,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté en croûte",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 13.7,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté ou terrine aux champignons (forestier)",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 2.48,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pâté ou terrine de campagne",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.84,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Pied de porc demi-sel",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 3.02,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Poitrine de porc demi-sel",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.21,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Poitrine de porc/fumée, crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.56,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle de poisson/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.86,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle de poisson/en sauce",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.92,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle de veau/en sauce",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.51,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle de volaille/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.4,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle de volaille/en sauce",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.46,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Quenelle nature/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 3.57,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rillettes",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.84,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rond de jambon cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.03,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rosette ou Fuseau",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.4,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Rôti de volaille en salaison/cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.31,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Roulade de porc pistachée",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 9.51,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Salami",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.4,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Salami porc et boeuf",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.45,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse alsacienne fumée ou Gendarme",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.26,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse cocktail",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 14.7,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de bière",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.67,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de foie",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 12.5,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Francfort",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.67,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de jambon pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 8.67,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Montbéliard",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.26,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Morteau",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.26,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Morteau/bouillie/cuite à l'eau",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.26,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Strasbourg ou Knack",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 14.7,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Toulouse/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.0,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de Toulouse/cuite",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.2,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de volaille/façon charcutière",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 13.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse de volaille/type Knack",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 17.6,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse sèche",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.45,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse suisse à cuire",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 7.26,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisse viennoise/crue",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 16.0,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson à l'ail",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 11.8,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson brioché/cuit",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 4.89,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson cuit pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.88,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson de Paris",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.46,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson de Paris/fumé",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.46,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson sec",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.4,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson sec aux noix et/ou noisettes",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.45,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson sec pur porc",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.4,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Saucisson sec pur porc/qualité supérieure",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.4,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Terrine de canard",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 6.18,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    },
+    {
+        "name": "Terrine de lapin",
+        "description": "",
+        "type": "food",
+        "emissions": {
+            "base_unit": "kg",
+            "value": 5.21,
+            "unit": "kg",
+            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+        }
+    }
+]
