@@ -1,0 +1,54 @@
+{
+    "title": "Köln-Zürich Roundtrip",
+    "description": "We consider that the flight distance roundtrip is  <a href='https://www.airmilescalculator.com/distance/cgn-to-zrh/' target='_blank'>784 km",
+    "scopes": [
+      {
+        "level": "Scope 3",
+        "description": {},
+        "list": [
+          {
+            "type": "component",
+            "consumer": {
+              "name": "Airbus A320",
+              "description": "",
+              "consumptions": {
+                "oil": {
+                  "value": "0.0385",
+                  "unit": "l",
+                  "base_unit": "km",
+                  "reference_url": "https://www.fzt.haw-hamburg.de/pers/Scholz/arbeiten/TextBurzlaff.pdf"
+                }
+              }
+            },
+            "quantity": "784",
+            "quantity_unit": "km",
+            "source": {
+              "name": "Jet kerosene",
+              "type": "oil",
+              "description": "",
+              "emissions": {
+                "co2": {
+                  "value": "2.4909885",
+                  "unit": "kg",
+                  "base_unit": "l",
+                  "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+                },
+                "ch4": {
+                  "value": "0.00034839",
+                  "unit": "kg",
+                  "base_unit": "l",
+                  "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+                },
+                "n2o": {
+                  "value": "0.0000209034",
+                  "unit": "kg",
+                  "base_unit": "l",
+                  "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
