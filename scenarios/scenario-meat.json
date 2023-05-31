@@ -1,0 +1,68 @@
+{
+  "title": "Food",
+  "description": "In 2020, French people ate <a href='https://www.vitagora.com/en/blog/2021/flexitarian-meat-trend/#:~:text=(source%3A%20French%20Ministry%20of%20food,105kg%20per%20person%20in%201992.' target='_blank'>84.5kg</a> of meat per person. You can choose here how you want to distribute the kilogrammes between types of meat.",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 28,
+          "quantity_unit": "kg",
+          "consumer": {
+            "name": "Steak"
+          },
+          "source": {
+            "name": "Dés/allumettes/râpé ou haché de jambon",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://ourworldindata.org/food-choice-vs-eating-local"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 28,
+          "quantity_unit": "kg",
+          "consumer": {
+            "name": "Steak"
+          },
+          "source": {
+            "name": "Andouille",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 16.2,
+                "unit": "kg",
+                "reference_url": "https://ourworldindata.org/food-choice-vs-eating-local"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 28,
+          "quantity_unit": "kg",
+          "consumer": {
+            "name": "Steak"
+          },
+          "source": {
+            "name": "Épaule de porc/cuite/choix, découennée dégraissée",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://ourworldindata.org/food-choice-vs-eating-local"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
