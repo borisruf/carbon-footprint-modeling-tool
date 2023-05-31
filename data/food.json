@@ -4,10 +4,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -15,10 +17,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -26,10 +30,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -37,10 +43,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -48,10 +56,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -59,10 +69,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -70,10 +82,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -81,10 +95,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -92,10 +108,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 1.64,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 1.64,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -103,10 +121,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 1.64,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 1.64,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -114,10 +134,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 14.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 14.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -125,10 +147,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.58,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.58,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -136,10 +160,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.06,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.06,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -147,10 +173,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.23,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.23,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -158,10 +186,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.23,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.23,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -169,10 +199,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.98,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.98,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -180,10 +212,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.09,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.09,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -191,10 +225,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.09,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.09,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -202,10 +238,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.09,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.09,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -213,10 +251,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.83,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.83,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -224,10 +264,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.17,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.17,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -235,10 +277,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.17,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.17,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -246,10 +290,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.08,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.08,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -257,10 +303,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.54,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.54,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -268,10 +316,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.54,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.54,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -279,10 +329,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 2.12,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 2.12,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -290,10 +342,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 1.86,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 1.86,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -301,10 +355,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 17.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 17.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -312,10 +368,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -323,10 +381,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.82,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.82,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -334,10 +394,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.09,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.09,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -345,10 +407,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -356,10 +420,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -367,10 +433,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.18,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.18,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -378,10 +446,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.94,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.94,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -389,10 +459,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.12,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.12,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -400,10 +472,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.96,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.96,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -411,10 +485,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 14.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 14.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -422,10 +498,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 14.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 14.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -433,10 +511,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 14.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 14.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -444,10 +524,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -455,10 +537,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -466,10 +550,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -477,10 +563,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -488,10 +576,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -499,10 +589,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -510,10 +602,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -521,10 +615,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -532,10 +628,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -543,10 +641,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -554,10 +654,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 14.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 14.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -565,10 +667,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.82,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.82,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -576,10 +680,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -587,10 +693,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.82,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.82,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -598,10 +706,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.78,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.78,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -609,10 +719,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.96,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.96,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -620,10 +732,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 17.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 17.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -631,10 +745,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 17.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 17.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -642,10 +758,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 17.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 17.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -653,10 +771,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 17.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 17.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -664,10 +784,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.39,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.39,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -675,10 +797,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.16,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.16,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -686,10 +810,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.39,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.39,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -697,10 +823,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.16,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.16,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -708,10 +836,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 39.5,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 39.5,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -719,10 +849,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 39.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 39.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -730,10 +862,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 32.3,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 32.3,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -741,10 +875,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 25.0,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 25.0,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -752,10 +888,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 25.0,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 25.0,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -763,10 +901,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 30.4,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 30.4,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -774,10 +914,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.18,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.18,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -785,10 +927,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.18,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.18,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -796,10 +940,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.18,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.18,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -807,10 +953,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.18,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.18,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -818,10 +966,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.63,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.63,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -829,10 +979,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.51,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.51,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -840,10 +992,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.51,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.51,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -851,10 +1005,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 22.3,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 22.3,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -862,10 +1018,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 2.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 2.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -873,10 +1031,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 2.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 2.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -884,10 +1044,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 17.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 17.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -895,10 +1057,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -906,10 +1070,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -917,10 +1083,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -928,10 +1096,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -939,10 +1109,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -950,10 +1122,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -961,10 +1135,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -972,10 +1148,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.93,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.93,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -983,10 +1161,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 12.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 12.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -994,10 +1174,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 3.17,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 3.17,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1005,10 +1187,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1016,10 +1200,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 3.33,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 3.33,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1027,10 +1213,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.16,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.16,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1038,10 +1226,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.28,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.28,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1049,10 +1239,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.63,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.63,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1060,10 +1252,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.71,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.71,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1071,10 +1265,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.07,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.07,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1082,10 +1278,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1093,10 +1291,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.18,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.18,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1104,10 +1304,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 2.62,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 2.62,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1115,10 +1317,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1126,10 +1330,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1137,10 +1343,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1148,10 +1356,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1159,10 +1369,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1170,10 +1382,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1181,10 +1395,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1192,10 +1408,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1203,10 +1421,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.96,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.96,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1214,10 +1434,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.08,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.08,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1225,10 +1447,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.12,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.12,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1236,10 +1460,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 10.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 10.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1247,10 +1473,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.08,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.08,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1258,10 +1486,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.14,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.14,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1269,10 +1499,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.08,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.08,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1280,10 +1512,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.08,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.08,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1291,10 +1525,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.05,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.05,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1302,10 +1538,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 12.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 12.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1313,10 +1551,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.23,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.23,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1324,10 +1564,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 10.8,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 10.8,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1335,10 +1577,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.23,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.23,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1346,10 +1590,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.23,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.23,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1357,10 +1603,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.05,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.05,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1368,10 +1616,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.05,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.05,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1379,10 +1629,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.05,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.05,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1390,10 +1642,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 12.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 12.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1401,10 +1655,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1412,10 +1668,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.3,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.3,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1423,10 +1681,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 13.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 13.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1434,10 +1694,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 15.3,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 15.3,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1445,10 +1707,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.14,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.14,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1456,10 +1720,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1467,10 +1733,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 11.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1478,10 +1746,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.63,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.63,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1489,10 +1759,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.77,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.77,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1500,10 +1772,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.17,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.17,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1511,10 +1785,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.17,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.17,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1522,10 +1798,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.08,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.08,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1533,10 +1811,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.14,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.14,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1544,10 +1824,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.08,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.08,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1555,10 +1837,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.08,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.08,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1566,10 +1850,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.3,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.3,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1577,10 +1863,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.12,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.12,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1588,10 +1876,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.0,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.0,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1599,10 +1889,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.0,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.0,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1610,10 +1902,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.62,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.62,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1621,10 +1915,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 12.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 12.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1632,10 +1928,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.84,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.84,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1643,10 +1941,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 11.7,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.7,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1654,10 +1954,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.67,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.67,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1665,10 +1967,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.67,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.67,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1676,10 +1980,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.09,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.09,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1687,10 +1993,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.51,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.51,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1698,10 +2006,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 11.3,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.3,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1709,10 +2019,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.46,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.46,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1720,10 +2032,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.4,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.4,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1731,10 +2045,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.75,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.75,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1742,10 +2058,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 1.92,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 1.92,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1753,10 +2071,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 1.58,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 1.58,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1764,10 +2084,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 15.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 15.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1775,10 +2097,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.34,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.34,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1786,10 +2110,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.47,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.47,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1797,10 +2123,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.51,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.51,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1808,10 +2136,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.34,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.34,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1819,10 +2149,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.36,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.36,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1830,10 +2162,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.44,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.44,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1841,10 +2175,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1852,10 +2188,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.03,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.03,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1863,10 +2201,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 12.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 12.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1874,10 +2214,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.34,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.34,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1885,10 +2227,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.34,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.34,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1896,10 +2240,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 12.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 12.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1907,10 +2253,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.47,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.47,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1918,10 +2266,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.34,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.34,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1929,10 +2279,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.47,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.47,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1940,10 +2292,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.83,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.83,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1951,10 +2305,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.03,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.03,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1962,10 +2318,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 15.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 15.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1973,10 +2331,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.66,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.66,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1984,10 +2344,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.21,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.21,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -1995,10 +2357,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.66,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.66,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2006,10 +2370,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.21,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.21,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2017,10 +2383,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 47.7,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 47.7,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2028,10 +2396,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 47.8,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 47.8,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2039,10 +2409,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 38.3,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 38.3,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2050,10 +2422,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 28.7,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 28.7,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2061,10 +2435,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 28.7,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 28.7,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2072,10 +2448,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 36.8,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 36.8,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2083,10 +2461,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.26,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.26,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2094,10 +2474,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2105,10 +2487,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.91,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.91,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2116,10 +2500,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 27.1,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 27.1,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2127,10 +2513,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 1.98,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 1.98,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2138,10 +2526,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 2.33,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 2.33,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2149,10 +2539,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 15.9,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 15.9,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2160,10 +2552,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.84,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.84,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2171,10 +2565,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.84,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.84,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2182,10 +2578,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.84,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.84,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2193,10 +2591,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.84,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.84,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2204,10 +2604,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.84,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.84,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2215,10 +2617,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.84,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.84,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2226,10 +2630,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.14,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.14,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2237,10 +2643,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 13.7,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 13.7,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2248,10 +2656,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 2.48,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 2.48,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2259,10 +2669,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.84,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.84,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2270,10 +2682,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 3.02,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 3.02,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2281,10 +2695,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.21,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.21,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2292,10 +2708,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.56,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.56,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2303,10 +2721,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.86,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.86,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2314,10 +2734,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.92,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.92,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2325,10 +2747,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.51,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.51,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2336,10 +2760,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.4,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.4,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2347,10 +2773,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.46,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.46,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2358,10 +2786,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 3.57,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 3.57,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2369,10 +2799,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.84,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.84,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2380,10 +2812,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.03,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.03,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2391,10 +2825,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.4,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.4,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2402,10 +2838,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.31,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.31,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2413,10 +2851,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 9.51,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.51,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2424,10 +2864,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.4,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.4,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2435,10 +2877,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.45,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.45,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2446,10 +2890,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.26,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.26,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2457,10 +2903,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 14.7,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 14.7,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2468,10 +2916,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.67,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.67,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2479,10 +2929,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 12.5,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 12.5,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2490,10 +2942,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.67,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.67,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2501,10 +2955,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 8.67,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.67,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2512,10 +2968,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.26,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.26,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2523,10 +2981,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.26,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.26,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2534,10 +2994,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.26,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.26,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2545,10 +3007,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 14.7,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 14.7,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2556,10 +3020,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.0,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.0,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2567,10 +3033,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.2,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.2,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2578,10 +3046,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 13.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 13.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2589,10 +3059,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 17.6,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 17.6,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2600,10 +3072,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.45,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.45,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2611,10 +3085,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 7.26,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 7.26,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2622,10 +3098,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 16.0,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 16.0,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2633,10 +3111,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 11.8,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.8,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2644,10 +3124,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 4.89,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.89,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2655,10 +3137,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.88,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.88,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2666,10 +3150,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.46,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.46,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2677,10 +3163,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.46,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.46,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2688,10 +3176,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.4,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.4,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2699,10 +3189,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.45,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.45,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2710,10 +3202,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.4,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.4,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2721,10 +3215,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.4,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.4,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2732,10 +3228,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 6.18,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 6.18,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     },
     {
@@ -2743,10 +3241,12 @@
         "description": "",
         "type": "food",
         "emissions": {
-            "base_unit": "kg",
-            "value": 5.21,
-            "unit": "kg",
-            "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.21,
+                "unit": "kg",
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+            }
         }
     }
 ]
