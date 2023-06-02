@@ -27,23 +27,29 @@
               "type": "oil",
               "description": "",
               "emissions": {
-                "co2": {
-                  "value": "2.4909885",
+                "co2e": {
+                  "value": "11.58130823",
                   "unit": "kg",
                   "base_unit": "l",
-                  "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+                  "reference_url": "https://www.epa.gov/sites/default/files/2015-07/documents/emission-factors_2014.pdf"
+                },
+                "co2": {
+                  "value" : "2.4909885",
+                  "unit" : "kg" ,
+                  "base_unit" : "l",
+                  "reference_url" : "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
                 },
                 "ch4": {
-                  "value": "0.00034839",
-                  "unit": "kg",
-                  "base_unit": "l",
-                  "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+                  "value" : "0.00034839",
+                  "unit" : "kg" ,
+                  "base_unit" : "l",
+                  "reference_url" : "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
                 },
                 "n2o": {
-                  "value": "0.0000209034",
-                  "unit": "kg",
-                  "base_unit": "l",
-                  "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+                  "value" : "0.0000209034",
+                  "unit" : "kg" ,
+                  "base_unit" : "l",
+                  "reference_url" : "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
                 }
               }
             }
