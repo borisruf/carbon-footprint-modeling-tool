@@ -19,7 +19,7 @@
                 "base_unit": "kg",
                 "value": 7.1,
                 "unit": "kg",
-                "reference_url": "https://ourworldindata.org/food-choice-vs-eating-local"
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
               }
             }
           }
@@ -38,7 +38,7 @@
                 "base_unit": "kg",
                 "value": 16.2,
                 "unit": "kg",
-                "reference_url": "https://ourworldindata.org/food-choice-vs-eating-local"
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
               }
             }
           }
@@ -57,7 +57,7 @@
                 "base_unit": "kg",
                 "value": 7.1,
                 "unit": "kg",
-                "reference_url": "https://ourworldindata.org/food-choice-vs-eating-local"
+                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
               }
             }
           }
