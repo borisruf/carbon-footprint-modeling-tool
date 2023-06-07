@@ -352,13 +352,13 @@
                 "unit": "kg",
                 "base_unit": "kWh",
                 "reference_url": "https://www.nowtricity.com/country/denmark/"
-              },
-              "co2": {
+            },
+            "co2": {
                 "value": "0.117",
                 "unit": "kg",
                 "base_unit": "kWh",
                 "reference_url": "https://en.energinet.dk/About-our-news/News/2021/06/22/Danish-electricity-generation-was-greener-than-ever-in-2020/"
-              }
+            }
         }
     },
     {
@@ -12713,6 +12713,12 @@
                 "value": 2.0304e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.72396120895755,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -12763,6 +12769,12 @@
                 "value": 2.652e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.634359290010856,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -12772,10 +12784,10 @@
         "type": "regular gasoline",
         "emissions": {
             "co2e": {
-                "base_unit": "l",
-                "value": 2.93,
+                "base_unit": "kg",
+                "value": 11.126932089258496,
                 "unit": "kg",
-                "reference_url": "https://bilans-ges.ademe.fr/documentation/UPLOAD_DOC_EN/index.htm?new_liquides.htm"
+                "reference_url": "your_reference_url"
             },
             "co2": {
                 "base_unit": "l",
@@ -12838,6 +12850,12 @@
                 "value": 1.88718e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 10.083451990669438,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -12863,6 +12881,12 @@
                 "value": 1.88718e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.126932089258496,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -12888,6 +12912,12 @@
                 "value": 2.09034e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.68697710419743,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -12913,6 +12943,12 @@
                 "value": 2.1024e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.68697710419743,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -12994,6 +13030,12 @@
                 "value": 2.27856e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.768870479023407,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13019,6 +13061,12 @@
                 "value": 2.5542e-06,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 8.073101724780143,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13044,6 +13092,12 @@
                 "value": 6.032e-06,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 5.539690548712028,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13069,6 +13123,12 @@
                 "value": 2.0559e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.05296387973826,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13094,6 +13154,12 @@
                 "value": 2.412e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 20.64957814957815,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13119,6 +13185,12 @@
                 "value": 2.412e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 12.748949255166547,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13144,6 +13216,12 @@
                 "value": 1.95e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 13.792429353755603,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13294,6 +13372,12 @@
                 "value": 4.005e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 20.704882904882904,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13344,6 +13428,12 @@
                 "value": 3.87e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 20.64957814957815,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13369,6 +13459,12 @@
                 "value": 2.835e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 20.64957814957815,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13394,6 +13490,12 @@
                 "value": 1.785e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 11.830939730939729,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13619,6 +13721,12 @@
                 "value": 3.87e-06,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 0.05314,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13644,6 +13752,12 @@
                 "value": 2.5e-07,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 0.027972,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13669,6 +13783,12 @@
                 "value": 7.1e-07,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 0.027972,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13694,6 +13814,12 @@
                 "value": 3.36e-06,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 9.634359290010856,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13869,6 +13995,12 @@
                 "value": 1.62e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 10.083451990669438,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13894,6 +14026,12 @@
                 "value": 1.62e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 4.208262777347764,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13944,6 +14082,12 @@
                 "value": 4.536e-06,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 0.155242,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -13994,6 +14138,12 @@
                 "value": 5.04e-06,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 0.20958,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     },
@@ -14044,6 +14194,12 @@
                 "value": 1.366e-05,
                 "unit": "kg",
                 "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+            },
+            "co2e": {
+                "base_unit": "kg",
+                "value": 19.16971916971917,
+                "unit": "kg",
+                "reference_url": "your_reference_url"
             }
         }
     }
