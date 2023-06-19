@@ -1,0 +1,17 @@
+{
+  "title": "Carbon footprint of one query on GPT-3",
+  "description": "<a href='http://www.cs.umd.edu/~tomg/' target='_blank'>Chris Pointon</a> explains that each query on ChatGPT generates around <a href='https://twitter.com/tomgoldsteincs/status/1600196995389366274' target='_blank'>30 words</a>.<br/><br/>Thus, according to Chris Pointon, the carbon footprint of a GPT-3 query is as follows :",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+            "list": [
+        {
+          "type": "link",
+          "quantity": 30,
+          "scenario_id": "scenario-gpt-chris-n-1"
+        }
+      ]
+    }
+  ]
+}

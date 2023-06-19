@@ -1,0 +1,43 @@
+{
+    "title": "Carbon footprint of an hour of a GPU used for ChatGPT",
+    "description": "To estimate the carbon footprint of GPT-3, <a href=\"https://www.linkedin.com/in/chrispointon/?originalSubdomain=uk\" target=\"_blank\">Chris Pointon</a> used a tweet from <a href=\"http://www.cs.umd.edu/~tomg/\" target=\"_blank\">Tom Goldstein</a>.<br/><br/> He measure the consumption of electricity with an <a href=\"https://twitter.com/tomgoldsteincs/status/1600196995389366274\" target=\"_blank\"> Nvidia A100 GPU</a>, and uses energy mix information for Western USA. So, he calculates the power consumption based on the GPU time and this <a href=\"https://github.com/cloud-carbon-footprint/cloud-carbon-footprint/blob/trunk/packages/azure/src/domain/AzureFootprintEstimationConstants.ts\" target=\"_blank\">source</a>.",
+    "scopes": [
+      {
+        "level": "Scope 3",
+        "description": {},
+        "list": [
+          {
+            "type": "component",
+            "consumer": {
+              "name": "GPT-3",
+              "description": "Nvidia A100 GPU with 80GB memory",
+              "consumptions": {
+                "electricity": {
+                  "value": "407",
+                  "unit": "kWh",
+                  "base_unit": "request",
+                  "reference_url": "https://github.com/cloud-carbon-footprint/cloud-carbon-footprint/blob/trunk/packages/azure/src/domain/AzureFootprintEstimationConstants.ts"
+                }
+              }
+            },
+            "quantity": "1",
+            "quantity_unit": "hour",
+            "source": {
+              "name": "Western USA electricity grid",
+              "type": "electricity",
+              "description": "(2021)",
+              "emissions": {
+                "co2e": {
+                  "value": "0.322167",
+                  "unit": "kg",
+                  "base_unit": "kWh",
+                  "reference_url": "https://github.com/cloud-carbon-footprint/cloud-carbon-footprint/blob/trunk/packages/azure/src/domain/AzureFootprintEstimationConstants.ts"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

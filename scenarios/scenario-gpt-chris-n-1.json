@@ -1,0 +1,17 @@
+{
+    "title": "Carbon footprint of one word output on ChatGPT",
+    "description": "When <a href=\"http://www.cs.umd.edu/~tomg/\" target=\"_blank\">Tom Goldstein</a> did his analysis, he noticed that the Nvidia A100 GPU takes <a href=\"https://twitter.com/tomgoldsteincs/status/1600196995389366274\" target=\"_blank\">350 ms</a> to output a word.<br/><br/>So, we have a factor of 350/3600000 = 9.7222e-5<br/><br/>Thus, we have the carbon footprint of a word emitted by GPT-3",
+    "scopes": [
+        {
+            "level": "Scope 3",
+            "description": {},
+                  "list": [
+              {
+                "type": "link",
+                "quantity": 0.00009722222,
+                "scenario_id": "scenario-gpt-chris-n-2"
+              }
+            ]
+          }
+        ]
+      }
