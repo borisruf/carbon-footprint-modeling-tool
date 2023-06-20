@@ -1,6 +1,6 @@
 {
-    "title": "Carbon footprint of an hour of a GPU used for ChatGPT",
-    "description": "To estimate the carbon footprint of GPT-3, <a href=\"https://www.linkedin.com/in/chrispointon/?originalSubdomain=uk\" target=\"_blank\">Chris Pointon</a> used a tweet from <a href=\"http://www.cs.umd.edu/~tomg/\" target=\"_blank\">Tom Goldstein</a>.<br/><br/> He measure the consumption of electricity with an <a href=\"https://twitter.com/tomgoldsteincs/status/1600196995389366274\" target=\"_blank\"> Nvidia A100 GPU</a>, and uses energy mix information for Western USA. So, he calculates the power consumption based on the GPU time and this <a href=\"https://github.com/cloud-carbon-footprint/cloud-carbon-footprint/blob/trunk/packages/azure/src/domain/AzureFootprintEstimationConstants.ts\" target=\"_blank\">source</a>.",
+    "title": "Hourly emission by GPU running at full load",
+    "description": "The <a href='https://medium.com/@chrispointon/the-carbon-footprint-of-chatgpt-e1bc14e4cc2a' target='_blank'>author assumes</a> that ChatGPT is hosted in an Azure datacenter in California, running on Nvidia Tesla A100 GPUs.<br/><br/>Thus, he takes as starting point the energy consumption of this processor under full load as provided by Cloud Carbon Footprint (<a href='https://www.cloudcarbonfootprint.org/docs/methodology/#appendix-iii-gpus-and-minmax-watts' target='_blank'>407 Watts per hour</a>). For the emissions, he uses a grid emissions factor for Western USA (WECC) from <a href='https://www.cloudcarbonfootprint.org/docs/methodology/#azure-2' target='_blank'>EPA</a>.  ",
     "scopes": [
       {
         "level": "Scope 3",
@@ -9,19 +9,19 @@
           {
             "type": "component",
             "consumer": {
-              "name": "GPT-3",
-              "description": "Nvidia A100 GPU with 80GB memory",
+              "name": "Processor",
+              "description": "Nvidia Tesla A100",
               "consumptions": {
                 "electricity": {
-                  "value": "407",
+                  "value": "0.407",
                   "unit": "kWh",
-                  "base_unit": "request",
-                  "reference_url": "https://github.com/cloud-carbon-footprint/cloud-carbon-footprint/blob/trunk/packages/azure/src/domain/AzureFootprintEstimationConstants.ts"
+                  "base_unit": "hour",
+                  "reference_url": "https://www.cloudcarbonfootprint.org/docs/methodology/#appendix-iii-gpus-and-minmax-watts"
                 }
               }
             },
             "quantity": "1",
-            "quantity_unit": "hour",
+            "quantity_unit": "h",
             "source": {
               "name": "Western USA electricity grid",
               "type": "electricity",
@@ -31,7 +31,7 @@
                   "value": "0.322167",
                   "unit": "kg",
                   "base_unit": "kWh",
-                  "reference_url": "https://github.com/cloud-carbon-footprint/cloud-carbon-footprint/blob/trunk/packages/azure/src/domain/AzureFootprintEstimationConstants.ts"
+                  "reference_url": "https://www.epa.gov/egrid/download-data"
                 }
               }
             }
