@@ -1,0 +1,30 @@
+{
+    "title": "Monthly business travel in 2019",
+    "description": "In 2019, AXA published the <a href='https://www-axa-com.cdn.axa-contento-118412.eu/www-axa-com/83f21a68-30a9-47ef-938b-a8b2519c4ae8_axa_urd2022_accessibleb_va.pdf' target='_blank'>resulsts</a> of the carbon footprint breakdown of the company. The business travel represented 37% of the emissions in 2019. Thus, a yearly consumption of 92.5kt co2e. We wanted a monthly emission. So we multiply by 1/12 = <a href='https://www.google.com/search?q=1%2F12&rlz=1C5CHFA_enFR1063&ei=Dh6lZIO_M6LtkdUP8bi42Ac&ved=0ahUKEwiD_pfvh_f_AhWidqQEHXEcDnsQ4dUDCA8&uact=5&oq=1%2F12&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CwgAEIAEELEDEIMBOgsIABCKBRCxAxCDAToLCC4QigUQsQMQgwE6CwguEIAEELEDEIMBSgQIQRgAUABY0AZg4ghoAHABeACAAVOIAfgBkgEBNJgBAKABAcABAQ&sclient=gws-wiz-serp' target='_blank'>0.08333333333</a> .",
+    "scopes": [
+      {
+        "level": "Scope 1",
+        "list": [
+          {
+            "type": "component",
+            "quantity": 0.08333333333,
+            "quantity_unit": "year",
+            "consumer": {
+              "name": "Monthly carbon footprint"
+            },
+            "source": {
+              "name": "Yearly Carbon Footprint of the business travel in 2019",
+              "emissions": {
+                "co2e": {
+                  "base_unit": "year",
+                  "value": 9.2e+7,
+                  "unit": "kg",
+                  "reference_url": "https://www-axa-com.cdn.axa-contento-118412.eu/www-axa-com/83f21a68-30a9-47ef-938b-a8b2519c4ae8_axa_urd2022_accessibleb_va.pdf"
+                }
+              }
+            }
+          }
+        ]
+    }
+  ]
+}
