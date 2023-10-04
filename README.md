@@ -111,7 +111,7 @@ This is a fully functional prototype, more features are in the planning. Any fee
 
 ## Paper reference
 
-B. Ruf and M. Detyniecki, "[Open and Linked Data Model for Carbon Footprint Scenarios](https://borisruf.github.io/carbon-footprint-modeling-tool/ICREC2022_Open_and_Linked_Data_Model_for_Carbon_Footprint_Scenarios.pdf)", 7th International Conference on Renewable Energy and Conservation (ICREC), 2022.
+B. Ruf and M. Detyniecki, "[Open and Linked Data Model for Carbon Footprint Scenarios](https://arxiv.org/abs/2310.01278)", 7th International Conference on Renewable Energy and Conservation (ICREC), 2022.
 
 I. D'Aramon, B. Ruf, M. Detyniecki, "[Assessing Carbon Footprint Estimations of ChatGPT](https://borisruf.github.io/carbon-footprint-modeling-tool/ICREC2023_Assessing_Carbon_Footprint_Estimations_of_ChatGPT.pdf)", 8th International Conference on Renewable Energy and Conservation (ICREC), 2023.
 
