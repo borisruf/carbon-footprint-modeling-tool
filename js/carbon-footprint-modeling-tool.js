@@ -71,7 +71,6 @@ function calculateScopeEmissions(scope) {
 
     for (const [j, element] of scope.list.entries()) {
 
-
         emissions[j] = {};
 
         if (element.type == "component") {
@@ -133,8 +132,21 @@ function calculateScopeEmissions(scope) {
             }
 
             emissions[j] = linkedEmissions;
+        } else if (element.type == "scenario") {
+
+            let scenarioEmissions = totalEmissions(element.scenario);
+            
+            // consider quantity parameter if any
+            if (Number(element.quantity)) {
+                Object.keys(scenarioEmissions).map(function(key, index) {
+                    scenarioEmissions[key] *= element.quantity;
+                });
+            }
+
+            emissions[j] = scenarioEmissions;
         }
     }
+
     return emissions;
 }
 
@@ -176,40 +188,50 @@ function totalEmissionsByUnit(emissions, unit) {
 }
 
 // calculate emissions from JSON data and update DOM
-function updateView(scenario_json) {
+function updateView(scenario_json, scenario_id) {
 
-    for (const [i, scope] of scenario_json.scopes.entries()) {
+    let scenarioDiv = scenario_id ? document.getElementById(scenario_id) : document;
+
+    // tweak for nested scenarios
+    if (scenario_json.hasOwnProperty("scenario")) { scenario_json = scenario_json.scenario }
+
+    for ([i, scope] of scenario_json.scopes.entries()) {
 
         // calculate emissions per scope
         let emissions = calculateScopeEmissions(scope);
 
-        let scopeDiv = document.querySelectorAll("div[name='scope']:not(.template)")[i];
+        let scopeDiv = scenarioDiv.querySelectorAll("div[name='scope']:not(.template)")[i];
 
         let unit;
         let subTotalMessage;
 
         for (const [j, element] of scope.list.entries()) {
 
-            let elementDiv = scopeDiv.querySelectorAll("div[name='component'], div[name='link']")[j];
-            let sourceConnectors = elementDiv.querySelectorAll("div.connector");
+            // recursive call when element is nested scenario
+            if (element.type == "scenario") {updateView(element.scenario, element.scenario_id)};
+
+            let elementDiv = scopeDiv.querySelectorAll("div[name='component'], div[name='link'], div[name='nestedScenario']")[j];
+
+            // get connector from direct children of element, may be empty for link or nested scenario
+            let sourceConnector = Array.from(elementDiv.querySelectorAll(":scope > div.connector")).pop();
 
             if (Object.keys(emissions[j]).length) {
 
                 unit = emission_type_parameter || bestEmissionType(emissions[j]);
                 subTotalMessage = formatTotalEmissions(emissions[j][unit], unit);
-                if (Object.keys(sourceConnectors).length) {sourceConnectors[1].innerHTML = "-----";}
+                if (sourceConnector) {sourceConnector.innerHTML = "-----";}
 
             } else {
                 subTotalMessage = "";
-                if (Object.keys(sourceConnectors).length) {sourceConnectors[1].innerHTML = "--||--";}
+                if (sourceConnector) {sourceConnector.innerHTML = "--||--";}
             }
 
             // update sub total message
-            elementDiv.querySelectorAll(".emission_sub_total")[0].innerHTML = subTotalMessage;
+            Array.from(elementDiv.querySelectorAll(".emission_sub_total")).pop().innerHTML = subTotalMessage;
         }
 
         let best_unit = emission_type_parameter || bestTotalEmissionType(emissions);
-        let totalMessage = scopeDiv.getElementsByClassName("total_emission")[0];
+        let totalMessage = Array.from(scopeDiv.querySelectorAll(".total_emission")).pop();
 
         // update total emissions with best common emission type
         if (best_unit) {
@@ -228,6 +250,7 @@ function updateView(scenario_json) {
 function updateData() {
     
     let root = document.getElementById("container");
+
     // update global scenario variable
     scenario = traverseDOMtree(root);
 
@@ -268,54 +291,44 @@ function notNested(element, root) {
 
 function traverseDOMtree(element) {
 
-    // this element is a leaf node, it has no children
-    if (["string", "number"].includes(element.dataset.type)) {
+  // this element is a leaf node, it has no children
+  if (["string", "number"].includes(element.dataset.type)) {
+    if (element.nodeName == "A") {
+      return element.href;
 
-        if (element.nodeName == "A") {
-            return element.href;
-        } else if (element.nodeName == "INPUT") {
-            return element.value;
-        } else {
-            return element.innerHTML;
-        }
+    } else if (element.nodeName == "INPUT") {
+      return element.value;
+
+    } else {
+      return element.innerHTML;
     }
+  }
 
-    // this element is a tree node (object or array), it has children  
-    let y = {};
+  // this element is a tree node (object or array), it has children
+  let children = filter(element);
 
-    // browse the tree for all non-nested data elements
-    let children = filter(element)
+  if (element.dataset.type == "array") {
+
+    // create an array to hold the output
+    let arr = [];
 
     for (const c of children) {
-        
-        let v = null;
-        // object
-        if (c.dataset.type == "object") {
-            let j = {};
-            let c_children = filter(c); 
-            for (const d of c_children) {
-                v = traverseDOMtree(d); 
-                j[d.getAttribute("name")] = v;
-            }
-            y[c.getAttribute("name")] = j;
-            
-
-        // array
-        } else if (c.dataset.type == "array") {
-            let j = [];
-            let c_children = filter(c);
-            for (const d of c_children) {
-                v = traverseDOMtree(d); 
-                j.push(v);
-            }
-            y[c.getAttribute("name")] = j;
-
-        // string or number
-        } else {
-            y[c.getAttribute("name")] = traverseDOMtree(c);
-        }
+      let v = traverseDOMtree(c);
+      arr.push(v);
     }
-    return y;
+    return arr;
+
+  } else {
+
+    // create an object to hold the output
+    let obj = {};
+
+    for (const c of children) {
+      let v = traverseDOMtree(c);
+      obj[c.getAttribute("name")] = v;
+    }
+    return obj;
+  }
 }
 
 // calculate total emissions for all scopes of one scenario

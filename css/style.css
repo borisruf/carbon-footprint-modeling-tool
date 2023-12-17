@@ -36,14 +36,14 @@ div#footer a {
     color: blue;
 }
 
-div[name="link"], div[name="component"] {
+div[name="link"], div[name="component"], div[name="nestedScenario"] {
     padding:  15px;
     margin:  0px 20px 20px 20px;
     border-radius: 10px;
     background-color: white;   
 }
 
-span[name="type"], div[name="link"] span[name="scenario_id"] {
+span[name="type"], span[name="scenario_id"] {
     display: none;
 }
 
@@ -51,7 +51,7 @@ div[name="component"] div.row div, div[name="link"] div.row div {
     padding:  5px 10px 10px 10px;
 }
 
-div[name="component"] div.row, div[name="link"] div.row {
+div[name="component"] div.row, div[name="link"] div.row, div[name="nestedScenario"] div.row {
     clear:  right;
     display: flex;
     margin-bottom:  4px;
@@ -81,26 +81,29 @@ div[name="consumptions"], div[name="emissions"] {
     padding-top:  15px !important;
 }
 
-div[name="component"] div[name="consumer"], div[name="component"] div[name="source"], div[name="component"] div.usage, div[name="link"] div.usage {
+div[name="component"] div[name="consumer"], div[name="component"] div[name="source"], div[name="component"] div.usage, div[name="link"] div.usage, div[name="nestedScenario"] div.usage {
     border:  solid;
     overflow: hidden;
 }
 
-div[name="link"] div.usage {
+div[name="link"] div.usage, div[name="nestedScenario"] div.usage {
     margin-right:  20px;
+    flex-basis: auto;
+    padding: 5px 10px 10px 10px;
 }
+
 
 div[name="component"] div[name="consumer"], div[name="component"] div[name="source"] {
     max-width: 365px;
     position: relative;
 }
 
-div[name="component"] div.usage, div[name="link"] div.usage {
+div[name="component"] div.usage, div[name="link"] div.usage, div[name="nestedScenario"] div.usage {
     height:  27px;
-    min-width: 110px;
+    min-width: fit-content;
 }
 
-div[name="component"] div.usage input, div[name="link"] div.usage input {
+div[name="component"] div.usage input, div[name="link"] div.usage input, div[name="nestedScenario"] div.usage input {
     width:  100px;
     margin:  5px;
 }

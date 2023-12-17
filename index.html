@@ -36,6 +36,157 @@
         request2.send(null)
         let sources_json = JSON.parse(request2.responseText);
 
+        function fetchScenario(id) {
+            let request = new XMLHttpRequest();
+            request.open("GET", "./scenarios/" + id + ".json", false);
+            request.setRequestHeader('Cache-Control', 'no-cache');
+            request.send(null)
+            return JSON.parse(request.responseText);
+        }
+
+        function traverseScenario(scenario) {
+            for (const [i, scope] of scenario.scopes.entries()){
+
+                for (const [j, element] of scope.list.entries()) {
+
+                    if(element.type == "link") {
+
+                        // convert link to scenario
+                        element.type = "scenario"
+
+                        // fetch scenario and recursively call traverse function
+                        element.scenario = traverseScenario(fetchScenario(element.scenario_id));
+                    }
+                }
+            }
+            return scenario;
+        }
+
+        // recursive function to populate the dom template with the JSON data
+        function populateTemplate(componentDiv, element, selectors) {
+            
+            for (const key of Object.keys(element)) {
+                
+                let _s = selectors + " [name='" + key + "']";
+                let d = componentDiv.querySelector(_s);
+                if (d) {
+                    d.setAttribute("data-type", typeof(element[key]));
+                }
+
+                // element is an object or array
+                if (typeof(element[key]) == "object") {
+                    populateTemplate(componentDiv, element[key], _s);
+
+                // element is a single value
+                } else {   
+                    
+                    if (d) {
+                        if (d.nodeName == "A") {
+                            d.href = element[key];
+                        } else if (d.nodeName == "INPUT") {
+                            d.value = element[key];
+                        } else {
+                            d.innerHTML = element[key];
+                        }
+                    } 
+                }
+            }
+        }
+
+
+        function buildScenarioDOMtree(scenario) {
+
+            let scenarioDiv = document.querySelector(".template[name='scenario']").cloneNode(true);
+            scenarioDiv.classList.remove("template");
+
+            let titleSpan = scenarioDiv.querySelector("h1 span[name='title']");
+
+            titleSpan.innerHTML = scenario.title;
+
+            let titleSup = scenarioDiv.querySelector("h1 sup");
+
+            if (scenario.reference_url) {
+                titleSup.querySelector("a[name='reference_url']").href = scenario.reference_url;
+            } else {
+                titleSup.parentNode.removeChild(titleSup);
+            }
+            
+            //document.title = scenario.title + " – " + document.title;
+
+            if (scenario.description) {
+                let descriptionDiv = scenarioDiv.querySelector("div[name='description']");
+                descriptionDiv.innerHTML = scenario.description;
+            }
+
+            for (const [i, scope] of scenario.scopes.entries()){
+
+                let scopeDiv = document.querySelector(".template[name='scope']").cloneNode(true);
+                scopeDiv.classList.remove("template");
+
+                for (const key of Object.keys(scope)) {
+                    if (typeof(scope[key]) != "object") {
+                        let d = scopeDiv.querySelector("[name='" + key + "']");
+                        d.innerHTML = scope[key];
+                        d.setAttribute("data-type", typeof(scope[key]));
+                    }
+                }
+                scenarioDiv.querySelector("[name=scopes]").appendChild(scopeDiv);
+
+                for (const [j, element] of scope.list.entries()) {
+
+                    // Scenario partial
+                    if(element.type == "scenario") { 
+
+                        let nestedScenarioDiv = document.querySelector(".template[name='nestedScenario']").cloneNode(true);
+                        nestedScenarioDiv.classList.remove("template");
+                        //nestedScenarioDiv.setAttribute("name", "scenario");
+
+                        populateTemplate(nestedScenarioDiv, element, "");
+
+                        let s = buildScenarioDOMtree(element.scenario);
+                        s.setAttribute("id", element.scenario_id);
+
+                        nestedScenarioDiv.querySelector("[class='row']").appendChild(s);
+
+                        scopeDiv.querySelector("[name='list']").appendChild(nestedScenarioDiv);
+
+                    // Component partial
+                    } else if(element.type == "component") { 
+
+                        let componentDiv = document.querySelector(".template[name='component']").cloneNode(true);
+                        componentDiv.classList.remove("template");
+                        
+                        
+                        populateTemplate(componentDiv, element, "");
+
+                        // remove consumption node if not included in component
+                        if (!element.consumer.consumptions || Object.keys(element.consumer.consumptions).length == 0) {
+                            componentDiv.querySelector("[name='consumptions']").remove();
+                        }
+
+                        // remove consumption list nodes if not included in consumptions
+                        for (c in consumptionMap) {
+                            if (element.consumer.consumptions && !Object.keys(element.consumer.consumptions).includes(c)) {
+                                let l = componentDiv.querySelector("[name='" +c+"']");
+                                if (l) {l.remove();}
+                            }
+                        }
+
+                        // remove emission list nodes if not included in emissions
+                        for (unit in emissionUnitMap) {
+                            if (!Object.keys(element.source.emissions).includes(unit)) {
+                                let l = componentDiv.querySelector("[name='" +unit+"']");
+                                if (l) {l.remove();}
+                            }
+                        }
+
+                        scopeDiv.querySelector("[name='list']").appendChild(componentDiv);
+                    }
+                }
+            }
+            return scenarioDiv;
+        }
+
         window.addEventListener('load', function () {
 
             // dynamical create consumption placeholders based on consumptionMap
@@ -64,374 +215,23 @@
 
             if (!scenario) {
                 // fetch JSON file
-                let request = new XMLHttpRequest();
-                request.open("GET", "./scenarios/" + id + ".json", false);
-                request.setRequestHeader('Cache-Control', 'no-cache');
-                request.send(null)
-                scenario = JSON.parse(request.responseText);
+                scenario = fetchScenario(id);
             }
 
-            let titleSpan = document.querySelector("h1 span[name='title']");
-            titleSpan.innerHTML = scenario.title;
+            // expand the scenario by loading linked scenarios
+            scenario = traverseScenario(scenario);
 
-            let titleSup = document.querySelector("h1 sup");
+            let dom = buildScenarioDOMtree(scenario);
+            document.getElementById("container").appendChild(dom);
 
-            if (scenario.reference_url) {
-                titleSup.querySelector("a[name='reference_url']").href = scenario.reference_url;
-            } else {
-                titleSup.parentNode.removeChild(titleSup);
-            }
-            
-            document.title = scenario.title + " – " + document.title;
-
-            if (scenario.description) {
-                let descriptionDiv = document.querySelector("div[name='description']");
-                descriptionDiv.innerHTML = scenario.description;
-            }
-
-            for (const [i, scope] of scenario.scopes.entries()){
-
-                let scopeDiv = document.querySelector(".template[name='scope']").cloneNode(true);
-                scopeDiv.classList.remove("template");
-
-                for (const key of Object.keys(scope)) {
-                    if (typeof(scope[key]) != "object") {
-                        let d = scopeDiv.querySelector("[name='" + key + "']");
-                        d.innerHTML = scope[key];
-                        d.setAttribute("data-type", typeof(scope[key]));
-                    }
-                }
-                
-                document.getElementById("scopes").appendChild(scopeDiv);
-
-                for (const [j, element] of scope.list.entries()) {
-
-                    // Link partial
-                    if(element.type == "link") { 
-                        let linkDiv = document.querySelector(".template[name='link']").cloneNode(true);
-
-                        linkDiv.classList.remove("template");
-
-                        for (const key of Object.keys(element)) {
-                                
-                            let d = linkDiv.querySelector("[name='" + key + "']");
-                            if (d) {
-                                d.setAttribute("data-type", typeof(element[key]));
-                                d.innerHTML = element[key];
-                            }
-                        }
-
-                        linkDiv.querySelector("[name='url']").setAttribute("href", "index.html?id=" + element.scenario_id);
-                        linkDiv.querySelector("[name='title']").innerHTML = element.scenario_id;
-
-                        if (Number(element.quantity)) {
-                            linkDiv.querySelector("[name='quantity']").value = element.quantity;
-                        } else {
-                            let usageDiv = linkDiv.querySelector("div.usage");
-                            usageDiv.parentNode.removeChild(usageDiv)
-                        }
-
-                        scopeDiv.querySelector("[name='list']").appendChild(linkDiv);
-
-                        updateLink(element.scenario_id, linkDiv);
-
-                    // Component partial
-                    } else if(element.type == "component") { 
-
-                        let componentDiv = document.querySelector(".template[name='component']").cloneNode(true);
-                        componentDiv.classList.remove("template");
-                        
-                        // recursive function to populate the dom template with the JSON data
-                        function populateTemplate(componentDiv, element, selectors) {
-                            
-                            for (const key of Object.keys(element)) {
-                                
-                                let _s = selectors + " [name='" + key + "']";
-                                let d = componentDiv.querySelector(_s);
-                                if (d) {
-                                    d.setAttribute("data-type", typeof(element[key]));
-                                }
-
-                                // element is an object or array
-                                if (typeof(element[key]) == "object") {
-                                    populateTemplate(componentDiv, element[key], _s);
-
-                                // element is a single value
-                                } else {   
-                                    
-                                    if (d) {
-                                        if (d.nodeName == "A") {
-                                            d.href = element[key];
-                                        } else if (d.nodeName == "INPUT") {
-                                            d.value = element[key];
-                                        } else {
-                                            d.innerHTML = element[key];
-                                        }
-                                    } 
-                                }
-                            }
-                        }
-
-                        populateTemplate(componentDiv, element, "");
-
-                        // remove consumption node if not included in component
-                        if (!element.consumer.consumptions || Object.keys(element.consumer.consumptions).length == 0) {
-                            componentDiv.querySelector("[name='consumptions']").remove();
-                        }
-
-                        // remove consumption list nodes if not included in consumptions
-                        for (c in consumptionMap) {
-                            if (element.consumer.consumptions && !Object.keys(element.consumer.consumptions).includes(c)) {
-                                let l = componentDiv.querySelector("[name='" +c+"']");
-                                if (l) {l.remove();}
-                            }
-                        }
-
-                        // remove emission list nodes if not included in emissions
-                        for (unit in emissionUnitMap) {
-                            if (!Object.keys(element.source.emissions).includes(unit)) {
-                                let l = componentDiv.querySelector("[name='" +unit+"']");
-                                if (l) {l.remove();}
-                            }
-                        }
-
-                        scopeDiv.querySelector("[name='list']").appendChild(componentDiv);
-                    }
-                }
-            }
             updateView(scenario);
-
-            /* search consumer overlay and auto complete */
-
-            document.querySelectorAll("#searchConsumerOverlay, div[name='consumer'] img.edit-icon").forEach(item => {
-                item.addEventListener('click', toggleSearchConsumerOverlay)
-            });
-
-            const consumerAutoCompleteJS = new autoComplete({
-                placeHolder: "Search for consumer ...",
-                selector: "#searchConsumerInput",
-                searchEngine: "loose",
-                data: {
-                    src: consumers_json,
-                    keys: ["name", "description"],
-                    filter: (list) => {
-                        let searchCategories = consumerAutoCompleteJS.input.value.match(/type:[a-z_]+/);
-                        
-                        // search operator found
-                        if(searchCategories) {
-                            let consumerCategory = searchCategories[0].split(":")[1];
-
-                            const results = list.filter((item) => {
-                                const itemCategory = item.value.category.toLowerCase();
-
-                                // only propose consumer items of specified category
-                                if (itemCategory == consumerCategory) {
-                                    return item.value;
-                                } 
-                            });
-                            return results;
-
-                        } else {
-                            return list;
-                        }
-                    }
-                },
-                //remove search operators from query
-                query: (input) => {
-                    return input.replace(/type:[a-z_]+\s+/, "");
-                },
-                resultsList: {
-                    element: (list, data) => {
-                      const info = document.createElement("p");
-                      if (data.results.length > 0) {
-                        info.innerHTML = `Displaying <strong>${data.results.length}</strong> out of <strong>${data.matches.length}</strong> results`;
-                      } else {
-                        info.innerHTML = `Found <strong>${data.matches.length}</strong> matching results for <strong>"${data.query}"</strong>`;
-                      }
-                      list.prepend(info);
-                    },
-                    noResults: true,
-                    maxResults: 10
-                },
-                resultItem: {
-                    element: (item, data) => {
-                    item.style = "display: flex; justify-content: space-between;";
-                    item.innerHTML = `
-                          <span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
-                            ${data.value.name}<br/>
-                            <span style="font-size: 13px; font-weight: 100; color: rgba(0,0,0,.2);">${data.value.description}</span>
-                          </span>  
-                          <span style="display: flex; align-items: center; font-size: 13px; font-weight: 100; text-transform: uppercase; color: rgba(0,0,0,1);">
-                            ${Object.keys(data.value.consumptions).join(",<br/>")}
-                          </span>`;
-                    },
-                    highlight: true
-                }
-            });
-
-            consumerAutoCompleteJS.input.addEventListener("selection", function (event) {
-                
-                consumerAutoCompleteJS.input.blur();
-                consumerAutoCompleteJS.input.value = "";
-
-                // get selection data
-                const feedback = event.detail;
-                const selection = feedback.selection.value;
-
-                // identify active consumer div
-                let rowDiv = document.querySelector("div.row[data-active='true']");
-                let consumerDiv = rowDiv.querySelector(".data[name='consumer']");
-                let detailsDiv = consumerDiv.querySelector("div.details");
-
-                // restore consumption information because not all consumers have one
-                let consumptionsTemplate = document.querySelector(".template[name='component'] div[name='consumptions']").cloneNode(true);
-                consumptionsTemplate.style.display = "block";
-
-                let oldConsumptions = detailsDiv.querySelector("div div[name='consumptions']");
-
-                if (oldConsumptions) detailsDiv.removeChild(oldConsumptions);
-                detailsDiv.appendChild(consumptionsTemplate);
-
-                // update consumer data
-                populateTemplate(consumerDiv, selection, "");
-
-                // remove consumption list nodes if not included in consumptions
-                for (consumption in consumptionMap) {
-                    if (!Object.keys(selection.consumptions).includes(consumption)) {
-                        let l = consumerDiv.querySelector("[name='" +consumption+"']");
-                        if (l) {l.remove()}
-                    }
-                }
-
-                // align base unit of quantity factor
-                consumerDiv.parentNode.querySelector("label[name='quantity_unit'].data").innerHTML = selection.consumptions[Object.keys(selection.consumptions)[0]].base_unit;
-
-                // update emissions
-                updateData();
-
-                // hide overlay
-                let overlay = document.getElementById("searchConsumerOverlay");
-                overlay.style.display = "none";
-                rowDiv.setAttribute("data-active", false);
-            });
-
-            consumerAutoCompleteJS.input.addEventListener("focus", function (event) {
-                event.stopPropagation();
-            });
-
-            /* search source overlay and auto complete */
-
-            document.querySelectorAll("#searchSourceOverlay, div[name='source'] img.edit-icon").forEach(item => {
-                item.addEventListener('click', toggleSearchSourceOverlay)
-            });
-
-            const sourceAutoCompleteJS = new autoComplete({
-                placeHolder: "Search energy source ...",
-                selector: "#searchSourceInput",
-                searchEngine: "loose",
-                data: {
-                    src: sources_json,
-                    keys: ["name", "description"],
-                    filter: (list) => {
-                        const results = list.filter((item) => {
-                            const itemType = item.value.type.toLowerCase();
-
-                            let rowDiv = document.querySelector("div.row[data-active='true']");
-                            let consumptionTypes = Array.from(rowDiv.querySelectorAll("div[name='consumer'] div[name='consumptions'] ul.list li")).map(li => li.getAttribute("name"));
-
-                            // only present source items of suitable consumption type(s) if any consumption types defined
-                            if (consumptionTypes.includes(itemType) || consumptionTypes.length === 0) {
-                                return item.value;
-                            }
-                        });
-                        return results;
-                    }
-                },
-                resultsList: {
-                    element: (list, data) => {
-                      const info = document.createElement("p");
-                      if (data.results.length > 0) {
-                        info.innerHTML = `Displaying <strong>${data.results.length}</strong> out of <strong>${data.matches.length}</strong> results`;
-                      } else {
-                        info.innerHTML = `Found <strong>${data.matches.length}</strong> matching results for <strong>"${data.query}"</strong>`;
-                      }
-                      list.prepend(info);
-                    },
-                    noResults: true,
-                    maxResults: 30
-                },
-                resultItem: {
-                    element: (item, data) => {
-                    item.style = "display: block; justify-content: space-between;";
-                    item.innerHTML = `
-                          <span style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
-                            ${data.value.name}
-                          </span>  
-                          <span style="display: flex; align-items: center; font-size: 13px; font-weight: 100; text-transform: uppercase; color: rgba(0,0,0,.2);">
-                            ${data.value.description}
-                          </span>`;
-                    },
-                    highlight: true
-                }
-            });
-
-            sourceAutoCompleteJS.input.addEventListener("selection", function (event) {
-                
-                sourceAutoCompleteJS.input.blur();
-                sourceAutoCompleteJS.input.value = "";
-
-                // get selection data
-                const feedback = event.detail;
-                const selection = feedback.selection.value;
-
-                // identify active source div
-                let rowDiv = document.querySelector("div.row[data-active='true']");
-                let sourceDiv = rowDiv.querySelector(".data[name='source']");
-                let detailsDiv = sourceDiv.querySelector("div.details");
-
-                // not all types of emissions are available for all sources
-                // refresh the list of emission types
-                let emissionsTemplate = document.querySelector(".template[name='component'] div[name='emissions']").cloneNode(true);
-                emissionsTemplate.style.display = "block";
-
-                let oldEmissions = detailsDiv.querySelector("div div[name='emissions']");
-
-                detailsDiv.removeChild(oldEmissions);
-                detailsDiv.appendChild(emissionsTemplate)
-
-                // update source data
-                populateTemplate(sourceDiv, selection, "");
-
-                // remove emission list nodes if not included in emissions
-                for (unit in emissionUnitMap) {
-                    if (!Object.keys(selection.emissions).includes(unit)) {
-                        let l = sourceDiv.querySelector("[name='" +unit+"']");
-                        if (l) {l.remove();}
-                    }
-                }
-
-                // update emissions
-                updateData();
-
-                // hide overlay
-                let overlay = document.getElementById("searchSourceOverlay");
-                overlay.style.display = "none";
-                rowDiv.setAttribute("data-active", false);
-            });
-
-            sourceAutoCompleteJS.input.addEventListener("focus", function (event) {
-                event.stopPropagation();
-            });
         });
 
     </script>
 </head>
 
 <body>
-    <div id="container">
-        <h1><span class="data" name="title" data-type="string" id="title"></span><sup>[<a class="data" name="reference_url" target="_blank" onclick="event.stopPropagation()">i</a>]</sup></h1>
-        <div class="data" data-type="string" name="description"></div>
-        <div class="data" name="scopes" data-type="array" id="scopes"></div>
+    <div id="container" name="scenario" data-type="object" style="max-width: none;">
     </div>
     <div id="footer">
         <a href="#" onclick="saveJSON()">Save JSON</a>
@@ -454,12 +254,29 @@
 
 <!--------------------------------------------------------------------------------------------------------->
     <div class="templates">
+        <div class="data template" name="scenario" data-type="object">
+            <h1><span class="data" name="title" data-type="string" id="title"></span><sup>[<a class="data" name="reference_url" target="_blank" onclick="event.stopPropagation()">i</a>]</sup></h1>
+            <div class="data" data-type="string" name="description"></div>
+            <div class="data" name="scopes" data-type="array"></div>
+        </div>
         <!------------------------------------------------------------------------------------------------->
-        <div class="data template" name="scope" data-type="object">
+        <div class="template data" name="scope">
             <div class="data" name="level"></div>
             <div class="data tooltip" name="description"></div>
             <div class="data" name="list" data-type="array"></div>
             <div class="total_emission"></div>
+        </div>
+        <!------------------------------------------------------------------------------------------------->
+        <div class="data template" name="nestedScenario" data-type="object">
+            <div class="row">
+                <div class="usage">
+                    <input type="number" name="quantity" class="data" onchange="updateData()">
+                    <label for="quantity">X</label>
+                </div>
+            </div>
+            <div><span class="emission_sub_total"></span></div>
+            <span class="data" name="scenario_id"></span> 
+             <span class="data" name="type"></span> 
         </div>
         <!------------------------------------------------------------------------------------------------->
         <div class="data template" name="link" data-type="object">
