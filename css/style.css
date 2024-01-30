@@ -127,9 +127,8 @@ div[name="scope"] div.total_emission {
     
     border-radius: 50%;
     width: 80px;
-    height: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 80px;
+    padding: 10px;
     background-color: yellow;
     text-align:  center;
     display: flex;
@@ -156,6 +155,20 @@ div[name="scope"] div[name="level"] {
     left:  20px;
     padding:  10px;
     border-radius: 10px;
+}
+
+div[name="nestedScenario"] {
+    div[name="scope"] div[name="level"] {
+        display: none;
+    }
+
+    div[name="scope"] div.total_emission {   
+        width: 60px;
+        height: 60px;
+        right:  -20px;
+        bottom:  -10px;
+
+    }
 }
 
 span.emission_value, span.emission_unit {

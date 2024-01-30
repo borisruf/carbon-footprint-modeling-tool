@@ -94,14 +94,21 @@
         }
 
 
-        function buildScenarioDOMtree(scenario) {
+        function buildScenarioDOMtree(scenario, scenario_id) {
 
             let scenarioDiv = document.querySelector(".template[name='scenario']").cloneNode(true);
             scenarioDiv.classList.remove("template");
 
             let titleSpan = scenarioDiv.querySelector("h1 span[name='title']");
 
-            titleSpan.innerHTML = scenario.title;
+            if (scenario_id) {
+                let titleLink = document.createElement("a");
+                titleLink.innerHTML = scenario.title;
+                titleLink.href = "show.html?id=" + scenario_id;
+                titleSpan.appendChild(titleLink);
+            } else {
+                titleSpan.innerHTML = scenario.title;
+            }
 
             let titleSup = scenarioDiv.querySelector("h1 sup");
 
@@ -143,7 +150,7 @@
 
                         populateTemplate(nestedScenarioDiv, element, "");
 
-                        let s = buildScenarioDOMtree(element.scenario);
+                        let s = buildScenarioDOMtree(element.scenario, element.scenario_id);
                         s.setAttribute("id", element.scenario_id);
 
                         nestedScenarioDiv.querySelector("[class='row']").appendChild(s);
