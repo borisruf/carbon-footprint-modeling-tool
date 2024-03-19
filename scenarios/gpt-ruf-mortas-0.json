@@ -1,0 +1,17 @@
+{
+    "title": "Monthly carbon footprint of ChatGPT (Ruf & Mortas)",
+    "description": "In this scenario, we approximate the carbon footprint of ChatGPT based on the Llama 2 model and energy consumption data from Hugging Face.",
+    "scopes": [
+      {
+        "level": "Scope 3",
+        "description": {},
+          "list": [
+          {
+            "type": "link",
+            "quantity": 590000000,
+            "scenario_id": "gpt-ruf-mortas-1"
+          }
+        ]
+      }
+    ]
+  }

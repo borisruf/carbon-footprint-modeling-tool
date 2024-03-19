@@ -1,0 +1,17 @@
+{
+  "title": "Carbon footprint of one average query to GPT-3",
+  "description": "We assume that each query to ChatGPT generates in average 1,319 tokens.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 1319,
+          "scenario_id": "gpt-ruf-mortas-2"
+        }
+      ]
+    }
+  ]
+}
