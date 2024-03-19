@@ -48,9 +48,15 @@ function formatTotalEmissions(value_in_kg, emission_type) {
     } else if (value_in_kg >= 1000) {
         value = value_in_kg/1000;
         unit = "t";
-    } else if (value_in_kg < 1) {
+    } else if (value_in_kg >= 1) {
+        value = value_in_kg;
+        unit = "kg";
+    } else if (value_in_kg >= 0.001) {
         value = value_in_kg*1000;
         unit = "g";
+    } else if (value_in_kg < 0.001) {
+        value = value_in_kg*1000000;
+        unit = "mg";
     }
     return Math.round(value * 100) / 100 + unit + " " + emissionUnitMap[emission_type];
 }
