@@ -109,7 +109,7 @@
             }
 
             if (title_parameter) {
-                document.getElementById("title").innerHTML = encodeURI(title_parameter);
+                document.getElementById("title").appendChild(document.createTextNode(title_parameter));
             }
 
 
