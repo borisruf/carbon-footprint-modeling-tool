@@ -340,7 +340,11 @@ function traverseDOMtree(element) {
 }
 
 // calculate total emissions for all scopes of one scenario
-function totalEmissions(scenario_json) {
+function totalEmissions(scenario_json, factor=1) {
+
+    if (!factor) {
+        factor = 1
+    }
 
     let emissions = [];
 
@@ -352,6 +356,7 @@ function totalEmissions(scenario_json) {
 
     let available_units = availableTotalEmissionTypes(emissions);
 
+
     // reduce emissions to emission types available for all components
     for (e in emissions) {
         for (c in e) {
@@ -361,11 +366,16 @@ function totalEmissions(scenario_json) {
         }
     }
 
-    let sums = [];
-    
+    let sums = {};
+
     available_units.forEach(function (unit, index) {
         sums[unit] = totalEmissionsByUnit(emissions, unit);
-    });                        
+    });
+
+    // multiply emission values by an optional factor (default=1)
+    Object.keys(sums).forEach(key => {
+        sums[key] *= factor;
+    });
 
     return sums
 }
