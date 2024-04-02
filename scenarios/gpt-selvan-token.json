@@ -1,6 +1,6 @@
 {
   "title": "GPT-3 emission per token (Selvan)",
-  "description": "The outputs in this experiment generate in average 230 words. We apply the factor <a href='https://www.google.com/search?q=1%2F230' target='_blank'>1/230</a> to compute the token-based emissions.",
+  "description": "The outputs in this experiment generate in average 230 words. We apply factor <a href='https://www.google.com/search?q=1%2F230' target='_blank'>1/230</a> to get the emissions per completion token.<br/><br/>As this calculation ignores the impact of the prompt on the energy consumption, we assume an equal number of prompt tokens and apply factor <b>0.5x</b> to obtain a per-token value.",
   "scopes": [
     {
       "level": "Scope 3",
@@ -8,7 +8,7 @@
             "list": [
         {
           "type": "link",
-          "quantity": 0.004347826087,
+          "quantity": 0.00217391304,
           "scenario_id": "gpt-selvan-1b"
         }
       ]
