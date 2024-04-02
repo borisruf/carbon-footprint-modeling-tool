@@ -1,6 +1,6 @@
 {
     "title": "GPT-3 emission per token (Pointon)",
-    "description": "Tom Goldstein, Professor at U of Maryland, extrapolates that if GPT-3 were to run on a single Nvidia A100 GPU, it would take <a href=\"https://twitter.com/tomgoldsteincs/status/1600196995389366274\" target=\"_blank\">350 ms</a> to output one word.<br/><br/>The fraction of such an operation of one hour is 350/3600000 = <a href='https://www.google.com/search?q=350%2F3600000' target='_blank'>9.7222e-5</a>",
+    "description": "Tom Goldstein, Professor at U of Maryland, extrapolates that if GPT-3 were to run on a single Nvidia A100 GPU, it would take <a href=\"https://twitter.com/tomgoldsteincs/status/1600196995389366274\" target=\"_blank\">350 ms</a> to output one word.<br/><br/>The fraction of such an operation of one hour is <b>350/3600000</b> = <a href='https://www.google.com/search?q=350%2F3600000' target='_blank'>9.7222e-5</a><br/><br/>As this calculation ignores the impact of the prompt on the energy consumption, we assume an equal number of prompt tokens and apply factor <b>0.5x</b> to obtain a per-token value.",
     "scopes": [
         {
             "level": "Scope 3",
