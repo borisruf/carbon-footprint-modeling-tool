@@ -1,0 +1,36 @@
+{
+  "title": "1 litre of diesel",
+  "description": "",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 1,
+          "quantity_unit": "l",
+          "consumer": {
+            "name": "Combustion"
+          },
+          "source": {
+            "name": "Diesel",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 2.71685,
+                "unit": "kg",
+                "reference_url": "https://www.bp.com/bptargetneutralnavapp/consumer/bpTN_Online%20Travel%20GHG%20Emissions%20Calculator_Updated%20Methodology%20Statement_01July2021.961acd71.pdf"
+              },
+              "co2": {
+                "base_unit": "kg",
+                "value": 2.6533,
+                "unit": "kg",
+                "reference_url": "https://ghgprotocol.org/sites/default/files/2023-05/6a_EX_Answers_Calculating%20Emissions%20(updated).doc"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
