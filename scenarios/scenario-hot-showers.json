@@ -1,0 +1,18 @@
+{
+	"id": "hot-shower",
+  "title": "A year of hot showers carbon footprint",
+  "description" : "Assuming that a human takes a shower each day, it takes 365 showers per year",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": "indirect electricty emissions",
+      "list": [
+		{
+          "type": "link",
+		  "quantity": 365,
+          "scenario_id": "scenario-1hot-shower"
+        }
+      ]
+    }
+  ]
+}
