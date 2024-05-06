@@ -242,3 +242,46 @@ div[name="level"]:hover + .tooltip {
   display:flex;
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.json-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    min-width: 300px;
+    width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.json-content {
+    color: #333; /* Text color */
+    font-family: monospace; /* Use monospace font for consistent spacing */
+    white-space: pre-wrap; /* Preserve line breaks and wrap long lines */
+    font-size: 14px; 
+}
+
+#jsonButton {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 9999; /* Ensure the button is above other content */
+    border: 1px solid #ccc; 
+    padding: 8px 8px; 
+    background: none; /* Remove the button background */
+    font: inherit; /* Inherit the font style */
+    cursor: pointer; /* Change the cursor to indicate interactivity */
+
+}
