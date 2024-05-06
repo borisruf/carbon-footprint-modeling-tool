@@ -741,7 +741,10 @@ function addSearchOverlay() {
     });
 }
 
+
 // for the index creation script
-module.exports = {
-    totalEmissions: totalEmissions
-};
+try {
+    module.exports = {
+        totalEmissions: totalEmissions
+    };
+} catch(error){}
