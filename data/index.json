@@ -190,10 +190,26 @@
     }
   },
   {
+    "id": "scenario-1L-hot-water",
+    "title": "Warming 1L of water from 18 to 38°C",
+    "description": "Before being heated, the temperature of the water in a tank is 18°C. <br> Most people take a shower at 38°C (a little bit above body temperature).<br><br> According to thermodynamic, heating 1L of water from 18 to 38°C consume 0.0232 kWh. <br><br><b>Formula:</b> Energy [kWh] = (mass of water [g] x specific heat capacity [J/g°C] x delta T [°C]) / conversion coefficient [J/kWh] <br><b>Details:</b> (1 000 x 4.18 x (38 - 18)) / 3 600 000 = 0.0232",
+    "emissions": {
+      "co2e": 0.0012063999999999998
+    }
+  },
+  {
     "id": "scenario-1b7dd417-5ac9-4be4-af6a-f2bb3bdae1a5",
     "title": "Food",
     "emissions": {
       "co2": 0
+    }
+  },
+  {
+    "id": "scenario-1hot-shower",
+    "title": "1 hot shower",
+    "description": "The average flow rate of a shower is 15L/minute. The average time for a shower in France is 9 minutes <a href='https://www.francetvinfo.fr/economie/les-francais-restent-9-minutes-en-moyenne-sous-la-douche_922471.html' target='_blank'>[source]</a>. <br>The volume of water used in a shower is 135 L. <br><br> <b>Formula:</b> Volume [L] = flow rate [L/min] x time [minutes] <br><b> Details:</b> 15 * 9 = 135",
+    "emissions": {
+      "co2e": 0.16286399999999998
     }
   },
   {
@@ -403,11 +419,26 @@
     }
   },
   {
+    "id": "scenario-hot-showers",
+    "title": "A year of hot showers carbon footprint",
+    "description": "Assuming that a human takes a shower each day, it takes 365 showers per year",
+    "emissions": {
+      "co2e": 59.445359999999994
+    }
+  },
+  {
     "id": "scenario-meat",
     "title": "Yearly meat consumption",
     "description": "In 2020, French people ate <a href='https://www.vitagora.com/en/blog/2021/flexitarian-meat-trend/#:~:text=(source%3A%20French%20Ministry%20of%20food,105kg%20per%20person%20in%201992.' target='_blank'>84.5kg</a> of meat per person. You can choose here how you want to distribute the kilogrammes between types of meat.",
     "emissions": {
       "co2e": 851.1999999999999
+    }
+  },
+  {
+    "id": "scenario-paris-montreal",
+    "title": "Paris (CDG) to Montreal (YUL) round-trip ",
+    "emissions": {
+      "co2e": 654.1023315179427
     }
   },
   {
