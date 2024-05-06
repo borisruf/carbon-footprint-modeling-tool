@@ -125,11 +125,38 @@ function calculateScopeEmissions(scope) {
             }
                 
         } else if (element.type == "link") {
-            let request = new XMLHttpRequest();
-            request.open("GET", "./scenarios/" + element.scenario_id + ".json", false);
-            request.setRequestHeader('Cache-Control', 'no-cache');
-            request.send(null)
-            let json = JSON.parse(request.responseText);
+
+            let responseText;
+
+            // The code is running in a Node.js environment - index creation mode
+            if (typeof module !== 'undefined' && module.exports) {
+
+                const request = require('sync-request');
+
+                const res = request('GET', 'http://localhost:8000/scenarios/' + element.scenario_id + '.json', {
+                  headers: {
+                    'Cache-Control': 'no-cache'
+                  }
+                });
+
+                if (res.statusCode === 200) {
+                  responseText = res.getBody('utf8');
+                } else {
+                  // Handle the HTTP request error
+                  console.error('Request failed with status code:', res.statusCode);
+                }
+
+            // The code is running in regular website mode
+            } else {
+  
+                let request = new XMLHttpRequest();
+                request.open("GET", "./scenarios/" + element.scenario_id + ".json", false);
+                request.setRequestHeader('Cache-Control', 'no-cache');
+                request.send(null)
+            }      
+
+
+            let json = JSON.parse(responseText);
             let linkedEmissions = totalEmissions(json);
             
             // consider quantity parameter if any
@@ -713,3 +740,8 @@ function addSearchOverlay() {
         event.stopPropagation();
     });
 }
+
+// for the index creation script
+module.exports = {
+    totalEmissions: totalEmissions
+};
