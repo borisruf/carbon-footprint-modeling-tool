@@ -1,0 +1,19 @@
+{
+	"id": "1hot-shower",
+  "title": "1 hot shower",
+  "description" : "The average flow rate of a shower is 15L/minute. The average time for a shower in France is 9 minutes <a href='https://www.francetvinfo.fr/economie/les-francais-restent-9-minutes-en-moyenne-sous-la-douche_922471.html' target='_blank'>[source]</a>. <br>The volume of water used in a shower is 135 L. <br><br> <b>Formula:</b> Volume [L] = flow rate [L/min] x time [minutes] <br><b> Details:</b> 15 * 9 = 135",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": "indirect electricty emissions",
+      "list": [
+        
+		{
+          "type": "link",
+		  "quantity": 135,
+          "scenario_id": "scenario-1L-hot-water"
+        }
+      ]
+    }
+  ]
+}
