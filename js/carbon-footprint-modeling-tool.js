@@ -61,16 +61,28 @@ function formatTotalEmissions(value_in_kg, emission_type) {
     return Math.round(value * 100) / 100 + unit + " " + emissionUnitMap[emission_type];
 }
 
-// TODO: generalize with unit table
 function convertValue(value, source_unit, target_unit) {
-    if (target_unit.toLowerCase() == "kg") {
-        if (source_unit.toLowerCase() == "t") {
-            return value*1000;
-        } else if (source_unit.toLowerCase() == "g") {
-            return value/1000;
-        }
+  const conversionRates = {
+    "g_kg": 0.001,
+    "g_t": 0.000001,
+    "kg_g": 1000,
+    "kg_t": 0.001,
+    "t_g": 1000000,
+    "t_kg": 1000
+  };
+
+  if (massUnits.includes(source_unit) && massUnits.includes(target_unit)) {
+    const conversionKey = `${source_unit}_${target_unit}`;
+    if (conversionRates.hasOwnProperty(conversionKey)) {
+      return value * conversionRates[conversionKey];
+    } else if (source_unit === target_unit) {
+      return value; // No conversion needed
+    } else {
+      return "Conversion rate not available";
     }
+  } else {
     return value;
+  }
 }
 
 // calculate scope emissions from JSON data

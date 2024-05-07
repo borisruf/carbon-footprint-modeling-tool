@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emission Scenario Reference Database</title>
+  <style>
+
+    div#container {
+      max-width: 800px;
+      margin:  auto; 
+    }
+
+    form {
+      padding-bottom: 20px;
+    }
+
+    h1, h2 {
+      font-family: courier;
+    }
+
+    table td:nth-child(1) {
+      width: 450px;
+      font-family: courier;
+    }
+
+    table td:nth-child(2) {
+      width: 200px; 
+      font-family: courier;
+    }
+    table td:nth-child(3) {
+      font-family: sans-serif !important; 
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select,
+    button {
+      padding: 10px; /* Adjust padding as needed */
+      border-radius: 0; /* Use sharp corners */
+      box-shadow: none; /* Remove shadows */
+      font-size: 16px; /* Adjust font size as needed */
+      border: 1px solid #000; /* Replace #000 with desired border color */
+      -webkit-appearance: none; 
+    }
+
+    input[type="text"] {
+      width: 300px;
+    }
+
+    input[type="text"],
+    select,
+    button {
+      border: 1px solid #000; /* Replace #000 with desired border color */
+    }
+
+  </style>
+
+  <script src="js/carbon-footprint-modeling-tool.js"></script>
+  <script>
+
+    async function loadIndexData() {
+      try {
+        const response = await fetch('data/index.json');
+        if (!response.ok) {
+          throw new Error('Failed to load index data');
+        }
+        const indexData = await response.json();
+        return indexData;
+      } catch (error) {
+        console.error('Error loading index data:', error);
+        return null;
+      }
+    }
+
+    function buildResultsTable(scenarios, massUnit, emissionType, scenarioId) {
+      
+      const table = document.createElement('table');
+
+      // Populate table rows with scenario data
+      scenarios.forEach(scenario => {
+        const row = table.insertRow();
+        const titleCell = row.insertCell();
+        const emissionValueCell = row.insertCell();
+        const referenceCell = row.insertCell();
+
+        emissionValueCell.appendChild(document.createTextNode(convertValue(scenario.emissions[emissionType], "kg", massUnit).toFixed(2) + " " + massUnit + " " + emissionUnitMap[emissionType]));
+
+        const titleLink = document.createElement('a');
+        titleLink.setAttribute('href', `index.html?id=${scenario.id}`);
+        titleLink.appendChild(document.createTextNode(scenario.title));
+        titleCell.appendChild(titleLink);
+
+        if (scenarioId) {
+          const referenceLink = document.createElement('a');
+          referenceLink.setAttribute('href', `benchmark.html?ids[]=${scenario.id}&reference_id=${scenarioId}`);
+          referenceLink.appendChild(document.createTextNode("\u0131\u0049\u0131"));
+          referenceCell.appendChild(referenceLink);
+        }
+
+      });
+
+      return table;
+    }
+
+    function filterData(indexData, searchValueInKg, emissionType, factor, margin) {
+      const results = indexData.filter(scenario => {
+        const scenarioValueInKg = scenario.emissions[emissionType];
+        if (scenarioValueInKg !== undefined) {
+          const difference = Math.abs(scenarioValueInKg/factor - searchValueInKg);
+          return (difference < searchValueInKg*margin);
+        }
+        return false
+      });
+
+
+      results.sort((a, b) => {
+        const diffA = convertValue(Math.abs(a.ValueInKg - searchValueInKg));
+        const diffB = convertValue(Math.abs(b.ValueInKg - searchValueInKg));
+        return diffA - diffB;
+      });
+
+      return results
+
+    }
+
+    function init() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var searchValue = urlParams.get('value');
+      var massUnit = urlParams.get('mass_unit');
+      var emissionType = urlParams.get('emission_type');
+      var scenarioId = urlParams.get('scenario_id');
+
+      //populate form
+      document.getElementById('searchInput').value = searchValue;
+      if (massUnit) document.getElementById('massUnit').value = massUnit;
+      if (emissionType) document.getElementById('emissionType').value = emissionType;
+
+      var searchValueInKg = convertValue(searchValue, massUnit, 'kg');
+
+      loadIndexData().then(indexData => {
+        if (indexData) {
+ 
+          let similarScenarios = filterData(indexData, searchValueInKg, emissionType, 1, 0.2);
+          document.getElementById('similarScenarios').appendChild(buildResultsTable(similarScenarios, massUnit, emissionType, scenarioId));
+
+          let x10Scenarios = filterData(indexData, searchValueInKg, emissionType, 10, 0.2);
+          document.getElementById('x10Scenarios').appendChild(buildResultsTable(x10Scenarios, massUnit, emissionType, scenarioId));
+
+          let x100Scenarios = filterData(indexData, searchValueInKg, emissionType, 100, 0.2);
+          document.getElementById('x100Scenarios').appendChild(buildResultsTable(x100Scenarios, massUnit, emissionType, scenarioId));
+
+          let x01Scenarios = filterData(indexData, searchValueInKg, emissionType, 0.1, 0.2);
+          document.getElementById('x01Scenarios').appendChild(buildResultsTable(x01Scenarios, massUnit, emissionType, scenarioId));
+        }
+      });
+    }
+
+    window.onload = init;
+  </script>
+</head>
+<body>
+  <div id="container">
+    <h1>Emission Scenario Reference Database</h1>
+    <form id="searchForm" onsubmit="">
+      <input type="text" name="value" id="searchInput" placeholder="Emission value">
+      <select name="mass_unit" id="massUnit">
+        <option value="g">Grams</option>
+        <option value="kg" selected>Kilograms</option>
+        <option value="t">Metric Tons</option>
+      </select>
+      <select name="emission_type" id="emissionType">
+        <option value="co2e" selected>CO2e</option>
+        <option value="co2">CO2</option>
+        <option value="ch4">CH4</option>
+        <option value="n2o">N2O</option>
+        <option value="hfcs">HFCs</option>
+        <option value="pfcs">PFCs</option>
+        <option value="sf6">SF6</option>
+        <option value="nf33">NF33</option>    
+      </select>
+      <button type="submit">Search</button>
+      <button onclick="window.location.href=window.location.href.split('?')[0];return false">Reset</button>
+    </form>
+    
+    <h2>x1</h2>
+    <div id="similarScenarios"></div>
+    <h2>x10</h2>
+    <div id="x10Scenarios"></div>
+    <h2>x100</h2>
+    <div id="x100Scenarios"></div>
+    <h2>x0.1</h2>
+    <div id="x01Scenarios"></div>
+  </div>
+</body>
+</html>

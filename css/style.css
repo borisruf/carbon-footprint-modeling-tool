@@ -273,15 +273,24 @@ div[name="level"]:hover + .tooltip {
     font-size: 14px; 
 }
 
-#jsonButton {
+#jsonButton, #compareButton {
     position: fixed;
     top: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
     z-index: 9999; /* Ensure the button is above other content */
     border: 1px solid #ccc; 
-    padding: 8px 8px; 
     background: none; /* Remove the button background */
     font: inherit; /* Inherit the font style */
     cursor: pointer; /* Change the cursor to indicate interactivity */
 
+}
+
+#jsonButton {
+    right: 20px; 
+    padding: 8px 8px; 
+}
+
+#compareButton {
+    right: 70px; 
+    font-size: 24px !important;
+    padding: 3px 10px; 
 }
