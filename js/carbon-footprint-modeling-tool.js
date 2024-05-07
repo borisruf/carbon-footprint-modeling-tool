@@ -153,6 +153,8 @@ function calculateScopeEmissions(scope) {
                 request.open("GET", "./scenarios/" + element.scenario_id + ".json", false);
                 request.setRequestHeader('Cache-Control', 'no-cache');
                 request.send(null)
+
+                responseText = request.responseText;
             }      
 
 
