@@ -115,6 +115,7 @@ B. Ruf and M. Detyniecki, "[Open and Linked Data Model for Carbon Footprint Scen
 
 I. D'Aramon, B. Ruf, M. Detyniecki, "[Assessing Carbon Footprint Estimations of ChatGPT](https://borisruf.github.io/carbon-footprint-modeling-tool/ICREC_2023_Assessing_Carbon_Footprint_Estimations_of_ChatGPT.pdf)", 8th International Conference on Renewable Energy and Conservation (ICREC), 2023.
 
+B. Ruf, Félix Mortas, M. Detyniecki, "[Transparent and Human-centered Carbon Footprinting](https://sustainingscalablesustainability.wordpress.com/wp-content/uploads/2024/04/sss24_camera_ready_2.pdf)", 42nd ACM Conference on Human Factors in Computing Systems (CHI), Workshop on Sustaining Scalable Sustainability, 2024.
 
 
 ## MIT License
