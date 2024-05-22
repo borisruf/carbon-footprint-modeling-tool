@@ -1,0 +1,122 @@
+{
+  "title": "Paris to Dublin by train and ferry",
+  "description": "Paris – London – Holyhead – Dublin",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Stena Line"
+          },
+          "quantity": "117",
+          "quantity_unit": "km",
+          "source": {
+            "name": "Ferry foot passenger",
+            "description": "",
+            "emissions": {
+              "co2e": {
+                "value": "0.01874",
+                "unit": "kg",
+                "base_unit": "km",
+                "reference_url": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2021"
+              },
+              "co2": {
+                "value": "0.01848",
+                "unit": "kg",
+                "base_unit": "km",
+                "reference_url": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2021"
+              },
+              "ch4": {
+                "value": "0.00001",
+                "unit": "kg",
+                "base_unit": "km",
+                "reference_url": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2021"
+              },
+              "n2o": {
+                "value": "0.00025",
+                "unit": "kg",
+                "base_unit": "km",
+                "reference_url": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2021"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Eurostar",
+            "description": "",
+            "consumptions": {
+              "electricity": {
+                "value": "0.05",
+                "unit": "kWh",
+                "base_unit": "km",
+                "reference_url": "https://www.researchgate.net/publication/263145479_Are_Railways_Climate_Friendly"
+              }
+            }
+          },
+          "quantity": "342",
+          "quantity_unit": "km",
+          "source": {
+            "name": "France electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.0511",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.0573",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Class 390 Pendolino",
+            "description": "",
+            "consumptions": {
+              "electricity": {
+                "value": "0.033",
+                "unit": "kWh",
+                "base_unit": "km",
+                "reference_url": "https://www.greengauge21.net/wp-content/uploads/Energy-Consumption-and-CO2-impacts.pdf"
+              }
+            }
+          },
+          "quantity": "365",
+          "quantity_unit": "km",
+          "source": {
+            "name": "United Kingdom electricity grid",
+            "type": "electricity",
+            "description": "(2019)",
+            "emissions": {
+              "co2e": {
+                "value": "0.225",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
