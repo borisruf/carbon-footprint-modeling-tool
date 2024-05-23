@@ -109,7 +109,7 @@ Benchmark example: [2021 vs. 2022 car pool comparison](https://borisruf.github.i
 ## Notes
 This is a fully functional prototype, more features are in the planning. Any feedback is welcome.
 
-## Paper reference
+## Paper references
 
 B. Ruf and M. Detyniecki, "[Open and Linked Data Model for Carbon Footprint Scenarios](https://arxiv.org/abs/2310.01278)", 7th International Conference on Renewable Energy and Conservation (ICREC), 2022.
 
