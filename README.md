@@ -105,6 +105,13 @@ The benchmark view renders a bar chart for two or more hosted scenarios identifi
 
 Benchmark example: [2021 vs. 2022 car pool comparison](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923)
 
+### Find comparative scenarios
+The search view can be accessed either by directly visiting [search.html](https://borisruf.github.io/carbon-footprint-modeling-tool/search.html) or by clicking on the __&#x2248;__ button located at the top right of any scenario. In the search bar, an emission value, the type of mass, and the emission category can be specified. The search results display comparable carbon scenarios for different scales: identical emissions, 10 times, 100 times, and 0.1 times. 
+
+<img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/search.png" width="500"/>
+
+The [index.js](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/data/index.json) file functions as (flat-file) database, produced by the Node.js script [create-index.js](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/js/create-index.js) (please note that the rest of the code does not depend on Node.js!).
+
 
 ## Notes
 This is a fully functional prototype, more features are in the planning. Any feedback is welcome.
