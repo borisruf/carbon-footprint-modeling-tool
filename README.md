@@ -134,6 +134,8 @@ The benchmark view renders a bar chart for two or more hosted scenarios identifi
 
 Benchmark example: [2021 vs. 2022 car pool comparison](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923)
 
+Utilize the URL parameter `title` to add a title, and `factor` to apply multiplication by a factor.
+
 ---
 
 ### Find comparative scenarios
