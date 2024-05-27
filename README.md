@@ -123,7 +123,7 @@ Carbon emission scenarios are complex and interconnected. Consequently, the data
 
 The viewer loads all nested scenarios recursively into a single, interactive scenario.
 
-<img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/nested" width="500"/>
+<img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/nested.png" width="500"/>
 
 ---
 
