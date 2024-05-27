@@ -1,0 +1,17 @@
+{
+  "title": "GPT-4 estimated using Llama 2",
+  "description": "In the absence of reliable data on the energy consumption of GPT-4, this information is extrapolated from the freely available language model <a href=\"https://huggingface.co/meta-llama/Llama-2-70b-hf\" target=\"_blank\">Llama 2</a>. The number of parameters in this version of Llama 2 is 68.98 billion, whereas GPT-4 might have a much larger parameter count of <a href='https://the-decoder.com/gpt-4-architecture-datasets-costs-and-more-leaked/' target='_blank'>1.76 trillion</a>.<br/><br/>Therefore, we assume that submitting a query to GPT-4 requires <b>2.5x</b> more energy.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 2.5,
+          "scenario_id": "gpt-ruf-mortas-3"
+        }
+      ]
+    }
+  ]
+}
