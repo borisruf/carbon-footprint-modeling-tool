@@ -121,9 +121,9 @@ Carbon emission scenarios are complex and interconnected. Consequently, the data
 }
 ```
 
-The viewer loads all nested scenarios recursively into a single, interactive scenario.
+The viewer loads all nested scenarios recursively into a single, interactive scenario:
 
-<img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/nested.png" width="750"/>
+<a href="https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=gpt-ruf-mortas-token&emission_type=co2e" target="_blank"><img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/nested.png" width="750"/></a>
 
 ---
 
