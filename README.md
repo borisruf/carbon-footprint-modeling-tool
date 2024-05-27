@@ -98,12 +98,38 @@ Example: [index.html?id=scenario-95e1ade0-033c-40de-b30d-4e62f4723254](https://b
 
 ---
 
+### Nesting scenarios
+Carbon emission scenarios are complex and interconnected. Consequently, the data model supports scenario nesting via links. For example:
+
+```json
+{
+  "title": "GPT-3",
+  "description": "In the absence of reliable data on the energy consumption of GPT-3, this information is extrapolated from the freely available language model <a href=\"https://huggingface.co/meta-llama/Llama-2-70b-hf\" target=\"_blank\">Llama 2</a>. The number of parameters in Llama 2 is 68.98 billion, whereas GPT-3 has a much larger parameter count of <a href='https://openai.com/research/language-models-are-few-shot-learners' target='_blank'>175 billion</a>.<br/><br/>Therefore, we assume that submitting a query to GPT-3 requires <b>2.5x</b> more energy.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 2.5,
+          "scenario_id": "gpt-ruf-mortas-3"
+        }
+      ]
+    }
+  ]
+}
+``` 
+---
+
 ### Compare scenarios
 The benchmark view renders a bar chart for two or more hosted scenarios identified in the URL by their ids, like `benchmark.html?ids[]=scenario-1&ids[]=scenario-2`.
 
 <img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/benchmark.png" width="500"/>
 
 Benchmark example: [2021 vs. 2022 car pool comparison](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923)
+
+---
 
 ### Find comparative scenarios
 The search view can be accessed either by directly visiting [search.html](https://borisruf.github.io/carbon-footprint-modeling-tool/search.html) or by clicking on the __&#x2248;__ button located at the top right of any scenario. In the search bar, an emission value, the type of mass, and the emission category can be specified. The search results display comparable carbon scenarios for different scales: identical emissions, 10 times, 100 times, and 0.1 times. 
