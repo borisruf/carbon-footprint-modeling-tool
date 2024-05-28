@@ -10,7 +10,7 @@
             "type": "component",
             "consumer": {
               "name": "kWh/token",
-              "description": "Llama 2 68.98B parameters",
+              "description": "Llama 3 8B parameters",
               "consumptions": {
                 "electricity": {
                   "value": "0.00000496211425",	  
