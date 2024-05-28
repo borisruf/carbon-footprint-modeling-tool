@@ -6,7 +6,7 @@ A data model and a viewer for carbon footprint scenarios. This toolkit makes it 
 
 The main features of the [data model](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.svg) are:
 - A universal data scheme to model carbon emission scenarios, split by **scopes**, **consumer components** and **energy sources**
-- A modular structure which allows for **nested scenarios** that can be explored and modified at different levels of detail
+- A modular structure which allows for <a href="#nesting-scenarios">**nested scenarios**</a> that can be explored and modified at different levels of detail
 - Support to back consumption and emission details with **reference sources** for better transparency
 
 ![Carbon footprint scenario data model](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.svg)
@@ -27,7 +27,7 @@ The main features of the [viewer](https://borisruf.github.io/carbon-footprint-mo
 ### View a scenario
 The viewer renders the scenario data which is either stored in a JSON file that is [hosted on the server](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-95e1ade0-033c-40de-b30d-4e62f4723254), or it is [embedded in the URL](https://borisruf.github.io/carbon-footprint-modeling-tool/?#eyJ0aXRsZSI6Ik1vYmlsaXR5Iiwic2NvcGVzIjpbeyJsZXZlbCI6IlNjb3BlIDEiLCJkZXNjcmlwdGlvbiI6Iidvbi1zaXRlJyBkaXJlY3QgZW1pc3Npb25zIiwibGlzdCI6W3sidHlwZSI6ImNvbXBvbmVudCIsImNvbnN1bWVyIjp7Im5hbWUiOiJWb2xrc3dhZ2VuIEdvbGYgKDIwMTQpIiwiZGVzY3JpcHRpb24iOiJFbmdpbmUgSUQgNDUsIDQgY3lsaW5kZXJzLCBNYW51YWwgNi1zcGQiLCJjb25zdW1wdGlvbnMiOnsiZGllc2VsIjp7InZhbHVlIjoiMC4wNzM1MDQ2ODc1IiwidW5pdCI6ImwiLCJiYXNlX3VuaXQiOiJrbSIsInJlZmVyZW5jZV91cmwiOiJodHRwczovL3d3dy5mdWVsZWNvbm9teS5nb3YvIn19fSwicXVhbnRpdHkiOiIxMDAwMCIsInF1YW50aXR5X3VuaXQiOiJrbSIsInNvdXJjZSI6eyJuYW1lIjoiR2FzL0RpZXNlbCBvaWwiLCJ0eXBlIjoiZGllc2VsIiwiZGVzY3JpcHRpb24iOiIiLCJlbWlzc2lvbnMiOnsiY28yZSI6eyJ2YWx1ZSI6IjMuMjUiLCJ1bml0Ijoia2ciLCJiYXNlX3VuaXQiOiJsIiwicmVmZXJlbmNlX3VybCI6Imh0dHBzOi8vYmlsYW5zLWdlcy5hZGVtZS5mci9kb2N1bWVudGF0aW9uL1VQTE9BRF9ET0NfRU4vaW5kZXguaHRtP25ld19saXF1aWRlcy5odG0ifSwiY28yIjp7InZhbHVlIjoiMi42NzY0OTIiLCJ1bml0Ijoia2ciLCJiYXNlX3VuaXQiOiJsIiwicmVmZXJlbmNlX3VybCI6Imh0dHA6Ly93d3cuaXBjYy1uZ2dpcC5pZ2VzLm9yLmpwL3B1YmxpYy8yMDA2Z2wvdm9sMi5odG1sIn0sImNoNCI6eyJ2YWx1ZSI6IjAuMDAwMzYxMiIsInVuaXQiOiJrZyIsImJhc2VfdW5pdCI6ImwiLCJyZWZlcmVuY2VfdXJsIjoiaHR0cDovL3d3dy5pcGNjLW5nZ2lwLmlnZXMub3IuanAvcHVibGljLzIwMDZnbC92b2wyLmh0bWwifSwibjJvIjp7InZhbHVlIjoiMC4wMDAwMjE2NzIiLCJ1bml0Ijoia2ciLCJiYXNlX3VuaXQiOiJsIiwicmVmZXJlbmNlX3VybCI6Imh0dHA6Ly93d3cuaXBjYy1uZ2dpcC5pZ2VzLm9yLmpwL3B1YmxpYy8yMDA2Z2wvdm9sMi5odG1sIn19fX1dfV19). 
 Details on consumption and emissions can be toggled by clicking on the respective title. If a data source was included, consumer components 
-or energy sources can be changed by clicking the pencil icon <img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/pencil-square.svg" width="15"/>. The total of the emissions per scope is shown in the yellow circle on the bottom right. It is updated instantly when settings in the scenario change. The emissions of nested scenarios are calculated recursively. They can be zoomed into by clicking on their links.
+or energy sources can be changed by clicking the pencil icon <img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/pencil-square.svg" width="15"/>. The total of the emissions per scope is shown in the yellow circle on the bottom right. It is updated instantly when settings in the scenario change. The emissions of nested scenarios are calculated recursively. 
 
 Example scenarios:
 - [Streaming a 30-minute video [IEA updated, UK]](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24.json))
@@ -98,6 +98,35 @@ Example: [index.html?id=scenario-95e1ade0-033c-40de-b30d-4e62f4723254](https://b
 
 ---
 
+### Nesting scenarios
+Carbon emission scenarios are complex and interconnected. Consequently, the data model supports scenario nesting via links. For example:
+
+```json
+{
+  "title": "GPT-3",
+  "description": "In the absence of reliable data on the energy consumption of GPT-3, this information is extrapolated from the freely available language model <a href=\"https://huggingface.co/meta-llama/Llama-2-70b-hf\" target=\"_blank\">Llama 2</a>. The number of parameters in Llama 2 is 68.98 billion, whereas GPT-3 has a much larger parameter count of <a href='https://openai.com/research/language-models-are-few-shot-learners' target='_blank'>175 billion</a>.<br/><br/>Therefore, we assume that submitting a query to GPT-3 requires <b>2.5x</b> more energy.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 2.5,
+          "scenario_id": "gpt-ruf-mortas-3"
+        }
+      ]
+    }
+  ]
+}
+```
+
+The viewer loads all nested scenarios recursively into a single, interactive scenario:
+
+<a href="https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=gpt-ruf-mortas-token&emission_type=co2e" target="_blank"><img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/nested.png" width="750"/></a>
+
+---
+
 ### Compare scenarios
 The benchmark view renders a bar chart for two or more hosted scenarios identified in the URL by their ids, like `benchmark.html?ids[]=scenario-1&ids[]=scenario-2`.
 
@@ -105,16 +134,28 @@ The benchmark view renders a bar chart for two or more hosted scenarios identifi
 
 Benchmark example: [2021 vs. 2022 car pool comparison](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923)
 
+Utilize the URL parameter `title` to add a title, and `factor` to apply multiplication by a factor. Provide a `reference_id` to put the scenario into perspective with another scenario (<a href="https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt-ruf-mortas-1&factor=1000&title=1,000%20ChatGPT%20requests&reference_id=diesel" target="_blank">Example</a>).
+
+---
+
+### Find comparative scenarios
+The search view can be accessed either by directly visiting [search.html](https://borisruf.github.io/carbon-footprint-modeling-tool/search.html) or by clicking on the __&#x2248;__ button located at the top right of any scenario. In the search bar, an emission value, the type of mass, and the emission category can be specified. The search results display comparable carbon scenarios for different scales: identical emissions, 10 times, 100 times, and 0.1 times. 
+
+<img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/search.png" width="500"/>
+
+The [index.js](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/data/index.json) file functions as (flat-file) database, produced by the Node.js script [create-index.js](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/js/create-index.js) (please note that the rest of the code does not depend on Node.js!).
+
 
 ## Notes
 This is a fully functional prototype, more features are in the planning. Any feedback is welcome.
 
-## Paper reference
+## Paper references
 
 B. Ruf and M. Detyniecki, "[Open and Linked Data Model for Carbon Footprint Scenarios](https://arxiv.org/abs/2310.01278)", 7th International Conference on Renewable Energy and Conservation (ICREC), 2022.
 
 I. D'Aramon, B. Ruf, M. Detyniecki, "[Assessing Carbon Footprint Estimations of ChatGPT](https://borisruf.github.io/carbon-footprint-modeling-tool/ICREC_2023_Assessing_Carbon_Footprint_Estimations_of_ChatGPT.pdf)", 8th International Conference on Renewable Energy and Conservation (ICREC), 2023.
 
+B. Ruf, Félix Mortas, M. Detyniecki, "[Transparent and Human-centered Carbon Footprinting](https://sustainingscalablesustainability.wordpress.com/wp-content/uploads/2024/04/sss24_camera_ready_2.pdf)", 42nd ACM Conference on Human Factors in Computing Systems (CHI), Workshop on Sustaining Scalable Sustainability, 2024.
 
 
 ## MIT License

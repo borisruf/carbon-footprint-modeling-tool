@@ -20,7 +20,7 @@
             width:  max-content;
             height:  90%;
         }
-        div[name="sample"] {
+        div[name="sample"], div[name="reference"] {
             width:  200px;
             margin:  20px;
             align-self: flex-end;
@@ -28,7 +28,16 @@
         div[name="sample"] div[name="bar"] {
             border:  solid;
         }
-        div[name="sample"] div[name="foot"] {
+        div[name="reference"] div[name="bar"] {
+            border:  solid;
+            border-color: lightgray;
+            background-color: lightgray;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        div[name="sample"] div[name="foot"], div[name="reference"] div[name="foot"] {
             min-height:  100px;
         }
 
@@ -40,6 +49,7 @@
 
         let url = new URL(location.href);
         let ids = url.searchParams.getAll("ids[]");
+        let reference_id = url.searchParams.get("reference_id");
 
         // optional parameter to override emission type
         var emission_type_parameter = url.searchParams.get("emission_type");
@@ -58,6 +68,7 @@
         window.addEventListener('load', function () {
 
             let scenarios = {};
+            let reference_scenario;
 
             // fetch the scenarios which are to be compared
             for (const scenario_id of ids) {
@@ -69,21 +80,42 @@
                 scenarios[scenario_id] = JSON.parse(request.responseText);
             }
 
+            if (reference_id) {
+                let request = new XMLHttpRequest();
+                request.open("GET", "./scenarios/" + reference_id + ".json", false);
+                request.setRequestHeader('Cache-Control', 'no-cache');
+                request.send(null)
+                reference_scenario = JSON.parse(request.responseText);
+            }
+
             let arena = document.getElementById("arena");
 
             // identify max emission value
             let emissions = {}
+            let reference_emission = {};
 
             for (const [scenario_id, scenario] of Object.entries(scenarios)) {
                 emissions[scenario_id] = totalEmissions(scenarios[scenario_id], factor_parameter || null);
             }
+            let all_emissions = emissions;
 
-            let best_unit = emission_type_parameter || bestTotalEmissionType(emissions);
+            if (reference_scenario) {
+                reference_emission = totalEmissions(reference_scenario,null);
+                all_emissions = Object.assign(emissions, {reference_scenario: reference_emission})
+            }
+
+            let best_unit = emission_type_parameter || bestTotalEmissionType(all_emissions);
 
             let emissions_of_best_unit = [];
             Object.keys(emissions).map(function(scenario_id, emission){
                 emissions_of_best_unit.push(emissions[scenario_id][best_unit]);
             });
+
+            let reference_emissions_of_best_unit;
+
+            if (reference_scenario) {
+                reference_emissions_of_best_unit = reference_emission[best_unit];
+            }
 
             // compute calibration factor
             let calibration_factor = 500/Math.max(...emissions_of_best_unit);
@@ -100,6 +132,7 @@
                 let emissions = totalEmissions(scenario, factor_parameter || null);
 
                 let bar = sample.querySelector("div[name='bar']");
+
                 bar.style.height = emissions[best_unit]*calibration_factor + "px";
 
                 let total_emission = sample.querySelector("span[name='total_emission']");
@@ -108,10 +141,33 @@
                 arena.appendChild(sample);
             }
 
+            // add comparison with baseline energy source if provided
+            if (reference_scenario) {
+
+                let sample = document.querySelector(".template[name='reference']").cloneNode(true);
+                sample.classList.remove("template");
+                
+                let title = sample.querySelector("a[name='title']");
+                title.innerHTML = reference_scenario.title;
+                title.setAttribute("href", "index.html?id=" + reference_id + "&emission_type=" + best_unit);
+
+                let bar = sample.querySelector("div[name='bar']");
+
+                let last_scenario = scenarios[ids.reverse()[0]];
+                let emissions = totalEmissions(last_scenario, factor_parameter || null);
+                
+                let reference_factor = (emissions[best_unit]/reference_emissions_of_best_unit).toFixed(2);
+
+                bar.style.height = emissions[best_unit]*calibration_factor + "px";
+
+                sample.querySelector("span[name='reference_factor']").innerHTML = reference_factor + "x"
+
+                arena.appendChild(sample);
+            }
+
             if (title_parameter) {
                 document.getElementById("title").appendChild(document.createTextNode(title_parameter));
             }
-
 
         });
 
@@ -132,6 +188,10 @@
         <div class="data template" name="sample" data-type="object">
             <span name="total_emission"></span>
             <div class="data" name="bar"></div>
+            <div name="foot"><a name="title"></a></div>
+        </div>
+        <div class="data template" name="reference" data-type="object">
+            <div class="data" name="bar"><span name="reference_factor"></span></div>
             <div name="foot"><a name="title"></a></div>
         </div>
     </div>

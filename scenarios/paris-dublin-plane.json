@@ -1,0 +1,41 @@
+{
+  "title": "Paris to Dublin by plane",
+  "scopes": [
+    {
+      "level": "Scope 1",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Boeing 737 Next Generation",
+            "description": "",
+            "consumptions": {
+              "oil": {
+                "value": "0.0277",
+                "unit": "l",
+                "base_unit": "km",
+                "reference_url": "https://web.archive.org/web/20140725005129/http://www.boeing.com/assets/pdf/commercial/startup/pdf/737ng_perf.pdf"
+              }
+            }
+          },
+          "quantity": "787",
+          "quantity_unit": "km",
+          "source": {
+            "name": "Jet kerosene",
+            "type": "oil",
+            "description": "",
+            "emissions": {
+              "co2e": {
+                "value": "2.525771758",
+                "unit": "kg",
+                "base_unit": "l",
+                "reference_url": "http://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

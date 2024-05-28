@@ -236,7 +236,30 @@
             /* search consumer overlay and auto complete */
             addSearchOverlay();
 
-        });
+            // handle displaying JSON
+            document.getElementById('jsonButton').addEventListener('click', function() {
+                var jsonString = JSON.stringify(scenario, null, 2); // Formatting JSON with 2-space indentation
+
+                document.getElementById('jsonContent').innerText = jsonString;
+
+                // Show the overlay
+                document.getElementById('jsonOverlay').style.display = 'block';
+            });
+
+            document.getElementById('jsonOverlay').addEventListener('click', function(event) {
+                if (event.target === this) {
+                    document.getElementById('jsonOverlay').style.display = 'none';
+                }
+            });
+
+            // find comparable scenarios
+            document.getElementById('compareButton').addEventListener('click', function() {
+                let total = totalEmissions(scenario);
+                let best = bestEmissionType(total);
+
+                window.open(`search.html?mass_unit=kg&value=${total[best]}&emission_type=${best}&scenario_id=${id}`, "_blank");
+            });
+      });
 
     </script>
 </head>
@@ -260,6 +283,17 @@
     <div id="searchSourceOverlay">
         <div id="searchSourceBox">
             <input id="searchSourceInput">
+        </div>
+    </div>
+
+    <button id="jsonButton" title="Show JSON code">{}</button>
+
+    <button id="compareButton" title="Find comparative scenarios">&#x2248;</button>
+
+    <!-- Overlay to display well-formatted JSON -->
+    <div class="overlay" id="jsonOverlay">
+        <div class="json-container" id="jsonContainer">
+            <pre class="json-content" id="jsonContent"></pre>
         </div>
     </div>
 
