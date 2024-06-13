@@ -12,12 +12,12 @@
         },
 		{
           "type": "link",
-          "quantity": 3,
+          "quantity": 10,
           "scenario_id": "coach-prevention-question-prompt-falcon"
         },
 		{
           "type": "link",
-          "quantity": 3,
+          "quantity": 10,
           "scenario_id": "coach-prevention-response-prompt-falcon"
         }
       ]
