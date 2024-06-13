@@ -1,0 +1,17 @@
+{
+    "title": "Yearly carbon footprint of SecureGPT 3.5 at AXA (Ruf & Mortas)",
+    "description": "In this scenario, we approximate the yearly carbon footprint of SecureGPT 3.5 based on the Llama 2 model and energy consumption data from Hugging Face.\nWe assume that 80% of AXA's ETFs use SecureGPT at a rate of 60 requests per working month.\nWe therefore have 60 (requests) * 12 (months) * 121,354 (ETFs) * 0.8 (%) = 69,899,904",
+    "scopes": [
+      {
+        "level": "Scope 3",
+        "description": {},
+          "list": [
+          {
+            "type": "link",
+            "quantity": 69899904,
+            "scenario_id": "gpt-ruf-mortas-1"
+          }
+        ]
+      }
+    ]
+  }

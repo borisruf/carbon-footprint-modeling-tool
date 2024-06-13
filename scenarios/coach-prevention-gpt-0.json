@@ -1,0 +1,16 @@
+{
+  "title": "Coach prevention's GHG emissions forecast for 1 year using GPT-3.5",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 365,
+          "scenario_id": "coach-prevention-gpt-1"
+        }
+      ]
+    }
+  ]
+}

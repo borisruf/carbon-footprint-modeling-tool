@@ -1,0 +1,16 @@
+{
+  "title": "Coach prevention question-prompt",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 150,
+          "scenario_id": "gpt3-ovh"
+        }
+      ]
+    }
+  ]
+}

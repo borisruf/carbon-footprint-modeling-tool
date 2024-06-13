@@ -1,0 +1,16 @@
+{
+  "title": "Coach prevention's GHG emissions forecast for 1 user",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 1,
+          "scenario_id": "coach-prevention-conversation-gpt"
+        }
+      ]
+    }
+  ]
+}

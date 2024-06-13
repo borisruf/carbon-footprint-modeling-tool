@@ -1,0 +1,26 @@
+{
+  "title": "Coach prevention conversation",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 1,
+          "scenario_id": "coach-prevention-instruction-prompt-gpt"
+        },
+		{
+          "type": "link",
+          "quantity": 3,
+          "scenario_id": "coach-prevention-question-prompt-gpt"
+        },
+		{
+          "type": "link",
+          "quantity": 3,
+          "scenario_id": "coach-prevention-response-prompt-gpt"
+        }
+      ]
+    }
+  ]
+}

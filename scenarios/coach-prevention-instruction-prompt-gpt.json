@@ -1,0 +1,16 @@
+{
+  "title": "Coach prevention instruction-prompt",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 300,
+          "scenario_id": "gpt3-ovh"
+        }
+      ]
+    }
+  ]
+}
