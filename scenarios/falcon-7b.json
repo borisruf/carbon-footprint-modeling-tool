@@ -25,7 +25,7 @@
             "source": {
               "name": "France electricity grid",
               "type": "electricity",
-              "description": "(2024 intern data)",
+              "description": "(2021)",
               "emissions": {
                 "co2e": {
                   "value": "0.0814",
