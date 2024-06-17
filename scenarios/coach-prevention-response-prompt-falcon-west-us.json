@@ -1,5 +1,5 @@
 {
-  "title": "Coach prevention instruction-prompt",
+  "title": "1 response from a Falcon chatbot in West US",
   "scopes": [
     {
       "level": "Scope 3",
@@ -7,8 +7,8 @@
         "list": [
         {
           "type": "link",
-          "quantity": 300,
-          "scenario_id": "falcon-180b"
+          "quantity": 600,
+          "scenario_id": "falcon-180b-west-us"
         }
       ]
     }

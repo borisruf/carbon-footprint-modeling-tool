@@ -1,5 +1,5 @@
 {
-  "title": "Coach prevention response-prompt",
+  "title": "1 instruction prompt to a Falcon 180B chatbot in West US",
   "scopes": [
     {
       "level": "Scope 3",
@@ -7,8 +7,8 @@
         "list": [
         {
           "type": "link",
-          "quantity": 600,
-          "scenario_id": "gpt3-ovh"
+          "quantity": 300,
+          "scenario_id": "falcon-180b-west-us"
         }
       ]
     }

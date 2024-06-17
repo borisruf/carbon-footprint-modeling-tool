@@ -1,0 +1,26 @@
+{
+  "title": "1 conversation with a Falcon 180B chatbot in West US",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 1,
+          "scenario_id": "coach-prevention-instruction-prompt-falcon-west-us"
+        },
+		{
+          "type": "link",
+          "quantity": 10,
+          "scenario_id": "coach-prevention-question-prompt-falcon-west-us"
+        },
+		{
+          "type": "link",
+          "quantity": 10,
+          "scenario_id": "coach-prevention-response-prompt-falcon-west-us"
+        }
+      ]
+    }
+  ]
+}

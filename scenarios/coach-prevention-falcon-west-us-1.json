@@ -1,0 +1,16 @@
+{
+  "title": "All user conversations with a Falcon 180B chatbot in West US for 1 day",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 200,
+          "scenario_id": "coach-prevention-falcon-west-us-2"
+        }
+      ]
+    }
+  ]
+}

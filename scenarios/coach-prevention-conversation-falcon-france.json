@@ -1,0 +1,26 @@
+{
+  "title": "1 chatbot conversation with Falcon 180B in France",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 1,
+          "scenario_id": "coach-prevention-instruction-prompt-falcon-france"
+        },
+		{
+          "type": "link",
+          "quantity": 10,
+          "scenario_id": "coach-prevention-question-prompt-falcon-france"
+        },
+		{
+          "type": "link",
+          "quantity": 10,
+          "scenario_id": "coach-prevention-response-prompt-falcon-france"
+        }
+      ]
+    }
+  ]
+}

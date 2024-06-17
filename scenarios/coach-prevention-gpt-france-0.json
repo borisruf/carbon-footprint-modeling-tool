@@ -1,0 +1,16 @@
+{
+  "title": "All user conversations with a GPT 3.5 chatbot in France for 1 year",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 365,
+          "scenario_id": "coach-prevention-gpt-france-1"
+        }
+      ]
+    }
+  ]
+}

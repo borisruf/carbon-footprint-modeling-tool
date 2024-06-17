@@ -1,5 +1,5 @@
 {
-  "title": "Coach prevention question-prompt",
+  "title": "1 question to a GPT-3.5 chatbot in France",
   "scopes": [
     {
       "level": "Scope 3",
@@ -8,7 +8,7 @@
         {
           "type": "link",
           "quantity": 150,
-          "scenario_id": "gpt3-ovh"
+          "scenario_id": "gpt3-france"
         }
       ]
     }

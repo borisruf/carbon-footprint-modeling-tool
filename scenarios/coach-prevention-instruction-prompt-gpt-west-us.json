@@ -1,0 +1,16 @@
+{
+  "title": "1 instruction prompt to a GPT-3.5 chatbot in West US",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 300,
+          "scenario_id": "gpt-ruf-mortas-2"
+        }
+      ]
+    }
+  ]
+}

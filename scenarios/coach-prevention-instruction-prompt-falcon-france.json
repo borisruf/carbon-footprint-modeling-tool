@@ -1,0 +1,16 @@
+{
+  "title": "1 instruction prompt to a Falcon 180B chatbot in France",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 300,
+          "scenario_id": "falcon-180b-france"
+        }
+      ]
+    }
+  ]
+}

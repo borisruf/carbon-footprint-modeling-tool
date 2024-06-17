@@ -1,5 +1,5 @@
 {
-  "title": "Falcon 180B",
+  "title": "1 token of Falcon 180B in West US",
   "description": "In the absence of reliable data on the energy consumption of Falcon 180B, this information is extrapolated from the freely available language model <a href=\"https://huggingface.co/tiiuae/falcon-7b\" target=\"_blank\">Falcon 7B</a>. The number of parameters in Falcon 7B is 7 billion, whereas Falcon 180B has a much larger parameter count of 180 billion</a>.<br/><br/>Therefore, we assume that submitting a query to Falcon 180B requires <b>2.5x</b> more energy.",
   "scopes": [
     {
@@ -9,7 +9,7 @@
         {
           "type": "link",
           "quantity": 2.5,
-          "scenario_id": "falcon-7b"
+          "scenario_id": "falcon-7b-west-us"
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "title": "Coach prevention conversation",
+  "title": "1 chatbot conversation with GPT-3.5 in France",
   "scopes": [
     {
       "level": "Scope 3",
@@ -8,17 +8,17 @@
         {
           "type": "link",
           "quantity": 1,
-          "scenario_id": "coach-prevention-instruction-prompt-falcon"
+          "scenario_id": "coach-prevention-instruction-prompt-gpt-france"
         },
 		{
           "type": "link",
           "quantity": 10,
-          "scenario_id": "coach-prevention-question-prompt-falcon"
+          "scenario_id": "coach-prevention-question-prompt-gpt-france"
         },
 		{
           "type": "link",
           "quantity": 10,
-          "scenario_id": "coach-prevention-response-prompt-falcon"
+          "scenario_id": "coach-prevention-response-prompt-gpt-france"
         }
       ]
     }

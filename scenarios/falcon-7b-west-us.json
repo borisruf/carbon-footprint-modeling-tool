@@ -1,5 +1,5 @@
 {
-    "title": "Falcon 7B",
+    "title": "1 token of Falcon 7B in West US",
     "description": "The <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>Hugging Face LLM-Perf Leaderboard</a> benchmarks the performance of large language models (LLMs). Energy consumption is measured using <a href='https://mlco2.github.io/codecarbon/index.html' target='_blank'>CodeCarbon</a>. We observe that the most energy efficient Falcon model with 7B parameters handles 422,919 completion tokens/kWh. Per token, that's 1/422919 = <a href='https://www.google.com/search?q=1%2F422919' target='_blank'>2.4e-6</a> kWh.",
     "scopes": [
       {
@@ -23,12 +23,12 @@
             "quantity": "1",
             "quantity_unit": "token",
             "source": {
-              "name": "France electricity grid",
+              "name": "Western USA electricity grid",
               "type": "electricity",
-              "description": "(2024 intern data)",
+              "description": "(2021)",
               "emissions": {
                 "co2e": {
-                  "value": "0.0814",
+                  "value": "0.322167",
                   "unit": "kg",
                   "base_unit": "kWh",
                   "reference_url": "https://www.epa.gov/egrid/download-data"

@@ -1,5 +1,5 @@
 {
-  "title": "Coach prevention's GHG emissions forecast for 1 year using GPT-3.5",
+  "title": "All user conversations with a Falcon 180B chatbot in France for 1 year",
   "scopes": [
     {
       "level": "Scope 3",
@@ -8,7 +8,7 @@
         {
           "type": "link",
           "quantity": 365,
-          "scenario_id": "coach-prevention-gpt-1"
+          "scenario_id": "coach-prevention-falcon-france-1"
         }
       ]
     }

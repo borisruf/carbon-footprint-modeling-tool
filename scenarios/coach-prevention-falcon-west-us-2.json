@@ -1,5 +1,5 @@
 {
-  "title": "Coach prevention's GHG emissions forecast for 1 user",
+  "title": "1 user chatbot conversations with Falcon 180B in West US",
   "scopes": [
     {
       "level": "Scope 3",
@@ -8,7 +8,7 @@
         {
           "type": "link",
           "quantity": 1,
-          "scenario_id": "coach-prevention-conversation-falcon"
+          "scenario_id": "coach-prevention-conversation-falcon-west-us"
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "title": "Coach prevention conversation",
+  "title": "1 conversation with a GPT-3.5 chatbot in West US",
   "scopes": [
     {
       "level": "Scope 3",
@@ -8,17 +8,17 @@
         {
           "type": "link",
           "quantity": 1,
-          "scenario_id": "coach-prevention-instruction-prompt-gpt"
+          "scenario_id": "coach-prevention-instruction-prompt-gpt-west-us"
         },
 		{
           "type": "link",
           "quantity": 10,
-          "scenario_id": "coach-prevention-question-prompt-gpt"
+          "scenario_id": "coach-prevention-question-prompt-gpt-west-us"
         },
 		{
           "type": "link",
           "quantity": 10,
-          "scenario_id": "coach-prevention-response-prompt-gpt"
+          "scenario_id": "coach-prevention-response-prompt-gpt-west-us"
         }
       ]
     }

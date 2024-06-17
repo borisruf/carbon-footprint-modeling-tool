@@ -1,0 +1,16 @@
+{
+  "title": "1 question to a Falcon chatbot in France",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 150,
+          "scenario_id": "falcon-180b-france"
+        }
+      ]
+    }
+  ]
+}

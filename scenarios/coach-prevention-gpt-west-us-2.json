@@ -1,0 +1,16 @@
+{
+  "title": "1 user chatbot conversations with GPT-3.5 in West US",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 1,
+          "scenario_id": "coach-prevention-conversation-gpt-west-us"
+        }
+      ]
+    }
+  ]
+}
