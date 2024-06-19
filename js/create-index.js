@@ -43,6 +43,42 @@ fs.readdir(scenariosFolder, (err, files) => {
     }
   });
 
+  // add data from internal source database
+
+  const fileContent = fs.readFileSync('../data/food.json', 'utf8'); // Read the file content
+  try {
+    const db = JSON.parse(fileContent); // Parse the JSON data
+
+    db.forEach(record => {
+      console.log(record)
+
+      let emissions = {}
+
+      for (let key in record.emissions) {
+        emissions[key] = record.emissions[key].value
+      }
+
+      let unit = record.emissions?.[Object.keys(record.emissions)[0]]?.base_unit ?? ""
+      let url = record.emissions?.[Object.keys(record.emissions)[0]]?.reference_url ?? ""
+
+      // Create result object
+    const result = {
+      id: null, // 
+      title: record.name + (unit ? " (per " + unit +")" : ""), // 
+      description: null, // 
+      emissions: emissions, // 
+      url: url
+    };
+
+    results.push(result); // Add the result to the results array
+    });
+
+    
+  } catch (error) {
+    console.error('Error parsing JSON file:', error);
+  }
+
+
   // Write the results to the output file
   fs.writeFile(outputFileName, JSON.stringify(results, null, 2), 'utf8', err => {
     if (err) {

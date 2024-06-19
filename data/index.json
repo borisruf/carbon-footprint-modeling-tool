@@ -9,6 +9,22 @@
     }
   },
   {
+    "id": "falcon-180b-ruf-mortas-token",
+    "title": "Falcon 180B emission per token (Ruf & Mortas)",
+    "description": "In the absence of energy consumption data of Falcon 180B, this information is extrapolated from available data on <a href=\"https://huggingface.co/tiiuae/falcon-7b\" target=\"_blank\">Falcon 7B</a>. The number of parameters in Falcon 7B is 7 billion, whereas Falcon 180B has a much larger parameter count of 180 billion</a>.<br/><br/>Therefore, we assume that submitting a query to Falcon 180B requires <b>25x</b> more energy.<br/><br/>Further note that in <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>the Hugging Face experiment</a>, the prompt size is 256 tokens, and the output size is 256 tokens, too. However, the \"Energy\" value refers to 1 generated completion token. As there is no reason to believe that prompt tokens consume no energy, we apply factor <b>0.5x</b> here, but use both prompt and completion tokens for our calculation.",
+    "emissions": {
+      "co2e": 0.000002405888925
+    }
+  },
+  {
+    "id": "falcon-7b",
+    "title": "Falcon 7B",
+    "description": "The <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>Hugging Face LLM-Perf Leaderboard</a> benchmarks the performance of large language models (LLMs). Energy consumption is measured using <a href='https://mlco2.github.io/codecarbon/index.html' target='_blank'>CodeCarbon</a>. We observe that the most energy efficient Falcon model with 7B parameters handles 422,919 completion tokens/kWh. Per token, that's 1/422919 = <a href='https://www.google.com/search?q=1%2F422919' target='_blank'>2.4e-6</a> kWh.",
+    "emissions": {
+      "co2e": 1.92471114e-7
+    }
+  },
+  {
     "id": "gpt-ludvigsen-0",
     "title": "Monthly carbon footprint of ChatGPT (Ludvigsen)",
     "description": "Kasper Groes Albin Ludvigsen <a href='https://towardsdatascience.com/chatgpts-electricity-consumption-7873483feac4' target='_blank'>approximated</a> the carbon footprint of ChatGPT. The calculation and the underlying assumptions he made are further illustrated in this <a href='https://github.com/borisruf/carbon-footprint-modeling-tool' target='_blank'>carbon footprint scenario</a>.<br/><br/>In January 2023, ChatGPT had about 100M unique users who made <a href='https://www.theguardian.com/technology/2023/feb/02/chatgpt-100-million-users-open-ai-fastest-growing-app' target='_blank'>590M</a> queries to GPT-3. The estimated emissions associated with these requests have been modeled below. To explore further, adjust the quantity in the input field or click on the link.",
@@ -105,6 +121,14 @@
     }
   },
   {
+    "id": "gpt-ruf-mortas-3b",
+    "title": "Llama 3",
+    "description": "The <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>Hugging Face LLM-Perf Leaderboard</a> benchmarks the performance of large language models (LLMs). Energy consumption is measured using <a href='https://mlco2.github.io/codecarbon/index.html' target='_blank'>CodeCarbon</a>. We observe that the most energy efficient Llama 3 model with 8B parameters handles 201,527 completion tokens/kWh. Per token, that's 1/201527 = <a href='https://www.google.com/search?q=1%2F201527' target='_blank'>5.1e-6</a> kWh.",
+    "emissions": {
+      "co2e": 0.0000015986294615797499
+    }
+  },
+  {
     "id": "gpt-ruf-mortas-token",
     "title": "GPT-3 emission per token (Ruf & Mortas)",
     "description": "In the absence of reliable data on the energy consumption of GPT-3, this information is extrapolated from the freely available language model <a href=\"https://huggingface.co/meta-llama/Llama-2-70b-hf\" target=\"_blank\">Llama 2</a>. The number of parameters in Llama 2 is 68.98 billion, whereas GPT-3 has a much larger parameter count of <a href='https://openai.com/research/language-models-are-few-shot-learners' target='_blank'>175 billion</a>.<br/><br/>Therefore, we assume that submitting a query to GPT-3 requires <b>2.5x</b> more energy.<br/><br/>Further note that in <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>the Hugging Face experiment</a>, the prompt size is 256 tokens, and the output size is 256 tokens, too. However, the \"Energy\" value refers to 1 generated completion token. As there is no reason to believe that prompt tokens consume no energy, we apply factor <b>0.5x</b> here, but use both prompt and completion tokens for our calculation.",
@@ -172,6 +196,53 @@
     }
   },
   {
+    "id": "gpt4-ruf-mortas-1",
+    "title": "Carbon footprint of one average query to GPT-4 estimated using Llama 3",
+    "description": "We assume that each query to ChatGPT generates in average 1,319 tokens.",
+    "emissions": {
+      "co2e": 0.4638902971612118
+    }
+  },
+  {
+    "id": "gpt4-ruf-mortas-1b",
+    "title": "Carbon footprint of one average query to GPT-4 estimated using Llama 2",
+    "description": "We assume that each query to ChatGPT generates in average 1,319 tokens.",
+    "emissions": {
+      "co2e": 0.06609932022293576
+    }
+  },
+  {
+    "id": "gpt4-ruf-mortas-2",
+    "title": "GPT-4 emission per token (Ruf & Mortas)",
+    "description": "In the absence of reliable data on the energy consumption of GPT-4, this information is extrapolated from the freely available language model <a href=\"https://huggingface.co/meta-llama/Meta-Llama-3-8B\" target=\"_blank\">Llama 3</a>. The number of parameters in this version of Llama 3 is 8 billion, whereas GPT-4 might have a much larger parameter count of <a href='https://the-decoder.com/gpt-4-architecture-datasets-costs-and-more-leaked/' target='_blank'>1.76 trillion</a>.<br/><br/>Therefore, we assume that submitting a query to GPT-4 requires <b>220x</b> more energy.",
+    "emissions": {
+      "co2e": 0.00035169848154754496
+    }
+  },
+  {
+    "id": "gpt4-ruf-mortas-2b",
+    "title": "GPT-4 estimated using Llama 2",
+    "description": "In the absence of reliable data on the energy consumption of GPT-4, this information is extrapolated from the freely available language model <a href=\"https://huggingface.co/meta-llama/Llama-2-70b-hf\" target=\"_blank\">Llama 2</a>. The number of parameters in this version of Llama 2 is 68.98 billion, whereas GPT-4 might have a much larger parameter count of <a href='https://the-decoder.com/gpt-4-architecture-datasets-costs-and-more-leaked/' target='_blank'>1.76 trillion</a>.<br/><br/>Therefore, we assume that submitting a query to GPT-4 requires <b>25.5x</b> more energy.",
+    "emissions": {
+      "co2e": 0.000050113207143999815
+    }
+  },
+  {
+    "id": "paris-dublin-plane",
+    "title": "Paris to Dublin by plane",
+    "emissions": {
+      "co2e": 55.06157174722419
+    }
+  },
+  {
+    "id": "paris-dublin-train-ferry",
+    "title": "Paris to Dublin by train and ferry",
+    "description": "Paris – London – Holyhead – Dublin",
+    "emissions": {
+      "co2e": 5.776515
+    }
+  },
+  {
     "id": "scenario-0065da59-7785-4eed-8a11-c73b70cf798e",
     "title": "Singapore (SIN) to Paris (CDG) round-trip ",
     "emissions": {
@@ -194,7 +265,7 @@
     "title": "Warming 1L of water from 18 to 38°C",
     "description": "Before being heated, the temperature of the water in a tank is 18°C. <br> Most people take a shower at 38°C (a little bit above body temperature).<br><br> According to thermodynamic, heating 1L of water from 18 to 38°C consume 0.0232 kWh. <br><br><b>Formula:</b> Energy [kWh] = (mass of water [g] x specific heat capacity [J/g°C] x delta T [°C]) / conversion coefficient [J/kWh] <br><b>Details:</b> (1 000 x 4.18 x (38 - 18)) / 3 600 000 = 0.0232",
     "emissions": {
-      "co2e": 0.0012063999999999998
+      "co2e": 0.0012064
     }
   },
   {
@@ -209,7 +280,7 @@
     "title": "1 hot shower",
     "description": "The average flow rate of a shower is 15L/minute. The average time for a shower in France is 9 minutes <a href='https://www.francetvinfo.fr/economie/les-francais-restent-9-minutes-en-moyenne-sous-la-douche_922471.html' target='_blank'>[source]</a>. <br>The volume of water used in a shower is 135 L. <br><br> <b>Formula:</b> Volume [L] = flow rate [L/min] x time [minutes] <br><b> Details:</b> 15 * 9 = 135",
     "emissions": {
-      "co2e": 0.16286399999999998
+      "co2e": 0.162864
     }
   },
   {
@@ -423,7 +494,7 @@
     "title": "A year of hot showers carbon footprint",
     "description": "Assuming that a human takes a shower each day, it takes 365 showers per year",
     "emissions": {
-      "co2e": 59.445359999999994
+      "co2e": 59.44536
     }
   },
   {
@@ -451,5 +522,2255 @@
       "ch4": 0.010515803760000001,
       "n2o": 0.0006309482256
     }
+  },
+  {
+    "id": null,
+    "title": "Andouille (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Andouille de Guéméné (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Andouille de Vire (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Andouille/réchauffée à la poêle (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Andouillette/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Andouillette de Troyes/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Andouillette/sautée/poêlée (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Boudin blanc truffé/cru (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Boudin noir/rayon frais (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 1.64
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Boudin noir/sauté/poêlé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 1.64
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Bresaola (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 14.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Canard/magret fumé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.58
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Cervelas (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.06
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Cervelas à l'ail/pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.23
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Cervelas obernois (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.23
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chair à saucisse/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.98
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chair à saucisse/porc et buf/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.09
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chair à saucisse/pur porc/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.09
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chipolata/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.09
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chipolata/cuite (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.83
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chorizo (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.17
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chorizo supérieur/doux ou fort/type charcuterie en tranches (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.17
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chorizo supérieur/doux ou fort/type saucisse sèche (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.08
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Confit de canard (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.54
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Confit de canard/viande (cuisse)/sans peau, réchauffé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.54
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Confit de foie de porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 2.12
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Confit de foie de volaille (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 1.86
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Coppa (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 17.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Dés/allumettes/râpé ou haché de jambon (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Dés/allumettes/râpé ou haché de jambon de volaille (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.82
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Diot/cru (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.09
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Épaule de porc/cuite/choix, découennée dégraissée (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Épaule de porc/cuite/standard, découennée dégraissée (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Filet de bacon (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.18
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Fromage de tête (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.94
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Haché de volaille (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.12
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon à l'os braisé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.96
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cru (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 14.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cru/fumé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 14.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cru/fumé/allégé en matière grasse (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 14.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/choix (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/choix/avec couenne (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/choix/découenné dégraissé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/de Paris/découenné dégraissé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/fumé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/supérieur (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/supérieur/à teneur réduite en sel (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/supérieur/avec couenne (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/supérieur/découenné (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/supérieur/découenné dégraissé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon de Bayonne (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 14.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon de dinde ou Blanc de dinde en tranche (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.82
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon de porc à cuire ou Jambon à rôtir/cuire au four (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon de poulet ou Blanc de poulet en tranche (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.82
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon en croûte (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.78
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambonneau/cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.96
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon sec (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 17.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon sec/découenné/dégraissé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 17.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon sec de Parme (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 17.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon sec Serrano (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 17.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Lardon fumé/cru (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.39
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Lardon fumé/cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.16
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Lardon nature/cru (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.39
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Lardon nature/cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.16
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/boeuf et mouton/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 39.5
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/boeuf et mouton/cuite (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 39.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/buf/mouton et porc, crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 32.3
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 25
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/porc et buf/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 25
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/pur buf/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 30.4
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Mortadelle (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.18
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Mortadelle pistachée pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.18
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Mortadelle/porc et boeuf (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.18
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Mortadelle/pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.18
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Mousse de canard (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.63
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Mousse de foie de porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.51
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Mousse de foie de porc supérieure ou Crème de foie (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.51
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Museau de boeuf en vinaigrette (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 22.3
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Museau de porc vinaigrette (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 2.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Oreille de porc demi-sel (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 2.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pancetta ou Poitrine roulée sèche (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 17.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté au poivre vert (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté breton (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de foie de porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de foie de porc/supérieur (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de foie de volaille (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de foie d'oie (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de gibier (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de lapin (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.93
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté en croûte (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 12.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté ou terrine aux champignons (forestier) (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 3.17
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté ou terrine de campagne (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pied de porc demi-sel (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 3.33
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Poitrine de porc demi-sel (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.16
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Poitrine de porc/fumée/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.28
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle de poisson/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.63
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle de poisson/en sauce (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.71
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle de veau/en sauce (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.07
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle de volaille/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle de volaille/en sauce (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.18
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle nature/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 2.62
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rillettes de canard (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rillettes de poulet (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rillettes de Tours (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rillettes d'oie (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rillettes du Mans (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rillettes pur oie (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rillettes pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rillettes traditionnelles de porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rond de jambon cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.96
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rosette ou Fuseau (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.08
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rôti de volaille en salaison/cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.12
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Roulade de porc pistachée (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 10.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Salami (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.08
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Salami porc et boeuf (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.14
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Salami pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.08
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Salami type danois (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.08
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse alsacienne fumée ou Gendarme (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.05
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse cocktail (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 12.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de bière (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.23
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de foie (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 10.8
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Francfort (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.23
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de jambon pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.23
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Montbéliard (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.05
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Morteau (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.05
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Morteau/bouillie/cuite à l'eau (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.05
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Strasbourg ou Knack (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 12.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Toulouse/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Toulouse/cuite (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.3
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de volaille/façon charcutière (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 13.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de volaille/type Knack (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 15.3
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse sèche (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.14
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse viennoise/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson à l'ail (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 11.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson brioché/cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.63
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson cuit pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.77
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson de Paris (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.17
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson de Paris/fumé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.17
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson sec (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.08
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson sec aux noix et/ou noisettes (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.14
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson sec pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.08
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson sec pur porc/qualité supérieure (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.08
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Terrine de canard (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.3
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Terrine de lapin (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.12
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Andouillette/Andouille (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Boudin blanc truffé/cru (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Boudin noir (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.62
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Bresaola (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 12.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Canard/magret fumé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.84
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Cervelas (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 11.7
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Cervelas à l'ail/pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.67
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Cervelas obernois (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.67
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chair à saucisse/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.09
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chipolata/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.51
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chipolata/cuite (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 11.3
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chorizo (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.46
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Chorizo supérieur/doux ou fort, type saucisse sèche (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.4
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Confit de canard (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.75
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Confit de foie de porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 1.92
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Confit de foie de volaille (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 1.58
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Coppa (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 15.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Dés/allumettes, râpé ou haché de jambon (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.34
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Dés/allumettes, râpé ou haché de jambon de volaille (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.47
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Diot/cru (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.51
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Épaule de porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.34
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Filet de bacon (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.36
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Fromage de tête (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.44
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Haché de volaille (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon à l'os braisé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.03
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cru (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 12.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.34
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon cuit/supérieur (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.34
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon de Bayonne (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 12.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon de dinde ou Blanc de dinde en tranche (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.47
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon de porc à cuire ou Jambon à rôtir/cuire au four (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.34
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon de poulet ou Blanc de poulet en tranche (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.47
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon en croûte (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.83
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambonneau/cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.03
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Jambon sec (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 15.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Lardon fumé/cru (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.66
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Lardon fumé/cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.21
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Lardon nature/cru (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.66
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Lardon nature/cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.21
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/boeuf et mouton, crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 47.7
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/boeuf et mouton, cuite (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 47.8
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/boeuf, mouton et porc, crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 38.3
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 28.7
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/porc et boeuf, crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 28.7
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Merguez/pur boeuf, crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 36.8
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Mortadelle (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.26
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Mousse de canard (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Mousse de foie de porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.91
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Museau de boeuf en vinaigrette (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 27.1
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Museau de porc vinaigrette (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 1.98
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Oreille de porc demi-sel (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 2.33
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pancetta ou Poitrine roulée sèche (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 15.9
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté au poivre vert (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.84
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté breton (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.84
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de foie de porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.84
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de foie de volaille (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.84
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de foie d'oie (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.84
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de gibier (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.84
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté de lapin (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.14
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté en croûte (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 13.7
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté ou terrine aux champignons (forestier) (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 2.48
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pâté ou terrine de campagne (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.84
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Pied de porc demi-sel (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 3.02
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Poitrine de porc demi-sel (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.21
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Poitrine de porc/fumée, crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.56
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle de poisson/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.86
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle de poisson/en sauce (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.92
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle de veau/en sauce (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.51
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle de volaille/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.4
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle de volaille/en sauce (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.46
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Quenelle nature/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 3.57
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rillettes (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.84
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rond de jambon cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.03
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rosette ou Fuseau (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.4
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Rôti de volaille en salaison/cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.31
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Roulade de porc pistachée (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 9.51
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Salami (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.4
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Salami porc et boeuf (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.45
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse alsacienne fumée ou Gendarme (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.26
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse cocktail (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 14.7
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de bière (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.67
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de foie (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 12.5
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Francfort (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.67
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de jambon pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 8.67
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Montbéliard (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.26
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Morteau (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.26
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Morteau/bouillie/cuite à l'eau (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.26
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Strasbourg ou Knack (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 14.7
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Toulouse/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de Toulouse/cuite (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16.2
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de volaille/façon charcutière (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 13.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse de volaille/type Knack (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 17.6
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse sèche (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.45
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse suisse à cuire (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 7.26
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisse viennoise/crue (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 16
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson à l'ail (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 11.8
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson brioché/cuit (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 4.89
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson cuit pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.88
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson de Paris (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.46
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson de Paris/fumé (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.46
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson sec (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.4
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson sec aux noix et/ou noisettes (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.45
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson sec pur porc (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.4
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Saucisson sec pur porc/qualité supérieure (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.4
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Terrine de canard (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 6.18
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+  },
+  {
+    "id": null,
+    "title": "Terrine de lapin (per kg)",
+    "description": null,
+    "emissions": {
+      "co2e": 5.21
+    },
+    "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   }
 ]

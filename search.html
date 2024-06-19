@@ -71,27 +71,29 @@
       }
     }
 
-    function buildResultsTable(scenarios, massUnit, emissionType, scenarioId) {
+    function buildResultsTable(records, massUnit, emissionType, scenarioId) {
       
       const table = document.createElement('table');
 
       // Populate table rows with scenario data
-      scenarios.forEach(scenario => {
+      records.forEach(record => {
         const row = table.insertRow();
         const titleCell = row.insertCell();
         const emissionValueCell = row.insertCell();
         const referenceCell = row.insertCell();
 
-        emissionValueCell.appendChild(document.createTextNode(convertValue(scenario.emissions[emissionType], "kg", massUnit).toFixed(2) + " " + massUnit + " " + emissionUnitMap[emissionType]));
+        emissionValueCell.appendChild(document.createTextNode(convertValue(record.emissions[emissionType], "kg", massUnit).toFixed(2) + " " + massUnit + " " + emissionUnitMap[emissionType]));
+
+        const url = record.id ? `index.html?id=${record.id}` : record.url
 
         const titleLink = document.createElement('a');
-        titleLink.setAttribute('href', `index.html?id=${scenario.id}`);
-        titleLink.appendChild(document.createTextNode(scenario.title));
+        titleLink.setAttribute('href', url);
+        titleLink.appendChild(document.createTextNode(record.title));
         titleCell.appendChild(titleLink);
 
         if (scenarioId) {
           const referenceLink = document.createElement('a');
-          referenceLink.setAttribute('href', `benchmark.html?ids[]=${scenario.id}&reference_id=${scenarioId}`);
+          referenceLink.setAttribute('href', `benchmark.html?ids[]=${record.id}&reference_id=${scenarioId}`);
           referenceLink.appendChild(document.createTextNode("\u0131\u0049\u0131"));
           referenceCell.appendChild(referenceLink);
         }
