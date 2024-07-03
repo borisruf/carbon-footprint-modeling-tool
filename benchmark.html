@@ -12,6 +12,7 @@
     <style>
         div[id="header"] {
             text-align:  center;
+			height: 10vh;
         }
         div[id="arena"] {
             clear:  right;
@@ -39,7 +40,9 @@
         }
         div[name="sample"] div[name="foot"], div[name="reference"] div[name="foot"] {
             min-height:  100px;
+			
         }
+		
 
         html, body {margin:0;padding:0;height:100%;}
 
@@ -118,7 +121,7 @@
             }
 
             // compute calibration factor
-            let calibration_factor = 500/Math.max(...emissions_of_best_unit);
+            let calibration_factor = 50/Math.max(...emissions_of_best_unit);
 
             for (const [scenario_id, scenario] of Object.entries(scenarios)) {
 
@@ -133,7 +136,7 @@
 
                 let bar = sample.querySelector("div[name='bar']");
 
-                bar.style.height = emissions[best_unit]*calibration_factor + "px";
+                bar.style.height = emissions[best_unit]*calibration_factor + "vh";
 
                 let total_emission = sample.querySelector("span[name='total_emission']");
                 total_emission.innerHTML = formatTotalEmissions(emissions[best_unit], best_unit);
