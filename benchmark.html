@@ -118,7 +118,7 @@
             }
 
             // compute calibration factor
-            let calibration_factor = 500/Math.max(...emissions_of_best_unit);
+            let calibration_factor = window.screen.availHeight/2/Math.max(...emissions_of_best_unit);
 
             for (const [scenario_id, scenario] of Object.entries(scenarios)) {
 
