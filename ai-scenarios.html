@@ -74,9 +74,9 @@
 </head>
 <body>
   <h1>AI Emissions Scenario Generator</h1>
-  <form id="urlForm" onsubmit="generateURL(); return false;">
+  <form onsubmit="generateURL(); return false;">
     <label for="ids">AI model:</label>
-    <select id="ids" name="ids">
+    <select id="ids" name="ids" multiple required>
       <option value="gpt-ruf-mortas-token">GPT-3.5 (gpt-ruf-mortas-token)</option>
       <option value="gpt-pointon-token">GPT-3.5 (gpt-pointon-token)</option>
       <option value="gpt4-ruf-mortas-2b">GPT-4 (gpt4-ruf-mortas-2b)</option>
@@ -94,11 +94,11 @@
 
   <script>
     function generateURL() {
-      const ids = document.getElementById('ids').value;
+      const ids = Array.from(document.getElementById('ids').selectedOptions).map(option => `ids[]=${option.value}`).join('&');
       const factor = document.getElementById('factor').value;
       const title = document.getElementById('title').value;
 
-      let url = `https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=${ids}&factor=${factor}`;
+      let url = `/benchmark.html?${ids}&factor=${factor}`;
 
       if (title) {
         url += `&title=${encodeURIComponent(title)}`;
