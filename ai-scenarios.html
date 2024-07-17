@@ -106,7 +106,10 @@
 
       console.log(url)
 
-      window.open(url, '_blank');
+      if (window.location.hostname.includes("github.io")) {
+		window.open("/carbon-footprint-modeling-tool" + url, '_blank');
+	  } else {
+		window.open(url, '_blank');
     }
   </script>
 </body>
