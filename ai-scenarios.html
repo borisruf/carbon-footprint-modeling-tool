@@ -104,12 +104,11 @@
         url += `&title=${encodeURIComponent(title)}`;
       }
 
-      console.log(url)
-
       if (window.location.hostname.includes("github.io")) {
-		window.open("/carbon-footprint-modeling-tool" + url, '_blank');
-	  } else {
-		window.open(url, '_blank');
+		    window.open("/carbon-footprint-modeling-tool" + url, '_blank');
+	    } else {
+		    window.open(url, '_blank');
+      }
     }
   </script>
 </body>
