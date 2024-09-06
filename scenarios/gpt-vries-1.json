@@ -1,0 +1,43 @@
+{
+    "title": "Carbon footprint of one average query to GPT-3 (de Vries)",
+    "description": "In the article '<a href= 'https://asociace.ai/wp-content/uploads/2023/10/ai-spotreba.pdf' target='_blank'>The growing energy footprint of artificial intelligence</a>' Alex de Vries from VU Amsterdam School of Business and Economics refers to estimations published in a <a href='https://www.semianalysis.com/p/the-inference-cost-of-search-disruption' target='_blank'>blog post</a> by  SemiAnalysis. They suggest that OpenAI needed 3,617 of NVIDIA’s HGX A100 servers, totaling 28,936 graphics processing units (GPUs). From this, de Vries estimates a total energy demand of 564 MWh per day.<br><br> The same source also estimates that the number of daily active users is 13 million, with an average of 15 requests each, leading de Vries to estimate the average electricity consumption per request at 2.9 Wh. This aligns with a statement by Alphabet's chairman John Hennessy in February 2023, indicating that interacting with an LLM could '<a href='https://www.reuters.com/technology/tech-giants-ai-like-bing-bard-poses-billion-dollar-search-problem-2023-02-22/' target='_blank'>likely cost 10 times more than a standard keyword search,</a>' which was reported to be 0.3 Wh per query by Google in 2009.<br><br>Several reports, including one by <a href='https://www.goldmansachs.com/images/migrated/insights/pages/gs-research/gen-ai--too-much-spend,-too-little-benefit-/TOM_AI%202.0_ForRedaction.pdf' target='_blank'>Goldman Sachs Research</a> and another by <a href='https://www.bestbrokers.com/forex-brokers/ais-power-demand-calculating-chatgpts-electricity-consumption-for-handling-over-78-billion-user-queries-every-year/' target='_blank'>BestBrokers</a>, base their studies on this calculation.",
+    "scopes": [
+      {
+        "level": "Scope 3",
+        "description": {},
+        "list": [
+          {
+            "type": "component",
+            "consumer": {
+              "name": "kWh/request",
+              "description": "ChatGPT",
+              "consumptions": {
+                "electricity": {
+                  "value": "0.0029",
+                  "unit": "kWh",
+                  "base_unit": "request",
+                  "reference_url": "https://asociace.ai/wp-content/uploads/2023/10/ai-spotreba.pdf"
+                }
+              }
+            },
+            "quantity": "1",
+            "quantity_unit": "request",
+            "source": {
+              "name": "Western USA electricity grid",
+              "type": "electricity",
+              "description": "(2021)",
+              "emissions": {
+                "co2e": {
+                  "value": "0.322167",
+                  "unit": "kg",
+                  "base_unit": "kWh",
+                  "reference_url": "https://www.epa.gov/egrid/download-data"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

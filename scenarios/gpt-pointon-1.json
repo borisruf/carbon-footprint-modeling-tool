@@ -1,6 +1,6 @@
 {
   
-  "title": "Carbon footprint of one average query to GPT-3",
+  "title": "Carbon footprint of one average query to GPT-3 (Pointon)",
   "description": "Chris Pointon assumes that each query to ChatGPT generates in average <a href='https://medium.com/@chrispointon/the-carbon-footprint-of-chatgpt-e1bc14e4cc2a' target='_blank'>30 words</a>.",
   "scopes": [
     {
