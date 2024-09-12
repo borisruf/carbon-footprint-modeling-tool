@@ -1,6 +1,6 @@
 {
     "title": "1 token of Mistral Small in Europe",
-    "description": "The <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>Hugging Face LLM-Perf Leaderboard</a> benchmarks the performance of large language models (LLMs). Energy consumption is measured using <a href='https://mlco2.github.io/codecarbon/index.html' target='_blank'>CodeCarbon</a>. We suggest that <a href='https://openrouter.ai/models/mistralai/mistral-small/api'  target='_blank'>Mistral Small is equivalent to Mistrall 7B v0.1</a> on Huggingface. We observe that the most energy efficient Mistral 7B model with 7B parameters handles 387,772 completion tokens/kWh. Per token, that's 1/163934 = <a href='https://www.google.com/search?q=1%2F387772' target='_blank'>2.58e-6</a> kWh.",
+    "description": "The <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>Hugging Face LLM-Perf Leaderboard</a> benchmarks the performance of large language models (LLMs). Energy consumption is measured using <a href='https://mlco2.github.io/codecarbon/index.html' target='_blank'>CodeCarbon</a>. We suggest that <a href='https://openrouter.ai/models/mistralai/mistral-small/api'  target='_blank'>Mistral Small is equivalent to Mistrall 7B v0.1</a> on Huggingface. We observe that the most energy efficient Mistral 7B model with 7B parameters handles 387,772 completion tokens/kWh.<br/><br/>Further note that in <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>the Hugging Face experiment</a>, the prompt size is 256 tokens, and the output size is 256 tokens, too. However, the \"Energy\" value refers to 1 generated completion token. As there is no reason to believe that prompt tokens consume no energy, we apply factor <b>0.5x</b> here, but use both prompt and completion tokens for our calculation.<br/><br/>Per token on Mistral small, that's (1/387772)*0.5 = <a href='https://www.google.com/search?q=%281%2F%28387772%29%2F2' target='_blank'>1.29e-6</a> kWh.",
     "scopes": [
       {
         "level": "Scope 3",
@@ -13,7 +13,7 @@
               "description": "Mistral 7B v0.1",
               "consumptions": {
                 "electricity": {
-                  "value": "0.00000257883",
+                  "value": "0.00000128941",
                   "unit": "kWh",
                   "base_unit": "token",
                   "reference_url": "https://huggingface.co/spaces/optimum/llm-perf-leaderboard"
