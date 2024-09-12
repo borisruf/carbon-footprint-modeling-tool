@@ -1,5 +1,5 @@
 {
-  "title": "Carbon footprint of one average query to GPT-3",
+  "title": "Carbon footprint of one average query to GPT-3 (Ruf & Mortas)",
   "description": "We assume that each query to ChatGPT generates in average 1,319 tokens.",
   "scopes": [
     {

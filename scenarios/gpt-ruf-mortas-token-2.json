@@ -1,0 +1,17 @@
+{
+  "title": "GPT-3 emission per token (Ruf & Mortas)",
+  "description": "In the absence of reliable data on the energy consumption of GPT-3, this information is extrapolated from the freely available language model <a href=\"https://huggingface.co/meta-llama/Meta-Llama-3-8B\" target=\"_blank\">Llama 3</a>. The number of parameters in Llama 3 is 8 billion, whereas GPT-3 has a much larger parameter count of <a href='https://openai.com/research/language-models-are-few-shot-learners' target='_blank'>175 billion</a>.<br/><br/>Therefore, we assume that submitting a query to GPT-3 requires <b>21.9x</b> more energy.<br/><br/>Further note that in <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>the Hugging Face experiment</a>, the prompt size is 256 tokens, and the output size is 256 tokens, too. However, the \"Energy\" value refers to 1 generated completion token. As there is no reason to believe that prompt tokens consume no energy, we apply factor <b>0.5x</b> here, but use both prompt and completion tokens for our calculation.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 10.95,
+          "scenario_id": "gpt-ruf-mortas-3b"
+        }
+      ]
+    }
+  ]
+}

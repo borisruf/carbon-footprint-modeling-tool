@@ -1,0 +1,17 @@
+{
+  "title": "Monthly carbon footprint of ChatGPT (de Vries)",
+  "description": "One of the recent articles by Patel and Ahmed [31] assumes the number of active users for chatGPT to be 13 million and it was also assumed that 15 queries were made by each of the active users per day. = 195000000 per day",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 5850000000,
+          "scenario_id": "gpt-vries-1"
+        }
+      ]
+    }
+  ]
+}
