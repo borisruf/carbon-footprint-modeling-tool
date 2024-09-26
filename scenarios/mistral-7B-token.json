@@ -1,0 +1,43 @@
+{
+    "title": "Mistral 7B emission per token (Ruf & Mortas)",
+    "description": "The Hugging Face <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>LLM-Perf Leaderboard</a> does provide energy information for <a href='https://huggingface.co/mistralai/Mistral-7B-v0.1' target='_blank'>Mistral 7B v0.1</a> which generates 387,772 completion tokens/kWh in its most energy efficient version and has <a href='https://docs.mistral.ai/getting-started/open_weight_models/#sizes'>7.3B parameters</a>.",
+    "scopes": [
+      {
+        "level": "Scope 3",
+        "description": {},
+        "list": [
+          {
+            "type": "component",
+            "consumer": {
+              "name": "kWh/token",
+              "description": "Mistral 7B v0.1",
+              "consumptions": {
+                "electricity": {
+                  "value": "0.00000257883",
+                  "unit": "kWh",
+                  "base_unit": "token",
+                  "reference_url": "https://huggingface.co/spaces/optimum/llm-perf-leaderboard"
+                }
+              }
+            },
+            "quantity": "1",
+            "quantity_unit": "h",
+            "source": {
+              "name": "Western USA electricity grid",
+              "type": "electricity",
+              "description": "(2021)",
+              "emissions": {
+                "co2e": {
+                  "value": "0.322167",
+                  "unit": "kg",
+                  "base_unit": "kWh",
+                  "reference_url": "https://www.epa.gov/egrid/download-data"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
