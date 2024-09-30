@@ -38,6 +38,7 @@
       cursor: pointer;
       transition: background-color 0.3s;
       font-weight: bold;
+      font-size: 18px;
     }
     input[type="submit"]:hover {
       background-color: #45a049;
@@ -70,6 +71,21 @@
     visibility: visible;
     opacity: 1;
   }
+
+  div.additional-field {
+    background-color: rgb(237, 237, 237);
+    padding:5px;
+    font-size: 13px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  div.additional-field input {
+    width: 250px;
+  }
+  a#additionalFieldsLink {
+    color: grey;
+  }
   </style>
 </head>
 <body>
@@ -87,8 +103,27 @@
       <option value="mistral-small-ruf-mortas-token">Mistral Small (mistral-small-ruf-mortas-token)</option>
     </select>
 
-    <label for="factor">Total number of tokens <span class="tooltip">(info)<span class="tooltiptext">Prompt and completion tokens of all requests.</span>:</span></label>
+    <label for="factor">Total number of tokens: <a href="#" id="additionalFieldsLink">(expand)</a></label>
     <input type="number" id="factor" name="factor" required>
+
+    <div class="additional-field" style="display: none;">
+
+      <label for="usersPerDay">Number of users/day:</label>
+      <input type="number" id="usersPerDay" name="usersPerDay">
+
+      <label for="tokensPerInstruction">Number of tokens per instruction prompt <span class="tooltip">?⃝<span class="tooltiptext">Extra input provided to the model that includes behavioral settings and is not visible to the user.</span>:</label>
+      <input type="number" id="tokensPerInstruction" name="tokensPerInstruction">
+
+      <label for="maxUserRequests">Max number of user requests/day:</label>
+      <input type="number" id="maxUserRequests" name="maxUserRequests">
+
+      <label for="maxPromptTokens">Max number of prompt tokens<span class="tooltip">?⃝<span class="tooltiptext">The maximum number of tokens that a user can input in a single request.</span>:</label>
+      <input type="number" id="maxPromptTokens" name="maxPromptTokens">
+
+      <label for="maxCompletionTokens">Max number of completion tokens <span class="tooltip">?⃝<span class="tooltiptext">The maximum number of tokens the response can consist of.</span>:</label>
+      <input type="number" id="maxCompletionTokens" name="maxCompletionTokens">
+
+    </div>
 
     <label for="title">Title (optional):</label>
     <input type="text" id="title" name="title">
@@ -114,6 +149,41 @@
 		    window.open(url, '_blank');
       }
     }
+
+    function clearMetaFields() {
+      document.getElementById('usersPerDay').value = '';
+      document.getElementById('tokensPerInstruction').value = '';
+      document.getElementById('maxUserRequests').value = '';
+      document.getElementById('maxPromptTokens').value = '';
+      document.getElementById('maxCompletionTokens').value = '';
+    }
+
+    function generateFactor() {
+      const usersPerDay = document.getElementById('usersPerDay').value;
+      const tokensPerInstruction = document.getElementById('tokensPerInstruction').value;
+      const maxUserRequests = document.getElementById('maxUserRequests').value;
+      const maxPromptTokens = document.getElementById('maxPromptTokens').value;
+      const maxCompletionTokens = document.getElementById('maxCompletionTokens').value;
+
+      const factor = usersPerDay * maxUserRequests * (Number(tokensPerInstruction) + Number(maxPromptTokens) + Number(maxCompletionTokens));
+      document.getElementById('factor').value = factor;
+    }
+
+    document.getElementById('additionalFieldsLink').onclick = function(e) {
+      e.preventDefault();
+      var additionalFields = document.querySelectorAll('.additional-field');
+      for (var i = 0; i < additionalFields.length; i++) {
+        additionalFields[i].style.display = 'block';
+      }
+      this.style.display = 'none';
+    };
+
+    document.getElementById('usersPerDay').oninput = generateFactor;
+    document.getElementById('tokensPerInstruction').oninput = generateFactor;
+    document.getElementById('maxUserRequests').oninput = generateFactor;
+    document.getElementById('maxPromptTokens').oninput = generateFactor;
+    document.getElementById('maxCompletionTokens').oninput = generateFactor;
+    document.getElementById('factor').oninput = clearMetaFields;
   </script>
 </body>
 </html>
