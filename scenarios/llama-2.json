@@ -1,5 +1,5 @@
 {
-    "title": "Llama 2 emission per token",
+    "title": "Llama 2 emission per token (Hugging Face)",
     "description": "The <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>Hugging Face LLM-Perf Leaderboard</a> benchmarks the performance of large language models (LLMs). Energy consumption is measured using <a href='https://mlco2.github.io/codecarbon/index.html' target='_blank'>CodeCarbon</a>. We observe that the most energy efficient Llama 2 model with 70B parameters handles 163,934 completion tokens/kWh. Per token, that's 1/163934 = <a href='https://www.google.com/search?q=1%2F163934' target='_blank'>6.1e-6</a> kWh.",
     "scopes": [
       {

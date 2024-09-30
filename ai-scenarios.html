@@ -76,10 +76,12 @@
   <h1>AI Emissions Scenario Generator</h1>
   <form onsubmit="generateURL(); return false;">
     <label for="ids">AI model:</label>
-    <select id="ids" name="ids" multiple required>
-      <option value="gpt-ruf-mortas-token">GPT-3.5 (gpt-ruf-mortas-token)</option>
-      <option value="gpt-pointon-token">GPT-3.5 (gpt-pointon-token)</option>
-      <option value="gpt4-ruf-mortas-2b">GPT-4 (gpt4-ruf-mortas-2b)</option>
+    <select id="ids" name="ids" style="height:115px" multiple required>
+      <option value="gpt-ruf-mortas-token">OpenAI GPT-3.5 (gpt-ruf-mortas-token)</option>
+      <option value="gpt-pointon-token">OpenAI GPT-3.5 (gpt-pointon-token)</option>
+      <option value="gpt4-ruf-mortas-2">OpenAI GPT-4 (gpt4-ruf-mortas-2)</option>
+      <option value="llama-2">Meta Llama 2</option>
+      <option value="llama-3">Meta Llama 3</option>
       <option value="falcon-180b-ruf-mortas-token">Falcon 180B (falcon-180b-ruf-mortas-token)</option>
       <option value="mistral-7B-token">Mistral 7B v0.1 (mistral-7B-token)</option>
       <option value="mistral-small-ruf-mortas-token">Mistral Small (mistral-small-ruf-mortas-token)</option>
