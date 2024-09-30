@@ -9,7 +9,7 @@
         {
           "type": "link",
           "quantity": 1.25,
-          "scenario_id": "gpt-ruf-mortas-3"
+          "scenario_id": "llama-2"
         }
       ]
     }
