@@ -29,13 +29,22 @@ The viewer renders the scenario data which is either stored in a JSON file that 
 Details on consumption and emissions can be toggled by clicking on the respective title. If a data source was included, consumer components 
 or energy sources can be changed by clicking the pencil icon <img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/pencil-square.svg" width="15"/>. The total of the emissions per scope is shown in the yellow circle on the bottom right. It is updated instantly when settings in the scenario change. The emissions of nested scenarios are calculated recursively. 
 
-Example scenarios:
+#### Example scenarios:
 - [Streaming a 30-minute video [IEA updated, UK]](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24.json))
 - [Streaming a 30-minute video [IEA updated, Laptop and HD]](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc.json))
 - [Singapore (SIN) to Paris (CDG) round-trip](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-0065da59-7785-4eed-8a11-c73b70cf798e)  ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-0065da59-7785-4eed-8a11-c73b70cf798e.json))
 - [Nested sample of personal carbon footprint](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-265789b8-d7d1-442f-ba79-e627b9226c86) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-265789b8-d7d1-442f-ba79-e627b9226c86.json))
 - [Cargo ship emissions portfolio](https://borisruf.github.io/carbon-footprint-modeling-tool/?id=scenario-d9de099f-a408-4526-aec2-f781c9972b42) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-d9de099f-a408-4526-aec2-f781c9972b42.json))
-- [Monthly operation of ChatGPT](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=scenario-a5f20019-1f40-4f41-b2a7-f9db5346a23f) ([source](https://github.com/borisruf/carbon-footprint-modeling-tool/blob/main/scenarios/scenario-a5f20019-1f40-4f41-b2a7-f9db5346a23f.json))
+- [Monthly operation of ChatGPT](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids%5B%5D=gpt-ruf-mortas-1&ids%5B%5D=gpt-pointon-1&ids%5B%5D=gpt-selvan-1b&ids%5B%5D=gpt-vries-1&factor=590000000&title=Monthly%20carbon%20footprint%20of%20ChatGPT%20(several%20scenarios))
+
+#### AI model inferences:
+- [OpenAI GPT-3.5](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt-ruf-mortas-token&ids[]=gpt-pointon-token&factor=1&title=Carbon%20emission%20of%20GPT-3.5%20per%20token%20(several%20scenarios))
+- [OpenAI GPT-4](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=gpt4-ruf-mortas-2b&emission_type=co2e)
+- [Meta Llama 2](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=llama-2&emission_type=co2e)
+- [Meta Llama 3](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=llama-3&emission_type=co2e)
+- [Mistral 7B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=mistral-7B-token&emission_type=co2e)
+- [Mistral Small](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=mistral-small-ruf-mortas-token&emission_type=co2e)
+- [Falcon 180B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=falcon-180b-ruf-mortas-token&emission_type=co2e)
 
 ---
 
@@ -113,7 +122,7 @@ Carbon emission scenarios are complex and interconnected. Consequently, the data
         {
           "type": "link",
           "quantity": 2.5,
-          "scenario_id": "gpt-ruf-mortas-3"
+          "scenario_id": "llama-2"
         }
       ]
     }
