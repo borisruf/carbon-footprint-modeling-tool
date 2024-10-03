@@ -1,5 +1,5 @@
 {
-  "title": "GPT-4 estimated using Llama 2",
+  "title": "GPT-4 emission per token (Ruf & Mortas)",
   "description": "In the absence of reliable data on the energy consumption of GPT-4, this information is extrapolated from the estimations made for GPT-3. The number of parameters of GPT-3 is 175 billion, whereas GPT-4 might have a much larger parameter count of <a href='https://the-decoder.com/gpt-4-architecture-datasets-costs-and-more-leaked/' target='_blank'>1.76 trillion</a>.<br/><br/>Therefore, we assume that submitting a query to GPT-4 requires <b>10x</b> more energy.",
   "scopes": [
     {
@@ -9,7 +9,7 @@
         {
           "type": "link",
           "quantity": 10,
-          "scenario_id": "gpt-ruf-mortas-token"
+          "scenario_id": "llama-2"
         }
       ]
     }

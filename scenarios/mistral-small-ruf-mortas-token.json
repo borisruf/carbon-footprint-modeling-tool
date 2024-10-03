@@ -1,0 +1,18 @@
+{
+    "title": "Mistral Small emission per token (Ruf & Mortas)",
+    "description": "The Mistral Small model is not listed on the Hugging Face <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>LLM-Perf Leaderboard</a> which benchmarks the performance of large language models (LLMs) and measures the energy consumption using <a href='https://mlco2.github.io/codecarbon/index.html' target='_blank'>CodeCarbon</a>. However, as Mistral <a href='https://docs.mistral.ai/getting-started/open_weight_models/'>open source</a> the weights of their models, we know that Mistral Small has <a href='https://docs.mistral.ai/getting-started/open_weight_models/#sizes'>22B parameters</a>.<br/><br/>The <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>leaderboard</a> does provide energy information for <a href='https://huggingface.co/mistralai/Mistral-7B-v0.1' target='_blank'>Mistral 7B v0.1</a> which generates 387,772 completion tokens/kWh in its most energy efficient version and has <a href='https://docs.mistral.ai/getting-started/open_weight_models/#sizes'>7.3B parameters</a>. Accordingly, we propose to extrapolate this data and approximate the energy consumption of Mistral Small by applying a factor of <b>3x</b>.<br/><br/>Further note that in <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>the Hugging Face experiment</a>, the prompt size is 256 tokens, and the output size is 256 tokens, too. However, the \"Energy\" value refers to 1 generated completion token. As there is no reason to believe that prompt tokens consume no energy, we apply factor <b>0.5x</b> here, but use both prompt and completion tokens for our calculation.<br/><br/>In conclusion, we suggest to apply a factor of <b><a href='https://www.google.com/search?q=22/7.3*0.5' target='_blank'>1.5</a>x</b> to estimate the energy consumption of Mistral Small.",
+    "scopes": [
+      {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 1.5,
+          "scenario_id": "mistral-7B-token"
+        }
+      ]
+    }
+    ]
+  }
+  
