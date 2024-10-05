@@ -21,7 +21,7 @@
               }
             },
             "quantity": "1",
-            "quantity_unit": "h",
+            "quantity_unit": "token",
             "source": {
               "name": "Western USA electricity grid",
               "type": "electricity",
