@@ -1,0 +1,43 @@
+{
+    "title": "Llama 3 8B emission per token (Hugging Face)",
+    "description": "The <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>Hugging Face LLM-Perf Leaderboard</a> benchmarks the performance of large language models (LLMs). Energy consumption is measured using <a href='https://mlco2.github.io/codecarbon/index.html' target='_blank'>CodeCarbon</a>. We observe that the most energy efficient Llama 3 model with 8B parameters handles 761,789 completion tokens/kWh.<br/><br/>Further note that in <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>the Hugging Face experiment</a>, the prompt size is 256 tokens, and the output size is 256 tokens, too. However, the \"Energy\" value refers to 1 generated completion token. As there is no reason to believe that prompt tokens consume no energy, we apply factor <b>0.5x</b> here, but use both prompt and completion tokens for our calculation.<br/><br/>Per token, that's (1/761789)x0.5 = <a href='https://www.google.com/search?q=%281%2F761789%29x0.5' target='_blank'>6.6e-7</a> kWh.",
+    "scopes": [
+      {
+        "level": "Scope 3",
+        "description": {},
+        "list": [
+          {
+            "type": "component",
+            "consumer": {
+              "name": "kWh/token",
+              "description": "Llama 3 8B parameters",
+              "consumptions": {
+                "electricity": {
+                  "value": "0.000000656349724",	  
+                  "unit": "kWh",
+                  "base_unit": "token",
+                  "reference_url": "https://huggingface.co/spaces/optimum/llm-perf-leaderboard"
+                }
+              }
+            },
+            "quantity": "1",
+            "quantity_unit": "token",
+            "source": {
+              "name": "Western USA electricity grid",
+              "type": "electricity",
+              "description": "(2021)",
+              "emissions": {
+                "co2e": {
+                  "value": "0.322167",
+                  "unit": "kg",
+                  "base_unit": "kWh",
+                  "reference_url": "https://www.epa.gov/egrid/download-data"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

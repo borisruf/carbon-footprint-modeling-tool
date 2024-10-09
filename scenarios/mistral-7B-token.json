@@ -1,6 +1,6 @@
 {
     "title": "Mistral 7B emission per token (Hugging Face)",
-    "description": "The Hugging Face <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>LLM-Perf Leaderboard</a> does provide energy information for <a href='https://huggingface.co/mistralai/Mistral-7B-v0.1' target='_blank'>Mistral 7B v0.1</a> which generates 387,772 completion tokens/kWh in its most energy efficient version and has <a href='https://docs.mistral.ai/getting-started/models/weights/#sizes'>7.3B parameters</a>.",
+    "description": "The Hugging Face <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>LLM-Perf Leaderboard</a> does provide energy information for <a href='https://huggingface.co/mistralai/Mistral-7B-v0.1' target='_blank'>Mistral 7B v0.1</a> which generates 387,772 completion tokens/kWh in its most energy efficient version and has <a href='https://docs.mistral.ai/getting-started/models/weights/#sizes'>7.3B parameters</a>.<br/><br/>Further note that in <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>the Hugging Face experiment</a>, the prompt size is 256 tokens, and the output size is 256 tokens, too. However, the \"Energy\" value refers to 1 generated completion token. As there is no reason to believe that prompt tokens consume no energy, we apply factor <b>0.5x</b> here, but use both prompt and completion tokens for our calculation.<br/><br/>Per token, that's (1/720549)x0.5 = <a href='https://www.google.com/search?q=%281%2F720549%29x0.5' target='_blank'>6.9e-7</a> kWh.",
     "scopes": [
       {
         "level": "Scope 3",
@@ -13,7 +13,7 @@
               "description": "Mistral 7B v0.1",
               "consumptions": {
                 "electricity": {
-                  "value": "0.00000257883",
+                  "value": "0.000000693915334",
                   "unit": "kWh",
                   "base_unit": "token",
                   "reference_url": "https://huggingface.co/spaces/optimum/llm-perf-leaderboard"

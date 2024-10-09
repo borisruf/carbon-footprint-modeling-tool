@@ -1,0 +1,18 @@
+{
+    "title": "Mistral Large 2 emission per token (Ruf & Mortas)",
+    "description": "In the absence of energy consumption data of Mistral Large 2, this information is extrapolated from available data on <a href=\"https://huggingface.co/mistralai/Mistral-7B-v0.1\" target=\"_blank\">Mistral 7B v0.1</a><br/><br/>The number of parameters in Mistral 7B is 7.3 billion, whereas Mistral Large 2 has a much larger parameter count of <a href=\"https://docs.mistral.ai/getting-started/models/weights/#sizes\" target=\"blank\"> 123 billion</a>.<br/><br/>Therefore, we assume that submitting a query to Mistral Large 2 requires <b><a href=\"https://www.google.com/search?q=123/7.3\" target=\"blank\">17x</a></b> more energy.",
+    "scopes": [
+      {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 17,
+          "scenario_id": "mistral-7B-token"
+        }
+      ]
+    }
+    ]
+  }
+  
