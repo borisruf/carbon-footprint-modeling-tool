@@ -1,0 +1,18 @@
+{
+  "title": "GPT-4 emission per token (Ruf & Mortas)",
+  "description": "In the absence of reliable data on the energy consumption of GPT-4, this information is extrapolated from the estimations made for GPT-3.5. The number of parameters of GPT-3.5 is 175 billion, whereas GPT-4 might have a much larger parameter count, considering it as a <a href=\"https://x.com/swyx/status/1671272883379908608\" target=\"blank\">Mixture of Expert (MoE) of 8x220 billion parameters</a>.<br/><br/>However, in the <a href=\"https://docs.mistral.ai/getting-started/models/weights/#sizes\" target=\"blank\">Mistral models weights documentation</a>, we can see that for MoE models, the real number of parameters is about 80% of the theorical parameters if we multiple the number of experts by their number of parameters. This means that some parameters are shared between the experts:<br/><br/><ul><li><b>Mixtral-8x7B-v0.1</b>: 8 experts x 7 billion parameters = <a href=\"https://www.google.com/search?q=8x7\" target=\"blank\">56</a> billions theorical parameters, but \"Number of parameters\" in the documentation is 46.7 billion. Then, the number of parameters is <a href=\"https://www.google.com/search?q=46.7/56\" target=\"blank\">83%</a> of the total thoerical number of parameters of the experts.</li><li><b>Mixtral-8x22B-v0.3</b>: 8 experts x 22 billion parameters = <a href=\"https://www.google.com/search?q=8x22\" target=\"blank\">176</a> but \"Number of parameters\" in the documentation is 140.6 billion. Then, the number of parameters is <a href=\"https://www.google.com/search?q=140.6/176\" target=\"blank\">80%</a> of the total thoerical number of parameters of the experts.</li></ul><br/><br/>So for GPT-4, the gossips are 8 experts of each 220 billion parameters, which involves a theorical total number of parameters of <a href=\"https://www.google.com/search?q=8x220\" target=\"blank\">1760</a> billion. But based on our asumptions, the real number of parameters could be 80% of 1760 billions, or <a href=\"https://www.google.com/search?q=1760x0.8\" target=\"blank\">1408</a> billions.<br/><br/>Also, still in the <a href=\"https://docs.mistral.ai/getting-started/models/weights/#sizes\" target=\"blank\">Mistral models weights documentation</a>the number of actived parameters during a query for a MoE is lower, around 28% of the real number of parameters:<ul><li><b>Mixtral-8x7B-v0.1</b>: 46.7 billion parameters but only 12.9 billion are activated, which represent <a href=\"https://www.google.com/search?q=12.9/46.7\" target=\"blank\">28%</a> of the real number of parameters.<li/><li><b>Mixtral-8x22B-v0.3</b>: 140.6 billion parameters but only 39.1 billion are activated, which also represent <a href=\"https://www.google.com/search?q=140.6/39.1\" target=\"blank\">28%</a> of the real number of parameters.</li></ul><br/><br/>Therefore, we assume than GPT-4 activates 28% of it's real number of parameters during a query, or <a href=\"https://www.google.com/search?q=1408x0.28\" target=\"blank\">394</a> billions of them.<br/><br/>Submitting a query to GPT-4 requires <a href=\"https://www.google.com/search?q=394/175\" target=\"blank\"><b>2.25x</b></a> more energy than for GPT-3.5.",
+
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 2.25,
+          "scenario_id": "gpt3-ruf-mortas-llama-2-7B-token"
+        }
+      ]
+    }
+  ]
+}

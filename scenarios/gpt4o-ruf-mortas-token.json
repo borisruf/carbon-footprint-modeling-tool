@@ -1,0 +1,17 @@
+{
+  "title": "GPT-4o emission per token (Ruf & Mortas)",
+  "description": "In the absence of reliable data on the energy consumption of GPT-4o, this information is extrapolated from the most optimistic estimation made for GPT-4. We don't have any official information on the number of parameters of GPT-4o, so we can make a guess based on the price of tokens processing for both models. However, you need a <a href=\"https://www.greaterwrong.com/posts/PLf7tvzujaJ2A2r7N/what-the-cost-difference-in-processing-input-vs-output\" target=\"blank\">lot more memory/memory bandwidth to process an output token than an input token</a>, because to process an output token you also need to fit the KV cache in memory. This known, we'll make our estimations based on the price of output tokens.	The <a href=\"https://openai.com/api/pricing/\" target=\"blank\">price</a> of 1 milion output token of gpt-4-turbo is $30, whereas for gpt-4o it is $10.<br/><br/>Therefore, we assume that submitting a query to GPT-4o requires <b><a href=\"https://www.google.com/search?q=10/30\" target=\"blank\">3x</a> less</b> energy than for GPT-4.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 0.33,
+          "scenario_id": "gpt4-ruf-mortas-llama-2-7B-token"
+        }
+      ]
+    }
+  ]
+}
