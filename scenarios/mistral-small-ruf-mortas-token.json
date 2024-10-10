@@ -9,7 +9,7 @@
         {
           "type": "link",
           "quantity": 3,
-          "scenario_id": "mistral-7B-token"
+          "scenario_id": "mistral-7b-token"
         }
       ]
     }
