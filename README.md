@@ -40,8 +40,8 @@ or energy sources can be changed by clicking the pencil icon <img src="https://r
 #### AI model inferences:
 - [OpenAI GPT-3.5](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt-ruf-mortas-token&ids[]=gpt-pointon-token&factor=1&title=Carbon%20emission%20of%20GPT-3.5%20per%20token%20(several%20scenarios))
 - [OpenAI GPT-4](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=gpt4-ruf-mortas-2&emission_type=co2e)
-- [Meta Llama 2](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=llama-2&emission_type=co2e)
-- [Meta Llama 3](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=llama-3&emission_type=co2e)
+- [Meta Llama 2 7B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=llama2-7b-token&emission_type=co2e)
+- [Meta Llama 3 8B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=llama3-8b-token&emission_type=co2e)
 - [Mistral 7B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=mistral-7b-token&emission_type=co2e)
 - [Mistral Small](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=mistral-small-ruf-mortas-token&emission_type=co2e)
 - [Mistral Large 2](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=mistral-large-2-ruf-mortas-token&emission_type=co2e)
