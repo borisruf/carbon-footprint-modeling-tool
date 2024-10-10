@@ -38,7 +38,7 @@ or energy sources can be changed by clicking the pencil icon <img src="https://r
 - [Monthly operation of ChatGPT](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids%5B%5D=gpt-ruf-mortas-1&ids%5B%5D=gpt-pointon-1&ids%5B%5D=gpt-selvan-1b&ids%5B%5D=gpt-vries-1&factor=590000000&title=Monthly%20carbon%20footprint%20of%20ChatGPT%20(several%20scenarios))
 
 #### AI model inferences:
-- [OpenAI GPT-3.5](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt-ruf-mortas-token&ids[]=gpt-pointon-token&factor=1&title=Carbon%20emission%20of%20GPT-3.5%20per%20token%20(several%20scenarios))
+- [OpenAI GPT-3.5](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt3-ruf-mortas-llama2-7b-token&ids[]=gpt3-ruf-mortas-llama2-70b-token&ids[]=gpt3-ruf-mortas-llama3-8b-token&ids[]=gpt-pointon-token&factor=1&title=Carbon%20emission%20of%20GPT-3.5%20per%20token%20(several%20scenarios))
 - [OpenAI GPT-4](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=gpt4-ruf-mortas-2&emission_type=co2e)
 - [Meta Llama 2 7B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=llama2-7b-token&emission_type=co2e)
 - [Meta Llama 3 8B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=llama3-8b-token&emission_type=co2e)
