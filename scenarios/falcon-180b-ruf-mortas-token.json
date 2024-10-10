@@ -1,6 +1,6 @@
 {
   "title": "Falcon 180B emission per token (Ruf & Mortas)",
-  "description": "In the absence of energy consumption data of Falcon 180B, this information is extrapolated from available data on <a href=\"https://huggingface.co/tiiuae/falcon-7b\" target=\"_blank\">Falcon 7B</a>. The number of parameters in Falcon 7B is 7 billion, whereas Falcon 180B has a much larger parameter count of 180 billion</a>.<br/><br/>Therefore, we assume that submitting a query to Falcon 180B requires <b>25x</b> more energy.<br/><br/>Further note that in <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>the Hugging Face experiment</a>, the prompt size is 256 tokens, and the output size is 256 tokens, too. However, the \"Energy\" value refers to 1 generated completion token. As there is no reason to believe that prompt tokens consume no energy, we apply factor <b>0.5x</b> here, but use both prompt and completion tokens for our calculation.",
+  "description": "In the absence of energy consumption data of Falcon 180B, this information is extrapolated from available data on <a href=\"https://huggingface.co/tiiuae/falcon-7b\" target=\"_blank\">Falcon 7B</a>. The number of parameters in Falcon 7B is 7 billion, whereas Falcon 180B has a much larger parameter count of 180 billion</a>.<br/><br/>Therefore, we assume that submitting a query to Falcon 180B requires <b><a href=\"https://www.google.com/search?q=180/7\" target=\"blank\">25x</a></b> more energy.",
   "scopes": [
     {
       "level": "Scope 3",
@@ -8,8 +8,8 @@
         "list": [
         {
           "type": "link",
-          "quantity": 12.5,
-          "scenario_id": "falcon-7b"
+          "quantity": 25,
+          "scenario_id": "falcon-7b-token"
         }
       ]
     }
