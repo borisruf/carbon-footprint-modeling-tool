@@ -48,6 +48,8 @@ or energy sources can be changed by clicking the pencil icon <img src="https://r
 - [Falcon 7B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=falcon-7b-token&emission_type=co2e)
 - [Falcon 180B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=falcon-180b-ruf-mortas-token&emission_type=co2e)
 
+#### Tools:
+- [AI Emissions Scenario Generator](https://borisruf.github.io/carbon-footprint-modeling-tool/ai-scenarios.html)
 ---
 
 ### Create a scenario
