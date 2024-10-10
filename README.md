@@ -124,7 +124,7 @@ Carbon emission scenarios are complex and interconnected. Consequently, the data
         {
           "type": "link",
           "quantity": 2.5,
-          "scenario_id": "llama-2"
+          "scenario_id": "llama2-7b-token"
         }
       ]
     }

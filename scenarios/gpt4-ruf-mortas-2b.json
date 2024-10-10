@@ -9,7 +9,7 @@
         {
           "type": "link",
           "quantity": 25.5,
-          "scenario_id": "llama-2"
+          "scenario_id": "llama2-7b-token"
         }
       ]
     }

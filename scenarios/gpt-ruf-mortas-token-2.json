@@ -9,7 +9,7 @@
         {
           "type": "link",
           "quantity": 10.95,
-          "scenario_id": "llama-3"
+          "scenario_id": "llama3-8b-token"
         }
       ]
     }
