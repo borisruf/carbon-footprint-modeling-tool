@@ -1,0 +1,17 @@
+{
+  "title": "GPT-3.5 emission per token (Ruf & Mortas)",
+  "description": "In the absence of reliable data on the energy consumption of GPT-3.5, this information is extrapolated from the freely available language model <a href=\"https://huggingface.co/meta-llama/Llama-2-7b-hf\" target=\"_blank\">Llama 2 7B</a>. The number of parameters in Llama 2 7B is 7 billion, whereas GPT-3.5 has a much larger parameter count of <a href='https://openai.com/research/language-models-are-few-shot-learners' target='_blank'>175 billion</a>.<br/><br/>Therefore, we assume that submitting a query to GPT-3 requires <b><a href=\"https://www.google.com/search?q=175/7\" target=\"blank\">25x</a></b> more energy.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 25,
+          "scenario_id": "llama2-7b-token"
+        }
+      ]
+    }
+  ]
+}
