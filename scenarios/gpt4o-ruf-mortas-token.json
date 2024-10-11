@@ -1,0 +1,17 @@
+{
+  "title": "GPT-4o emission per token (Ruf & Mortas)",
+  "description": "Official information about the architecture of GPT-4o is not available. In this scenario, we propose using our most optimistic energy consumption estimate made for GPT-4 and utilizing the price difference of both models as a proxy.<br/><br/>OpenAI charges <a href=\"https://openai.com/api/pricing/\" target=\"_blank\">different prices</a> for input and output tokens. Due to the mechanism of key-value (KV) caching, output tokens need <a href=\"https://www.greaterwrong.com/posts/PLf7tvzujaJ2A2r7N/what-the-cost-difference-in-processing-input-vs-output\" target=\"blank\">more memory</a> and therefore consume more energy than input tokens. For this reason, use the price for output tokens as proxy.</br></br>Currently, 1 million output tokens of GPT-4-turbo cost $30, while they cost $10 for GPT-4o. Therefore, we assume a query to GPT-4o to require <b><a href=\"https://www.google.com/search?q=10/30\" target=\"blank\">3x</a></b> less energy than for GPT-4.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 0.33,
+          "scenario_id": "gpt4-ruf-mortas-llama2-7b-token"
+        }
+      ]
+    }
+  ]
+}
