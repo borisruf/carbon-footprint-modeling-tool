@@ -23,13 +23,6 @@
         var emission_type_parameter = url.searchParams.get("emission_type");
 
         // TODO: replace data source of autocompletejs with API call
-        async function fetchConsumersJSON() {
-            const response = await fetch("./data/consumers.json");
-            return await response.json();
-        }
-        let consumers_json = fetchConsumersJSON();
-
-        // TODO: replace data source of autocompletejs with API call
         let request2 = new XMLHttpRequest();
         request2.open("GET", "./data/sources.json", false);
         request2.setRequestHeader('Cache-Control', 'no-cache');
@@ -170,8 +163,17 @@
             }
             updateView(scenario);
 
-            /* search consumer overlay and auto complete */
-            addSearchOverlay();
+            async function fetchConsumersJsonAndAddSearchOverlay() {
+                
+                // TODO: replace data source of autocompletejs with API call
+                const response = await fetch("./data/consumers.json");
+                consumers_json = await response.json();
+
+                /* search consumer overlay and auto complete */
+                await addSearchOverlay();
+            }
+
+            fetchConsumersJsonAndAddSearchOverlay();
 
             // handle displaying JSON
             document.getElementById('jsonButton').addEventListener('click', function() {

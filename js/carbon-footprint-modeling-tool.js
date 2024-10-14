@@ -539,7 +539,7 @@ function addSearchOverlay() {
         selector: "#searchConsumerInput",
         searchEngine: "loose",
         data: {
-            src: consumers_json,
+            src: Object.keys(consumers_json).map(key => (consumers_json[key])),
             keys: ["name", "description"],
             filter: (list) => {
                 let searchCategories = consumerAutoCompleteJS.input.value.match(/type:[a-z_]+/);
@@ -659,7 +659,7 @@ function addSearchOverlay() {
         selector: "#searchSourceInput",
         searchEngine: "loose",
         data: {
-            src: sources_json,
+            src: Object.keys(sources_json).map(key => (sources_json[key])),
             keys: ["name", "description"],
             filter: (list) => {
                 const results = list.filter((item) => {

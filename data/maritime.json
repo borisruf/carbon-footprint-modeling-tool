@@ -1,782 +1,782 @@
-[
-    {
-        "name": "Cargo/10 000 à 20 000 tonnes/HFO-MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0132,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Cargo/< 10 000 tonnes/HFO-MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0191,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Ferry/de jour",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0506,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Ferry/de nuit",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0879,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Gazier/Petit GPL/Donnée 2009",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0546,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Gazier/VLGC (Very Large Gas Carrier)/Donnée 2009",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0147,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Gazier/petit GPL",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0546,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Gazier/VLGC (Very Large Gas Carrier)",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0147,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Pétrolier/> 200 000 tonnes/GNL",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0026,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Pétrolier/> 200 000 tonnes/HFO-MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00261,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Pétrolier/5 000 à 60 000 tonnes/HFO-MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0207,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Pétrolier/< 5 000 tonnes/HFO-MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0606,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Pétrolier/60 000 à 200 000 tonnes/HFO-MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00884,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Pétrolier/Aframax, de 68500 à 200000 tonnes de port en lourd",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00543,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Pétrolier/Handy product, de 26500 à 68499 tonnes de port en lourd",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0187,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Pétrolier/Petit product tanker, de moins de 26500 tonnes de port en lourd",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0253,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Pétrolier/VLCC, de plus de 200000 tonnes de port en lourd",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00336,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Asie - Europe du Nord",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00554,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Asie - Méditerranée",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00695,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Autres liaisons détaillées",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0131,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Europe - Afrique",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0109,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Europe - Amérique du Sud et Centrale",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00879,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Europe du Nord - Amérique du Nord, façade atlantique",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0109,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Europe du Nord - Amérique du Nord, façade pacifique",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0105,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Europe du Nord - Médtierranée",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0109,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Europe - Moyen-Orient et Inde",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00717,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Europe - Océanie",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.012,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Intra Europe du Nord",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0152,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Intra Méditerranée",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0163,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Méditerranée - Amérique du Nord, façade atlantique",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0109,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Dry/Méditerranée - Amérique du Nord, façade pacifique",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00934,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Asie - Europe du Nord",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0109,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Asie - Méditerranée",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.013,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Autres liaisons détaillées",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0206,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Europe - Afrique",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0185,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Europe - Amérique du Sud et Centrale",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0152,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Europe du Nord - Amérique du Nord, façade atlantique",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0163,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Europe du Nord - Amérique du Nord, façade pacifique",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0163,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Europe du Nord - Médtierranée",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0184,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Europe - Moyen-Orient et Inde",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.013,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Europe - Océanie",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0174,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Intra Europe du Nord",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0239,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Intra Méditerranée",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0271,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Méditerranée - Amérique du Nord, façade atlantique",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0174,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Porte-conteneur/Reefer/Méditerranée - Amérique du Nord, façade pacifique",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0152,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Ro-Pax/HFO-MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.209,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Ro-Ro/Camions et Remorques/HFO-MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.101,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Ro-Ro/Chargement moyen/HFO-MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0457,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Ro-Ro/Remorques uniquement/HFO-MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0687,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Roulier/Ro-Pax",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0775,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Roulier/Ro-Ro",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.103,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Vraquier/> 100 000 tonnes/HFO - MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0029,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Vraquier/10 000 à 100 000 tonnes/HFO - MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00741,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Vraquier/< 10 000 tonnes/GNL",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0027,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Vraquier/< 10 000 tonnes/HFO - MGO",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0325,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Vraquier/Capesize, de plus de 127500 tonnes de port en lourd",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00365,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Vraquier/Handymax, de 40250 à 63499 tonnes de port en lourd",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00586,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Vraquier/Handysize, de moins de 40250 tonnes de port en lourd",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0112,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Vraquier/Panamax, de 63500 à 127500 tonnes de port en lourd",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.00544,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
-    },
-    {
-        "name": "Vraquier/petit fluvio-maritime",
-        "description": "",
-        "type": "Type of Boat",
-        "emissions": {
-            "co2e": {
-                "base_unit": "kg",
-                "value": 0.0188,
-                "unit": "t/km",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
-            }
-        }
+{
+  "type-of-boat-cargo10-000-20-000-tonneshfo-mgo": {
+    "name": "Cargo/10 000 à 20 000 tonnes/HFO-MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0132,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
     }
-]
+  },
+  "type-of-boat-cargo-10-000-tonneshfo-mgo": {
+    "name": "Cargo/< 10 000 tonnes/HFO-MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0191,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-ferryde-jour": {
+    "name": "Ferry/de jour",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0506,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-ferryde-nuit": {
+    "name": "Ferry/de nuit",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0879,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-gazierpetit-gpldonnée-2009": {
+    "name": "Gazier/Petit GPL/Donnée 2009",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0546,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-gaziervlgc-very-large-gas-carrierdonnée-2009": {
+    "name": "Gazier/VLGC (Very Large Gas Carrier)/Donnée 2009",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0147,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-gazierpetit-gpl": {
+    "name": "Gazier/petit GPL",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0546,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-gaziervlgc-very-large-gas-carrier": {
+    "name": "Gazier/VLGC (Very Large Gas Carrier)",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0147,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-pétrolier-200-000-tonnesgnl": {
+    "name": "Pétrolier/> 200 000 tonnes/GNL",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0026,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-pétrolier-200-000-tonneshfo-mgo": {
+    "name": "Pétrolier/> 200 000 tonnes/HFO-MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00261,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-pétrolier5-000-60-000-tonneshfo-mgo": {
+    "name": "Pétrolier/5 000 à 60 000 tonnes/HFO-MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0207,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-pétrolier-5-000-tonneshfo-mgo": {
+    "name": "Pétrolier/< 5 000 tonnes/HFO-MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0606,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-pétrolier60-000-200-000-tonneshfo-mgo": {
+    "name": "Pétrolier/60 000 à 200 000 tonnes/HFO-MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00884,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-pétrolieraframax-de-68500-200000-tonnes-de-port-en-lourd": {
+    "name": "Pétrolier/Aframax, de 68500 à 200000 tonnes de port en lourd",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00543,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-pétrolierhandy-product-de-26500-68499-tonnes-de-port-en-lourd": {
+    "name": "Pétrolier/Handy product, de 26500 à 68499 tonnes de port en lourd",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0187,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-pétrolierpetit-product-tanker-de-moins-de-26500-tonnes-de-port-en-lourd": {
+    "name": "Pétrolier/Petit product tanker, de moins de 26500 tonnes de port en lourd",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0253,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-pétroliervlcc-de-plus-de-200000-tonnes-de-port-en-lourd": {
+    "name": "Pétrolier/VLCC, de plus de 200000 tonnes de port en lourd",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00336,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryasie--europe-du-nord": {
+    "name": "Porte-conteneur/Dry/Asie - Europe du Nord",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00554,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryasie--méditerranée": {
+    "name": "Porte-conteneur/Dry/Asie - Méditerranée",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00695,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryautres-liaisons-détaillées": {
+    "name": "Porte-conteneur/Dry/Autres liaisons détaillées",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0131,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryeurope--afrique": {
+    "name": "Porte-conteneur/Dry/Europe - Afrique",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0109,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryeurope--amérique-du-sud-et-centrale": {
+    "name": "Porte-conteneur/Dry/Europe - Amérique du Sud et Centrale",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00879,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryeurope-du-nord--amérique-du-nord-façade-atlantique": {
+    "name": "Porte-conteneur/Dry/Europe du Nord - Amérique du Nord, façade atlantique",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0109,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryeurope-du-nord--amérique-du-nord-façade-pacifique": {
+    "name": "Porte-conteneur/Dry/Europe du Nord - Amérique du Nord, façade pacifique",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0105,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryeurope-du-nord--médtierranée": {
+    "name": "Porte-conteneur/Dry/Europe du Nord - Médtierranée",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0109,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryeurope--moyen-orient-et-inde": {
+    "name": "Porte-conteneur/Dry/Europe - Moyen-Orient et Inde",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00717,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryeurope--océanie": {
+    "name": "Porte-conteneur/Dry/Europe - Océanie",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.012,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryintra-europe-du-nord": {
+    "name": "Porte-conteneur/Dry/Intra Europe du Nord",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0152,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryintra-méditerranée": {
+    "name": "Porte-conteneur/Dry/Intra Méditerranée",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0163,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryméditerranée--amérique-du-nord-façade-atlantique": {
+    "name": "Porte-conteneur/Dry/Méditerranée - Amérique du Nord, façade atlantique",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0109,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurdryméditerranée--amérique-du-nord-façade-pacifique": {
+    "name": "Porte-conteneur/Dry/Méditerranée - Amérique du Nord, façade pacifique",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00934,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreeferasie--europe-du-nord": {
+    "name": "Porte-conteneur/Reefer/Asie - Europe du Nord",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0109,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreeferasie--méditerranée": {
+    "name": "Porte-conteneur/Reefer/Asie - Méditerranée",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.013,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreeferautres-liaisons-détaillées": {
+    "name": "Porte-conteneur/Reefer/Autres liaisons détaillées",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0206,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreefereurope--afrique": {
+    "name": "Porte-conteneur/Reefer/Europe - Afrique",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0185,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreefereurope--amérique-du-sud-et-centrale": {
+    "name": "Porte-conteneur/Reefer/Europe - Amérique du Sud et Centrale",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0152,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreefereurope-du-nord--amérique-du-nord-façade-atlantique": {
+    "name": "Porte-conteneur/Reefer/Europe du Nord - Amérique du Nord, façade atlantique",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0163,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreefereurope-du-nord--amérique-du-nord-façade-pacifique": {
+    "name": "Porte-conteneur/Reefer/Europe du Nord - Amérique du Nord, façade pacifique",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0163,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreefereurope-du-nord--médtierranée": {
+    "name": "Porte-conteneur/Reefer/Europe du Nord - Médtierranée",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0184,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreefereurope--moyen-orient-et-inde": {
+    "name": "Porte-conteneur/Reefer/Europe - Moyen-Orient et Inde",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.013,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreefereurope--océanie": {
+    "name": "Porte-conteneur/Reefer/Europe - Océanie",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0174,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreeferintra-europe-du-nord": {
+    "name": "Porte-conteneur/Reefer/Intra Europe du Nord",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0239,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreeferintra-méditerranée": {
+    "name": "Porte-conteneur/Reefer/Intra Méditerranée",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0271,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreeferméditerranée--amérique-du-nord-façade-atlantique": {
+    "name": "Porte-conteneur/Reefer/Méditerranée - Amérique du Nord, façade atlantique",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0174,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-porte-conteneurreeferméditerranée--amérique-du-nord-façade-pacifique": {
+    "name": "Porte-conteneur/Reefer/Méditerranée - Amérique du Nord, façade pacifique",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0152,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-ro-paxhfo-mgo": {
+    "name": "Ro-Pax/HFO-MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.209,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-ro-rocamions-et-remorqueshfo-mgo": {
+    "name": "Ro-Ro/Camions et Remorques/HFO-MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.101,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-ro-rochargement-moyenhfo-mgo": {
+    "name": "Ro-Ro/Chargement moyen/HFO-MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0457,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-ro-roremorques-uniquementhfo-mgo": {
+    "name": "Ro-Ro/Remorques uniquement/HFO-MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0687,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-roulierro-pax": {
+    "name": "Roulier/Ro-Pax",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0775,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-roulierro-ro": {
+    "name": "Roulier/Ro-Ro",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.103,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-vraquier-100-000-tonneshfo--mgo": {
+    "name": "Vraquier/> 100 000 tonnes/HFO - MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0029,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-vraquier10-000-100-000-tonneshfo--mgo": {
+    "name": "Vraquier/10 000 à 100 000 tonnes/HFO - MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00741,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-vraquier-10-000-tonnesgnl": {
+    "name": "Vraquier/< 10 000 tonnes/GNL",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0027,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-vraquier-10-000-tonneshfo--mgo": {
+    "name": "Vraquier/< 10 000 tonnes/HFO - MGO",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0325,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-vraquiercapesize-de-plus-de-127500-tonnes-de-port-en-lourd": {
+    "name": "Vraquier/Capesize, de plus de 127500 tonnes de port en lourd",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00365,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-vraquierhandymax-de-40250-63499-tonnes-de-port-en-lourd": {
+    "name": "Vraquier/Handymax, de 40250 à 63499 tonnes de port en lourd",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00586,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-vraquierhandysize-de-moins-de-40250-tonnes-de-port-en-lourd": {
+    "name": "Vraquier/Handysize, de moins de 40250 tonnes de port en lourd",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0112,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-vraquierpanamax-de-63500-127500-tonnes-de-port-en-lourd": {
+    "name": "Vraquier/Panamax, de 63500 à 127500 tonnes de port en lourd",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.00544,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  },
+  "type-of-boat-vraquierpetit-fluvio-maritime": {
+    "name": "Vraquier/petit fluvio-maritime",
+    "description": "",
+    "type": "Type of Boat",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kg",
+        "value": 0.0188,
+        "unit": "t/km",
+        "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+      }
+    }
+  }
+}
