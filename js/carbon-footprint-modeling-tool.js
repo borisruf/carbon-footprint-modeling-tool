@@ -86,7 +86,7 @@ function convertValue(value, source_unit, target_unit) {
 }
 
 // calculate scope emissions from JSON data
-function calculateScopeEmissions(scope) {
+function calculateScopeEmissions(scope, primary_source=null) {
     let emissions = {};
 
     for (const [j, element] of scope.list.entries()) {
@@ -169,8 +169,13 @@ function calculateScopeEmissions(scope) {
                 responseText = request.responseText;
             }      
 
-
             let json = JSON.parse(responseText);
+
+            if (primary_source) {
+                // overload sources with primary source if provided
+                json = updateSource(json, primary_source)
+            }
+
             let linkedEmissions = totalEmissions(json);
             
             // consider quantity parameter if any
@@ -237,7 +242,7 @@ function totalEmissionsByUnit(emissions, unit) {
 }
 
 // calculate emissions from JSON data and update DOM
-function updateView(scenario_json, scenario_id) {
+function updateView(scenario_json, scenario_id, primary_source=null) {
 
     let scenarioDiv = scenario_id ? document.getElementById(scenario_id) : document;
 
@@ -247,7 +252,7 @@ function updateView(scenario_json, scenario_id) {
     for ([i, scope] of scenario_json.scopes.entries()) {
 
         // calculate emissions per scope
-        let emissions = calculateScopeEmissions(scope);
+        let emissions = calculateScopeEmissions(scope, primary_source);
 
         let scopeDiv = scenarioDiv.querySelectorAll("div[name='scope']:not(.template)")[i];
 
@@ -257,7 +262,7 @@ function updateView(scenario_json, scenario_id) {
         for (const [j, element] of scope.list.entries()) {
 
             // recursive call when element is nested scenario
-            if (element.type == "scenario") {updateView(element.scenario, element.scenario_id)};
+            if (element.type == "scenario") {updateView(element.scenario, element.scenario_id, primary_source)};
 
             let elementDiv = scopeDiv.querySelectorAll("div[name='component'], div[name='link'], div[name='nestedScenario']")[j];
 
@@ -305,6 +310,21 @@ function updateData() {
 
     // update emission calculations
     updateView(scenario);
+}
+
+// recursively updates any source object in the JSON object provided with primary_source
+function updateSource(json_object, primary_source) {
+  if (json_object && typeof json_object === 'object') {
+    if (json_object.hasOwnProperty('source')) {
+      json_object.source = primary_source;
+    }
+    for (let key in json_object) {
+      if (json_object.hasOwnProperty(key)) {
+        updateSource(json_object[key], primary_source);
+      }
+    }
+  }
+  return json_object;
 }
 
 // browse the DOM element for all non-nested data elements
@@ -381,7 +401,7 @@ function traverseDOMtree(element) {
 }
 
 // calculate total emissions for all scopes of one scenario
-function totalEmissions(scenario_json, factor=1) {
+function totalEmissions(scenario_json, factor=1, primary_source=null) {
 
     if (!factor) {
         factor = 1
@@ -392,7 +412,7 @@ function totalEmissions(scenario_json, factor=1) {
     for (const [i, scope] of scenario_json.scopes.entries()) {
 
         // omit scopes and create flat emissions array
-        emissions = emissions.concat(Object.values(calculateScopeEmissions(scope)));
+        emissions = emissions.concat(Object.values(calculateScopeEmissions(scope, primary_source)));
     }
 
     let available_units = availableTotalEmissionTypes(emissions);

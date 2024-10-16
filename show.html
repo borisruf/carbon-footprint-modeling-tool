@@ -18,6 +18,7 @@
 
         let url = new URL(location.href);
         let id = url.searchParams.get("id");
+        let source_id = url.searchParams.get("source_id");
 
         // optional parameter to override emission type
         var emission_type_parameter = url.searchParams.get("emission_type");
@@ -28,6 +29,13 @@
         request2.setRequestHeader('Cache-Control', 'no-cache');
         request2.send(null)
         let sources_json = JSON.parse(request2.responseText);
+
+        let primary_source;
+
+        // identify primary source if provided
+        if (source_id) {
+            primary_source = sources_json[source_id];
+        }
 
         window.addEventListener('load', function () {
 
@@ -62,6 +70,11 @@
                 request.setRequestHeader('Cache-Control', 'no-cache');
                 request.send(null)
                 scenario = JSON.parse(request.responseText);
+            }
+
+            if (primary_source) {
+                // overload sources with primary source if provided
+                scenario = updateSource(scenario, primary_source);
             }
 
             let titleSpan = document.querySelector("h1 span[name='title']");
@@ -114,7 +127,7 @@
                             }
                         }
 
-                        linkDiv.querySelector("[name='url']").setAttribute("href", "show.html?id=" + element.scenario_id);
+                        linkDiv.querySelector("[name='url']").setAttribute("href", "show.html?id=" + element.scenario_id + "&source_id=" + source_id);
                         linkDiv.querySelector("[name='title']").innerHTML = element.scenario_id;
 
                         if (Number(element.quantity)) {
@@ -161,7 +174,8 @@
                     }
                 }
             }
-            updateView(scenario);
+
+            updateView(scenario, null, primary_source);
 
             async function fetchConsumersJsonAndAddSearchOverlay() {
                 

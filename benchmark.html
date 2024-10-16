@@ -50,6 +50,19 @@
         let url = new URL(location.href);
         let ids = url.searchParams.getAll("ids[]");
         let reference_id = url.searchParams.get("reference_id");
+        let source_ids = url.searchParams.getAll("source_ids[]");
+        let primary_sources = [];
+
+        if (source_ids) {
+            // TODO: replace data source of autocompletejs with API call
+            let request2 = new XMLHttpRequest();
+            request2.open("GET", "./data/sources.json", false);
+            request2.setRequestHeader('Cache-Control', 'no-cache');
+            request2.send(null)
+            let sources_json = JSON.parse(request2.responseText);
+
+            primary_sources = source_ids.map(key => (key in sources_json ? sources_json[key] : null));
+        }
 
         // optional parameter to override emission type
         var emission_type_parameter = url.searchParams.get("emission_type");
@@ -94,8 +107,9 @@
             let emissions = {}
             let reference_emission = {};
 
+            // calculate emissions per scenario, consider primary source if provided
             for (const [scenario_id, scenario] of Object.entries(scenarios)) {
-                emissions[scenario_id] = totalEmissions(scenarios[scenario_id], factor_parameter || null);
+                emissions[scenario_id] = totalEmissions(scenarios[scenario_id], factor_parameter || null, primary_sources[ids.indexOf(scenario_id)]);
             }
             let all_emissions = emissions;
 
@@ -127,9 +141,9 @@
                 
                 let title = sample.querySelector("a[name='title']");
                 title.innerHTML = scenario.title;
-                title.setAttribute("href", "index.html?id=" + scenario_id + "&emission_type=" + best_unit);
+                title.setAttribute("href", "index.html?id=" + scenario_id + "&emission_type=" + best_unit + "&source_id=" + source_ids[ids.indexOf(scenario_id)]);
 
-                let emissions = totalEmissions(scenario, factor_parameter || null);
+                let emissions = totalEmissions(scenario, factor_parameter || null, primary_sources[ids.indexOf(scenario_id)]);
 
                 let bar = sample.querySelector("div[name='bar']");
 
@@ -166,7 +180,7 @@
             }
 
             if (title_parameter) {
-                document.getElementById("title").appendChild(document.createTextNode(title_parameter));
+                document.getElementById("title").appendChild(document.createTextNode(decodeURIComponent(title_parameter)));
             }
 
         });

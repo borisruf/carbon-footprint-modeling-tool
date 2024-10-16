@@ -18,6 +18,7 @@
 
         let url = new URL(location.href);
         let id = url.searchParams.get("id");
+        let source_id = url.searchParams.get("source_id");
 
         // optional parameter to override emission type
         var emission_type_parameter = url.searchParams.get("emission_type");
@@ -28,6 +29,12 @@
         request2.setRequestHeader('Cache-Control', 'no-cache');
         request2.send(null)
         let sources_json = JSON.parse(request2.responseText);
+
+        // identify primary source if provided
+        let primary_source;
+        if (source_id) {
+            primary_source = sources_json[source_id];
+        }
 
         function fetchScenario(id) {
             let request = new XMLHttpRequest();
@@ -97,7 +104,7 @@
             if (scenario_id) {
                 let titleLink = document.createElement("a");
                 titleLink.innerHTML = scenario.title;
-                titleLink.href = "show.html?id=" + scenario_id;
+                titleLink.href = "show.html?id=" + scenario_id + "&source_id=" + source_id;
                 titleSpan.appendChild(titleLink);
             } else {
                 titleSpan.innerHTML = scenario.title;
@@ -220,6 +227,11 @@
 
             // expand the scenario by loading linked scenarios
             scenario = traverseScenario(scenario);
+
+            if (primary_source) {
+                // overload sources with primary source if provided
+                scenario = updateSource(scenario, primary_source);
+            }
 
             let dom = buildScenarioDOMtree(scenario);
             document.getElementById("container").appendChild(dom);
