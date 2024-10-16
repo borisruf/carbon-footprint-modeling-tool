@@ -141,7 +141,7 @@
                 
                 let title = sample.querySelector("a[name='title']");
                 title.innerHTML = scenario.title;
-                title.setAttribute("href", "index.html?id=" + scenario_id + "&emission_type=" + best_unit + "&source_id=" + source_ids[ids.indexOf(scenario_id)]);
+                title.setAttribute("href", "index.html?id=" + scenario_id + "&emission_type=" + best_unit + "&source_id=" +  (source_ids[ids.indexOf(scenario_id)] || ""));
 
                 let emissions = totalEmissions(scenario, factor_parameter || null, primary_sources[ids.indexOf(scenario_id)]);
 
