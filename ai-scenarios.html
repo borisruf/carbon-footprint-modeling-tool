@@ -19,7 +19,7 @@
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
+      max-width: 500px;
       margin: 0 auto;
     }
     label, input, select {
@@ -27,9 +27,9 @@
       margin-bottom: 10px;
     }
     input, select {
-      width:390px;
+      width:490px;
     }
-    input[type="submit"] {
+    form#urlGenerator input[type="submit"] {
       background-color: #4CAF50;
       color: white;
       padding: 10px 20px;
@@ -40,7 +40,7 @@
       font-weight: bold;
       font-size: 18px;
     }
-    input[type="submit"]:hover {
+    form#urlGenerator input[type="submit"]:hover {
       background-color: #45a049;
     }
 
@@ -83,16 +83,53 @@
   div.additional-field input {
     width: 250px;
   }
+
   a#additionalFieldsLink {
     color: grey;
   }
+
+  div.model {
+    background-color: rgb(237, 237, 237);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  div.model select {
+    width: 200px;
+  }
+
+  div.model h4.modelName {
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+
+  .closeButton {
+    float: right;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    color: grey;
+  }
+
   </style>
 </head>
 <body>
   <h1>AI Emissions Scenario Generator</h1>
-  <form onsubmit="generateURL(); return false;">
-    <label for="ids">AI model:</label>
-    <select id="ids" name="ids" style="height:172px" multiple required>
+ 
+ <form id="modelSelect"> 
+  <label for="ids">Add one or more AI models:</label>
+    <select id="ids" name="ids" onchange="addModel(); return false;" required>
+      <option value="">--- Select ---</option>
       <option value="gpt-ruf-mortas-token">OpenAI GPT-3.5 (gpt-ruf-mortas-token)</option>
       <option value="gpt-pointon-token">OpenAI GPT-3.5 (gpt-pointon-token)</option>
       <option value="gpt4-ruf-mortas-llama2-70b-token">OpenAI GPT-4 (gpt4-ruf-mortas-llama2-70b-token)</option>
@@ -106,7 +143,17 @@
       <option value="mistral-small-ruf-mortas-token">Mistral Small (mistral-small-ruf-mortas-token)</option>
       <option value="mistral-large-2-ruf-mortas-token">Mistral Large 2 (mistral-large-2-ruf-mortas-token)</option>
     </select>
+  </form>
 
+  <br/>
+
+
+  <form id="urlGenerator" onsubmit="generateURL(); return false;">
+    <div class="models">
+    </div>
+
+
+    <br/>
     <label for="factor">Total number of tokens: <a href="#" id="additionalFieldsLink">(expand)</a></label>
     <input type="number" id="factor" name="factor" required>
 
@@ -135,13 +182,49 @@
     <input type="submit" value="Generate URL">
   </form>
 
+  <select id="source_ids" name="source_ids[]" style="display:none">
+    <option value="electricity-austria-2020">Austria (2020)</option>
+    <option value="electricity-belgium-2020">Belgium (2020)</option>
+    <option value="electricity-bulgaria-2020">Bulgaria (2020)</option>
+    <option value="electricity-croatia-2020">Croatia (2020)</option>
+    <option value="electricity-cyprus-2020">Cyprus (2020)</option>
+    <option value="electricity-czechia-2020">Czechia (2020)</option>
+    <option value="electricity-denmark-2020">Denmark (2020)</option>
+    <option value="electricity-estonia-2020">Estonia (2020)</option>
+    <option selected value="electricity-eu-27-2020">EU-27 (2020)</option>
+    <option value="electricity-finland-2020">Finland (2020)</option>
+    <option value="electricity-france-2020">France (2020)</option>
+    <option value="electricity-germany-2020">Germany (2020)</option>
+    <option value="electricity-greece-2020">Greece (2020)</option>
+    <option value="electricity-hungary-2020">Hungary (2020)</option>
+    <option value="electricity-ireland-2020">Ireland (2020)</option>
+    <option value="electricity-italy-2020">Italy (2020)</option>
+    <option value="electricity-latvia-2020">Latvia (2020)</option>
+    <option value="electricity-lithuania-2020">Lithuania (2020)</option>
+    <option value="electricity-luxembourg-2020">Luxembourg (2020)</option>
+    <option value="electricity-malta-2020">Malta (2020)</option>
+    <option value="electricity-netherlands-2020">Netherlands (2020)</option>
+    <option value="electricity-poland-2020">Poland (2020)</option>
+    <option value="electricity-portugal-2020">Portugal (2020)</option>
+    <option value="electricity-romania-2020">Romania (2020)</option>
+    <option value="electricity-slovakia-2020">Slovakia (2020)</option>
+    <option value="electricity-slovenia-2020">Slovenia (2020)</option>
+    <option value="electricity-spain-2020">Spain (2020)</option>
+    <option value="electricity-sweden-2020">Sweden (2020)</option>
+    <option value="electricity-usa-2020">USA (2020)</option>
+  </select>
+
   <script>
     function generateURL() {
-      const ids = Array.from(document.getElementById('ids').selectedOptions).map(option => `ids[]=${option.value}`).join('&');
+      const idsInputs = document.querySelectorAll('.models input[name="ids[]"]');
+      const ids = Array.from(idsInputs).map(input => `${input.name}=${input.value}`).join('&');
+      const sourceIdsInputs = document.querySelectorAll('.models select[name="source_ids[]"]');
+      const sourceIds = Array.from(sourceIdsInputs).map(input => `${input.name}=${input.value}`).join('&');
       const factor = document.getElementById('factor').value;
       const title = document.getElementById('title').value;
 
-      let url = `/benchmark.html?${ids}&factor=${factor}`;
+
+      let url = `/benchmark.html?${ids}&factor=${factor}&${sourceIds}`;
 
       if (title) {
         url += `&title=${encodeURIComponent(title)}`;
@@ -171,6 +254,50 @@
 
       const factor = usersPerDay * maxUserRequests * (Number(tokensPerInstruction) + Number(maxPromptTokens) + Number(maxCompletionTokens));
       document.getElementById('factor').value = factor;
+    }
+
+    function addModel() {
+      const parentDiv = document.querySelector('.models');
+      const modelDiv = document.createElement('div');
+      modelDiv.setAttribute("class", "model")
+
+      const modelDropdown = document.getElementById('ids');
+      const selectedModel = modelDropdown.value;
+      
+      const newModel = document.createElement('input');
+      newModel.type = 'hidden';
+      newModel.name = 'ids[]';
+      newModel.value = selectedModel;
+      modelDiv.appendChild(newModel);
+
+      const closeButton = document.createElement('button');
+      closeButton.setAttribute("class", "closeButton");
+      closeButton.onclick =  function() {
+        this.parentElement.remove();
+      };
+      closeButton.textContent = "X";
+      modelDiv.appendChild(closeButton);
+
+      const modelName = modelDropdown.options[modelDropdown.selectedIndex].text;
+      const modelHeadline = document.createElement('h4');
+      modelHeadline.setAttribute("class", "modelName")
+      modelHeadline.textContent = modelName;
+
+      modelDiv.appendChild(modelHeadline);
+      
+      // Create a label element
+      const sourceLabel = document.createElement('label');
+      sourceLabel.setAttribute('for', 'source_ids');
+      sourceLabel.textContent = 'Electricity grid of the data center:';
+      modelDiv.appendChild(sourceLabel);
+
+      let sourceSelect = document.getElementById("source_ids").cloneNode(true);
+      sourceSelect.style.display = "block";
+      modelDiv.appendChild(sourceSelect);
+
+      parentDiv.appendChild(modelDiv);
+
+      modelDropdown.selectedIndex = 0;
     }
 
     document.getElementById('additionalFieldsLink').onclick = function(e) {
