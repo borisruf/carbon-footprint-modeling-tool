@@ -152,6 +152,16 @@ div.model h4.modelName {
   }
 }
 
+div#footer {
+  padding-top: 20px;
+  text-align: center;
+  color: grey;
+  font-size: 12px;
+  a {
+    color: grey;
+  }
+}
+
 
   </style>
 </head>
@@ -211,8 +221,12 @@ div.model h4.modelName {
     <label for="title">Title (optional):</label>
     <input type="text" id="title" name="title">
 
-    <input type="submit" value="Generate URL">
+    <input type="submit" value="Generate">
   </form>
+
+  <div id="footer">
+    Created using the open <a href="https://github.com/borisruf/carbon-footprint-modeling-tool">carbon footprint data model</a>, an ongoing research project
+  </div>
 
   <select id="source_ids" name="source_ids[]" style="display:none">
     <option value="electricity-austria-2020">Austria (2020)</option>
