@@ -5,121 +5,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Emissions Scenario Generator</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      padding: 20px;
-    }
-    h1 {
-      color: #333;
-      text-align: center;
-    }
-    form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    label, input, select {
-      display: block;
-      margin-bottom: 10px;
-    }
-    input, select {
-      width:490px;
-    }
-    form#urlGenerator input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    form#urlGenerator input[type="submit"]:hover {
-      background-color: #45a049;
-    }
+   body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 0;
+}
 
-    .tooltip {
-      position: relative;
-      display: inline-block;
-      cursor: help;
-    }
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 24px; /* Adjust size for better mobile readability */
+}
 
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%; /* Make form width responsive */
+}
+
+label, input, select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, select {
+  width: 100%; /* Use percentage-based width for responsiveness */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+form#urlGenerator input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%; /* Make the submit button full width on small screens */
+}
+
+form#urlGenerator input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+div.additional-field {
+  background-color: rgb(237, 237, 237);
+  padding: 5px;
+  font-size: 13px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+div.additional-field input {
+  width: 100%; /* Make input fields full width */
+}
+
+a#additionalFieldsLink {
+  color: grey;
+}
+
+div.model {
+  background-color: rgb(237, 237, 237);
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+div.model select {
+  width: 100%; /* Full width for select dropdown */
+}
+
+div.model h4.modelName {
+  margin-bottom: 10px;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.closeButton {
+  float: right;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  color: grey;
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
   }
 
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+  form {
+    padding: 15px;
+  }
+
+  form#urlGenerator input[type="submit"] {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  .tooltip .tooltiptext {
+    width: 150px; /* Smaller tooltips on mobile */
   }
 
   div.additional-field {
-    background-color: rgb(237, 237, 237);
-    padding:5px;
-    font-size: 13px;
-    padding-top: 10px;
-    margin-bottom: 20px;
+    font-size: 12px;
   }
+}
 
-  div.additional-field input {
-    width: 250px;
-  }
-
-  a#additionalFieldsLink {
-    color: grey;
-  }
-
-  div.model {
-    background-color: rgb(237, 237, 237);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-
-    margin-top: 10px;
-    font-size: 13px;
-  }
-
-  div.model select {
-    width: 200px;
-  }
-
-  div.model h4.modelName {
-    margin-bottom: 10px;
-    font-size: 14px;
-    margin-top: 0px;
-  }
-
-  .closeButton {
-    float: right;
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    color: grey;
-  }
 
   </style>
 </head>
