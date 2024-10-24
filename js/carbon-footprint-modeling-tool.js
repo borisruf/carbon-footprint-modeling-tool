@@ -97,6 +97,11 @@ function calculateScopeEmissions(scope, primary_source=null) {
             let usage_factor = 1;
             let consumption;
 
+            if (primary_source) {
+                // overwrite source with primary source if provided
+                element.source = primary_source;
+            }
+
             // consumption data available
             if (element.consumer.consumptions && Object.keys(element.consumer.consumptions).length) {
                 // check for consumption data suitable for selected energy source
