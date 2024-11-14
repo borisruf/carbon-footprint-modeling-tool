@@ -19,7 +19,6 @@ fs.readdir(scenariosFolder, (err, files) => {
   files.forEach(file => {
     if (path.extname(file) === '.json') { // Check if the file is a JSON file
       const filePath = path.join(scenariosFolder, file);
-      console.log(filePath)
       const fileContent = fs.readFileSync(filePath, 'utf8'); // Read the file content
 
       try {
@@ -46,10 +45,12 @@ fs.readdir(scenariosFolder, (err, files) => {
   // add data from internal source database
 
   const fileContent = fs.readFileSync('../data/food.json', 'utf8'); // Read the file content
+
   try {
     const db = JSON.parse(fileContent); // Parse the JSON data
 
-    db.forEach(record => {
+    for (const key in db) {
+      const record = db[key];
       console.log(record)
 
       let emissions = {}
@@ -63,7 +64,7 @@ fs.readdir(scenariosFolder, (err, files) => {
 
       // Create result object
     const result = {
-      id: null, // 
+      id: key, // 
       title: record.name + (unit ? " (per " + unit +")" : ""), // 
       description: null, // 
       emissions: emissions, // 
@@ -71,7 +72,7 @@ fs.readdir(scenariosFolder, (err, files) => {
     };
 
     results.push(result); // Add the result to the results array
-    });
+    };
 
     
   } catch (error) {
