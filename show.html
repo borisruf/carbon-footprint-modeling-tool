@@ -189,28 +189,16 @@
 
             fetchConsumersJsonAndAddSearchOverlay();
 
-            // handle displaying JSON
-            document.getElementById('jsonButton').addEventListener('click', function() {
-                var jsonString = JSON.stringify(scenario, null, 2); // Formatting JSON with 2-space indentation
-
-                document.getElementById('jsonContent').innerText = jsonString;
-
-                // Show the overlay
-                document.getElementById('jsonOverlay').style.display = 'block';
-            });
-
             document.getElementById('jsonOverlay').addEventListener('click', function(event) {
                 if (event.target === this) {
                     document.getElementById('jsonOverlay').style.display = 'none';
                 }
             });
 
-            // find comparable scenarios
-            document.getElementById('compareButton').addEventListener('click', function() {
-                let total = totalEmissions(scenario);
-                let best = bestEmissionType(total);
-
-                window.open(`search.html?mass_unit=kg&value=${total[best]}&emission_type=${best}&scenario_id=${id}`, "_blank");
+            document.getElementById('linkOverlay').addEventListener('click', function(event) {
+                if (event.target === this) {
+                    document.getElementById('linkOverlay').style.display = 'none';
+                }
             });
         });
 
@@ -223,11 +211,11 @@
         <div class="data" data-type="string" name="description"></div>
         <div class="data" name="scopes" data-type="array" id="scopes"></div>
     </div>
-    <div id="footer">
-        <a href="#" onclick="saveJSON()">Save JSON</a>
-        | <a href="#" onclick="copyJSON()">Copy JSON</a>
-        | <a href="#" onclick="makeUrl()">Make URL</a>
-        | <a href="https://github.com/borisruf/carbon-footprint-modeling-tool">About</a>
+    <div id="links">
+        <a href="#" onclick="showLink()">Share via link</a>
+        | <a href="#" onclick="showJSON()">Show data</a>
+        | <a href="#" onclick="contextualizeEmissions()">Contextualize emissions</a>
+        | <a href="https://github.com/borisruf/carbon-footprint-modeling-tool">About the data model</a>
     </div>
 
     <div id="searchConsumerOverlay">
@@ -242,14 +230,29 @@
         </div>
     </div>
 
-    <button id="jsonButton" title="Show JSON code">{}</button>
-
-    <button id="compareButton" title="Find comparative scenarios">&#x2248;</button>
-
     <!-- Overlay to display well-formatted JSON -->
     <div class="overlay" id="jsonOverlay">
         <div class="json-container" id="jsonContainer">
             <pre class="json-content" id="jsonContent"></pre>
+        </div>
+    </div>
+
+    <!-- Overlay to display url -->
+    <div class="overlay" id="linkOverlay">
+        <div class="link-container" id="linkContainer">
+            All data of this scenario is encoded in the following url:<br/><br/>
+            <div class="input-container">
+                <input id="link" readonly="true" onclick="this.select();" />
+                <button class="copy-button" onclick="copyToClipboard()">
+                    <span>Copy to clipboard</span>
+                </button>
+            </div>
+            <br/><br/>
+            Feel free to copy and share it for reference. Consider shortening the url with a service such as <a href="https://www.bitly.com" target="_blank">Bitly</a> for use in print.
+            <br/><br/><br/>
+            <button onclick="document.getElementById('linkOverlay').style.display = 'none';">
+                <span>Close</span>
+            </button>
         </div>
     </div>
 

@@ -11,6 +11,41 @@ function uuidv4() {
     );
 }
 
+function showJSON() {
+    var jsonString = JSON.stringify(scenario, null, 2); // Formatting JSON with 2-space indentation
+
+    document.getElementById('jsonContent').innerText = jsonString;
+
+    // Show the overlay
+    document.getElementById('jsonOverlay').style.display = 'block';
+}
+
+function showLink() {
+
+    var fileContent = JSON.stringify(scenario);
+    let url = location.protocol + '//' + location.host + location.pathname + '?#' + btoa(unescape(encodeURIComponent(fileContent)))
+
+    let overlay = document.getElementById('linkOverlay');
+    overlay.querySelector('#link').value = url;
+
+    // Show the overlay
+    overlay.style.display = 'block';
+}
+
+function copyToClipboard() {
+    let overlay = document.getElementById('linkOverlay');
+    link.select();
+    document.execCommand('copy');
+    alert('Link copied to clipboard!');
+}
+
+function contextualizeEmissions() {
+    let total = totalEmissions(scenario);
+    let best = bestEmissionType(total);
+
+    window.open(`search.html?mass_unit=kg&value=${total[best]}&emission_type=${best}&scenario_id=${id}`, "_blank");
+}
+
 // save with new random scenario id
 function copyJSON() { downloadJSON("scenario-" + uuidv4() + ".json"); }
 

@@ -25,16 +25,18 @@ div#container {
     margin-left:  100px;
 }
 
-div#footer {
+div#links {
     max-width: 1280px;
     margin:  auto;
     text-align:  center;
     padding-top: 40px;
+    padding-bottom: 20px;
 }
 
-div#footer a {
+div#links a {
     color: blue;
 }
+
 
 div[name="link"], div[name="component"], div[name="nestedScenario"] {
     padding:  15px;
@@ -253,7 +255,7 @@ div[name="level"]:hover + .tooltip {
     z-index: 9999;
 }
 
-.json-container {
+.json-container, .link-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -266,31 +268,33 @@ div[name="level"]:hover + .tooltip {
     overflow: auto;
 }
 
+.link-container {
+    padding: 50px;
+}
+
+.link-container input {
+    font-size: 14px;
+    background-color: #f6f8fa;
+    padding: 8px;
+    flex: 1;
+    margin-right: 5px; /* Add some spacing between input and button */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}            
+
+.link-container button {
+    flex: 0 0 auto;
+    padding: 8px 20px;
+    font-size: 14px;
+
+}
+
 .json-content {
     color: #333; /* Text color */
     font-family: monospace; /* Use monospace font for consistent spacing */
     white-space: pre-wrap; /* Preserve line breaks and wrap long lines */
     font-size: 14px; 
-}
-
-#jsonButton, #compareButton {
-    position: fixed;
-    top: 20px; /* Adjust as needed */
-    z-index: 9999; /* Ensure the button is above other content */
-    border: 1px solid #ccc; 
-    background: none; /* Remove the button background */
-    font: inherit; /* Inherit the font style */
-    cursor: pointer; /* Change the cursor to indicate interactivity */
-
-}
-
-#jsonButton {
-    right: 20px; 
-    padding: 8px 8px; 
-}
-
-#compareButton {
-    right: 70px; 
-    font-size: 24px !important;
-    padding: 3px 10px; 
 }
