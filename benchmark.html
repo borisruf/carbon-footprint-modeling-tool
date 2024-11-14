@@ -116,21 +116,18 @@
                 let emission = {};
                 emission["scenario_id"] = scenario_id;
                 emission["emission"] = totalEmissions(scenario, factor_parameter || null, primary_sources[i]);
-                console.log(primary_sources[i])
                 emissions.push(emission);
                 i++;
             }
 
-            console.log(emissions);
-
-            const all_emissions = emissions.reduce((acc, { scenario_id, emission }) => {
+            let all_emissions = emissions.reduce((acc, { scenario_id, emission }) => {
                 acc[scenario_id] = emission;
                 return acc;
-            }, {});
+            }, {});            
 
             if (reference_scenario) {
                 reference_emission = totalEmissions(reference_scenario, null);
-                all_emissions = Object.assign(emissions, {reference_scenario: reference_emission});
+                all_emissions = Object.assign({}, all_emissions, { reference_scenario: reference_emission });
             }
 
             let best_unit = emission_type_parameter || bestTotalEmissionType(all_emissions);
@@ -185,7 +182,8 @@
 
                 let bar = sample.querySelector("div[name='bar']");
 
-                let last_scenario = scenarios[ids.reverse()[0]];
+                let last_scenario = scenarios[scenarios.length-1].scenario;
+
                 let emissions = totalEmissions(last_scenario, factor_parameter || null);
                 
                 let reference_factor = (emissions[best_unit]/reference_emissions_of_best_unit).toFixed(2);
