@@ -154,7 +154,7 @@ Utilize the URL parameter `title` to add a title, and `factor` to apply multipli
 ---
 
 ### Find comparative scenarios
-The search view can be accessed either by directly visiting [search.html](https://borisruf.github.io/carbon-footprint-modeling-tool/search.html) or by clicking on the __&#x2248;__ button located at the top right of any scenario. In the search bar, an emission value, the type of mass, and the emission category can be specified. The search results display comparable carbon scenarios for different scales: identical emissions, 10 times, 100 times, and 0.1 times. 
+The search view can be accessed either by directly visiting [search.html](https://borisruf.github.io/carbon-footprint-modeling-tool/search.html) or by clicking on the link "Contextualize emissions" in the footer of any scenario. In the search bar, an emission value, the type of mass, and the emission category can be specified. The search results display comparable carbon scenarios for different scales: identical emissions, 10 times, 100 times, and 0.1 times. 
 
 <img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/search.png" width="500"/>
 
