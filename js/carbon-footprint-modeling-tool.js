@@ -3,7 +3,7 @@ const emissionUnitMap = {"co2e": "CO2e", "co2": "CO2", "ch4": "CH4", "n2o": "N2O
 // ordered list of consumptions
 const consumptionMap = {"electricity": "Electricity", "regular gasoline": "Regular Gasoline", "premium gasoline": "Premium Gasoline", "bunker fuel": "Bunker Fuel", "diesel": "Diesel", "oil": "Oil"}
 // list of accepted (mass) units
-const massUnits = ["g", "kg", "t"];
+const massUnits = ["mg", "g", "kg", "t", "kt", "mt"];
 
 function uuidv4() {
     return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
@@ -43,7 +43,9 @@ function contextualizeEmissions() {
     let total = totalEmissions(scenario);
     let best = bestEmissionType(total);
 
-    window.open(`search.html?mass_unit=kg&value=${total[best]}&emission_type=${best}&scenario_id=${id}`, "_blank");
+    let [value, unit] = bestMassUnit(total[best]);
+
+    window.open(`search.html?mass_unit=${unit}&value=${value}&emission_type=${best}&scenario_id=${id}`, "_blank");
 }
 
 // save with new random scenario id
@@ -70,9 +72,7 @@ function makeUrl() {
     window.open(url, '_blank').focus();
 }
 
-function formatTotalEmissions(value_in_kg, emission_type) {
-
-    let value = value_in_kg;
+function bestMassUnit(value_in_kg) {
     let unit = "kg";
     if (value_in_kg >= 1000000000) {
         value = value_in_kg/1000000000;
@@ -93,21 +93,53 @@ function formatTotalEmissions(value_in_kg, emission_type) {
         value = value_in_kg*1000000;
         unit = "mg";
     }
+
+    return [value, unit]
+}
+
+function formatTotalEmissions(value_in_kg, emission_type) {
+
+    let [value, unit] = bestMassUnit(value_in_kg);
     return Math.round(value * 100) / 100 + unit + " " + emissionUnitMap[emission_type];
 }
 
 function convertValue(value, source_unit, target_unit) {
-  const conversionRates = {
+const conversionRates = {
+    "mg_g": 0.001,
+    "g_mg": 1000,
+    "mg_kg": 0.000001,
+    "kg_mg": 1000000,
+    "mg_t": 0.000000001,
+    "t_mg": 1000000000,
+    "mg_kt": 0.000000000001,
+    "kt_mg": 1000000000000,
+    "mg_mt": 0.000000000000001,
+    "mt_mg": 1000000000000000,
     "g_kg": 0.001,
-    "g_t": 0.000001,
     "kg_g": 1000,
-    "kg_t": 0.001,
+    "g_t": 0.000001,
     "t_g": 1000000,
-    "t_kg": 1000
+    "g_kt": 0.000000001,
+    "kt_g": 1000000000,
+    "g_mt": 0.000000000001,
+    "mt_g": 1000000000000,
+    "kg_t": 0.001,
+    "t_kg": 1000,
+    "kg_kt": 0.000001,
+    "kt_kg": 1000000,
+    "kg_mt": 0.000000001,
+    "mt_kg": 1000000000,
+    "t_kt": 0.001,
+    "kt_t": 1000,
+    "t_mt": 0.000001,
+    "mt_t": 1000000
   };
 
   if (massUnits.includes(source_unit) && massUnits.includes(target_unit)) {
     const conversionKey = `${source_unit}_${target_unit}`;
+    console.log(conversionKey)
+
+
     if (conversionRates.hasOwnProperty(conversionKey)) {
       return value * conversionRates[conversionKey];
     } else if (source_unit === target_unit) {

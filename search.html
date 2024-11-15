@@ -71,7 +71,7 @@
       }
     }
 
-    function buildResultsTable(records, massUnit, emissionType, scenarioId) {
+    function buildResultsTable(records, emissionType, scenarioId) {
       
       const table = document.createElement('table');
 
@@ -82,7 +82,9 @@
         const emissionValueCell = row.insertCell();
         const referenceCell = row.insertCell();
 
-        emissionValueCell.appendChild(document.createTextNode(convertValue(record.emissions[emissionType], "kg", massUnit).toFixed(2) + " " + massUnit + " " + emissionUnitMap[emissionType]));
+        let [value, unit] = bestMassUnit(record.emissions[emissionType]);
+
+        emissionValueCell.appendChild(document.createTextNode(value.toFixed(2) + " " + unit + " " + emissionUnitMap[emissionType]));
 
         const url = record.id ? `index.html?id=${record.id}` : record.url
 
@@ -142,16 +144,16 @@
         if (indexData) {
  
           let similarScenarios = filterData(indexData, searchValueInKg, emissionType, 1, 0.2);
-          document.getElementById('similarScenarios').appendChild(buildResultsTable(similarScenarios, massUnit, emissionType, scenarioId));
+          document.getElementById('similarScenarios').appendChild(buildResultsTable(similarScenarios, emissionType, scenarioId));
 
           let x10Scenarios = filterData(indexData, searchValueInKg, emissionType, 10, 0.2);
-          document.getElementById('x10Scenarios').appendChild(buildResultsTable(x10Scenarios, massUnit, emissionType, scenarioId));
+          document.getElementById('x10Scenarios').appendChild(buildResultsTable(x10Scenarios, emissionType, scenarioId));
 
           let x100Scenarios = filterData(indexData, searchValueInKg, emissionType, 100, 0.2);
-          document.getElementById('x100Scenarios').appendChild(buildResultsTable(x100Scenarios, massUnit, emissionType, scenarioId));
+          document.getElementById('x100Scenarios').appendChild(buildResultsTable(x100Scenarios, emissionType, scenarioId));
 
           let x01Scenarios = filterData(indexData, searchValueInKg, emissionType, 0.1, 0.2);
-          document.getElementById('x01Scenarios').appendChild(buildResultsTable(x01Scenarios, massUnit, emissionType, scenarioId));
+          document.getElementById('x01Scenarios').appendChild(buildResultsTable(x01Scenarios, emissionType, scenarioId));
         }
       });
     }
@@ -165,9 +167,12 @@
     <form id="searchForm" onsubmit="">
       <input type="text" name="value" id="searchInput" placeholder="Emission value">
       <select name="mass_unit" id="massUnit">
+        <option value="mg">Miligrams</option>
         <option value="g">Grams</option>
         <option value="kg" selected>Kilograms</option>
         <option value="t">Metric Tons</option>
+        <option value="kt">Kilotons</option>
+        <option value="mt">Megatons</option>
       </select>
       <select name="emission_type" id="emissionType">
         <option value="co2e" selected>CO2e</option>
