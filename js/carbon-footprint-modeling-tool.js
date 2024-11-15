@@ -22,7 +22,7 @@ function showJSON() {
 
 function showLink() {
 
-    var fileContent = JSON.stringify(scenario);
+    var fileContent = JSON.stringify(scenario.scenario ? scenario.scenario : scenario);
     let url = location.protocol + '//' + location.host + location.pathname + '?#' + btoa(unescape(encodeURIComponent(fileContent)))
 
     let overlay = document.getElementById('linkOverlay');
