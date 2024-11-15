@@ -628,7 +628,7 @@
     }
   },
   {
-    "id": "food-andouille",
+    "id": null,
     "title": "Andouille (per kg)",
     "description": null,
     "emissions": {
@@ -637,7 +637,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-andouille-de-guemene",
+    "id": null,
     "title": "Andouille de Guéméné (per kg)",
     "description": null,
     "emissions": {
@@ -646,7 +646,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-andouille-de-vire",
+    "id": null,
     "title": "Andouille de Vire (per kg)",
     "description": null,
     "emissions": {
@@ -655,7 +655,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-andouille-rechauffee-a-la-poele",
+    "id": null,
     "title": "Andouille/réchauffée à la poêle (per kg)",
     "description": null,
     "emissions": {
@@ -664,7 +664,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-andouillette-crue",
+    "id": null,
     "title": "Andouillette/crue (per kg)",
     "description": null,
     "emissions": {
@@ -673,7 +673,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-andouillette-de-troyes-crue",
+    "id": null,
     "title": "Andouillette de Troyes/crue (per kg)",
     "description": null,
     "emissions": {
@@ -682,7 +682,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-andouillette-sautee-poelee",
+    "id": null,
     "title": "Andouillette/sautée/poêlée (per kg)",
     "description": null,
     "emissions": {
@@ -691,7 +691,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-boudin-blanc-truffe-cru",
+    "id": null,
     "title": "Boudin blanc truffé/cru (per kg)",
     "description": null,
     "emissions": {
@@ -700,7 +700,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-boudin-noir-rayon-frais",
+    "id": null,
     "title": "Boudin noir/rayon frais (per kg)",
     "description": null,
     "emissions": {
@@ -709,7 +709,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-boudin-noir-saute-poele",
+    "id": null,
     "title": "Boudin noir/sauté/poêlé (per kg)",
     "description": null,
     "emissions": {
@@ -718,7 +718,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-bresaola",
+    "id": null,
     "title": "Bresaola (per kg)",
     "description": null,
     "emissions": {
@@ -727,7 +727,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-canard-magret-fume",
+    "id": null,
     "title": "Canard/magret fumé (per kg)",
     "description": null,
     "emissions": {
@@ -736,7 +736,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-cervelas",
+    "id": null,
     "title": "Cervelas (per kg)",
     "description": null,
     "emissions": {
@@ -745,7 +745,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-cervelas-a-l'ail-pur-porc",
+    "id": null,
     "title": "Cervelas à l'ail/pur porc (per kg)",
     "description": null,
     "emissions": {
@@ -754,7 +754,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-cervelas-obernois",
+    "id": null,
     "title": "Cervelas obernois (per kg)",
     "description": null,
     "emissions": {
@@ -763,7 +763,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-chair-a-saucisse-crue",
+    "id": null,
     "title": "Chair à saucisse/crue (per kg)",
     "description": null,
     "emissions": {
@@ -772,7 +772,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-chair-a-saucisse-porc-et-buf-crue",
+    "id": null,
     "title": "Chair à saucisse/porc et buf/crue (per kg)",
     "description": null,
     "emissions": {
@@ -781,7 +781,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-chair-a-saucisse-pur-porc-crue",
+    "id": null,
     "title": "Chair à saucisse/pur porc/crue (per kg)",
     "description": null,
     "emissions": {
@@ -790,7 +790,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-chipolata-crue",
+    "id": null,
     "title": "Chipolata/crue (per kg)",
     "description": null,
     "emissions": {
@@ -799,7 +799,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-chipolata-cuite",
+    "id": null,
     "title": "Chipolata/cuite (per kg)",
     "description": null,
     "emissions": {
@@ -808,7 +808,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-chorizo",
+    "id": null,
     "title": "Chorizo (per kg)",
     "description": null,
     "emissions": {
@@ -817,7 +817,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-chorizo-superieur-doux-ou-fort-type-charcuterie-en-tranches",
+    "id": null,
     "title": "Chorizo supérieur/doux ou fort/type charcuterie en tranches (per kg)",
     "description": null,
     "emissions": {
@@ -826,7 +826,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-chorizo-superieur-doux-ou-fort-type-saucisse-seche",
+    "id": null,
     "title": "Chorizo supérieur/doux ou fort, type saucisse sèche (per kg)",
     "description": null,
     "emissions": {
@@ -835,7 +835,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-confit-de-canard",
+    "id": null,
     "title": "Confit de canard (per kg)",
     "description": null,
     "emissions": {
@@ -844,7 +844,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-confit-de-canard-viande-cuisse-sans-peau-rechauffe",
+    "id": null,
     "title": "Confit de canard/viande (cuisse)/sans peau, réchauffé (per kg)",
     "description": null,
     "emissions": {
@@ -853,7 +853,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-confit-de-foie-de-porc",
+    "id": null,
     "title": "Confit de foie de porc (per kg)",
     "description": null,
     "emissions": {
@@ -862,7 +862,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-confit-de-foie-de-volaille",
+    "id": null,
     "title": "Confit de foie de volaille (per kg)",
     "description": null,
     "emissions": {
@@ -871,7 +871,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-coppa",
+    "id": null,
     "title": "Coppa (per kg)",
     "description": null,
     "emissions": {
@@ -880,7 +880,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-des-allumettes-rape-ou-hache-de-jambon",
+    "id": null,
     "title": "Dés/allumettes, râpé ou haché de jambon (per kg)",
     "description": null,
     "emissions": {
@@ -889,7 +889,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-des-allumettes-rape-ou-hache-de-jambon-de-volaille",
+    "id": null,
     "title": "Dés/allumettes, râpé ou haché de jambon de volaille (per kg)",
     "description": null,
     "emissions": {
@@ -898,7 +898,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-diot-cru",
+    "id": null,
     "title": "Diot/cru (per kg)",
     "description": null,
     "emissions": {
@@ -907,7 +907,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-epaule-de-porc-cuite-choix-decouennee-degraissee",
+    "id": null,
     "title": "Épaule de porc/cuite/choix, découennée dégraissée (per kg)",
     "description": null,
     "emissions": {
@@ -916,7 +916,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-epaule-de-porc-cuite-standard-decouennee-degraissee",
+    "id": null,
     "title": "Épaule de porc/cuite/standard, découennée dégraissée (per kg)",
     "description": null,
     "emissions": {
@@ -925,7 +925,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-filet-de-bacon",
+    "id": null,
     "title": "Filet de bacon (per kg)",
     "description": null,
     "emissions": {
@@ -934,7 +934,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-fromage-de-tete",
+    "id": null,
     "title": "Fromage de tête (per kg)",
     "description": null,
     "emissions": {
@@ -943,7 +943,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-hache-de-volaille",
+    "id": null,
     "title": "Haché de volaille (per kg)",
     "description": null,
     "emissions": {
@@ -952,7 +952,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-a-l'os-braise",
+    "id": null,
     "title": "Jambon à l'os braisé (per kg)",
     "description": null,
     "emissions": {
@@ -961,7 +961,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cru",
+    "id": null,
     "title": "Jambon cru (per kg)",
     "description": null,
     "emissions": {
@@ -970,7 +970,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cru-fume",
+    "id": null,
     "title": "Jambon cru/fumé (per kg)",
     "description": null,
     "emissions": {
@@ -979,7 +979,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cru-fume-allege-en-matiere-grasse",
+    "id": null,
     "title": "Jambon cru/fumé/allégé en matière grasse (per kg)",
     "description": null,
     "emissions": {
@@ -988,7 +988,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit-choix",
+    "id": null,
     "title": "Jambon cuit/choix (per kg)",
     "description": null,
     "emissions": {
@@ -997,7 +997,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit-choix-avec-couenne",
+    "id": null,
     "title": "Jambon cuit/choix/avec couenne (per kg)",
     "description": null,
     "emissions": {
@@ -1006,7 +1006,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit-choix-decouenne-degraisse",
+    "id": null,
     "title": "Jambon cuit/choix/découenné dégraissé (per kg)",
     "description": null,
     "emissions": {
@@ -1015,7 +1015,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit-de-paris-decouenne-degraisse",
+    "id": null,
     "title": "Jambon cuit/de Paris/découenné dégraissé (per kg)",
     "description": null,
     "emissions": {
@@ -1024,7 +1024,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit-fume",
+    "id": null,
     "title": "Jambon cuit/fumé (per kg)",
     "description": null,
     "emissions": {
@@ -1033,7 +1033,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit-superieur",
+    "id": null,
     "title": "Jambon cuit/supérieur (per kg)",
     "description": null,
     "emissions": {
@@ -1042,7 +1042,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit-superieur-a-teneur-reduite-en-sel",
+    "id": null,
     "title": "Jambon cuit/supérieur/à teneur réduite en sel (per kg)",
     "description": null,
     "emissions": {
@@ -1051,7 +1051,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit-superieur-avec-couenne",
+    "id": null,
     "title": "Jambon cuit/supérieur/avec couenne (per kg)",
     "description": null,
     "emissions": {
@@ -1060,7 +1060,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit-superieur-decouenne",
+    "id": null,
     "title": "Jambon cuit/supérieur/découenné (per kg)",
     "description": null,
     "emissions": {
@@ -1069,7 +1069,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit-superieur-decouenne-degraisse",
+    "id": null,
     "title": "Jambon cuit/supérieur/découenné dégraissé (per kg)",
     "description": null,
     "emissions": {
@@ -1078,7 +1078,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-de-bayonne",
+    "id": null,
     "title": "Jambon de Bayonne (per kg)",
     "description": null,
     "emissions": {
@@ -1087,7 +1087,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-de-dinde-ou-blanc-de-dinde-en-tranche",
+    "id": null,
     "title": "Jambon de dinde ou Blanc de dinde en tranche (per kg)",
     "description": null,
     "emissions": {
@@ -1096,7 +1096,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-de-porc-a-cuire-ou-jambon-a-rotir-cuire-au-four",
+    "id": null,
     "title": "Jambon de porc à cuire ou Jambon à rôtir/cuire au four (per kg)",
     "description": null,
     "emissions": {
@@ -1105,7 +1105,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-de-poulet-ou-blanc-de-poulet-en-tranche",
+    "id": null,
     "title": "Jambon de poulet ou Blanc de poulet en tranche (per kg)",
     "description": null,
     "emissions": {
@@ -1114,7 +1114,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-en-croute",
+    "id": null,
     "title": "Jambon en croûte (per kg)",
     "description": null,
     "emissions": {
@@ -1123,7 +1123,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambonneau-cuit",
+    "id": null,
     "title": "Jambonneau/cuit (per kg)",
     "description": null,
     "emissions": {
@@ -1132,7 +1132,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-sec",
+    "id": null,
     "title": "Jambon sec (per kg)",
     "description": null,
     "emissions": {
@@ -1141,7 +1141,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-sec-decouenne-degraisse",
+    "id": null,
     "title": "Jambon sec/découenné/dégraissé (per kg)",
     "description": null,
     "emissions": {
@@ -1150,7 +1150,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-sec-de-parme",
+    "id": null,
     "title": "Jambon sec de Parme (per kg)",
     "description": null,
     "emissions": {
@@ -1159,7 +1159,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-sec-serrano",
+    "id": null,
     "title": "Jambon sec Serrano (per kg)",
     "description": null,
     "emissions": {
@@ -1168,7 +1168,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-lardon-fume-cru",
+    "id": null,
     "title": "Lardon fumé/cru (per kg)",
     "description": null,
     "emissions": {
@@ -1177,7 +1177,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-lardon-fume-cuit",
+    "id": null,
     "title": "Lardon fumé/cuit (per kg)",
     "description": null,
     "emissions": {
@@ -1186,7 +1186,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-lardon-nature-cru",
+    "id": null,
     "title": "Lardon nature/cru (per kg)",
     "description": null,
     "emissions": {
@@ -1195,7 +1195,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-lardon-nature-cuit",
+    "id": null,
     "title": "Lardon nature/cuit (per kg)",
     "description": null,
     "emissions": {
@@ -1204,7 +1204,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-merguez-boeuf-et-mouton-crue",
+    "id": null,
     "title": "Merguez/boeuf et mouton, crue (per kg)",
     "description": null,
     "emissions": {
@@ -1213,7 +1213,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-merguez-boeuf-et-mouton-cuite",
+    "id": null,
     "title": "Merguez/boeuf et mouton, cuite (per kg)",
     "description": null,
     "emissions": {
@@ -1222,7 +1222,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-merguez-buf-mouton-et-porc-crue",
+    "id": null,
     "title": "Merguez/buf/mouton et porc, crue (per kg)",
     "description": null,
     "emissions": {
@@ -1231,7 +1231,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-merguez-crue",
+    "id": null,
     "title": "Merguez/crue (per kg)",
     "description": null,
     "emissions": {
@@ -1240,7 +1240,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-merguez-porc-et-buf-crue",
+    "id": null,
     "title": "Merguez/porc et buf/crue (per kg)",
     "description": null,
     "emissions": {
@@ -1249,7 +1249,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-merguez-pur-buf-crue",
+    "id": null,
     "title": "Merguez/pur buf/crue (per kg)",
     "description": null,
     "emissions": {
@@ -1258,7 +1258,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-mortadelle",
+    "id": null,
     "title": "Mortadelle (per kg)",
     "description": null,
     "emissions": {
@@ -1267,7 +1267,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-mortadelle-pistachee-pur-porc",
+    "id": null,
     "title": "Mortadelle pistachée pur porc (per kg)",
     "description": null,
     "emissions": {
@@ -1276,7 +1276,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-mortadelle-porc-et-boeuf",
+    "id": null,
     "title": "Mortadelle/porc et boeuf (per kg)",
     "description": null,
     "emissions": {
@@ -1285,7 +1285,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-mortadelle-pur-porc",
+    "id": null,
     "title": "Mortadelle/pur porc (per kg)",
     "description": null,
     "emissions": {
@@ -1294,7 +1294,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-mousse-de-canard",
+    "id": null,
     "title": "Mousse de canard (per kg)",
     "description": null,
     "emissions": {
@@ -1303,7 +1303,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-mousse-de-foie-de-porc",
+    "id": null,
     "title": "Mousse de foie de porc (per kg)",
     "description": null,
     "emissions": {
@@ -1312,7 +1312,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-mousse-de-foie-de-porc-superieure-ou-creme-de-foie",
+    "id": null,
     "title": "Mousse de foie de porc supérieure ou Crème de foie (per kg)",
     "description": null,
     "emissions": {
@@ -1321,7 +1321,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-museau-de-boeuf-en-vinaigrette",
+    "id": null,
     "title": "Museau de boeuf en vinaigrette (per kg)",
     "description": null,
     "emissions": {
@@ -1330,7 +1330,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-museau-de-porc-vinaigrette",
+    "id": null,
     "title": "Museau de porc vinaigrette (per kg)",
     "description": null,
     "emissions": {
@@ -1339,7 +1339,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-oreille-de-porc-demi-sel",
+    "id": null,
     "title": "Oreille de porc demi-sel (per kg)",
     "description": null,
     "emissions": {
@@ -1348,7 +1348,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pancetta-ou-poitrine-roulee-seche",
+    "id": null,
     "title": "Pancetta ou Poitrine roulée sèche (per kg)",
     "description": null,
     "emissions": {
@@ -1357,7 +1357,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-au-poivre-vert",
+    "id": null,
     "title": "Pâté au poivre vert (per kg)",
     "description": null,
     "emissions": {
@@ -1366,7 +1366,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-breton",
+    "id": null,
     "title": "Pâté breton (per kg)",
     "description": null,
     "emissions": {
@@ -1375,7 +1375,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-de-foie-de-porc",
+    "id": null,
     "title": "Pâté de foie de porc (per kg)",
     "description": null,
     "emissions": {
@@ -1384,7 +1384,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-de-foie-de-porc-superieur",
+    "id": null,
     "title": "Pâté de foie de porc/supérieur (per kg)",
     "description": null,
     "emissions": {
@@ -1393,7 +1393,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-de-foie-de-volaille",
+    "id": null,
     "title": "Pâté de foie de volaille (per kg)",
     "description": null,
     "emissions": {
@@ -1402,7 +1402,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-de-foie-d'oie",
+    "id": null,
     "title": "Pâté de foie d'oie (per kg)",
     "description": null,
     "emissions": {
@@ -1411,7 +1411,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-de-gibier",
+    "id": null,
     "title": "Pâté de gibier (per kg)",
     "description": null,
     "emissions": {
@@ -1420,7 +1420,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-de-lapin",
+    "id": null,
     "title": "Pâté de lapin (per kg)",
     "description": null,
     "emissions": {
@@ -1429,7 +1429,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-en-croute",
+    "id": null,
     "title": "Pâté en croûte (per kg)",
     "description": null,
     "emissions": {
@@ -1438,7 +1438,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-ou-terrine-aux-champignons-forestier",
+    "id": null,
     "title": "Pâté ou terrine aux champignons (forestier) (per kg)",
     "description": null,
     "emissions": {
@@ -1447,7 +1447,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pate-ou-terrine-de-campagne",
+    "id": null,
     "title": "Pâté ou terrine de campagne (per kg)",
     "description": null,
     "emissions": {
@@ -1456,7 +1456,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-pied-de-porc-demi-sel",
+    "id": null,
     "title": "Pied de porc demi-sel (per kg)",
     "description": null,
     "emissions": {
@@ -1465,7 +1465,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-poitrine-de-porc-demi-sel",
+    "id": null,
     "title": "Poitrine de porc demi-sel (per kg)",
     "description": null,
     "emissions": {
@@ -1474,7 +1474,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-poitrine-de-porc-fumee-crue",
+    "id": null,
     "title": "Poitrine de porc/fumée, crue (per kg)",
     "description": null,
     "emissions": {
@@ -1483,7 +1483,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-quenelle-de-poisson-crue",
+    "id": null,
     "title": "Quenelle de poisson/crue (per kg)",
     "description": null,
     "emissions": {
@@ -1492,7 +1492,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-quenelle-de-poisson-en-sauce",
+    "id": null,
     "title": "Quenelle de poisson/en sauce (per kg)",
     "description": null,
     "emissions": {
@@ -1501,7 +1501,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-quenelle-de-veau-en-sauce",
+    "id": null,
     "title": "Quenelle de veau/en sauce (per kg)",
     "description": null,
     "emissions": {
@@ -1510,7 +1510,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-quenelle-de-volaille-crue",
+    "id": null,
     "title": "Quenelle de volaille/crue (per kg)",
     "description": null,
     "emissions": {
@@ -1519,7 +1519,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-quenelle-de-volaille-en-sauce",
+    "id": null,
     "title": "Quenelle de volaille/en sauce (per kg)",
     "description": null,
     "emissions": {
@@ -1528,7 +1528,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-quenelle-nature-crue",
+    "id": null,
     "title": "Quenelle nature/crue (per kg)",
     "description": null,
     "emissions": {
@@ -1537,7 +1537,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rillettes-de-canard",
+    "id": null,
     "title": "Rillettes de canard (per kg)",
     "description": null,
     "emissions": {
@@ -1546,7 +1546,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rillettes-de-poulet",
+    "id": null,
     "title": "Rillettes de poulet (per kg)",
     "description": null,
     "emissions": {
@@ -1555,7 +1555,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rillettes-de-tours",
+    "id": null,
     "title": "Rillettes de Tours (per kg)",
     "description": null,
     "emissions": {
@@ -1564,7 +1564,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rillettes-d'oie",
+    "id": null,
     "title": "Rillettes d'oie (per kg)",
     "description": null,
     "emissions": {
@@ -1573,7 +1573,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rillettes-du-mans",
+    "id": null,
     "title": "Rillettes du Mans (per kg)",
     "description": null,
     "emissions": {
@@ -1582,7 +1582,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rillettes-pur-oie",
+    "id": null,
     "title": "Rillettes pur oie (per kg)",
     "description": null,
     "emissions": {
@@ -1591,7 +1591,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rillettes-pur-porc",
+    "id": null,
     "title": "Rillettes pur porc (per kg)",
     "description": null,
     "emissions": {
@@ -1600,7 +1600,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rillettes-traditionnelles-de-porc",
+    "id": null,
     "title": "Rillettes traditionnelles de porc (per kg)",
     "description": null,
     "emissions": {
@@ -1609,7 +1609,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rond-de-jambon-cuit",
+    "id": null,
     "title": "Rond de jambon cuit (per kg)",
     "description": null,
     "emissions": {
@@ -1618,7 +1618,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rosette-ou-fuseau",
+    "id": null,
     "title": "Rosette ou Fuseau (per kg)",
     "description": null,
     "emissions": {
@@ -1627,7 +1627,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-roti-de-volaille-en-salaison-cuit",
+    "id": null,
     "title": "Rôti de volaille en salaison/cuit (per kg)",
     "description": null,
     "emissions": {
@@ -1636,7 +1636,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-roulade-de-porc-pistachee",
+    "id": null,
     "title": "Roulade de porc pistachée (per kg)",
     "description": null,
     "emissions": {
@@ -1645,7 +1645,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-salami",
+    "id": null,
     "title": "Salami (per kg)",
     "description": null,
     "emissions": {
@@ -1654,7 +1654,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-salami-porc-et-boeuf",
+    "id": null,
     "title": "Salami porc et boeuf (per kg)",
     "description": null,
     "emissions": {
@@ -1663,7 +1663,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-salami-pur-porc",
+    "id": null,
     "title": "Salami pur porc (per kg)",
     "description": null,
     "emissions": {
@@ -1672,7 +1672,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-salami-type-danois",
+    "id": null,
     "title": "Salami type danois (per kg)",
     "description": null,
     "emissions": {
@@ -1681,7 +1681,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-alsacienne-fumee-ou-gendarme",
+    "id": null,
     "title": "Saucisse alsacienne fumée ou Gendarme (per kg)",
     "description": null,
     "emissions": {
@@ -1690,7 +1690,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-cocktail",
+    "id": null,
     "title": "Saucisse cocktail (per kg)",
     "description": null,
     "emissions": {
@@ -1699,7 +1699,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-biere",
+    "id": null,
     "title": "Saucisse de bière (per kg)",
     "description": null,
     "emissions": {
@@ -1708,7 +1708,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-foie",
+    "id": null,
     "title": "Saucisse de foie (per kg)",
     "description": null,
     "emissions": {
@@ -1717,7 +1717,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-francfort",
+    "id": null,
     "title": "Saucisse de Francfort (per kg)",
     "description": null,
     "emissions": {
@@ -1726,7 +1726,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-jambon-pur-porc",
+    "id": null,
     "title": "Saucisse de jambon pur porc (per kg)",
     "description": null,
     "emissions": {
@@ -1735,7 +1735,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-montbeliard",
+    "id": null,
     "title": "Saucisse de Montbéliard (per kg)",
     "description": null,
     "emissions": {
@@ -1744,7 +1744,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-morteau",
+    "id": null,
     "title": "Saucisse de Morteau (per kg)",
     "description": null,
     "emissions": {
@@ -1753,7 +1753,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-morteau-bouillie-cuite-a-l'eau",
+    "id": null,
     "title": "Saucisse de Morteau/bouillie/cuite à l'eau (per kg)",
     "description": null,
     "emissions": {
@@ -1762,7 +1762,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-strasbourg-ou-knack",
+    "id": null,
     "title": "Saucisse de Strasbourg ou Knack (per kg)",
     "description": null,
     "emissions": {
@@ -1771,7 +1771,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-toulouse-crue",
+    "id": null,
     "title": "Saucisse de Toulouse/crue (per kg)",
     "description": null,
     "emissions": {
@@ -1780,7 +1780,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-toulouse-cuite",
+    "id": null,
     "title": "Saucisse de Toulouse/cuite (per kg)",
     "description": null,
     "emissions": {
@@ -1789,7 +1789,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-volaille-facon-charcutiere",
+    "id": null,
     "title": "Saucisse de volaille/façon charcutière (per kg)",
     "description": null,
     "emissions": {
@@ -1798,7 +1798,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-de-volaille-type-knack",
+    "id": null,
     "title": "Saucisse de volaille/type Knack (per kg)",
     "description": null,
     "emissions": {
@@ -1807,7 +1807,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-seche",
+    "id": null,
     "title": "Saucisse sèche (per kg)",
     "description": null,
     "emissions": {
@@ -1816,7 +1816,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-viennoise-crue",
+    "id": null,
     "title": "Saucisse viennoise/crue (per kg)",
     "description": null,
     "emissions": {
@@ -1825,7 +1825,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisson-a-l'ail",
+    "id": null,
     "title": "Saucisson à l'ail (per kg)",
     "description": null,
     "emissions": {
@@ -1834,7 +1834,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisson-brioche-cuit",
+    "id": null,
     "title": "Saucisson brioché/cuit (per kg)",
     "description": null,
     "emissions": {
@@ -1843,7 +1843,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisson-cuit-pur-porc",
+    "id": null,
     "title": "Saucisson cuit pur porc (per kg)",
     "description": null,
     "emissions": {
@@ -1852,7 +1852,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisson-de-paris",
+    "id": null,
     "title": "Saucisson de Paris (per kg)",
     "description": null,
     "emissions": {
@@ -1861,7 +1861,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisson-de-paris-fume",
+    "id": null,
     "title": "Saucisson de Paris/fumé (per kg)",
     "description": null,
     "emissions": {
@@ -1870,7 +1870,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisson-sec",
+    "id": null,
     "title": "Saucisson sec (per kg)",
     "description": null,
     "emissions": {
@@ -1879,7 +1879,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisson-sec-aux-noix-et-ou-noisettes",
+    "id": null,
     "title": "Saucisson sec aux noix et/ou noisettes (per kg)",
     "description": null,
     "emissions": {
@@ -1888,7 +1888,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisson-sec-pur-porc",
+    "id": null,
     "title": "Saucisson sec pur porc (per kg)",
     "description": null,
     "emissions": {
@@ -1897,7 +1897,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisson-sec-pur-porc-qualite-superieure",
+    "id": null,
     "title": "Saucisson sec pur porc/qualité supérieure (per kg)",
     "description": null,
     "emissions": {
@@ -1906,7 +1906,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-terrine-de-canard",
+    "id": null,
     "title": "Terrine de canard (per kg)",
     "description": null,
     "emissions": {
@@ -1915,7 +1915,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-terrine-de-lapin",
+    "id": null,
     "title": "Terrine de lapin (per kg)",
     "description": null,
     "emissions": {
@@ -1924,7 +1924,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-andouillette-andouille",
+    "id": null,
     "title": "Andouillette/Andouille (per kg)",
     "description": null,
     "emissions": {
@@ -1933,7 +1933,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-boudin-noir",
+    "id": null,
     "title": "Boudin noir (per kg)",
     "description": null,
     "emissions": {
@@ -1942,7 +1942,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-epaule-de-porc",
+    "id": null,
     "title": "Épaule de porc (per kg)",
     "description": null,
     "emissions": {
@@ -1951,7 +1951,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-jambon-cuit",
+    "id": null,
     "title": "Jambon cuit (per kg)",
     "description": null,
     "emissions": {
@@ -1960,7 +1960,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-merguez-boeuf-mouton-et-porc-crue",
+    "id": null,
     "title": "Merguez/boeuf, mouton et porc, crue (per kg)",
     "description": null,
     "emissions": {
@@ -1969,7 +1969,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-merguez-porc-et-boeuf-crue",
+    "id": null,
     "title": "Merguez/porc et boeuf, crue (per kg)",
     "description": null,
     "emissions": {
@@ -1978,7 +1978,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-merguez-pur-boeuf-crue",
+    "id": null,
     "title": "Merguez/pur boeuf, crue (per kg)",
     "description": null,
     "emissions": {
@@ -1987,7 +1987,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-rillettes",
+    "id": null,
     "title": "Rillettes (per kg)",
     "description": null,
     "emissions": {
@@ -1996,7 +1996,7 @@
     "url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
   },
   {
-    "id": "food-saucisse-suisse-a-cuire",
+    "id": null,
     "title": "Saucisse suisse à cuire (per kg)",
     "description": null,
     "emissions": {

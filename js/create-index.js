@@ -64,7 +64,7 @@ fs.readdir(scenariosFolder, (err, files) => {
 
       // Create result object
     const result = {
-      id: key, // 
+      id: null, // 
       title: record.name + (unit ? " (per " + unit +")" : ""), // 
       description: null, // 
       emissions: emissions, // 
