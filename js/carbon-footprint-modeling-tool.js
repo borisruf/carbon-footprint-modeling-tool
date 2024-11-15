@@ -14,7 +14,8 @@ function uuidv4() {
 function showJSON() {
     var jsonString = JSON.stringify(scenario, null, 2); // Formatting JSON with 2-space indentation
 
-    document.getElementById('jsonContent').innerText = jsonString;
+    let textarea = document.getElementById('jsonContent')
+    textarea.value = jsonString;
 
     // Show the overlay
     document.getElementById('jsonOverlay').style.display = 'block';
@@ -70,6 +71,27 @@ function makeUrl() {
     var fileContent = JSON.stringify(scenario);
     let url = location.protocol + '//' + location.host + location.pathname + '?#' + btoa(unescape(encodeURIComponent(fileContent)))
     window.open(url, '_blank').focus();
+}
+
+
+function updateScenario() {
+    let textarea = document.getElementById("jsonContent");
+
+    try {
+        scenario = JSON.parse(textarea.value);
+
+        // buildScenarioDOMtree is a local function in index and show TODO: refactor
+        let dom = buildScenarioDOMtree(scenario);
+
+        let container = document.getElementById("container")
+        container.innerHTML = "";
+        container.appendChild(dom);
+        updateView(scenario);
+
+        document.getElementById('jsonOverlay').style.display = 'none';
+    } catch (error) {
+        alert("JSON schema is invalid")
+    }
 }
 
 function bestMassUnit(value_in_kg) {
@@ -137,8 +159,6 @@ const conversionRates = {
 
   if (massUnits.includes(source_unit) && massUnits.includes(target_unit)) {
     const conversionKey = `${source_unit}_${target_unit}`;
-    console.log(conversionKey)
-
 
     if (conversionRates.hasOwnProperty(conversionKey)) {
       return value * conversionRates[conversionKey];

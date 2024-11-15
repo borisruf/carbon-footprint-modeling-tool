@@ -271,7 +271,7 @@
     </div>
     <div id="links">
         <a href="#" onclick="showLink()">Share via link</a>
-        | <a href="#" onclick="showJSON()">Show data</a>
+        | <a href="#" onclick="showJSON()">Edit data</a>
         | <a href="#" onclick="contextualizeEmissions()">Contextualize emissions</a>
         | <a href="https://github.com/borisruf/carbon-footprint-modeling-tool">About the data model</a>
     </div>
@@ -291,7 +291,13 @@
     <!-- Overlay to display well-formatted JSON -->
     <div class="overlay" id="jsonOverlay">
         <div class="json-container" id="jsonContainer">
-            <pre class="json-content" id="jsonContent"></pre>
+            <div class="textarea-container">
+                <textarea class="json-content" id="jsonContent"></textarea>
+            </div>
+            <div class="button-container">
+                <button onclick="updateScenario()">Update</button>
+                <button onclick="document.getElementById('jsonOverlay').style.display = 'none';">Cancel</button>
+            </div>
         </div>
     </div>
 

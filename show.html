@@ -37,61 +37,24 @@
             primary_source = sources_json[source_id];
         }
 
-        window.addEventListener('load', function () {
+        function buildScenarioDOMtree(scenario, scenario_id) {
 
-            // dynamical create consumption placeholders based on consumptionMap
-            let consumptionsUl = document.querySelector("div.data.template[name='component'] div.data[name='consumptions'] ul");
-            for (const key of Object.keys(consumptionMap)) {
-                let li = consumptionsUl.querySelector("li").cloneNode(true);
-                li.setAttribute("name", key);
-                li.querySelector("span[name='title'").innerHTML = consumptionMap[key];
-                consumptionsUl.appendChild(li)
-            }
-            consumptionsUl.removeChild(consumptionsUl.querySelector("li"));
+            let scenarioDiv = document.querySelector(".template[name='scenario']").cloneNode(true);
+            scenarioDiv.classList.remove("template");
 
-            // no id parameter, test for base64 encoded 
-            if (!id) {
-                let base64 = url.hash;
-
-                // hash detected
-                if (base64) {
-                    scenario = JSON.parse(atob(base64.substring(1)));
-
-                // fallback to sample scenario
-                } else {
-                    window.location.href = "?id=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc"
-                }
-            }
-
-            if (!scenario) {
-                // fetch JSON file
-                let request = new XMLHttpRequest();
-                request.open("GET", "./scenarios/" + id + ".json", false);
-                request.setRequestHeader('Cache-Control', 'no-cache');
-                request.send(null)
-                scenario = JSON.parse(request.responseText);
-            }
-
-            if (primary_source) {
-                // overload sources with primary source if provided
-                scenario = updateSource(scenario, primary_source);
-            }
-
-            let titleSpan = document.querySelector("h1 span[name='title']");
+            let titleSpan = scenarioDiv.querySelector("h1 span[name='title']");
             titleSpan.innerHTML = scenario.title;
-
-            let titleSup = document.querySelector("h1 sup");
+            
+            let titleSup = scenarioDiv.querySelector("h1 sup");
 
             if (scenario.reference_url) {
                 titleSup.querySelector("a[name='reference_url']").href = scenario.reference_url;
             } else {
                 titleSup.parentNode.removeChild(titleSup);
             }
-            
-            document.title = scenario.title + " – " + document.title;
 
             if (scenario.description) {
-                let descriptionDiv = document.querySelector("div[name='description']");
+                let descriptionDiv = scenarioDiv.querySelector("div[name='description']");
                 descriptionDiv.innerHTML = scenario.description;
             }
 
@@ -108,7 +71,7 @@
                     }
                 }
                 
-                document.getElementById("scopes").appendChild(scopeDiv);
+                scenarioDiv.querySelector("[name=scopes]").appendChild(scopeDiv);
 
                 for (const [j, element] of scope.list.entries()) {
 
@@ -174,6 +137,52 @@
                     }
                 }
             }
+            return scenarioDiv;
+        }
+
+        window.addEventListener('load', function () {
+
+            // dynamical create consumption placeholders based on consumptionMap
+            let consumptionsUl = document.querySelector("div.data.template[name='component'] div.data[name='consumptions'] ul");
+            for (const key of Object.keys(consumptionMap)) {
+                let li = consumptionsUl.querySelector("li").cloneNode(true);
+                li.setAttribute("name", key);
+                li.querySelector("span[name='title'").innerHTML = consumptionMap[key];
+                consumptionsUl.appendChild(li)
+            }
+            consumptionsUl.removeChild(consumptionsUl.querySelector("li"));
+
+            // no id parameter, test for base64 encoded 
+            if (!id) {
+                let base64 = url.hash;
+
+                // hash detected
+                if (base64) {
+                    scenario = JSON.parse(atob(base64.substring(1)));
+
+                // fallback to sample scenario
+                } else {
+                    window.location.href = "?id=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc"
+                }
+            }
+
+            if (!scenario) {
+                // fetch JSON file
+                let request = new XMLHttpRequest();
+                request.open("GET", "./scenarios/" + id + ".json", false);
+                request.setRequestHeader('Cache-Control', 'no-cache');
+                request.send(null)
+                scenario = JSON.parse(request.responseText);
+            }
+
+            if (primary_source) {
+                // overload sources with primary source if provided
+                scenario = updateSource(scenario, primary_source);
+            }
+
+            let dom = buildScenarioDOMtree(scenario);
+
+            document.getElementById("container").appendChild(dom);
 
             updateView(scenario, null, primary_source);
 
@@ -206,14 +215,11 @@
 </head>
 
 <body>
-    <div id="container">
-        <h1><span class="data" name="title" data-type="string" id="title"></span><sup>[<a class="data" name="reference_url" target="_blank" onclick="event.stopPropagation()">i</a>]</sup></h1>
-        <div class="data" data-type="string" name="description"></div>
-        <div class="data" name="scopes" data-type="array" id="scopes"></div>
+    <div id="container" name="scenario" data-type="object" style="max-width: none;">
     </div>
     <div id="links">
         <a href="#" onclick="showLink()">Share via link</a>
-        | <a href="#" onclick="showJSON()">Show data</a>
+        | <a href="#" onclick="showJSON()">Edit data</a>
         | <a href="#" onclick="contextualizeEmissions()">Contextualize emissions</a>
         | <a href="https://github.com/borisruf/carbon-footprint-modeling-tool">About the data model</a>
     </div>
@@ -233,7 +239,13 @@
     <!-- Overlay to display well-formatted JSON -->
     <div class="overlay" id="jsonOverlay">
         <div class="json-container" id="jsonContainer">
-            <pre class="json-content" id="jsonContent"></pre>
+            <div class="textarea-container">
+                <textarea class="json-content" id="jsonContent"></textarea>
+            </div>
+            <div class="button-container">
+                <button onclick="updateScenario()">Update</button>
+                <button onclick="document.getElementById('jsonOverlay').style.display = 'none';">Cancel</button>
+            </div>
         </div>
     </div>
 
@@ -258,6 +270,11 @@
 
 <!--------------------------------------------------------------------------------------------------------->
     <div class="templates">
+        <div class="data template" name="scenario" data-type="object">
+            <h1><span class="data" name="title" data-type="string" id="title"></span><sup>[<a class="data" name="reference_url" target="_blank" onclick="event.stopPropagation()">i</a>]</sup></h1>
+            <div class="data" data-type="string" name="description"></div>
+            <div class="data" name="scopes" data-type="array"></div>
+        </div>
         <!------------------------------------------------------------------------------------------------->
         <div class="data template" name="scope" data-type="object">
             <div class="data" name="level"></div>
