@@ -58,10 +58,13 @@ or energy sources can be changed by clicking the pencil icon <img src="https://r
 There are two ways to compose new scenarios: Either by customizing an existing scenario in the viewer and exporting the new setting, or by writing the data structure formatted in JSON from zero.
 
 #### 1. Extend an existing scenario (easy)
-Use an existing scenario and update the quantities, consumer components and energy sources (as described [above](#view-a-scenario)). When done, export the scenario using one of the links on the bottom of the page:
-  - "Save JSON" downloads the scenario as JSON file to your computer
-  - "Copy JSON" downloads the scenario with a new random identifier to your computer
-  - "Make URL" encodes the scenario within a URL you can use to share publicly publish it
+You can modify an existing scenario as follows:
+  - Update the quantities, consumer components and energy sources in the user interface (as described [above](#view-a-scenario))
+  - Click the link "Edit data" in the footer and modify the JSON code
+
+When finished, you can do one of the following to export the scenario:
+  - Click the link "Edit data" in the footer and copy the JSON code
+  - Click the link "Share via link" and copy the URL of your scenario
 
 #### 2. Create a new scenario from scratch (advanced)
 Create a new JSON file following the [data scheme](https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/data_model.svg). For example:
@@ -154,7 +157,7 @@ Utilize the URL parameter `title` to add a title, and `factor` to apply multipli
 ---
 
 ### Find comparative scenarios
-The search view can be accessed either by directly visiting [search.html](https://borisruf.github.io/carbon-footprint-modeling-tool/search.html) or by clicking on the __&#x2248;__ button located at the top right of any scenario. In the search bar, an emission value, the type of mass, and the emission category can be specified. The search results display comparable carbon scenarios for different scales: identical emissions, 10 times, 100 times, and 0.1 times. 
+The search view can be accessed either by directly visiting [search.html](https://borisruf.github.io/carbon-footprint-modeling-tool/search.html) or by clicking on the link "Contextualize emissions" in the footer of any scenario. In the search bar, an emission value, the type of mass, and the emission category can be specified. The search results display comparable carbon scenarios for different scales: identical emissions, 10 times, 100 times, and 0.1 times. 
 
 <img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/search.png" width="500"/>
 
