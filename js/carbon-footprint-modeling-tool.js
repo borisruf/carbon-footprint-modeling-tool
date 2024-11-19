@@ -119,6 +119,28 @@ function bestMassUnit(value_in_kg) {
     return [value, unit]
 }
 
+function bestEnergyUnit(value_in_kWh) {
+    let unit = "kWh";
+    if (value_in_kWh >= 1000000) {
+        value = value_in_kWh/1000000;
+        unit = "GWh";
+    } else if (value_in_kWh >= 1000) {
+        value = value_in_kWh/1000;
+        unit = "MWh";
+    } else if (value_in_kWh >= 1) {
+        value = value_in_kWh;
+        unit = "kWh";
+    } else if (value_in_kWh >= 0.001) {
+        value = value_in_kWh*1000;
+        unit = "Wh";
+    } else if (value_in_kWh < 0.001) {
+        value = value_in_kWh*1000000;
+        unit = "mWh";
+    }
+
+    return [value, unit]
+}
+
 function formatTotalEmissions(value_in_kg, emission_type) {
 
     let [value, unit] = bestMassUnit(value_in_kg);
@@ -221,7 +243,7 @@ function formatConsumptionStringByUnit(consumption) {
 
     if (source_type == "electricity") {
         source_type = "";
-        value = value.toFixed(4);
+        [value, unit] = bestEnergyUnit(value);
     } else { 
         source_type = " (" + source_type + ")";
         value = value.toFixed(2);
