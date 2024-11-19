@@ -125,6 +125,142 @@ function formatTotalEmissions(value_in_kg, emission_type) {
     return Math.round(value * 100) / 100 + unit + " " + emissionUnitMap[emission_type];
 }
 
+function getComponentConsumption(component) {
+
+    let consumption = null;
+    let consumptions = component.consumer.consumptions;
+
+    //some consumer have several consumptions (e.g., hybrid car), select the one that matches the quantity unit
+    for (let c in consumptions) {
+        if (c === component.source.type) {
+        consumption = consumptions[c];
+        }
+    }
+
+    if (consumption) {
+
+        value = consumption.value;
+        quantity = component.quantity;
+        unit = consumption.unit;
+
+        return [Number(value)*quantity, unit, component.source.type];
+    }
+}
+
+function getScopeConsumptions(scope) {
+
+    let consumptions = [];
+
+    if (scope.list && scope.list.length > 0) {
+
+        scope.list.forEach((item) => {
+
+            if (item.type === "component" && item.consumer && item.consumer.consumptions) {
+                let value = 0;
+                let unit = null;
+                let source_type = null;
+                
+                [value, unit, source_type] = getComponentConsumption(item);
+                
+                consumptions.push([value, unit, source_type]);
+
+            } else if (item.type === "scenario") {
+                let c = getScenarioConsumptions(item);
+                consumptions.push(...c);
+            }
+        });
+    }
+
+    return consumptions;
+}
+
+function getScenarioConsumptions(scenario) {
+
+    let consumptions = [];
+    let quantity = 1;
+
+    if (scenario.hasOwnProperty("scenario")) { 
+        quantity = scenario.quantity;
+        scenario = scenario.scenario; 
+    }
+
+    if (scenario.scopes && scenario.scopes.length > 0) {
+
+        scenario.scopes.forEach((scope) => {        
+            let c = getScopeConsumptions(scope);
+            c.map((subArray) => { subArray[0] *= quantity; return subArray });
+            consumptions.push(...c);            
+        })
+    }
+    return consumptions;
+}
+
+function aggregateConsumptionsByUnit(consumptions) {
+    
+    let table = {};
+
+    consumptions.forEach((consumption) => {
+        let value = consumption[0];
+        let unit = consumption[1];
+        let source_type = consumption[2];
+
+        if (table[source_type]) {
+            table[source_type].value += value;
+        } else {
+            table[source_type] = { value, unit };
+        }
+    });
+
+    return Object.entries(table).map(([source_type, { value, unit }]) => ([ value, unit, source_type ]));
+}
+
+function formatConsumptionStringByUnit(consumption) {
+    let value = consumption[0];
+    let unit = consumption[1];
+    let source_type = consumption[2];
+
+    if (source_type == "electricity") {
+        source_type = "";
+        value = value.toFixed(4);
+    } else { 
+        source_type = " (" + source_type + ")";
+        value = value.toFixed(2);
+    }
+
+    return value + " " + unit + source_type
+}
+
+function formatTotalConsumptionString(consumptions) {
+
+    let aggregatedConsumptions = aggregateConsumptionsByUnit(consumptions);
+    let processedAggregatedConsumptions = aggregatedConsumptions.map((entry) => [formatConsumptionStringByUnit(entry)]);
+    return processedAggregatedConsumptions.map(subArray => subArray.join(" ")).join(" / ")
+}
+
+function formatTotalConsumption(element) {
+
+    let value = 0;
+    let unit = null;
+    let source_type = null;
+
+    // regular components with consumption information, excluding source/emission combinations (e.g., x kg CO2/km)
+    if (element.type == "component" && element.consumer && element.consumer.consumptions) {
+
+        let consumption = getComponentConsumption(element);
+
+        return formatConsumptionStringByUnit(consumption);
+
+    } else if (element.type == "scenario") {
+
+        let consumptions = getScenarioConsumptions(element);
+        
+        return formatTotalConsumptionString(consumptions);
+    }
+
+    return null;
+}
+
+
 function convertValue(value, source_unit, target_unit) {
 const conversionRates = {
     "mg_g": 0.001,
@@ -348,13 +484,23 @@ function updateView(scenario_json, scenario_id, primary_source=null) {
 
         let scopeDiv = scenarioDiv.querySelectorAll("div[name='scope']:not(.template)")[i];
 
+        if (show_consumption_parameter) {
+            let totalConsumptionsMessage = Array.from(scopeDiv.querySelectorAll(".total_consumptions")).pop();
+            let consumptions = getScopeConsumptions(scope);
+            totalConsumptionsMessage.innerHTML = formatTotalConsumptionString(consumptions);
+        }
+
         let unit;
-        let subTotalMessage;
+        let consumptionSubTotalMessage;
+        let emissionSubTotalMessage;
+        
 
         for (const [j, element] of scope.list.entries()) {
 
             // recursive call when element is nested scenario
-            if (element.type == "scenario") {updateView(element.scenario, element.scenario_id, primary_source)};
+            if (element.type == "scenario") {
+                updateView(element.scenario, element.scenario_id, primary_source);
+            };
 
             let elementDiv = scopeDiv.querySelectorAll("div[name='component'], div[name='link'], div[name='nestedScenario']")[j];
 
@@ -363,31 +509,41 @@ function updateView(scenario_json, scenario_id, primary_source=null) {
 
             if (Object.keys(emissions[j]).length) {
 
+                if (show_consumption_parameter) {
+                    consumptionSubTotalMessage = formatTotalConsumption(element);
+                }
+
                 unit = emission_type_parameter || bestEmissionType(emissions[j]);
-                subTotalMessage = formatTotalEmissions(emissions[j][unit], unit);
+                emissionSubTotalMessage = formatTotalEmissions(emissions[j][unit], unit);
                 if (sourceConnector) {sourceConnector.innerHTML = "-----";}
 
             } else {
-                subTotalMessage = "";
+                consumptionSubTotalMessage = "";
+                emissionSubTotalMessage = "";
                 if (sourceConnector) {sourceConnector.innerHTML = "--||--";}
             }
 
-            // update sub total message
-            Array.from(elementDiv.querySelectorAll(".emission_sub_total")).pop().innerHTML = subTotalMessage;
+            if (show_consumption_parameter) {
+
+                // update consumption sub total message
+                Array.from(elementDiv.querySelectorAll(".consumption_sub_total")).pop().innerHTML = consumptionSubTotalMessage;
+            }
+
+            // update emission sub total message
+            Array.from(elementDiv.querySelectorAll(".emission_sub_total")).pop().innerHTML = emissionSubTotalMessage;
         }
 
         let best_unit = emission_type_parameter || bestTotalEmissionType(emissions);
-        let totalMessage = Array.from(scopeDiv.querySelectorAll(".total_emission")).pop();
+        let totalEmissionMessage = Array.from(scopeDiv.querySelectorAll(".total_emission")).pop();   
 
         // update total emissions with best common emission type
         if (best_unit) {
             let sum = totalEmissionsByUnit(emissions, best_unit);
-
-            totalMessage.innerHTML = formatTotalEmissions(sum, best_unit);
+            totalEmissionMessage.innerHTML = formatTotalEmissions(sum, best_unit);
 
         } else {
             console.warn("No common emission type available for " + scope.level);
-            totalMessage.innerHTML = "ʘ ʘ<br />o";
+            totalEmissionMessage.innerHTML = "ʘ ʘ<br />o";
         }
         
     }

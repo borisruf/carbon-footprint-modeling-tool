@@ -325,3 +325,34 @@ div[name="level"]:hover + .tooltip {
   display: flex;
   align-items: center;
 }
+
+.consumption_sub_total {
+  display: none;
+}
+
+.consumption_sub_total:after {
+  content: "";
+  clear: both; /* or 'left' or 'right' depending on your layout */
+  display: block; /* or 'inline-block' depending on your layout */
+}
+
+div[name="scope"] div.total_consumptions {
+    position: absolute;
+    float: right;
+    
+    right:  -70px;
+    bottom:  85px;
+    
+    border-radius: 10%;
+    width: 140px;
+    min-height: 40px;
+    padding: 10px;
+    background-color: lightblue;
+    text-align:  center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    display: none;
+    font-size: 14px;
+}

@@ -23,6 +23,9 @@
         // optional parameter to override emission type
         var emission_type_parameter = url.searchParams.get("emission_type");
 
+        // optional parameter to show consumption data
+        var show_consumption_parameter = url.searchParams.get("show_consumption") === "true";
+
         // TODO: replace data source of autocompletejs with API call
         let request2 = new XMLHttpRequest();
         request2.open("GET", "./data/sources.json", false);
@@ -261,6 +264,11 @@
                     document.getElementById('linkOverlay').style.display = 'none';
                 }
             });
+
+            if (show_consumption_parameter) {
+                document.querySelectorAll(".consumption_sub_total").forEach((element) => element.style.display = "block");
+                document.querySelectorAll(".total_consumptions").forEach((element) => element.style.display = "block");
+            }
       });
 
     </script>
@@ -333,6 +341,7 @@
             <div class="data tooltip" name="description"></div>
             <div class="data" name="list" data-type="array"></div>
             <div class="total_emission"></div>
+            <div class="total_consumptions"></div>
         </div>
         <!------------------------------------------------------------------------------------------------->
         <div class="data template" name="nestedScenario" data-type="object">
@@ -342,7 +351,10 @@
                     <label for="quantity">X</label>
                 </div>
             </div>
-            <div><span class="emission_sub_total"></span></div>
+            <div>
+                <span class="consumption_sub_total"></span>
+                <span class="emission_sub_total"></span>
+            </div>
             <span class="data" name="scenario_id"></span> 
              <span class="data" name="type"></span> 
         </div>
@@ -359,7 +371,10 @@
                 <span class="data" name="scenario_id"></span> 
                 <span class="data" name="type"></span> 
             </div>
-            <div><span class="emission_sub_total"></span></div>
+            <div>
+                <span class="consumption_sub_total"></span>
+                <span class="emission_sub_total"></span>
+            </div>
         </div>
         <!------------------------------------------------------------------------------------------------->
         <div class="data template" name="component" data-type="object">
@@ -426,7 +441,10 @@
                     </div>
                 </div>
             </div>
-            <div><span class="emission_sub_total"></span></div>
+            <div>
+                <span class="consumption_sub_total"></span>
+                <span class="emission_sub_total"></span>
+            </div>
         </div>
         <!------------------------------------------------------------------------------------------------->
     </div>
