@@ -244,6 +244,7 @@ function formatConsumptionStringByUnit(consumption) {
     if (source_type == "electricity") {
         source_type = "";
         [value, unit] = bestEnergyUnit(value);
+        value = value.toFixed(4);
     } else { 
         source_type = " (" + source_type + ")";
         value = value.toFixed(2);
