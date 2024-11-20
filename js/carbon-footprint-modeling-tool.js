@@ -331,7 +331,7 @@ const conversionRates = {
 }
 
 // calculate scope emissions from JSON data
-function calculateScopeEmissions(scope, primary_source=null) {
+function calculateScopeEmissions(scope, factor=1, primary_source=null) {
     let emissions = {};
 
     for (const [j, element] of scope.list.entries()) {
@@ -421,12 +421,7 @@ function calculateScopeEmissions(scope, primary_source=null) {
 
             let json = JSON.parse(responseText);
 
-            if (primary_source) {
-                // overload sources with primary source if provided
-                json = updateSource(json, primary_source)
-            }
-
-            let linkedEmissions = totalEmissions(json);
+            let linkedEmissions = totalEmissions(json, factor, primary_source);
             
             // consider quantity parameter if any
             if (Number(element.quantity)) {
@@ -438,7 +433,7 @@ function calculateScopeEmissions(scope, primary_source=null) {
             emissions[j] = linkedEmissions;
         } else if (element.type == "scenario") {
 
-            let scenarioEmissions = totalEmissions(element.scenario);
+            let scenarioEmissions = totalEmissions(element.scenario, factor, primary_source);
             
             // consider quantity parameter if any
             if (Number(element.quantity)) {
@@ -502,7 +497,7 @@ function updateView(scenario_json, scenario_id, primary_source=null) {
     for ([i, scope] of scenario_json.scopes.entries()) {
 
         // calculate emissions per scope
-        let emissions = calculateScopeEmissions(scope, primary_source);
+        let emissions = calculateScopeEmissions(scope, 1, primary_source);
 
         let scopeDiv = scenarioDiv.querySelectorAll("div[name='scope']:not(.template)")[i];
 
@@ -682,7 +677,7 @@ function totalEmissions(scenario_json, factor=1, primary_source=null) {
     for (const [i, scope] of scenario_json.scopes.entries()) {
 
         // omit scopes and create flat emissions array
-        emissions = emissions.concat(Object.values(calculateScopeEmissions(scope, primary_source)));
+        emissions = emissions.concat(Object.values(calculateScopeEmissions(scope, factor, primary_source)));
     }
 
     let available_units = availableTotalEmissionTypes(emissions);
