@@ -421,7 +421,7 @@ function calculateScopeEmissions(scope, factor=1, primary_source=null) {
 
             let json = JSON.parse(responseText);
 
-            let linkedEmissions = totalEmissions(json, factor, primary_source);
+            let linkedEmissions = totalEmissions(json, 1, primary_source);
             
             // consider quantity parameter if any
             if (Number(element.quantity)) {
@@ -433,7 +433,7 @@ function calculateScopeEmissions(scope, factor=1, primary_source=null) {
             emissions[j] = linkedEmissions;
         } else if (element.type == "scenario") {
 
-            let scenarioEmissions = totalEmissions(element.scenario, factor, primary_source);
+            let scenarioEmissions = totalEmissions(element.scenario, 1, primary_source);
             
             // consider quantity parameter if any
             if (Number(element.quantity)) {
