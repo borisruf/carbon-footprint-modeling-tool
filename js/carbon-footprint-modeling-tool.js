@@ -1042,6 +1042,19 @@ function addSearchOverlay() {
     });
 }
 
+function focusLabelsOnClick() {
+    const divs = document.querySelectorAll('.total_emission, .total_consumptions');
+
+    divs.forEach(div => {
+        div.addEventListener('click', () => {
+            // Reset z-index for all divs
+            divs.forEach(d => d.style.zIndex = '1');
+            // Set z-index of the clicked div to a higher value
+            div.style.zIndex = '10';
+        });
+    });
+}
+
 
 // for the index creation script
 try {
