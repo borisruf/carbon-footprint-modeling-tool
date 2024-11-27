@@ -257,7 +257,8 @@ function formatTotalConsumptionString(consumptions) {
 
     let aggregatedConsumptions = aggregateConsumptionsByUnit(consumptions);
     let processedAggregatedConsumptions = aggregatedConsumptions.map((entry) => [formatConsumptionStringByUnit(entry)]);
-    return processedAggregatedConsumptions.map(subArray => subArray.join(" ")).join(" / ")
+    let processedAggregatedConsumptionsString = processedAggregatedConsumptions.map(subArray => subArray.join(" ")).join(" / ")
+    return processedAggregatedConsumptionsString || "n/a"
 }
 
 function formatTotalConsumption(element) {
