@@ -52,6 +52,13 @@ or energy sources can be changed by clicking the pencil icon <img src="https://r
 
 #### Tools:
 - [AI Emissions Scenario Generator](https://borisruf.github.io/carbon-footprint-modeling-tool/ai-scenarios.html)
+
+  
+#### Optional url parameters
+
+- `source_id` overwrites all sources in the scenario with the provided source. Example: [index.html?id=mistral-small-ruf-mortas-token&source_id=electricity-ireland-2020](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=mistral-small-ruf-mortas-token&source_id=electricity-ireland-2020)
+- `emission_type` sets the emission measure used in the scenario. Example: [index.html?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24&emission_type=co2](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24&emission_type=co2)
+- `show_consumption` additionally displays the consumption. Example: [index.html?id=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923&show_consumption=true](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923&show_consumption=true)
 ---
 
 ### Create a scenario
