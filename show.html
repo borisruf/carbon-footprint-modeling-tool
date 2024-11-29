@@ -159,6 +159,10 @@
             if (!id) {
                 let base64 = url.hash;
 
+                if (isUrlEncoded(base64)) {
+                    base64 = decodeURIComponent(base64);
+                }
+
                 // hash detected
                 if (base64) {
                     scenario = JSON.parse(atob(base64.substring(1)));

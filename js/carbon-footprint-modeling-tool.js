@@ -11,6 +11,11 @@ function uuidv4() {
     );
 }
 
+function isUrlEncoded(str) {
+    // Check if the string contains any percent-encoded characters
+    return /%[0-9A-Fa-f]{2}/.test(str);
+}
+
 function showJSON() {
     var jsonString = JSON.stringify(scenario, null, 2); // Formatting JSON with 2-space indentation
 
@@ -24,7 +29,7 @@ function showJSON() {
 function showLink() {
 
     var fileContent = JSON.stringify(scenario.scenario ? scenario.scenario : scenario);
-    let url = location.protocol + '//' + location.host + location.pathname + '?#' + btoa(unescape(encodeURIComponent(fileContent)))
+    let url = location.protocol + '//' + location.host + location.pathname + '?#' + encodeURIComponent(btoa(unescape(encodeURIComponent(fileContent))))
 
     let overlay = document.getElementById('linkOverlay');
     overlay.querySelector('#link').value = url;
