@@ -187,9 +187,11 @@ function getScopeConsumptions(scope) {
                 let unit = null;
                 let source_type = null;
                 
-                [value, unit, source_type] = getComponentConsumption(item);
-                
-                consumptions.push([value, unit, source_type]);
+                const consumption = getComponentConsumption(item);
+                if (consumption) {
+                    const [value, unit, source_type] = consumption;
+                    consumptions.push([value, unit, source_type]);
+                }
 
             } else if (item.type === "scenario") {
                 let c = getScenarioConsumptions(item);

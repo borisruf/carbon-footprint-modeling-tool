@@ -212,7 +212,7 @@
             // no id parameter, test for base64 encoded 
             if (!id) {
                 let base64 = url.hash;
-                
+
                 if (isUrlEncoded(base64)) {
                     base64 = decodeURIComponent(base64);
                 }
@@ -290,13 +290,13 @@
         | <a href="https://github.com/borisruf/carbon-footprint-modeling-tool">About the data model</a>
     </div>
 
-    <div id="searchConsumerOverlay">
+    <div class="overlay" id="searchConsumerOverlay">
         <div id="searchConsumerBox">
             <input id="searchConsumerInput">
         </div>
     </div>
 
-    <div id="searchSourceOverlay">
+    <div class="overlay" id="searchSourceOverlay">
         <div id="searchSourceBox">
             <input id="searchSourceInput">
         </div>
