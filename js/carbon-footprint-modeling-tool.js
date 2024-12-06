@@ -51,14 +51,14 @@ function contextualizeEmissions() {
 
     let [value, unit] = bestMassUnit(total[best]);
 
-    window.open(`search.html?mass_unit=${unit}&value=${value}&emission_type=${best}&scenario_id=${id}`, "_blank");
+    window.open(`search.html?mass_unit=${unit}&value=${value}&emission_type=${best}&scenario_id=${scenario_id}`, "_blank");
 }
 
 // save with new random scenario id
 function copyJSON() { downloadJSON("scenario-" + uuidv4() + ".json"); }
 
 // save with same scenario id
-function saveJSON() { downloadJSON(id + ".json") }
+function saveJSON() { downloadJSON(scenario_id + ".json") }
 
 function downloadJSON(filename) {
 

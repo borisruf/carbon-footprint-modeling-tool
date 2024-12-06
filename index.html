@@ -17,7 +17,10 @@
         var scenario;
 
         let url = new URL(location.href);
-        let id = url.searchParams.get("id");
+        
+        // the preferred parameter is scenario_id; id is retained for backward compatibility
+        let scenario_id = url.searchParams.get("scenario_id") || url.searchParams.get("id");
+
         let source_id = url.searchParams.get("source_id");
 
         // optional parameter to override emission type
@@ -39,9 +42,9 @@
             primary_source = sources_json[source_id];
         }
 
-        function fetchScenario(id) {
+        function fetchScenario(scenario_id) {
             let request = new XMLHttpRequest();
-            request.open("GET", "./scenarios/" + id + ".json", false);
+            request.open("GET", "./scenarios/" + scenario_id + ".json", false);
             request.setRequestHeader('Cache-Control', 'no-cache');
             request.send(null)
             return JSON.parse(request.responseText);
@@ -107,7 +110,7 @@
             if (scenario_id) {
                 let titleLink = document.createElement("a");
                 titleLink.innerHTML = scenario.title;
-                titleLink.href = "show.html?id=" + scenario_id + "&source_id=" + source_id;
+                titleLink.href = "show.html?scenario_id=" + scenario_id + "&source_id=" + source_id;
                 titleSpan.appendChild(titleLink);
             } else {
                 titleSpan.innerHTML = scenario.title;
@@ -209,27 +212,38 @@
             }
             consumptionsUl.removeChild(consumptionsUl.querySelector("li"));
 
-            // no id parameter, test for base64 encoded 
-            if (!id) {
-                let base64 = url.hash;
+            // no scenario id parameter, test for base64 encoded 
+            if (!scenario_id) {
+
+                // check for scenario parameter
+                let base64 = url.searchParams.get("scenario");
+
+                // check for hash value
+                if (!base64) {
+                    base64 = url.hash;
+
+                    if (base64) {
+                        base64 = base64.substring(1);
+                    }
+                }
 
                 if (isUrlEncoded(base64)) {
                     base64 = decodeURIComponent(base64);
                 }
 
-                // hash detected
+                // base64 detected
                 if (base64) {
-                    scenario = JSON.parse(atob(base64.substring(1)));
+                    scenario = JSON.parse(atob(base64));
 
                 // fallback to sample scenario
                 } else {
-                    window.location.href = "?id=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc"
+                    window.location.href = "?scenario_id=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc"
                 }
             }
 
             if (!scenario) {
                 // fetch JSON file
-                scenario = fetchScenario(id);
+                scenario = fetchScenario(scenario_id);
             }
 
             // expand the scenario by loading linked scenarios

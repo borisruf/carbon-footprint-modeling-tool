@@ -10,6 +10,75 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+
+        html, body {
+          margin:0;
+          padding:0;
+          height:100%;
+        }
+
+        h1 {
+          color: #333;
+          text-align: center;
+          font-size: 24px; /* Adjust size for better mobile readability */
+        }
+
+        form, div#description {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          max-width: 500px;
+          margin: 0 auto;
+          width: 100%; /* Make form width responsive */
+        }
+
+        span#expandedDescription {
+            margin-top:10px;
+            display: none;
+        }
+
+        a#expandedDescriptionLink {
+            color: grey;
+        }
+
+        input, select, textarea {
+          width: 100%; /* Use percentage-based width for responsiveness */
+          box-sizing: border-box; /* Ensure padding is included in width calculation */
+        }
+
+        div#form {
+            font-family: Arial, sans-serif !important; 
+            display: none;
+        }
+
+        #benchmarkForm button.addButton, #benchmarkForm button[type="submit"] {
+          font-family: Arial, sans-serif;
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          font-weight: bold;
+          font-size: 18px;
+          width: 100%; /* Make the submit button full width on small screens */
+        }
+
+        #benchmarkForm button.addButton {
+          background-color: white;
+          color: black;
+          border: solid 1px grey;
+          font-weight: normal;
+          margin-bottom: 20px;
+          width:200px;
+          padding: 5px 10px;
+          font-size: 16px;
+          border-radius: 2px;
+        }
+
+
         div[id="header"] {
             text-align:  center;
         }
@@ -41,15 +110,111 @@
             min-height:  100px;
         }
 
-        html, body {margin:0;padding:0;height:100%;}
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .input-section {
+            margin-bottom: 15px;
+            padding: 10px;
+            cursor: grab;
+            background-color: rgb(237, 237, 237);
+            padding: 15px;
+        }
+        .input-section.dragging {
+            opacity: 0.5;
+        }
+
+        div#footer {
+          padding-top: 20px;
+          text-align: center;
+          color: grey;
+          font-size: 12px;
+          a {
+            color: grey;
+          }
+        }
+
+        .closeButton {
+          float: right;
+          cursor: pointer;
+          background: none;
+          border: none;
+          padding: 0;
+          font: inherit;
+          cursor: pointer;
+          outline: inherit;
+          color: grey;
+        }
+
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          cursor: help;
+        }
+
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 200px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px;
+          position: absolute;
+          z-index: 1;
+          bottom: 125%;
+          left: 50%;
+          margin-left: -60px;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+          opacity: 1;
+        }
 
     </style>
 
     <script>
 
         let url = new URL(location.href);
-        let ids = url.searchParams.getAll("ids[]");
+        // the preferred parameter is scenario_ids[]; ids[] is retained for backward compatibility
+        let scenario_ids = [...url.searchParams.getAll("scenario_ids[]"), ...url.searchParams.getAll("ids[]")];
+
+        let scenarios = url.searchParams.getAll("scenarios[]").map(base64 => {
+
+            let scenario = {};
+            scenario["scenario_id"] = null;
+            scenario["base64"] = base64;
+
+            base64 = decodeURIComponent(base64);
+            scenario["scenario"] = JSON.parse(atob(base64));
+
+            return scenario;
+        });
+
+        let reference_scenario_base64 = url.searchParams.get("reference_scenario");
+        let reference_scenario = {};
+
+        if (reference_scenario_base64) {
+
+            reference_scenario["scenario_id"] = null;
+            reference_scenario["base64"] = reference_scenario_base64;
+
+            reference_scenario_base64 = decodeURIComponent(reference_scenario_base64);
+            reference_scenario["scenario"] = JSON.parse(atob(reference_scenario_base64));
+        };
+
+
+
         let reference_id = url.searchParams.get("reference_id");
+
         let source_ids = url.searchParams.getAll("source_ids[]");
         let primary_sources = [];
 
@@ -73,35 +238,41 @@
         // optional parameter to multiply scenarios by factor
         var factor_parameter = url.searchParams.get("factor");
 
-        // fallback to sample scenario if no id parameter 
-        if (!ids.length) {
-            window.location.href = "benchmark.html?ids[]=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24&ids[]=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc"
-        }
-
         window.addEventListener('load', function () {
 
-            let scenarios = [];
-            let reference_scenario;
+            document.getElementById('expandedDescriptionLink').onclick = function(e) {
+              e.preventDefault();
+              var expandedDescription = document.querySelector('#expandedDescription');
+              expandedDescription.style.display = 'block';
+              this.style.display = 'none';
+            };
+
+            // fallback to sample scenario if no id parameter 
+            if (!scenario_ids.length && !scenarios.length) {
+                //    window.location.href = "benchmark.html?scenario_ids[]=scenario-8f35af7c-ee5b-42aa-b538-371b126b3d24&scenario_ids[]=scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc"
+            document.getElementById("form").style.display = "block";
+            }
 
             // fetch the scenarios which are to be compared
-            for (const scenario_id of ids) {
+            for (const scenario_id of scenario_ids) {
 
                 let request = new XMLHttpRequest();
                 request.open("GET", "./scenarios/" + scenario_id + ".json", false);
                 request.setRequestHeader('Cache-Control', 'no-cache');
                 request.send(null)
                 let scenario = {};
-                scenario["id"] = scenario_id;
+                scenario["scenario_id"] = scenario_id;
                 scenario["scenario"] = JSON.parse(request.responseText);
                 scenarios.push(scenario);
             }
 
-            if (reference_id) {
+            if (Object.keys(reference_scenario).length === 0 && reference_id) {
                 let request = new XMLHttpRequest();
                 request.open("GET", "./scenarios/" + reference_id + ".json", false);
                 request.setRequestHeader('Cache-Control', 'no-cache');
                 request.send(null)
-                reference_scenario = JSON.parse(request.responseText);
+                reference_scenario["scenario_id"] = reference_id;
+                reference_scenario["scenario"] = JSON.parse(request.responseText);
             }
 
             let arena = document.getElementById("arena");
@@ -112,7 +283,8 @@
 
             // calculate emissions per scenario, consider primary source if provided
             let i = 0;
-            for (const { id: scenario_id, scenario } of scenarios) {
+            for (const { scenario_id: scenario_id, base64: base64, scenario: scenario } of scenarios) {
+
                 let emission = {};
                 emission["scenario_id"] = scenario_id;
                 emission["emission"] = totalEmissions(scenario, factor_parameter || null, primary_sources[i]);
@@ -123,14 +295,21 @@
             let all_emissions = emissions.reduce((acc, { scenario_id, emission }) => {
                 acc[scenario_id] = emission;
                 return acc;
-            }, {});            
+            }, {});
 
-            if (reference_scenario) {
-                reference_emission = totalEmissions(reference_scenario, null);
+            if (Object.keys(reference_scenario).length > 0) {
+
+                reference_emission = totalEmissions(reference_scenario["scenario"], null);
                 all_emissions = Object.assign({}, all_emissions, { reference_scenario: reference_emission });
             }
 
             let best_unit = emission_type_parameter || bestTotalEmissionType(all_emissions);
+
+            if (!best_unit) {
+                console.error("No common emission type available");
+                alert("Error: No common emission type available");
+                return
+            }
 
             let emissions_of_best_unit = [];
             emissions.map(function({ scenario_id, emission }) {
@@ -139,7 +318,7 @@
 
             let reference_emissions_of_best_unit;
 
-            if (reference_scenario) {
+            if (Object.keys(reference_scenario).length > 0) {
                 reference_emissions_of_best_unit = reference_emission[best_unit];
             }
 
@@ -147,23 +326,35 @@
             let calibration_factor = window.screen.availHeight/2/Math.max(...emissions_of_best_unit);
 
             let j = 0;
-            for (const { id: scenario_id, scenario } of scenarios) {
+
+            for (const { scenario_id: scenario_id, base64: base64, scenario: scenario } of scenarios) {
 
                 let sample = document.querySelector(".template[name='sample']").cloneNode(true);
                 sample.classList.remove("template");
                 
                 let title = sample.querySelector("a[name='title']");
                 title.innerHTML = scenario.title;
-                title.setAttribute("href", "index.html?id=" + scenario_id + "&emission_type=" + best_unit + "&source_id=" +  (source_ids[j] || ""));
+
+                let urlParameters = {};
+                if (scenario_id) {
+                    urlParameters["scenario_id"] = scenario_id;
+                } else {
+                    urlParameters["scenario"] = encodeURIComponent(base64);
+                }
+
+                urlParameters["emission_type"] = best_unit;
+                urlParameters["source_id"] = (source_ids[j] || "");
+
+                title.setAttribute("href", "index.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
 
                 let emissions = totalEmissions(scenario, factor_parameter || null, primary_sources[j]);
 
                 let bar = sample.querySelector("div[name='bar']");
 
-
                 bar.style.height = emissions[best_unit]*calibration_factor + "px";
 
                 let total_emission = sample.querySelector("span[name='total_emission']");
+
                 total_emission.innerHTML = formatTotalEmissions(emissions[best_unit], best_unit);
 
                 arena.appendChild(sample);
@@ -171,20 +362,31 @@
             }
 
             // add comparison with baseline energy source if provided
-            if (reference_scenario) {
+            if (Object.keys(reference_scenario).length > 0) {
 
                 let sample = document.querySelector(".template[name='reference']").cloneNode(true);
                 sample.classList.remove("template");
-                
+
                 let title = sample.querySelector("a[name='title']");
-                title.innerHTML = reference_scenario.title;
-                title.setAttribute("href", "index.html?id=" + reference_id + "&emission_type=" + best_unit);
+                title.innerHTML = reference_scenario["scenario"].title;
+
+                let urlParameters = {};
+                if (reference_scenario["scenario_id"]) {
+                    urlParameters["scenario_id"] = reference_scenario["scenario_id"];
+                } else {
+                    urlParameters["scenario"] = encodeURIComponent(reference_scenario["base64"]);
+                }
+
+                urlParameters["emission_type"] = best_unit;
+
+                title.setAttribute("href", "index.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
 
                 let bar = sample.querySelector("div[name='bar']");
 
                 let last_scenario = scenarios[scenarios.length-1].scenario;
+                let last_primary_source = primary_sources[scenarios.length-1];
 
-                let emissions = totalEmissions(last_scenario, factor_parameter || null);
+                let emissions = totalEmissions(last_scenario, factor_parameter || null, last_primary_source);
                 
                 let reference_factor = (emissions[best_unit]/reference_emissions_of_best_unit).toFixed(2);
 
@@ -201,10 +403,198 @@
 
         });
 
+    let draggedElement;
+    let originalY;
+
+    function addInput() {
+        const container = document.getElementById('inputContainer');
+        const newInputSection = document.createElement('div');
+        newInputSection.className = 'input-section';
+        newInputSection.setAttribute('draggable', 'true');
+        newInputSection.setAttribute('ondragstart', 'drag(event)');
+        newInputSection.setAttribute('ondragover', 'allowDrop(event)');
+        newInputSection.setAttribute('ondrop', 'drop(event)');
+        newInputSection.innerHTML = `
+            <div class="form-group">
+                <button onclick="removeInput(this)" class="closeButton">X</button>
+                <label>Scenario ID <span class="tooltip">?⃝<span class="tooltiptext">Enter the scenario ID you would like to benchmark.</span>:</label>
+                <input type="text" name="scenario_ids[]" required><br/>
+                <label>Source <span class="tooltip">?⃝<span class="tooltiptext">Optionally, select a carbon factor for the electricity source to override the scenario's default.</span>(optional):</label>
+                <select id="source_ids" name="source_ids[]">
+                    <option value="">--- Select source ---</option>
+                    <option value="electricity-austria-2020">Austria (2020)</option>
+                    <option value="electricity-belgium-2020">Belgium (2020)</option>
+                    <option value="electricity-bulgaria-2020">Bulgaria (2020)</option>
+                    <option value="electricity-croatia-2020">Croatia (2020)</option>
+                    <option value="electricity-cyprus-2020">Cyprus (2020)</option>
+                    <option value="electricity-czechia-2020">Czechia (2020)</option>
+                    <option value="electricity-denmark-2020">Denmark (2020)</option>
+                    <option value="electricity-estonia-2020">Estonia (2020)</option>
+                    <option value="electricity-eu-27-2020">EU-27 (2020)</option>
+                    <option value="electricity-finland-2020">Finland (2020)</option>
+                    <option value="electricity-france-2020">France (2020)</option>
+                    <option value="electricity-germany-2020">Germany (2020)</option>
+                    <option value="electricity-greece-2020">Greece (2020)</option>
+                    <option value="electricity-hungary-2020">Hungary (2020)</option>
+                    <option value="electricity-ireland-2020">Ireland (2020)</option>
+                    <option value="electricity-italy-2020">Italy (2020)</option>
+                    <option value="electricity-latvia-2020">Latvia (2020)</option>
+                    <option value="electricity-lithuania-2020">Lithuania (2020)</option>
+                    <option value="electricity-luxembourg-2020">Luxembourg (2020)</option>
+                    <option value="electricity-malta-2020">Malta (2020)</option>
+                    <option value="electricity-netherlands-2020">Netherlands (2020)</option>
+                    <option value="electricity-poland-2020">Poland (2020)</option>
+                    <option value="electricity-portugal-2020">Portugal (2020)</option>
+                    <option value="electricity-romania-2020">Romania (2020)</option>
+                    <option value="electricity-slovakia-2020">Slovakia (2020)</option>
+                    <option value="electricity-slovenia-2020">Slovenia (2020)</option>
+                    <option value="electricity-spain-2020">Spain (2020)</option>
+                    <option value="electricity-sweden-2020">Sweden (2020)</option>
+                    <option value="electricity-usa-2020">USA (2020)</option>
+                </select>
+            </div>
+        `;
+        container.appendChild(newInputSection);
+    }
+
+    function removeInput(element) {
+        const inputSection = element.parentElement.parentElement;
+        inputSection.remove();
+    }
+
+    function toggleReferenceFields(input) {
+        const referenceId = document.querySelector('input[name="reference_id"]');
+        const referenceScenario = document.querySelector('textarea[name="reference_scenario"]');
+
+        if (input === referenceId) {
+            referenceScenario.value = '';
+        } else {
+            referenceId.value = '';
+        }
+    }
+
+    function drag(event) {
+        draggedElement = event.target;
+        draggedElement.classList.add('dragging');
+        originalY = draggedElement.getBoundingClientRect().top;
+    }
+
+    function allowDrop(event) {
+        event.preventDefault();
+    }
+
+    function drop(event) {
+        event.preventDefault(); // Prevent default behavior
+        const dropTarget = event.target.closest('.input-section');
+
+        if (dropTarget) {
+            // Insert the dragged element before or after the drop target
+            if (event.clientY < originalY) {
+                dropTarget.parentNode.insertBefore(draggedElement, dropTarget);
+            } else {
+                dropTarget.parentNode.insertBefore(draggedElement, dropTarget.nextSibling);
+            }
+        } else {
+            const container = document.getElementById('inputContainer');
+            container.appendChild(draggedElement); // Append to the end if not dropped on a valid target
+        }
+
+        draggedElement.classList.remove('dragging');
+    }
+
     </script>
 </head>
 
 <body>
+
+    <div id="form">
+        <h1>Carbon Emission Scenario Benchmarking</h1>
+
+        <div id="description">
+          Compare and contextualize different emission scenarios: <a href="#" id="expandedDescriptionLink">...more</a>
+          <span id="expandedDescription">
+            Carbon emission studies can be complex and significantly influenced by specific factors, such as the energy mix of the electricity grid used. Our <a href="https://github.com/borisruf/carbon-footprint-modeling-tool?tab=readme-ov-file#carbon-footprint-modeling-tool" target="_blank">open data model</a> for carbon footprint scenarios addresses these complexities by offering a transparent and flexible approach to emissions analysis.<br/><br/>
+            Comparing different scenarios and putting their emissions into context can still be challenging. This benchmark view aims to simplify the process. Use the form below, or <a href="/benchmark.html?ids[]=gpt-ruf-mortas-token&ids[]=mistral-small-ruf-mortas-token&factor=10000000&source_ids[]=electricity-eu-27-2020&source_ids[]=electricity-eu-27-2020&title=GPT-3.5%20vs%20Mistral%20Small%20(1M%20tokens)&reference_id=diesel" target="_blank">try an example</a>.
+          </span>
+        </div>
+        <br/>
+
+        <form id="benchmarkForm" action="benchmark.html" method="GET">
+            <div id="inputContainer">
+                <div class="input-section" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)" ondrop="drop(event)">
+                    <div class="form-group">
+                        <label for="scenario_ids[]">Scenario ID <span class="tooltip">?⃝<span class="tooltiptext">Enter the scenario ID you would like to benchmark.</span>:</label>
+                        <input type="text" name="scenario_ids[]" required><br/>
+                        <label for="source_ids[]">Source <span class="tooltip">?⃝<span class="tooltiptext">Optionally, select a carbon factor for the electricity source to override the scenario's default.</span>(optional):</label>
+                          <select id="source_ids" name="source_ids[]">
+                            <option value="">--- Select source ---</option>
+                            <option value="electricity-austria-2020">Austria (2020)</option>
+                            <option value="electricity-belgium-2020">Belgium (2020)</option>
+                            <option value="electricity-bulgaria-2020">Bulgaria (2020)</option>
+                            <option value="electricity-croatia-2020">Croatia (2020)</option>
+                            <option value="electricity-cyprus-2020">Cyprus (2020)</option>
+                            <option value="electricity-czechia-2020">Czechia (2020)</option>
+                            <option value="electricity-denmark-2020">Denmark (2020)</option>
+                            <option value="electricity-estonia-2020">Estonia (2020)</option>
+                            <option value="electricity-eu-27-2020">EU-27 (2020)</option>
+                            <option value="electricity-finland-2020">Finland (2020)</option>
+                            <option value="electricity-france-2020">France (2020)</option>
+                            <option value="electricity-germany-2020">Germany (2020)</option>
+                            <option value="electricity-greece-2020">Greece (2020)</option>
+                            <option value="electricity-hungary-2020">Hungary (2020)</option>
+                            <option value="electricity-ireland-2020">Ireland (2020)</option>
+                            <option value="electricity-italy-2020">Italy (2020)</option>
+                            <option value="electricity-latvia-2020">Latvia (2020)</option>
+                            <option value="electricity-lithuania-2020">Lithuania (2020)</option>
+                            <option value="electricity-luxembourg-2020">Luxembourg (2020)</option>
+                            <option value="electricity-malta-2020">Malta (2020)</option>
+                            <option value="electricity-netherlands-2020">Netherlands (2020)</option>
+                            <option value="electricity-poland-2020">Poland (2020)</option>
+                            <option value="electricity-portugal-2020">Portugal (2020)</option>
+                            <option value="electricity-romania-2020">Romania (2020)</option>
+                            <option value="electricity-slovakia-2020">Slovakia (2020)</option>
+                            <option value="electricity-slovenia-2020">Slovenia (2020)</option>
+                            <option value="electricity-spain-2020">Spain (2020)</option>
+                            <option value="electricity-sweden-2020">Sweden (2020)</option>
+                            <option value="electricity-usa-2020">USA (2020)</option>
+                          </select>
+                        <!-- Remove button is not included here -->
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="addButton" onclick="addInput()">Add scenario</button>
+            
+            <div class="form-group">
+                <label>Factor <span class="tooltip">?⃝<span class="tooltiptext">Optionally, choose a multiplier that is applied to all scenarios.</span>(optional):</label>
+                <input type="number" name="factor">
+            </div>
+
+            <label style="font-weight:bold">Reference <span class="tooltip">?⃝<span class="tooltiptext">Optionally, add a reference scenario of a basic and relatable emission generating activity (e.g. burning diesel) to contextualize the result.</span>(optional)</label>
+            <div class="input-section">
+
+                <div class="form-group">
+                    <label>Scenario ID <span class="tooltip">?⃝<span class="tooltiptext">E.g., "diesel"</span>:</label>
+                    <input type="text" name="reference_id" oninput="toggleReferenceFields(this)">
+                </div>
+
+                <div class="form-group">
+                    <label>Encoded scenario <span class="tooltip">?⃝<span class="tooltiptext">Alternatively, enter an encoded scenario from a URL generated using the "Share via Link" feature available for each scenario in its footer.</span>:</label>
+                    <textarea name="reference_scenario" oninput="toggleReferenceFields(this)"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Compare</button>
+        </form>
+        <div id="footer">
+            Based on the carbon footprint data model. <a href="https://github.com/borisruf/carbon-footprint-modeling-tool">Learn more</a>
+        </div>
+    </div>
+
+
+
+
+
+
     <div id="header">
         <h1><span name="title" id="title"></span></h1>
     </div>
