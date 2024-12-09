@@ -153,13 +153,18 @@ The viewer loads all nested scenarios recursively into a single, interactive sce
 ---
 
 ### Compare scenarios
-The benchmark view renders a bar chart for two or more hosted scenarios identified in the URL by their ids, like `benchmark.html?ids[]=scenario-1&ids[]=scenario-2`.
+The benchmark view renders a bar chart for two or more hosted scenarios identified in the URL by their ids, like `benchmark.html?scenario_ids[]=scenario-1&scenario_ids[]=scenario-2`.
 
-<img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/benchmark.png" width="500"/>
+<a href="https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923" target="_blank"><img src="https://raw.githubusercontent.com/borisruf/carbon-footprint-modeling-tool/main/images/benchmark.png" width="500"/></a>
 
-Benchmark example: [2021 vs. 2022 car pool comparison](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=scenario-a03bc862-44f4-4ac6-be05-ea8ec93c1ba5&ids[]=scenario-615e4199-28fe-43d4-8b30-3cee5fe18923)
+Use the <a href="https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html" target="_blank">benchmark form</a> as a starting point.
 
-Utilize the URL parameter `title` to add a title, and `factor` to apply multiplication by a factor. Provide a `reference_id` to put the scenario into perspective with another scenario (<a href="https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt-ruf-mortas-1&factor=1000&title=1,000%20ChatGPT%20requests&reference_id=diesel" target="_blank">Example</a>).
+#### Optional url parameters
+
+- `title` adds a title to the benchmark view.
+- `factor` is a multiplier which is applied to all scenarios.
+- `reference_id` puts the scenario into perspective with another scenario. Example: <a href="https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt-ruf-mortas-1&factor=1000&title=1,000%20ChatGPT%20requests&reference_id=diesel" target="_blank">benchmark.html?ids[]=gpt-ruf-mortas-1&factor=1000&title=1,000%20ChatGPT%20requests&reference_id=diesel</a>
+- `reference` takes an encoded scenario as reference (mind the maximum number of url characters supported by your browser).
 
 ---
 
