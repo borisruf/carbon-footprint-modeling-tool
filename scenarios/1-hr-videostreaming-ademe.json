@@ -1,0 +1,35 @@
+{
+    "title": "Streaming an 1-hour video",
+    "description": "This video streaming emission factor is commonly used for comparison in carbon emission calculations. The <a href='https://base-empreinte.ademe.fr' target='_blank'>ADEME database</a> is often cited as the source (although it no longer includes this value), as is a study by <a href='https://negaoctet.org' target='_blank'>NégaOctet</a> (which can no longer be found on the Internet).<br/><br/>This figure should be treated with caution as it does not consider key factors in the calculation of emissions from this activity, such as the energy grid and the end-user device.",
+    "scopes": [
+      {
+        "level": "Scope 2",
+        "description": {},
+        "list": [
+          {
+            "type": "component",
+            "consumer": {
+              "name": "Video streaming",
+              "description": "",
+              "consumptions": []
+            },
+            "quantity": "1",
+            "quantity_unit": "hour",
+            "source": {
+              "name": "ADEME",
+              "description": "(2020)",
+              "emissions": {
+                "co2": {
+                  "value": "0.064",
+                  "unit": "kg",
+                  "base_unit": "hr",
+                  "reference_url": "https://impactco2.fr/outils/comparateur?value=0.064&comparisons=streamingvideo"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
