@@ -1,7 +1,6 @@
 {
-	"id": "1L-hot-water",
-  "title": "Warming 1L of water from 18 to 38°C",
-  "description" : "Before being heated, the temperature of the water in a tank is 18°C. <br> Most people take a shower at 38°C (a little bit above body temperature).<br><br> According to thermodynamic, heating 1L of water from 18 to 38°C consume 0.0232 kWh. <br><br><b>Formula:</b> Energy [kWh] = (mass of water [g] x specific heat capacity [J/g°C] x delta T [°C]) / conversion coefficient [J/kWh] <br><b>Details:</b> (1 000 x 4.18 x (38 - 18)) / 3 600 000 = 0.0232",
+  "title": "Heating 1 liter of water from 18 to 38°C",
+  "description" : "We assume that the initial water temperature in the tank is 18°C before heating, while the typical shower temperature is 38°C (slightly above body temperature). Based on thermodynamics, heating 1L of water from 18 to 38°C consumes 0.0232 kWh. <br><br><b>Formula:</b> Energy [kWh] = (mass of water [g] x specific heat capacity [J/g°C] x delta T [°C]) / conversion coefficient [J/kWh] <br><b>Details:</b> (1 000 x 4.18 x (38 - 18)) / 3 600 000 = 0.0232",
   "scopes": [
     {
       "level": "Scope 2",
@@ -10,29 +9,35 @@
         {
           "type": "component",
           "consumer": {
-            "name": "1L of hot water",
+            "name": "Water heating",
             "description": "From 18 to 38°C",
             "consumptions": {
-              "electricty": {
-                "value": "1",
+              "electricity": {
+                "value": "0.0232",
                 "unit": "kWh",
                 "base_unit": "L",
                 "reference_url": ""
               }
             }
           },
-          "quantity": "0.0232",
-          "quantity_unit": "kWh",
+          "quantity": "1",
+          "quantity_unit": "L",
           "source": {
-            "name": "Electricité/2022 - mix moyen/consommation",
-            "type": "electricty",
-            "description": "",
+            "name": "France electricity grid",
+            "description": "(2020)",
+            "type": "electricity",
             "emissions": {
               "co2e": {
-                "value": "52",
-                "unit": "g",
                 "base_unit": "kWh",
-                "reference_url": "https://base-empreinte.ademe.fr/donnees/jeu-donnees"
+                "value": 0.0511,
+                "unit": "kg",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "base_unit": "kWh",
+                "value": 0.0573,
+                "unit": "kg",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
               }
             }
           }

@@ -1,0 +1,17 @@
+{
+  "title": "1 minute of hot shower",
+  "description" : "The average flow rate of a shower is <a href='https://www.leroymerlin.fr/comment-choisir/comment-choisir-son-pommeau-de-douche.html' target='_blank'>15L/minute</a>.",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list": [ 
+		{
+          "type": "link",
+		  "quantity": 15,
+          "scenario_id": "scenario-1L-hot-water"
+        }
+      ]
+    }
+  ]
+}

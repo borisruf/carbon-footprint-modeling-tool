@@ -1,0 +1,42 @@
+{
+    "title": "1-minute Teams meeting held on 4G network with camera disabled",
+    "description": "An experiment was made on the amount of data transfered in a Microsoft Teams meeting with cameras-on vs off.<br/><br/>A total of 9 meetings of between 30 and 60 minutes were conducted using a 4G connection via a mobile phone, which allowed data usage to be tracked using the mobile application of the RedBySFR network provider.<br/><br/>When the camera was turned off, the average data throughput was 8.76 MB per minute.",
+    "scopes": [
+      {
+        "level": "Scope 2",
+        "description": {},
+        "list": [
+          {
+            "type": "component",
+            "consumer": {
+              "name": "Data transmission",
+              "description": "Experiment",
+              "consumptions": {
+                "data": {
+                  "value": "8.76",
+                  "unit": "MB",
+                  "base_unit": "minute"
+                }
+              }
+            },
+            "quantity": "1",
+            "quantity_unit": "minute",
+            "source": {
+              "name": "Mobile data emission factor",
+              "type": "data",
+              "description": "ADEME (2022)",
+              "emissions": {
+                "co2e": {
+                  "value": "0.0494",
+                  "unit": "g",
+                  "base_unit": "MB",
+                  "reference_url": "https://base-empreinte.ademe.fr/"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
