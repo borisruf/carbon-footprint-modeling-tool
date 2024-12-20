@@ -1,0 +1,108 @@
+{
+  "title": "Streaming a 1-hour video (IEA updated, World 2019)",
+  "reference_url": "https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix/",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Device",
+            "description": "(weighted average)",
+            "consumptions": {
+              "electricity": {
+                "value": "0.0555",
+                "unit": "kWh",
+                "base_unit": "hr",
+                "reference_url": "https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines"
+              }
+            }
+          },
+          "quantity": "1",
+          "quantity_unit": "hr",
+          "source": {
+            "name": "World electricity grid",
+            "type": "electricity",
+            "description": "(2019)",
+            "emissions": {
+              "co2": {
+                "value": "0.475",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.iea.org/reports/global-energy-co2-status-report-2019/emissions"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 3",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Data centres",
+            "description": {},
+            "consumptions": {
+              "electricity": {
+                "value": "0.003691247642",
+                "unit": "kWh",
+                "base_unit": "hr",
+                "reference_url": "https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix"
+              }
+            }
+          },
+          "quantity": "1",
+          "quantity_unit": "hr",
+          "source": {
+            "name": "World electricity grid",
+            "type": "electricity",
+            "description": "(2019)",
+            "emissions": {
+              "co2": {
+                "value": "0.475",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.iea.org/reports/global-energy-co2-status-report-2019/emissions"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Data transmission",
+            "description": {},
+            "consumptions": {
+              "electricity": {
+                "value": "0.0177",
+                "unit": "kWh",
+                "base_unit": "hr",
+                "reference_url": "https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines"
+              }
+            }
+          },
+          "quantity": "1",
+          "quantity_unit": "hr",
+          "source": {
+            "name": "World electricity grid",
+            "type": "electricity",
+            "description": "(2019)",
+            "emissions": {
+              "co2": {
+                "value": "0.475",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.iea.org/reports/global-energy-co2-status-report-2019/emissions"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
