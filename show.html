@@ -131,6 +131,15 @@
                             }
                         }
 
+                        // remove reference urls when empty
+                        var links = componentDiv.getElementsByTagName('a');
+
+                        for (let i = 0; i < links.length; i++) {
+                            if (!links[i].hasAttribute('href')) {
+                                links[i].parentNode.parentNode.removeChild(links[i].parentNode);
+                            }
+                        }
+
                         // remove emission list nodes if not included in emissions
                         for (unit in emissionUnitMap) {
                             if (!Object.keys(element.source.emissions).includes(unit)) {

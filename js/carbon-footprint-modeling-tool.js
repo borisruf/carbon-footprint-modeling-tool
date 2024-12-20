@@ -1,7 +1,7 @@
 // ordered list of emissions
 const emissionUnitMap = {"co2e": "CO2e", "co2": "CO2", "ch4": "CH4", "n2o": "N2O", "hfcs": "HFCs", "pfcs": "PFCs", "sf6": "SF6", "nf33": "NF33"};
 // ordered list of consumptions
-const consumptionMap = {"electricity": "Electricity", "regular gasoline": "Regular Gasoline", "premium gasoline": "Premium Gasoline", "bunker fuel": "Bunker Fuel", "diesel": "Diesel", "oil": "Oil"}
+const consumptionMap = {"electricity": "Electricity", "regular gasoline": "Regular Gasoline", "premium gasoline": "Premium Gasoline", "bunker fuel": "Bunker Fuel", "diesel": "Diesel", "oil": "Oil", "data": "Data"}
 // list of accepted (mass) units
 const massUnits = ["mg", "g", "kg", "t", "kt", "mt"];
 
@@ -923,6 +923,15 @@ function addSearchOverlay() {
                 if (l) {
                     l.remove()
                 }
+            }
+        }
+
+        // remove reference urls when empty
+        var links = consumerDiv.getElementsByTagName('a');
+
+        for (let i = 0; i < links.length; i++) {
+            if (!links[i].hasAttribute('href')) {
+                links[i].parentNode.parentNode.removeChild(links[i].parentNode);
             }
         }
 
