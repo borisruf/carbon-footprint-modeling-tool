@@ -1,0 +1,34 @@
+{
+    
+        "title": "Firework rocket",
+        "description": "An average firework rocket has a net explosive mass of 20 grams. The emission factor of this explosive is 0.156 tons of CO2 per ton.",
+        "scopes": [
+            {
+                "level": "Scope 1",
+                "list": [
+                    {
+                        "type": "component",
+                        "consumer": {
+                            "name": "Fireworks",
+                            "description": "(net explosive mass)"
+                        },
+                        "quantity": "0.00002",
+                        "quantity_unit": "t",
+                        "source": {
+                            "name": "Pyrotechnic emission factor",
+                            "description": "(2022)",
+                            "emissions": {
+                                "co2": {
+                                    "value": "0.156",
+                                    "unit": "t",
+                                    "base_unit": "t",
+                                    "reference_url": "https://www.umweltbundesamt.de/sites/default/files/medien/1410/publikationen/uba_hg_silvesterfeuerwerk_nov_2022_bf.pdf"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+ 
+}
