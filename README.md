@@ -163,7 +163,7 @@ Use the <a href="https://borisruf.github.io/carbon-footprint-modeling-tool/bench
 
 - `title` adds a title to the benchmark view.
 - `factor` is a multiplier which is applied to all scenarios.
-- `reference_id` puts the scenario into perspective with another scenario. Example: <a href="https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt-ruf-mortas-1&factor=1000&title=1,000%20ChatGPT%20requests&reference_id=diesel" target="_blank">benchmark.html?ids[]=gpt-ruf-mortas-1&factor=1000&title=1,000%20ChatGPT%20requests&reference_id=diesel</a>
+- `reference_ids` puts the scenario into perspective with one or more other scenarios. Example: <a href="https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?scenario_ids[]=gpt-ruf-mortas-1&factor=1000&title=1,000%20ChatGPT%20requests&reference_ids[]=diesel" target="_blank">benchmark.html?scenario_ids[]=gpt-ruf-mortas-1&factor=1000&title=1,000%20ChatGPT%20requests&reference_ids[]=diesel</a>
 - `reference` takes an encoded scenario as reference (mind the maximum number of url characters supported by your browser).
 
 ---
