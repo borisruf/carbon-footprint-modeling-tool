@@ -200,20 +200,24 @@
         });
 
         let reference_scenario_base64 = url.searchParams.get("reference_scenario");
-        let reference_scenario = {};
+        let reference_scenarios = [];
 
         if (reference_scenario_base64) {
+
+            let reference_scenario = {};
 
             reference_scenario["scenario_id"] = null;
             reference_scenario["base64"] = reference_scenario_base64;
 
             reference_scenario_base64 = decodeURIComponent(reference_scenario_base64);
             reference_scenario["scenario"] = JSON.parse(atob(reference_scenario_base64));
+
+            reference_scenarios.push(reference_scenario);
         };
 
 
+        let reference_ids = [...url.searchParams.getAll("reference_ids[]"), url.searchParams.get("reference_id")].filter(value => value !== null && value !== "");
 
-        let reference_id = url.searchParams.get("reference_id");
 
         let source_ids = url.searchParams.getAll("source_ids[]");
         let primary_sources = [];
@@ -266,20 +270,23 @@
                 scenarios.push(scenario);
             }
 
-            if (Object.keys(reference_scenario).length === 0 && reference_id) {
+            for (const reference_id of reference_ids) {
+
                 let request = new XMLHttpRequest();
                 request.open("GET", "./scenarios/" + reference_id + ".json", false);
                 request.setRequestHeader('Cache-Control', 'no-cache');
                 request.send(null)
-                reference_scenario["scenario_id"] = reference_id;
-                reference_scenario["scenario"] = JSON.parse(request.responseText);
+                let scenario = {};
+                scenario["scenario_id"] = reference_id;
+                scenario["scenario"] = JSON.parse(request.responseText);
+                reference_scenarios.push(scenario);
+
             }
 
             let arena = document.getElementById("arena");
 
             // identify max emission value
             let emissions = [];
-            let reference_emission = {};
 
             // calculate emissions per scenario, consider primary source if provided
             let i = 0;
@@ -297,10 +304,11 @@
                 return acc;
             }, {});
 
-            if (Object.keys(reference_scenario).length > 0) {
+            if (Object.keys(reference_scenarios).length > 0) {
 
-                reference_emission = totalEmissions(reference_scenario["scenario"], null);
-                all_emissions = Object.assign({}, all_emissions, { reference_scenario: reference_emission });
+                for (const reference_scenario of reference_scenarios) {
+                    all_emissions[reference_scenario["scenario_id"]] = totalEmissions(reference_scenario["scenario"], null);
+                }
             }
 
             let best_unit = emission_type_parameter || bestTotalEmissionType(all_emissions);
@@ -315,12 +323,6 @@
             emissions.map(function({ scenario_id, emission }) {
                 emissions_of_best_unit.push(emission[best_unit]);
             });
-
-            let reference_emissions_of_best_unit;
-
-            if (Object.keys(reference_scenario).length > 0) {
-                reference_emissions_of_best_unit = reference_emission[best_unit];
-            }
 
             // compute calibration factor
             let calibration_factor = window.screen.availHeight/2/Math.max(...emissions_of_best_unit);
@@ -361,20 +363,21 @@
                 j++;
             }
 
-            // add comparison with baseline energy source if provided
-            if (Object.keys(reference_scenario).length > 0) {
+            // add comparison(s) with baseline energy source(s) if provided
+            for (const { scenario_id: scenario_id, base64: base64, scenario: scenario } of reference_scenarios) {
 
                 let sample = document.querySelector(".template[name='reference']").cloneNode(true);
                 sample.classList.remove("template");
 
                 let title = sample.querySelector("a[name='title']");
-                title.innerHTML = reference_scenario["scenario"].title;
+
+                title.innerHTML = scenario["title"];
 
                 let urlParameters = {};
-                if (reference_scenario["scenario_id"]) {
-                    urlParameters["scenario_id"] = reference_scenario["scenario_id"];
+                if (scenario_id) {
+                    urlParameters["scenario_id"] = scenario_id;
                 } else {
-                    urlParameters["scenario"] = encodeURIComponent(reference_scenario["base64"]);
+                    urlParameters["scenario"] = encodeURIComponent(base64);
                 }
 
                 urlParameters["emission_type"] = best_unit;
@@ -387,6 +390,10 @@
                 let last_primary_source = primary_sources[scenarios.length-1];
 
                 let emissions = totalEmissions(last_scenario, factor_parameter || null, last_primary_source);
+
+                let reference_emission = totalEmissions(scenario, null);
+
+                let reference_emissions_of_best_unit = reference_emission[best_unit];
                 
                 let reference_factor = (emissions[best_unit]/reference_emissions_of_best_unit).toFixed(2);
 

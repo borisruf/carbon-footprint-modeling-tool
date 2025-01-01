@@ -182,8 +182,8 @@ The aim of this project is to create a basis for transparent, knowledge-based de
 <br/>
  
  <form id="modelSelect"> 
-  <label for="ids">Add one or more AI models:</label>
-    <select id="ids" name="ids" onchange="addModel(); return false;" required>
+  <label for="scenario_ids">Add one or more AI models:</label>
+    <select id="scenario_ids" name="scenario_ids" onchange="addModel(); return false;" required>
       <option value="">--- Select ---</option>
       <option value="gpt-ruf-mortas-token">OpenAI GPT-3.5 (gpt-ruf-mortas-token)</option>
       <option value="gpt-pointon-token">OpenAI GPT-3.5 (gpt-pointon-token)</option>
@@ -275,7 +275,7 @@ The aim of this project is to create a basis for transparent, knowledge-based de
 
   <script>
     function generateURL() {
-      const idsInputs = document.querySelectorAll('.models input[name="ids[]"]');
+      const idsInputs = document.querySelectorAll('.models input[name="scenario_ids[]"]');
       const ids = Array.from(idsInputs).map(input => `${input.name}=${input.value}`).join('&');
       const sourceIdsInputs = document.querySelectorAll('.models select[name="source_ids[]"]');
       const sourceIds = Array.from(sourceIdsInputs).map(input => `${input.name}=${input.value}`).join('&');
@@ -320,12 +320,12 @@ The aim of this project is to create a basis for transparent, knowledge-based de
       const modelDiv = document.createElement('div');
       modelDiv.setAttribute("class", "model")
 
-      const modelDropdown = document.getElementById('ids');
+      const modelDropdown = document.getElementById('scenario_ids');
       const selectedModel = modelDropdown.value;
       
       const newModel = document.createElement('input');
       newModel.type = 'hidden';
-      newModel.name = 'ids[]';
+      newModel.name = 'scenario_ids[]';
       newModel.value = selectedModel;
       modelDiv.appendChild(newModel);
 
