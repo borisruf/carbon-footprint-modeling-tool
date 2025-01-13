@@ -85,13 +85,42 @@ function updateScenario() {
     try {
         scenario = JSON.parse(textarea.value);
 
-        // buildScenarioDOMtree is a local function in index and show TODO: refactor
-        let dom = buildScenarioDOMtree(scenario);
+        let s = scenario;
 
-        let container = document.getElementById("container")
-        container.innerHTML = "";
-        container.appendChild(dom);
-        updateView(scenario);
+        if (scenario.hasOwnProperty("scenario")) { 
+    
+            quantity = scenario.quantity;
+            s = scenario.scenario; 
+        }
+
+        // buildScenarioDOMtree is a local function in index and show TODO: refactor
+        let dom = buildScenarioDOMtree(s);
+
+        let scenarioDiv = document.querySelector('div[name="scenario"]');
+
+        if (scenarioDiv.firstChild) {
+            scenarioDiv.replaceChild(dom, scenarioDiv.firstChild);
+        } else {
+            scenarioDiv.appendChild(dom);
+        }
+
+        updateView(s);
+
+        // display factor input when scenario has quantity value or factor url parameter is provided
+        if (scenario.quantity) {
+
+            let factorDiv = document.querySelector('div[name="factor"]');
+            factorDiv.style.display = "block";
+            factorDiv.querySelector('input').value = quantity;
+
+            document.querySelector('div[name="factor_total"]').style.display = "block";
+
+            updateFactorTotal(s, quantity);
+        } else {
+
+            document.querySelector('div[name="factor"]').style.display = "none";
+            document.querySelector('div[name="factor_total"]').style.display = "none";
+        }
 
         document.getElementById('jsonOverlay').style.display = 'none';
     } catch (error) {
@@ -483,6 +512,7 @@ function availableTotalEmissionTypes(emissions) {
             units.push(unit); 
         }
     }
+
     return units;
 }
 
@@ -584,6 +614,13 @@ function updateData() {
 
     // update emission calculations
     updateView(scenario);
+
+    let factorDiv = document.querySelector('div[name="factor"]');
+    if (factorDiv.style.display !== 'none') {
+        let quantity = parseFloat(factorDiv.querySelector('input').value);
+        scenario.quantity = quantity;
+        updateFactorTotal(scenario, quantity);
+    }
 }
 
 // recursively updates any source object in the JSON object provided with primary_source
@@ -599,6 +636,30 @@ function updateSource(json_object, primary_source) {
     }
   }
   return json_object;
+}
+
+function updateFactorTotal(scenario, quantity) {
+
+    let factorTotalEmissionDiv = document.querySelector('div[class="factor_total_emission"]');
+
+    if (quantity>0) {
+
+        let emissions = totalEmissions(scenario, quantity || null, primary_source);
+
+        let best_unit = emission_type_parameter || bestEmissionType(emissions);
+
+        // update total emissions with best common emission type
+        if (best_unit) {
+            factorTotalEmissionDiv.innerHTML = formatTotalEmissions(emissions[best_unit], best_unit);
+
+        } else {
+            console.warn("No common emission type available for factor total emission");
+            factorTotalEmissionDiv.innerHTML = "ʘ ʘ<br />o";
+        }
+    } else {
+        factorTotalEmissionDiv.innerHTML = "0";
+    }
+
 }
 
 // browse the DOM element for all non-nested data elements
@@ -676,6 +737,10 @@ function traverseDOMtree(element) {
 
 // calculate total emissions for all scopes of one scenario
 function totalEmissions(scenario_json, factor=1, primary_source=null) {
+
+    if (scenario_json.hasOwnProperty("scenario")) { 
+        scenario_json = scenario_json.scenario; 
+    }
 
     if (!factor) {
         factor = 1

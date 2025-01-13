@@ -347,6 +347,10 @@
                 urlParameters["emission_type"] = best_unit;
                 urlParameters["source_id"] = (source_ids[j] || "");
 
+                if (factor_parameter !== '' && factor_parameter !== null && factor_parameter != 1) {
+                    urlParameters["factor"] = factor_parameter;
+                }
+
                 title.setAttribute("href", "index.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
 
                 let emissions = totalEmissions(scenario, factor_parameter || null, primary_sources[j]);
@@ -369,21 +373,6 @@
                 let sample = document.querySelector(".template[name='reference']").cloneNode(true);
                 sample.classList.remove("template");
 
-                let title = sample.querySelector("a[name='title']");
-
-                title.innerHTML = scenario["title"];
-
-                let urlParameters = {};
-                if (scenario_id) {
-                    urlParameters["scenario_id"] = scenario_id;
-                } else {
-                    urlParameters["scenario"] = encodeURIComponent(base64);
-                }
-
-                urlParameters["emission_type"] = best_unit;
-
-                title.setAttribute("href", "index.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
-
                 let bar = sample.querySelector("div[name='bar']");
 
                 let last_scenario = scenarios[scenarios.length-1].scenario;
@@ -402,6 +391,25 @@
                 sample.querySelector("span[name='reference_factor']").innerHTML = reference_factor + "x"
 
                 arena.appendChild(sample);
+
+                let title = sample.querySelector("a[name='title']");
+
+                title.innerHTML = scenario["title"];
+
+                let urlParameters = {};
+                if (scenario_id) {
+                    urlParameters["scenario_id"] = scenario_id;
+                } else {
+                    urlParameters["scenario"] = encodeURIComponent(base64);
+                }
+
+                urlParameters["emission_type"] = best_unit;
+
+                if (reference_factor !== '' && reference_factor !== null && reference_factor != 1) {
+                    urlParameters["factor"] = reference_factor;
+                }
+
+                title.setAttribute("href", "index.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
             }
 
             if (title_parameter) {

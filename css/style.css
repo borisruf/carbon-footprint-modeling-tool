@@ -56,9 +56,17 @@ div[name="component"] div.row div, div[name="link"] div.row div {
 div[name="component"] div.row, div[name="link"] div.row, div[name="nestedScenario"] div.row {
     clear:  right;
     display: flex;
-    margin-bottom:  4px;
-    align-items:  center;
-}
+    align-items: center;
+    width: 100%;
+} 
+
+div#container div.row {
+
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+} 
 
 div[name="component"] div.row div.connector {
     margin-top:  5px;
@@ -130,6 +138,25 @@ div[name="scope"] div.total_emission {
     border-radius: 50%;
     width: 80px;
     height: 80px;
+    padding: 10px;
+    background-color: yellow;
+    text-align:  center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+div[name="factor_total"] div.factor_total_emission {
+    
+    float: right;
+    
+    right:  -40px;
+    bottom:  -30px;
+    
+    border-radius: 30%;
+    width: 100px;
+    height: 100px;
     padding: 10px;
     background-color: yellow;
     text-align:  center;
@@ -355,4 +382,19 @@ div[name="scope"] div.total_consumptions {
     flex-direction: column;
     display: none;
     font-size: 14px;
+}
+
+div#container div[name="factor"], div#container div[name="factor_total"] {
+    min-width: 200px;
+    display: none;
+}
+
+div#container div[name="factor"] {
+    font-size: 20px;
+
+}
+
+div#container div[name="factor"] input {
+    font-size: 20px;
+    width: 100px;
 }
