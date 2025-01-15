@@ -1,0 +1,17 @@
+{
+  "title": "1 minute of video streaming (ADEME)",
+  "description": "This is a wrapper for the 1 hour video streaming scenario from ADEME",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": {},
+        "list": [
+        {
+          "type": "link",
+          "quantity": 0.0166666666,
+          "scenario_id": "1-hr-videostreaming-ademe"
+        }
+      ]
+    }
+  ]
+}
