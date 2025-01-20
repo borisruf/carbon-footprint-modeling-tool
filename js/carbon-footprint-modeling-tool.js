@@ -644,7 +644,7 @@ function updateFactorTotal(scenario, quantity) {
 
     if (quantity>0) {
 
-        let emissions = totalEmissions(scenario, quantity || null, primary_source);
+        let emissions = totalEmissions(scenario, quantity || null);
 
         let best_unit = emission_type_parameter || bestEmissionType(emissions);
 
