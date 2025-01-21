@@ -38,11 +38,26 @@ function showLink() {
     overlay.style.display = 'block';
 }
 
-function copyToClipboard() {
+function copyUrlToClipboard() {
+    
     let overlay = document.getElementById('linkOverlay');
     link.select();
     document.execCommand('copy');
     alert('Link copied to clipboard!');
+}
+
+function copyEncodedScenarioToClipboard() {
+
+    var fileContent = JSON.stringify(scenario.scenario ? scenario.scenario : scenario);
+    let copyEncodedScenarioToClipboard = encodeURIComponent(btoa(unescape(encodeURIComponent(fileContent))))
+
+    navigator.clipboard.writeText(copyEncodedScenarioToClipboard)
+        .then(() => {
+            alert('Encoded scenario copied to clipboard!');
+        })
+        .catch(err => {
+            console.error('Could not copy text: ', err);
+        });
 }
 
 function contextualizeEmissions() {
