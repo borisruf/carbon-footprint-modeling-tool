@@ -1,4 +1,208 @@
 {
+  "united-kingdom": {
+    "name": "United Kingdom electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.2506,
+        "unit": "kg"
+      }
+    }
+  },
+  "belgium": {
+    "name": "Belgium electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.206,
+        "unit": "kg"
+      }
+    }
+  },
+  "italy": {
+    "name": "Italy electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.3359,
+        "unit": "kg"
+      }
+    }
+  },
+  "spain": {
+    "name": "Spain electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.2086,
+        "unit": "kg"
+      }
+    }
+  },
+  "germany": {
+    "name": "Germany electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.3889,
+        "unit": "kg"
+      }
+    }
+  },
+  "denmark": {
+    "name": "Denmark electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.1348,
+        "unit": "kg"
+      }
+    }
+  },
+  "norway": {
+    "name": "Norway electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.0133,
+        "unit": "kg"
+      }
+    }
+  },
+  "sweden": {
+    "name": "Sweden electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.0256,
+        "unit": "kg"
+      }
+    }
+  },
+  "finland": {
+    "name": "Finland electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.1048,
+        "unit": "kg"
+      }
+    }
+  },
+  "poland": {
+    "name": "Poland electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.7542,
+        "unit": "kg"
+      }
+    }
+  },
+  "austria": {
+    "name": "Austria electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.2061,
+        "unit": "kg"
+      }
+    }
+  },
+  "greece": {
+    "name": "Greece electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.4787,
+        "unit": "kg"
+      }
+    }
+  },
+  "europe": {
+    "name": "Europe electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.24845,
+        "unit": "kg"
+      }
+    }
+  },
+  "switzerland": {
+    "name": "Switzerland electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.0869,
+        "unit": "kg"
+      }
+    }
+  },
+  "france": {
+    "name": "France electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.0814,
+        "unit": "kg"
+      }
+    }
+  },
+  "netherlands": {
+    "name": "Netherlands electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.3518,
+        "unit": "kg"
+      }
+    }
+  },
+  "ireland": {
+    "name": "Ireland electricity grid",
+    "description": "(2022)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.3476,
+        "unit": "kg"
+      }
+    }
+  },
   "electricity-usa-2020": {
     "name": "USA electricity grid",
     "description": "(2020)",
