@@ -653,13 +653,13 @@ function updateSource(json_object, primary_source) {
   return json_object;
 }
 
-function updateFactorTotal(scenario, quantity) {
+function updateFactorTotal(scenario, quantity, primary_source) {
 
     let factorTotalEmissionDiv = document.querySelector('div[class="factor_total_emission"]');
 
     if (quantity>0) {
 
-        let emissions = totalEmissions(scenario, quantity || null);
+        let emissions = totalEmissions(scenario, quantity || null, primary_source);
 
         let best_unit = emission_type_parameter || bestEmissionType(emissions);
 

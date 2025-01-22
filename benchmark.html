@@ -351,7 +351,7 @@
                     urlParameters["factor"] = factor_parameter;
                 }
 
-                title.setAttribute("href", "index.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
+                title.setAttribute("href", "show.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
 
                 let emissions = totalEmissions(scenario, factor_parameter || null, primary_sources[j]);
 
@@ -409,7 +409,7 @@
                     urlParameters["factor"] = reference_factor;
                 }
 
-                title.setAttribute("href", "index.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
+                title.setAttribute("href", "show.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
             }
 
             if (title_parameter) {

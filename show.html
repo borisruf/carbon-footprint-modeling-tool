@@ -26,6 +26,9 @@
         // optional parameter to override emission type
         var emission_type_parameter = url.searchParams.get("emission_type");
 
+        // optional parameter to apply factor to scenario
+        var quantity = url.searchParams.get("factor");
+
         // optional parameter to show consumption data
         var show_consumption_parameter = url.searchParams.get("show_consumption") === "true";
 
@@ -212,9 +215,28 @@
 
             let dom = buildScenarioDOMtree(scenario);
 
-            document.getElementById("container").appendChild(dom);
+            let scenarioDiv = document.querySelector('div[name="scenario"]');
+            if (scenarioDiv.firstChild) {
+                scenarioDiv.replaceChild(dom, scenarioDiv.firstChild);
+            } else {
+                scenarioDiv.appendChild(dom);
+            }
 
             updateView(scenario, null, primary_source);
+
+            // display factor input when scenario has quantity value or factor url parameter is provided
+            if (quantity) {
+
+                let factorDiv = document.querySelector('div[name="factor"]');
+                factorDiv.style.display = "block";
+                factorDiv.querySelector('input').value = quantity;
+
+                document.querySelector('div[name="factor_total"]').style.display = "block";
+
+                updateFactorTotal(scenario, quantity, primary_source);
+
+                scenario = {scenario: scenario, quantity: quantity}
+            } 
 
             async function fetchConsumersJsonAndAddSearchOverlay() {
                 
@@ -252,7 +274,18 @@
 </head>
 
 <body>
-    <div id="container" name="scenario" data-type="object" style="max-width: none;">
+    <div id="container" style="max-width: none;">
+        <div class="row">
+            <div name="factor">
+                <input type="number" name="quantity" class="data" onchange="updateData()">
+                <label for="quantity">X</label>
+            </div>
+            <div name="scenario" data-type="object" style="flex-grow: 1"></div>
+            <div name="factor_total">
+                <div class="factor_total_emission"></div>
+                <div class="factor_total_consumptions"></div>
+            </div>
+        </div>
     </div>
     <div id="links">
         <a href="#" onclick="showLink()">Share via link</a>
