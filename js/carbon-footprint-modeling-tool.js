@@ -288,6 +288,12 @@ function aggregateConsumptionsByUnit(consumptions) {
 }
 
 function formatConsumptionStringByUnit(consumption) {
+
+    // exit for emission-only entities
+    if (consumption === null || consumption === undefined) {
+        return "n/a" 
+    }
+
     let value = consumption[0];
     let unit = consumption[1];
     let source_type = consumption[2];
