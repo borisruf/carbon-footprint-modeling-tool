@@ -395,7 +395,7 @@ function calculateScopeEmissions(scope, factor=1, primary_source=null) {
             let usage_factor = 1;
             let consumption;
 
-            if (primary_source) {
+            if (primary_source && element.source.type == primary_source.type) {
                 // overwrite source with primary source if provided
                 element.source = primary_source;
             }
@@ -638,19 +638,23 @@ function updateData() {
     }
 }
 
-// recursively updates any source object in the JSON object provided with primary_source
+// recursively updates any source object of matching type in the JSON object provided with primary_source
 function updateSource(json_object, primary_source) {
-  if (json_object && typeof json_object === 'object') {
-    if (json_object.hasOwnProperty('source')) {
-      json_object.source = primary_source;
+    if (json_object && typeof json_object === 'object') {
+        if (json_object.hasOwnProperty('source')) {
+            let source = json_object.source;
+
+            if (source.type == primary_source.type) {
+                json_object.source = primary_source;
+            }
+        }
+        for (let key in json_object) {
+            if (json_object.hasOwnProperty(key)) {
+                updateSource(json_object[key], primary_source);
+            }
+        }
     }
-    for (let key in json_object) {
-      if (json_object.hasOwnProperty(key)) {
-        updateSource(json_object[key], primary_source);
-      }
-    }
-  }
-  return json_object;
+    return json_object;
 }
 
 function updateFactorTotal(scenario, quantity, primary_source) {
