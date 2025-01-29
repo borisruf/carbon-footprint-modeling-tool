@@ -240,6 +240,19 @@ function getScopeConsumptions(scope) {
             } else if (item.type === "scenario") {
                 let c = getScenarioConsumptions(item);
                 consumptions.push(...c);
+
+            } else if (item.type === "link") {
+
+                let request = new XMLHttpRequest();
+                request.open("GET", "./scenarios/" + item.scenario_id + ".json", false);
+                request.setRequestHeader('Cache-Control', 'no-cache');
+                request.send(null)
+
+                let scenario = JSON.parse(request.responseText);
+                let c = getScenarioConsumptions(scenario, item.quantity);
+
+                consumptions.push(...c);
+                
             }
         });
     }
@@ -247,10 +260,9 @@ function getScopeConsumptions(scope) {
     return consumptions;
 }
 
-function getScenarioConsumptions(scenario) {
+function getScenarioConsumptions(scenario, quantity=1) {
 
     let consumptions = [];
-    let quantity = 1;
 
     if (scenario.hasOwnProperty("scenario")) { 
         quantity = scenario.quantity;
