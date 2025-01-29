@@ -553,7 +553,9 @@ function updateView(scenario_json, scenario_id, primary_source=null) {
         // calculate emissions per scope
         let emissions = calculateScopeEmissions(scope, 1, primary_source);
 
-        let scopeDiv = scenarioDiv.querySelectorAll("div[name='scope']:not(.template)")[i];
+
+        //let scopeDiv = scenarioDiv.querySelectorAll("div[name='scope']:not(.template)")[i];
+        let scopeDiv = scenarioDiv.querySelector("div[name='scopes']").children[i];
 
         if (show_consumption_parameter) {
             let totalConsumptionsMessage = Array.from(scopeDiv.querySelectorAll(".total_consumptions")).pop();
@@ -605,7 +607,7 @@ function updateView(scenario_json, scenario_id, primary_source=null) {
         }
 
         let best_unit = emission_type_parameter || bestTotalEmissionType(emissions);
-        let totalEmissionMessage = Array.from(scopeDiv.querySelectorAll(".total_emission")).pop();   
+        let totalEmissionMessage = Array.from(scopeDiv.querySelectorAll(".total_emission")).pop();
 
         // update total emissions with best common emission type
         if (best_unit) {
