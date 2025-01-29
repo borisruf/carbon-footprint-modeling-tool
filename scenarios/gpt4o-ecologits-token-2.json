@@ -1,6 +1,6 @@
 {
   "title": "GPT-4o inference",
-  "description": "A Power Usage Effectiveness (PUE) factor is applied to consider data center infrastructure such as the cooling equipment.",
+  "description": "For the GPT-4o model, which utilizes a Mixture of Experts (MoE) architecture, the following assumptions are made:<br/><br/>Total parameters: 440 billion<br/>Active parameters: 220 billion<br/><br/>See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
