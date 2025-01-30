@@ -1,0 +1,84 @@
+{
+  "title": "Claude 3 Opus inference",
+  "description": "For the Claude 3 Opus model, which utilizes a Mixture of Experts (MoE) architecture, the following assumptions are made:<br/><br/>Total parameters: 2000 billion<br/>Active parameters: 1000 billion<br/><br/>See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "GPU(s) energy consumption",
+            "description": "NVIDIA A100 80GB GPU",
+            "consumptions": {
+              "electricity": {
+                "value": "0.00135795",
+                "unit": "kWh",
+                "base_unit": "token",
+                "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
+              }
+            }
+          },
+          "quantity": "1",
+          "quantity_unit": "token",
+          "source": {
+            "name": "France electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.0511",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.0573",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Server energy consumption",
+            "description": "(excluding GPUs)",
+            "consumptions": {
+              "electricity": {
+                "value": "4.29E-04",
+                "unit": "kWh",
+                "base_unit": "token",
+                "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
+              }
+            }
+          },
+          "quantity": "1",
+          "quantity_unit": "token",
+          "source": {
+            "name": "France electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.0511",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.0573",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
