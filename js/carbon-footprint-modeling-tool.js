@@ -210,9 +210,9 @@ function getComponentConsumption(component) {
 
     if (consumption) {
 
-        value = consumption.value;
-        quantity = component.quantity;
-        unit = consumption.unit;
+        let value = consumption.value;
+        let quantity = component.quantity;
+        let unit = consumption.unit;
 
         return [Number(value)*quantity, unit, component.source.type];
     }
