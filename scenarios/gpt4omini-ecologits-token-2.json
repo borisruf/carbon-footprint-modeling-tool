@@ -1,6 +1,6 @@
 {
   "title": "GPT-4o-mini inference",
-  "description": "The GPT-4o-mini model is assumed to be dense model with 28 billion active parameters. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "description": "The GPT-4o-mini model is assumed to be a dense model with 28 billion active parameters. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
