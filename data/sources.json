@@ -1,4 +1,16 @@
 {
+  "world-ecologits": {
+    "name": "World electricity grid",
+    "description": "(EcoLogits)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.590478,
+        "unit": "kg"
+      }
+    }
+  },
   "united-kingdom": {
     "name": "United Kingdom electricity grid",
     "description": "(2022)",
