@@ -1,5 +1,5 @@
 {
-  "world-ecologits": {
+  "world-ecologits-expert": {
     "name": "World electricity grid",
     "description": "(EcoLogits)",
     "type": "electricity",
@@ -7,6 +7,18 @@
       "co2e": {
         "base_unit": "kWh",
         "value": 0.590478,
+        "unit": "kg"
+      }
+    }
+  },
+  "world-ecologits-simple": {
+    "name": "World electricity grid",
+    "description": "(EcoLogits)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.373052,
         "unit": "kg"
       }
     }
