@@ -49,6 +49,8 @@ or energy sources can be changed by clicking the pencil icon <img src="https://r
 - [Mistral Large 2](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=mistral-large-2-ruf-mortas-token&emission_type=co2e)
 - [Falcon 7B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=falcon-7b-token&emission_type=co2e)
 - [Falcon 180B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=falcon-180b-ruf-mortas-token&emission_type=co2e)
+- [Anthropic Claude 3 Opus](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=claude3opus-ecologits-token)
+- [DeepSeek-V3](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=deepseekv3-token)
 
 #### Tools:
 - [AI Emissions Scenario Generator](https://borisruf.github.io/carbon-footprint-modeling-tool/ai-scenarios.html)
