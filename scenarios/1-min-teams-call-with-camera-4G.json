@@ -24,13 +24,13 @@
             "source": {
               "name": "Mobile data emission factor",
               "type": "data",
-              "description": "ADEME (2022)",
+              "description": "ARCEP (2019), <br>assuming 1 GB = 1024 MB, <br>and using a French IEA 2022 emission factor of 8.14 g CO2e/kWh:<br><br>0.6 kWh/GB / 1024 MB/GB * 8.14 g CO2e/kWh",
               "emissions": {
                 "co2e": {
-                  "value": "0.0494",
+                  "value": "0.0476",
                   "unit": "g",
                   "base_unit": "MB",
-                  "reference_url": "https://base-empreinte.ademe.fr/"
+                  "reference_url": "https://www.arcep.fr/uploads/tx_gspublication/reseaux-du-futur-empreinte-carbone-numerique-juillet2019.pdf"
                 }
               }
             }
