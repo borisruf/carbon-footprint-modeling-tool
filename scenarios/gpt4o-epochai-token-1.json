@@ -1,0 +1,18 @@
+{
+  "title": "Activating a single parameter of a LLM",
+  "description": "The Epoch AI analysts assume that activating 1 parameter of a large language model (LLM) in order to generate a token requires approximately 2 Floating Point Operations (FLOPs).",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list":
+		[
+            {
+               "type":"link",
+               "quantity":2,
+               "scenario_id":"gpt4o-epochai-token-2"
+            }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+   "title":"GPT-4o emission per token (Epoch AI)",
+   "description":"Analysts at <a href='https://epoch.ai/' target='_blank'>Epoch AI</a> published an estimate of the <a href='https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use' target='_blank'>energy consumption of ChatGPT</a> based on GPT-4o.<br/><br/>They make the following assumptions about the number of parameters of GPT-4o:<ul><li>the total number of parameters of the model ranges <a href='https://substack.com/redirect/07d95765-20c6-4219-9e2e-09eac7cc0d03' target='_blank'>from 100 to 400 billion</a></li><li>the model is a Mixture-of-Experts (MoE), where not all parameters are activated at once</li></ul>Finally, they select the maximum of the estimated total parameters (400bn), and assume that 25% get activated at once. Accordingly, they assume <b>100 billion active parameters</b> for further calculation.",
+   "scopes":[
+      {
+         "level":"Scope 2",
+         "description":{
+            
+         },
+         "list":[
+            {
+               "type":"link",
+               "quantity":100000000000,
+               "scenario_id":"gpt4o-epochai-token-1"
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Performing a single FLOP",
+  "description": "NVIDIA H100 GPUs can perform up to <a href='https://resources.nvidia.com/en-us-tensor-core/nvidia-tensor-core-gpu-datasheet' target='_blank'>989 trillion</a> (9.89e14) Floating Point Operations (FLOPs) per second. At that rate, it takes <a href='https://www.google.com/search?q=1/9.89e14' target='_blank'>1.01e-15</a> seconds of H100-time to process one FLOP.<br/><br/>However, GPUs cannot achieve their maximum FLOP/second output in practice. It is estimated that the typical utilization rates for inference clusters are around 10%. This estimation leads to a tenfold increase in the number of GPUs required to perform 1 FLOP.<br/><br/>Consequently, it takes approximately <a href='https://www.google.com/search?q=10*1.01e-15' target='_blank'>1.01e-14</a> seconds of H100-time to process 1 FLOP.",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list":
+		[
+            {
+               "type":"link",
+               "quantity":1.01E-14,
+               "scenario_id":"gpt4o-epochai-token-3"
+            }
+        ]
+    }
+  ]
+}

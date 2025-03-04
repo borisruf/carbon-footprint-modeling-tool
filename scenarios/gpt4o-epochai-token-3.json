@@ -1,0 +1,48 @@
+{
+  "title": "Operating a single NVIDIA H100 GPU per second",
+  "description": "The Epoch AI analysts make the following assumptions when estimating the power required to run the GPU:<br/><ul><li>a NVIDIA H100 GPU has a power rating of <a href='https://www.nvidia.com/en-us/data-center/h100/' target='_blank'>700 W</a></li><li>including overhead (server and data center) that's 1500 W</li><li>however, only <a href='https://www.microsoft.com/en-us/research/wp-content/uploads/2024/03/GPU_Power_ASPLOS_24.pdf' target='_blank'>around 70%</a> of peak power is consumed on average</li></ul>As a result, they assume a power consumption of 1050 W per second. In kilowatt-hours, this corresponds to 1050/1000/3600=<a href='https://www.google.com/search?q=1050/1000/3600' target='_blank'>0.0002916667</a> kWh.",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "GPU energy consumption",
+            "description": "NVIDIA H100 640GB GPU",
+            "consumptions": {
+              "electricity": {
+                "value": 0.0002916667,
+                "unit": "kWh",
+                "base_unit": "s",
+                "reference_url": "https://resources.nvidia.com/en-us-dgx-systems/ai-enterprise-dgx"
+              }
+            }
+          },
+          "quantity": "1",
+          "quantity_unit": "second(s)",
+          "source": {
+            "name": "France electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.0511",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.0573",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
