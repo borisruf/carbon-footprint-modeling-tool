@@ -1,0 +1,48 @@
+{
+  "title": "Lighting an LED bulb",
+  "description" : "The power of a classic <a href='https://www.ikea.com/fr/fr/p/tradfri-kit-de-demarrage-connecte-sans-fil-a-variateur-dintensite-spectre-blanc-80547567/' target='_blank'>LED light-bulb from IKEA</a> is 7.8 W. Therefore, it consumes 0.0078 kWh in 1 hour.",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": "indirect electricty emissions",
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "LED light bulb",
+            "description": "IKEA, 7.8W",
+            "consumptions": {
+              "electricity": {
+                "value": "0.0078",
+                "unit": "kWh",
+                "base_unit": "h",
+                "reference_url": "https://www.ikea.com/fr/fr/p/tradfri-kit-de-demarrage-connecte-sans-fil-a-variateur-dintensite-spectre-blanc-80547567/"
+              }
+            }
+          },
+          "quantity": "1",
+          "quantity_unit": "h",
+          "source": {
+            "name": "France electricity grid",
+            "description": "(2020)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 0.0511,
+                "unit": "kg",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "base_unit": "kWh",
+                "value": 0.0573,
+                "unit": "kg",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "quantity": null,
+  "scenario": {
+    "title": "Powering an average U.S. household for 1 year",
+    "description": "According to an <a href=\"https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php\" target=\"_blank\">IEA article</a>,  the average U.S. household uses about 10,500 kilowatt-hours (kWh) of electricity per year.<br><br>However, However, electricity consumption in homes differs significantly across various regions of the United States and among different types of housing. In contrast to natural gas, petroleum fuels, and wood—primarily utilized for heating and cooking—electricity can energize more than 100 different applications within households.<br><br>The three largest categories and their share of residential electricity consumption in 2020 were:<ul><li>Air conditioning: 19%</li><li>Space heating: 12%</li><li>Water heating: 12%</li></ul>",
+    "scopes": [
+      {
+        "level": "Scope 2",
+        "description": "indirect electricty emissions",
+        "list": [
+          {
+            "type": "component",
+            "consumer": {
+              "name": "U.S. household",
+              "description": "In average, for 1 year",
+              "consumptions": {
+                "electricity": {
+                  "value": "10500",
+                  "unit": "kWh",
+                  "base_unit": "year",
+                  "reference_url": "https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php?utm_source=substack&utm_medium=email"
+                }
+              }
+            },
+            "quantity": "1",
+            "quantity_unit": "year",
+            "source": {
+              "name": "USA electricity grid",
+              "type": "electricity",
+              "description": "(2021)",
+              "emissions": {
+                "co2e": {
+                  "value": "0.379",
+                  "unit": "kg",
+                  "base_unit": "kWh",
+                  "reference_url": "https://ourworldindata.org/grapher/carbon-intensity-electricity"
+                },
+                "co2": {
+                  "value": "0.3878",
+                  "unit": "kg",
+                  "base_unit": "kWh",
+                  "reference_url": "https://www.eia.gov/tools/faqs/faq.php?id=74&t=11"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
