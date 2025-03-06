@@ -47,6 +47,7 @@ or energy sources can be changed by clicking the pencil icon <img src="https://r
 - [Mistral 7B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=mistral-7b-token&emission_type=co2e)
 - [Mistral Small](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=mistral-small-ruf-mortas-token&emission_type=co2e)
 - [Mistral Large 2](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=mistral-large-2-ruf-mortas-token&emission_type=co2e)
+- [Google Gemini-1.5 Flash-8B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=gemini15flash-8b-ecologits-token&emission_type=co2e)
 - [Google Gemma 2 2B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=gemma2-2b-ecologits-token&emission_type=co2e)
 - [Google Gemma 2 9B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=gemma2-9b-ecologits-token&emission_type=co2e)
 - [Google Gemma 2 27B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=gemma2-27b-ecologits-token&emission_type=co2e)
