@@ -1,7 +1,7 @@
 {
   "europe-microsoft":{
-    "name": "Microsoft's average European electricity grid",
-    "description": "(internal source)",
+    "name": "European countries with Microsoft data centers",
+    "description": "(internal source, 2022)",
     "type": "electricity",
     "emissions": {
       "co2e": {
