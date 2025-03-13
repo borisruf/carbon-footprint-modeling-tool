@@ -1,4 +1,16 @@
 {
+  "europe-microsoft":{
+    "name": "Microsoft's average European electricity grid",
+    "description": "(internal source)",
+    "type": "electricity",
+    "emissions": {
+      "co2e": {
+        "base_unit": "kWh",
+        "value": 0.216925,
+        "unit": "kg"
+      }
+    }
+  },
   "world-ecologits-expert": {
     "name": "World electricity grid",
     "description": "(EcoLogits)",
