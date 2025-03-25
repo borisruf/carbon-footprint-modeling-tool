@@ -43,6 +43,10 @@
         let primary_source;
         if (source_id) {
             primary_source = sources_json[source_id];
+        } else if (source) {
+            primary_source = JSON.parse(atob(decodeURIComponent(source)));
+            let firstKey = Object.keys(primary_source)[0];
+            primary_source = primary_source[firstKey]
         }
 
         function fetchScenario(scenario_id) {
