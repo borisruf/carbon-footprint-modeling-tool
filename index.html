@@ -22,7 +22,8 @@
         let scenario_id = url.searchParams.get("scenario_id") || url.searchParams.get("id");
 
         let source_id = url.searchParams.get("source_id");
-
+        let source = url.searchParams.get("source");
+        
         // optional parameter to override emission type
         var emission_type_parameter = url.searchParams.get("emission_type");
 
