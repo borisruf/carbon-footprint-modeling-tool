@@ -22,6 +22,7 @@
         let scenario_id = url.searchParams.get("scenario_id") || url.searchParams.get("id");
 
         let source_id = url.searchParams.get("source_id");
+        let source = url.searchParams.get("source");
 
         // optional parameter to override emission type
         var emission_type_parameter = url.searchParams.get("emission_type");
@@ -44,8 +45,12 @@
         // identify primary source if provided
         if (source_id) {
             primary_source = sources_json[source_id];
+        } else if (source) {
+            primary_source = JSON.parse(atob(decodeURIComponent(source)));
+            let firstKey = Object.keys(primary_source)[0];
+            primary_source = primary_source[firstKey]
         }
-
+        
         function buildScenarioDOMtree(scenario, scenario_id) {
 
             let scenarioDiv = document.querySelector(".template[name='scenario']").cloneNode(true);
