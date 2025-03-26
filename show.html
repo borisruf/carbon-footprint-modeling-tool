@@ -104,7 +104,12 @@
                             }
                         }
 
-                        linkDiv.querySelector("[name='url']").setAttribute("href", "show.html?scenario_id=" + element.scenario_id + "&source_id=" + source_id  + "&show_consumption=" + show_consumption_parameter);
+                        if (source) {
+                            linkDiv.querySelector("[name='url']").setAttribute("href", "show.html?scenario_id=" + element.scenario_id + "&source=" + source  + "&show_consumption=" + show_consumption_parameter);
+                        } else if (source_id) {
+                            linkDiv.querySelector("[name='url']").setAttribute("href", "show.html?scenario_id=" + element.scenario_id + "&source_id=" + source_id  + "&show_consumption=" + show_consumption_parameter);
+                        }
+
                         linkDiv.querySelector("[name='title']").innerHTML = element.scenario_id;
 
                         if (Number(element.quantity)) {
