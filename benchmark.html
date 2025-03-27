@@ -220,18 +220,30 @@
 
 
         let source_ids = url.searchParams.getAll("source_ids[]");
+        let sources_base64 = url.searchParams.getAll("sources[]");
         let primary_sources = [];
 
-        if (source_ids) {
-            // TODO: replace data source of autocompletejs with API call
-            let request2 = new XMLHttpRequest();
-            request2.open("GET", "./data/sources.json", false);
-            request2.setRequestHeader('Cache-Control', 'no-cache');
-            request2.send(null)
-            let sources_json = JSON.parse(request2.responseText);
+        if (sources_base64.length > 0) {
+            // Traitement des sources encodées en base64
+            primary_sources = sources_base64.map(source_base64 => {
+                source_base64 = decodeURIComponent(source_base64);
+                source_json = JSON.parse(atob(source_base64));
+                let firstKey = Object.keys(source_json)[0];
+                source_json = source_json[firstKey]
+                
+                return source_json
+            });
+        } else if (source_ids.length > 0) {
+            // Traitement des source_ids
+            let request = new XMLHttpRequest();
+            request.open("GET", "./data/sources.json", false);
+            request.setRequestHeader('Cache-Control', 'no-cache');
+            request.send(null);
+            let sources_json = JSON.parse(request.responseText);
 
             primary_sources = source_ids.map(key => (key in sources_json ? sources_json[key] : null));
         }
+
 
         // optional parameter to override emission type
         var emission_type_parameter = url.searchParams.get("emission_type");
@@ -345,7 +357,15 @@
                 }
 
                 urlParameters["emission_type"] = best_unit;
-                urlParameters["source_id"] = (source_ids[j] || "");
+                if (sources_base64.length > 0) {
+                    urlParameters["source"] = sources_base64[j];
+                } else if (source_ids.length > 0) {
+                    urlParameters["source_id"] = source_ids[j];
+                } else {
+                    urlParameters["source_id"] = "";
+                }
+
+                
 
                 if (factor_parameter !== '' && factor_parameter !== null && factor_parameter != 1) {
                     urlParameters["factor"] = factor_parameter;
