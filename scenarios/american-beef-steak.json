@@ -1,0 +1,30 @@
+{
+  "title": "Beef from American cows",
+  "description": "<a href='https://carboncloud.com/about-us/' target='_blank'>CarbonCloud</a>, a company developing software that helps calculate and communicate the carbon footprint of food products, reported the carbon footprint of producing 1 kg of beef in the USA.<br><br>Based on this, we modeled the carbon footprint of eating one steak of 100 g.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 0.1,
+          "quantity_unit": "kg",
+          "consumer": {
+            "name": "American citizen"
+          },
+          "source": {
+            "name": "Beef, flank, sub-primal cut",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kg",
+                "value": 42.49,
+                "unit": "kg",
+                "reference_url": "https://apps.carboncloud.com/climatehub/product-reports/id/3066408596903"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
