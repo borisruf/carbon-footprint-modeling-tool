@@ -1,0 +1,34 @@
+{
+  "title": "1-hour video-call with camera enabled",
+  "description": "The study <a href='https://www.sciencedirect.com/sdfe/pdf/download/eid/1-s2.0-S0921344920307072/first-page-pdf' target='_blank'>The overlooked environmental footprint of increasing Internet use</a> published in 2021 reported a carbon footprint of 157.34 g of CO2e per hour of video-call with camera-on in the USA.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "User in the USA",
+            "description": ""
+          },
+          "quantity": "1",
+          "quantity_unit": "hour",
+          "source": {
+            "name": "Video-call with camera-on",
+            "type": "data",
+            "description": "",
+            "emissions": {
+              "co2e": {
+                "value": "157.34",
+                "unit": "g",
+                "base_unit": "hour",
+                "reference_url": "https://www.sciencedirect.com/sdfe/pdf/download/eid/1-s2.0-S0921344920307072/first-page-pdf"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
