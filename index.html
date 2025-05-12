@@ -124,7 +124,7 @@
                 titleLink.innerHTML = scenario.title;                
                 if (source_id) {
                     titleLink.href = "show.html?scenario_id=" + scenario_id + "&source_id=" + source_id;
-                } else if (source) {
+                } else {
                     titleLink.href = "show.html?scenario_id=" + scenario_id + "&source=" + source;
                 }
                 titleSpan.appendChild(titleLink);
