@@ -54,6 +54,8 @@ or energy sources can be changed by clicking the pencil icon <img src="https://r
 - [Falcon 7B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=falcon-7b-token&emission_type=co2e)
 - [Falcon 180B](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=falcon-180b-ruf-mortas-token&emission_type=co2e)
 - [Anthropic Claude 3 Opus](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=claude3opus-ecologits-token)
+- [Anthropic Claude 3.5 Sonnet](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=claude35sonnet-ecologits-token)
+- [Anthropic Claude 3 Haiku](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=claude3haiku-ecologits-token)
 - [DeepSeek-V3](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=deepseekv3-token)
 
 #### Tools:
