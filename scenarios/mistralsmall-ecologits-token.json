@@ -37,7 +37,7 @@
                   "description":"Global warming potential (GWP)",
                   "emissions":{
                      "co2e":{
-                        "value":"1.072458422120751e-07",
+                        "value":"1.338560883E-07",
                         "unit":"kg",
                         "base_unit":"token",
                         "reference_url":"https://ecologits.ai/latest/methodology/llm_inference/"

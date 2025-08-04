@@ -1,6 +1,6 @@
 {
   "title": "Mistral Small inference",
-  "description": "For the Mistral Small model, which utilizes a Mixture of Experts (MoE) architecture, the following assumptions are made:<br/><br/>Total parameters: 46.7 billion<br/>Active parameters: 12.9 billion<br/><br/>See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "description": "The Mistral Small model is a dense model with 23 billion active parameters. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
@@ -13,7 +13,7 @@
             "description": "NVIDIA A100 80GB GPU",
             "consumptions": {
               "electricity": {
-                "value": "2.57939E-06",
+                "value": "3.4793E-06",
                 "unit": "kWh",
                 "base_unit": "token",
                 "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
@@ -49,7 +49,7 @@
             "description": "(excluding GPUs)",
             "consumptions": {
               "electricity": {
-                "value": "1.13E-06",
+                "value": "1.41E-06",
                 "unit": "kWh",
                 "base_unit": "token",
                 "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
