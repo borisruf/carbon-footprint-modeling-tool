@@ -1,5 +1,5 @@
 {
-   "title":"Claude 3 Haiku emission per token (EcoLogits)",
+   "title":"Claude 3 Haiku emission per output token (EcoLogits)",
    "description":"The nonprofit organization <a href='https://genai-impact.org' target='_blank'>GenAI Impact</a> takes GPU and server power consumption into account when modeling AI model emissions. In both cases, they use the open dataset from the <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>LLM Perf Leaderboard</a> produced by Hugging Face. For closed models such as Claude 3 Haiku, where the data is not available, they fit linear regression models that model the energy consumption per output token as a function of the number of active parameters. To assess server energy consumption excluding GPUs, they fit a linear regression model to estimate the token generation latency.<br/><br/>To account for data center infrastructure such as the cooling equipment, a Power Usage Effectiveness (PUE) factor of <b>1.2x</b> is applied.",
    "scopes":[
       {
