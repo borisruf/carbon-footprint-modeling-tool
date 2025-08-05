@@ -254,6 +254,9 @@
         // optional parameter to multiply scenarios by factor
         var factor_parameter = url.searchParams.get("factor");
 
+        // optional parameters to multiply scenarios by each respective factor
+        let factor_parameters = url.searchParams.getAll("factors[]");
+
         window.addEventListener('load', function () {
 
             document.getElementById('expandedDescriptionLink').onclick = function(e) {
@@ -306,7 +309,15 @@
 
                 let emission = {};
                 emission["scenario_id"] = scenario_id;
-                emission["emission"] = totalEmissions(scenario, factor_parameter || null, primary_sources[i]);
+
+                let scenario_factor = null;
+                if (factor_parameters.length > 0 && factor_parameters[i]) {
+                    scenario_factor = factor_parameters[i];
+                } else if (factor_parameter !== null && factor_parameter !== undefined && factor_parameter !== '') {
+                    scenario_factor = factor_parameter;
+                }
+
+                emission["emission"] = totalEmissions(scenario, scenario_factor, primary_sources[i]);
                 emissions.push(emission);
                 i++;
             }
@@ -365,15 +376,20 @@
                     urlParameters["source_id"] = "";
                 }
 
-                
+                let scenario_factor = null;
+                if (factor_parameters.length > 0 && factor_parameters[j]) {
+                    scenario_factor = factor_parameters[j];
+                } else if (factor_parameter !== null && factor_parameter !== undefined && factor_parameter !== '') {
+                    scenario_factor = factor_parameter;
+                }
 
-                if (factor_parameter !== '' && factor_parameter !== null && factor_parameter != 1) {
-                    urlParameters["factor"] = factor_parameter;
+                if (scenario_factor) {
+                    urlParameters["factor"] = scenario_factor;
                 }
 
                 title.setAttribute("href", "show.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
 
-                let emissions = totalEmissions(scenario, factor_parameter || null, primary_sources[j]);
+                let emissions = totalEmissions(scenario, scenario_factor, primary_sources[j]);
 
                 let bar = sample.querySelector("div[name='bar']");
 
@@ -398,7 +414,15 @@
                 let last_scenario = scenarios[scenarios.length-1].scenario;
                 let last_primary_source = primary_sources[scenarios.length-1];
 
-                let emissions = totalEmissions(last_scenario, factor_parameter || null, last_primary_source);
+
+                let last_scenario_factor = null;
+                if (factor_parameters.length > 0) {
+                    last_scenario_factor = factor_parameters[factor_parameters.length-1];
+                } else if (factor_parameter !== null && factor_parameter !== undefined && factor_parameter !== '') {
+                    last_scenario_factor = factor_parameter;
+                }
+
+                let emissions = totalEmissions(last_scenario, last_scenario_factor || null, last_primary_source);
 
                 let reference_emission = totalEmissions(scenario, null);
 
