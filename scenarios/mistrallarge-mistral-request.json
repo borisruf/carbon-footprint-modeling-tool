@@ -1,0 +1,31 @@
+{
+  "title": "Mistral Large 2 emission per request (Mistral AI)",
+  "description": "Mistral AI, in collaboration with <a href='https://www.carbone4.com' target='_blank'>Carbone 4</a> and <a href='https://www.ademe.fr' target='_blank'>ADEME</a>, and peer-reviewed by <a href='https://resilio-solutions.com' target='_blank'>Resilio</a> and <a href='https://hubblo.org' target='_blank'>Hubblo</a>, conducted a <a href='https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai' target='_blank'>lifecycle analysis (LCA)</a> of their Mistral Large 2 model to assess its environmental impacts. Regarding GHG emissions during model inference, they found that generating a 400-token response (approximately one page of text), results in about 1.14 g CO2e, excluding user terminals.",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 1,
+          "quantity_unit": "request",
+          "consumer": {
+            "name": "Mistral Large 2",
+            "description": "400-token response"
+          },
+          "source": {
+            "name": "GHG Emissions",
+            "emissions": {
+              "co2e": {
+                "base_unit": "request",
+                "value": 0.00114,
+                "unit": "kg",
+                "reference_url": "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
