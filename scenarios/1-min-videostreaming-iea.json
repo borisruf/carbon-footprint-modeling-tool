@@ -1,6 +1,6 @@
 {
   "title": "1 minute of video streaming (IEA)",
-  "description": "This is a wrapper for the 1 hour video streaming scenario from the IEA.",
+  "description": "This is a wrapper for the 30 minute video streaming scenario from the IEA.",
   "scopes": [
     {
       "level": "Scope 2",
@@ -8,7 +8,7 @@
         "list": [
         {
           "type": "link",
-          "quantity": 0.0166666666,
+          "quantity": 0.03333333333,
           "scenario_id": "scenario-725b3ff2-294b-4cfc-81a3-fc460ee61fdc"
         }
       ]
