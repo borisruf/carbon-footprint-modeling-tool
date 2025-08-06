@@ -251,6 +251,9 @@
         // optional parameter to add page title
         var title_parameter = url.searchParams.get("title");
 
+        // optional parameter to add description
+        var description_parameter = url.searchParams.get("description");
+
         // optional parameter to multiply scenarios by factor
         var factor_parameter = url.searchParams.get("factor");
 
@@ -462,6 +465,10 @@
                 document.getElementById("title").appendChild(document.createTextNode(decodeURIComponent(title_parameter)));
             }
 
+            if (description_parameter) {
+                document.getElementById("info").appendChild(document.createTextNode(decodeURIComponent(description_parameter)));
+            }
+
         });
 
     let draggedElement;
@@ -663,6 +670,10 @@
 
     <div id="header">
         <h1><span name="title" id="title"></span></h1>
+    </div>
+
+    <div id="container">
+        <div id="info"></div>
     </div>
     
     <div id="arena"></div>
