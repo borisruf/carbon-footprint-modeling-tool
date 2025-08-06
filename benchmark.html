@@ -416,10 +416,12 @@
 
 
                 let last_scenario_factor = null;
-                if (factor_parameters.length > 0) {
+                if (factor_parameters.length == scenarios.length) {
                     last_scenario_factor = factor_parameters[factor_parameters.length-1];
                 } else if (factor_parameter !== null && factor_parameter !== undefined && factor_parameter !== '') {
                     last_scenario_factor = factor_parameter;
+                } else {
+                    last_scenario_factor = 1;
                 }
 
                 let emissions = totalEmissions(last_scenario, last_scenario_factor || null, last_primary_source);
