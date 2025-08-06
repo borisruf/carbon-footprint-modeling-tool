@@ -22,9 +22,16 @@
           },
           "source": {
             "name": "Global average electricity mix",
+            "description": "(2019)",
             "type": "electricity",
             "emissions": {
               "co2": {
+                "base_unit": "kWh",
+                "value": 0.463,
+                "unit": "kg",
+                "reference_url": "https://www.iea.org/reports/tracking-power-2020"
+              },
+              "co2e": {
                 "base_unit": "kWh",
                 "value": 0.463,
                 "unit": "kg",
@@ -56,9 +63,16 @@
           },
           "source": {
             "name": "Global average electricity mix",
+            "description": "(2019)",
             "type": "electricity",
             "emissions": {
               "co2": {
+                "base_unit": "kWh",
+                "value": 0.463,
+                "unit": "kg",
+                "reference_url": "https://www.iea.org/reports/tracking-power-2020"
+              },
+              "co2e": {
                 "base_unit": "kWh",
                 "value": 0.463,
                 "unit": "kg",
@@ -85,8 +99,15 @@
           "source": {
             "name": "Global average electricity mix",
             "type": "electricity",
+            "description": "(2019)",
             "emissions": {
               "co2": {
+                "base_unit": "kWh",
+                "value": 0.463,
+                "unit": "kg",
+                "reference_url": "https://www.iea.org/reports/tracking-power-2020"
+              },
+              "co2e": {
                 "base_unit": "kWh",
                 "value": 0.463,
                 "unit": "kg",
