@@ -1,0 +1,47 @@
+{
+  "title": "ChatGPT emission per request (Sam Altman)",
+  "description": "In June 2025, Sam Altman revealed <a href='https://blog.samaltman.com/the-gentle-singularity' target='_blank'>in a blog post</a> the energy consumption of one average ChatGPT interaction: \"People are often curious about how much energy a ChatGPT query uses; the average query uses about 0.34 watt-hours[...]\". No source or further details were provided. ",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 1,
+          "quantity_unit": "request",
+          "consumer": {
+            "name": "ChatGPT",
+            "description": "1 average request",
+            "consumptions": {
+              "electricity": {
+                "value": 0.00034,
+                "unit": "kWh",
+                "base_unit": "hr",
+                "reference_url": "https://blog.samaltman.com/the-gentle-singularity"
+              }
+            }
+          },
+          "source": {
+            "name": "USA electricity grid",
+            "description": "(2021)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 0.379,
+                "unit": "kg",
+                "reference_url": "https://ourworldindata.org/grapher/carbon-intensity-electricity"
+              },
+              "co2": {
+                "base_unit": "kWh",
+                "value": 0.3878,
+                "unit": "kg",
+                "reference_url": "https://www.eia.gov/tools/faqs/faq.php?id=74&t=11"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
