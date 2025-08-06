@@ -24,6 +24,12 @@
                   "unit": "kg",
                   "base_unit": "hr",
                   "reference_url": "https://impactco2.fr/outils/comparateur?value=0.064&comparisons=streamingvideo"
+                },
+                "co2e": {
+                  "value": "0.064",
+                  "unit": "kg",
+                  "base_unit": "hr",
+                  "reference_url": "https://ekwateur.fr/blog/enjeux-environnementaux/empreinte-carbone-streaming-video/"
                 }
               }
             }
