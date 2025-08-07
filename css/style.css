@@ -148,10 +148,12 @@ div[name="scope"] div.total_emission {
 }
 
 div[name="factor_total"] div.factor_total_emission {
+
+    position: relative;
     
     float: right;
     
-    right:  -40px;
+    right:  -20px;
     bottom:  -30px;
     
     border-radius: 30%;
@@ -164,6 +166,31 @@ div[name="factor_total"] div.factor_total_emission {
     justify-content: center;
     align-content: center;
     flex-direction: column;
+
+    margin-top: 20px;
+}
+
+div[name="factor_total"] div.factor_total_consumptions {
+    
+    position: relative;
+    
+    float: right;
+    
+    right:  -40px;
+    bottom:  -30px;
+    
+    border-radius: 10%;
+    width: 140px;
+    min-height: 40px;
+    padding: 10px;
+    background-color: lightblue;
+    text-align:  center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    display: none;
 }
 
 div[name="scope"] {

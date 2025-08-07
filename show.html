@@ -275,6 +275,7 @@
             if (show_consumption_parameter) {
                 document.querySelectorAll(".consumption_sub_total").forEach((element) => element.style.display = "block");
                 document.querySelectorAll(".total_consumptions").forEach((element) => element.style.display = "block");
+                document.querySelectorAll(".factor_total_consumptions").forEach((element) => element.style.display = "block");
             }
 
             focusLabelsOnClick();
@@ -292,8 +293,8 @@
             </div>
             <div name="scenario" data-type="object" style="flex-grow: 1"></div>
             <div name="factor_total">
-                <div class="factor_total_emission"></div>
                 <div class="factor_total_consumptions"></div>
+                <div class="factor_total_emission"></div>
             </div>
         </div>
     </div>

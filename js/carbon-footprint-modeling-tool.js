@@ -330,7 +330,7 @@ function formatTotalConsumptionString(consumptions) {
     return processedAggregatedConsumptionsString || "n/a"
 }
 
-function formatTotalConsumption(element) {
+function formatTotalConsumption(element, factor=1) {
 
     let value = 0;
     let unit = null;
@@ -343,10 +343,9 @@ function formatTotalConsumption(element) {
 
         return formatConsumptionStringByUnit(consumption);
 
-    } else if (element.type == "scenario") {
+    } else if (element.type == "scenario" || (Array.isArray(element.scopes) && element.scopes.length > 0)) {
 
-        let consumptions = getScenarioConsumptions(element);
-        
+        let consumptions = getScenarioConsumptions(element, factor);
         return formatTotalConsumptionString(consumptions);
     }
 
@@ -680,8 +679,11 @@ function updateSource(json_object, primary_source) {
 function updateFactorTotal(scenario, quantity, primary_source) {
 
     let factorTotalEmissionDiv = document.querySelector('div[class="factor_total_emission"]');
+    let factorTotalConsumptionDiv = document.querySelector('div[class="factor_total_consumptions"]');
 
-    if (quantity>0) {
+    if (quantity > 0) {
+
+        // emissions
 
         let emissions = totalEmissions(scenario, quantity || null, primary_source);
 
@@ -695,8 +697,16 @@ function updateFactorTotal(scenario, quantity, primary_source) {
             console.warn("No common emission type available for factor total emission");
             factorTotalEmissionDiv.innerHTML = "ʘ ʘ<br />o";
         }
+
+        // consumption
+
+        let total_consumption = formatTotalConsumption(scenario, quantity);
+        factorTotalConsumptionDiv.innerHTML = total_consumption;
+
+
     } else {
         factorTotalEmissionDiv.innerHTML = "0";
+        factorTotalConsumptionDiv.innerHTML = "0";
     }
 
 }
