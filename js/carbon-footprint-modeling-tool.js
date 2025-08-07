@@ -332,6 +332,10 @@ function formatTotalConsumptionString(consumptions) {
 
 function formatTotalConsumption(element, factor=1) {
 
+    if (element.hasOwnProperty("scenario")) { 
+        element = element.scenario; 
+    }
+
     let value = 0;
     let unit = null;
     let source_type = null;
@@ -701,6 +705,7 @@ function updateFactorTotal(scenario, quantity, primary_source) {
         // consumption
 
         let total_consumption = formatTotalConsumption(scenario, quantity);
+
         factorTotalConsumptionDiv.innerHTML = total_consumption;
 
 
