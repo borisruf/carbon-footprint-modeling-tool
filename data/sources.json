@@ -30,7 +30,7 @@
     "emissions": {
       "co2e": {
         "base_unit": "kWh",
-        "value": 0.373052,
+        "value": 0.3665,
         "unit": "kg"
       }
     }
@@ -274,6 +274,19 @@
         "value": 0.3878,
         "unit": "kg",
         "reference_url": "https://www.eia.gov/tools/faqs/faq.php?id=74&t=11"
+      }
+    }
+  },
+  "electricity-western-usa-2021": {
+    "name": "Western USA electricity grid",
+    "type": "electricity",
+    "description": "(2021)",
+    "emissions": {
+      "co2e": {
+        "value": "0.322167",
+        "unit": "kg",
+        "base_unit": "kWh",
+        "reference_url": "https://www.epa.gov/egrid/download-data"
       }
     }
   },
