@@ -10,8 +10,8 @@
           "quantity": 1,
           "quantity_unit": "request",
           "consumer": {
-            "name": "ChatGPT",
-            "description": "1 average request",
+            "name": "Google Gemini Apps",
+            "description": "1 median request",
             "consumptions": {
               "electricity": {
                 "value": 0.00024,
