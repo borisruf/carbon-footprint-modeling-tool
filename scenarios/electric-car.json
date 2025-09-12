@@ -1,0 +1,42 @@
+{
+    "title": "Electric car",
+    "description": "",
+    "scopes": [
+        {
+            "level": "Scope 2",
+            "description": "",
+            "list": [
+                {
+                    "type": "component",
+                    "consumer": {
+                        "name": "Tesla Model S (90 kW-hr battery pack) (2015)",
+                        "description": "Engine ID 71, Automatic (A1), Rear-Wheel Drive",
+                        "consumptions": {
+                            "electricity": {
+                                "value": "0.23612105305018688",
+                                "unit": "kWh",
+                                "base_unit": "km",
+                                "reference_url": "https://www.fueleconomy.gov/"
+                            }
+                        }
+                    },
+                    "quantity": "450",
+                    "quantity_unit": "km",
+                    "source": {
+                        "name": "Germany electricity grid",
+                        "type": "electricity",
+                        "description": "(2022)",
+                        "emissions": {
+                            "co2e": {
+                                "value": "0.3889",
+                                "unit": "kg",
+                                "base_unit": "kWh",
+                                "reference_url": {}
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
