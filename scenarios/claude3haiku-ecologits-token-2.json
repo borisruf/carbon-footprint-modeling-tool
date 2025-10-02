@@ -1,6 +1,6 @@
 {
   "title": "Claude 3 Haiku inference",
-  "description": "For the Claude 3 Haiku model, which utilizes a Mixture of Experts (MoE) architecture, the following assumptions are made:<br/><br/>Total parameters: 300 billion<br/>Active parameters: 112 billion<br/><br/>See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "description": "The Claude 3 Haiku model is assumed to be a dense model with 20 billion active parameters. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
@@ -13,7 +13,7 @@
             "description": "NVIDIA A100 80GB GPU",
             "consumptions": {
               "electricity": {
-                "value": "3.42276E-05",
+                "value": "0.000003212",
                 "unit": "kWh",
                 "base_unit": "token",
                 "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
@@ -49,7 +49,7 @@
             "description": "(excluding GPUs)",
             "consumptions": {
               "electricity": {
-                "value": "1.17E-05",
+                "value": "1.33E-06",
                 "unit": "kWh",
                 "base_unit": "token",
                 "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
