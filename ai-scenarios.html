@@ -177,6 +177,8 @@ div#footer {
   <span id="expandedDescription"><a href="https://www.iea.org/reports/electricity-2024/executive-summary" target="_blank">Gen AI is very energy hungry</a> and therefore comes with a large carbon footprint. However, most providers do not share any details on the emissions of their models. To deploy AI at scale while considering its impact on the environment, <a href="https://oecd.ai/en/wonk/navigating-the-environmental-impact-of-ai" target="_blank">AI professionals need this information</a> to make informed architectural decisions.<br/><br/>
 This tool helps approximate the carbon emissions associated with an AI project. It considers the model architecture, the emission coefficient of the region where the model is deployed, and the expected usage (number of tokens). The model emissions were estimated using an <a href="https://github.com/borisruf/carbon-footprint-modeling-tool?tab=readme-ov-file#carbon-footprint-modeling-tool" target="_blank">open data model</a> for carbon footprint scenarios and can be easily verified and adjusted as required.<br/><br/>
 The aim of this project is to create a basis for transparent, knowledge-based decision-making and to drive sustainable AI development.
+<br/><br/>
+<b>Note:</b> The methodology from EcoLogits only considers <em>output</em> tokens in their calculations. Please take this into account when approximating carbon footprints using their emission models. 
   </span>
 </div>
 <br/>
