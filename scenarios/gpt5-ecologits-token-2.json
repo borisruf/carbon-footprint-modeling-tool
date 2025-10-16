@@ -1,6 +1,6 @@
 {
-  "title": "GPT-5 inference",
-  "description": "For the GPT-5 model, which utilizes a Mixture of Experts (MoE) architecture, the following assumptions are made:<br/><br/>Total parameters: 300 billion<br/>Active parameters: 150 billion<br/><br/>See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "title": "gpt-5 inference",
+  "description": "For the gpt-5 model, which utilizes a Mixture of Experts (MoE) architecture, the following assumptions are made:<br/><br/>Total parameters: 300 billion<br/>Active parameters: 150 billion<br/><br/>See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
@@ -13,7 +13,7 @@
             "description": "NVIDIA A100 80GB GPU",
             "consumptions": {
               "electricity": {
-                "value": "0.000044385",
+                "value": "4.438500e-05",
                 "unit": "kWh",
                 "base_unit": "token",
                 "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
@@ -49,7 +49,7 @@
             "description": "(excluding GPUs)",
             "consumptions": {
               "electricity": {
-                "value": "1.49E-05",
+                "value": "1.485417e-05",
                 "unit": "kWh",
                 "base_unit": "token",
                 "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"

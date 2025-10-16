@@ -1,6 +1,6 @@
 {
-  "title": "GPT-5-nano inference",
-  "description": "The GPT-5-nano model is assumed to be a dense model with 15 billion active parameters. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "title": "gpt-5-nano inference",
+  "description": "The gpt-5-nano model is assumed to be a dense model with 15 billion active parameters. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
@@ -13,7 +13,7 @@
             "description": "NVIDIA A100 80GB GPU",
             "consumptions": {
               "electricity": {
-                "value": "2.7665E-06",
+                "value": "2.766500e-06",
                 "unit": "kWh",
                 "base_unit": "token",
                 "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
@@ -49,7 +49,7 @@
             "description": "(excluding GPUs)",
             "consumptions": {
               "electricity": {
-                "value": "1.19E-06",
+                "value": "1.192014e-06",
                 "unit": "kWh",
                 "base_unit": "token",
                 "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"

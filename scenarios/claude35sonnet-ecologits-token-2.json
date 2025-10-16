@@ -1,6 +1,6 @@
 {
-  "title": "Claude-3.5-sonnet inference",
-  "description": "The Claude-3.5-sonnet model is assumed to be a dense model with 175 billion active parameters. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "title": "claude-3.5-sonnet inference",
+  "description": "The claude-3.5-sonnet model is assumed to be a dense model with 175.0 billion active parameters. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
@@ -13,7 +13,7 @@
             "description": "NVIDIA A100 80GB GPU",
             "consumptions": {
               "electricity": {
-                "value": "0.000034045",
+                "value": "3.404500e-05",
                 "unit": "kWh",
                 "base_unit": "token",
                 "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
@@ -49,7 +49,7 @@
             "description": "(excluding GPUs)",
             "consumptions": {
               "electricity": {
-                "value": "1.13E-05",
+                "value": "1.129514e-05",
                 "unit": "kWh",
                 "base_unit": "token",
                 "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
