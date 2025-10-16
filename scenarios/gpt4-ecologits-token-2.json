@@ -1,6 +1,6 @@
 {
   "title": "gpt-4 inference",
-  "description": "For the gpt-4 model, which utilizes a Mixture of Experts (MoE) architecture, the following assumptions are made:<br/><br/>Total parameters: 1760.0 billion<br/>Active parameters: 394.0 billion<br/><br/>See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "description": "For the gpt-4 model, which utilizes a Mixture of Experts (MoE) architecture, the following assumptions are made:<br/><br/>Total parameters: 1760 billion<br/>Active parameters: 394 billion<br/><br/>See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
