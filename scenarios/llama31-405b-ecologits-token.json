@@ -1,6 +1,6 @@
 {
    "title":"Meta Llama 3.1 405B emission per token",
-   "description":"The model Llama 3.1 405B is an open model available for <a href='https://ai.meta.com/blog/meta-llama-3-1/' target='_blank'>download</a>. However, there has been no performance data published yet in the open dataset <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>LLM Perf Leaderboard</a> by Hugging Face.<br/><br/>Therefore, we apply the methodology proposed by the nonprofit organization <a href='https://genai-impact.org' target='_blank'>GenAI Impact</a> to estimate emissions. They consider GPU and server power consumption separately when modeling AI model emissions. In the first case, they fit linear regression models that model the energy consumption per output token as a function of the number of active parameters. In the second, they estimate server energy consumption by modeling the token generation latency. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.<br/><br/>To account for data center infrastructure such as the cooling equipment, a Power Usage Effectiveness (PUE) factor of <b>1.2x</b> is applied.",
+   "description":"The model Llama 3.1 405B is an open model available for <a href='https://ai.meta.com/blog/meta-llama-3-1/' target='_blank'>download</a>. However, there has been no performance data published yet in the open dataset <a href='https://huggingface.co/spaces/optimum/llm-perf-leaderboard' target='_blank'>LLM Perf Leaderboard</a> by Hugging Face.<br/><br/>Therefore, we apply the methodology proposed by the nonprofit organization <a href='https://genai-impact.org' target='_blank'>GenAI Impact</a> to estimate emissions. They consider GPU and server power consumption separately when modeling AI model emissions. In the first case, they fit linear regression models that model the energy consumption per output token as a function of the number of active parameters. In the second, they estimate server energy consumption by modeling the token generation latency. See the <a href='https://ecologits.ai/0.8/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.<br/><br/>To account for data center infrastructure such as the cooling equipment, a Power Usage Effectiveness (PUE) factor of <b>1.2x</b> is applied.",
    "scopes":[
       {
          "level":"Scope 2",
@@ -40,7 +40,7 @@
                         "value":"4.56121207508879E-06",
                         "unit":"kg",
                         "base_unit":"token",
-                        "reference_url":"https://ecologits.ai/latest/methodology/llm_inference/"
+                        "reference_url":"https://ecologits.ai/0.8/methodology/llm_inference/"
                      }
                   }
                }

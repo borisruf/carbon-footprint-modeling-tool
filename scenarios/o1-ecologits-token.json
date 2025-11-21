@@ -40,7 +40,7 @@
                         "value":"1.736837e-06",
                         "unit":"kg",
                         "base_unit":"token",
-                        "reference_url":"https://ecologits.ai/latest/methodology/llm_inference/"
+                        "reference_url":"https://ecologits.ai/0.8/methodology/llm_inference/"
                      }
                   }
                }
