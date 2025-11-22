@@ -3,7 +3,7 @@ const emissionUnitMap = {"co2e": "CO2e", "co2": "CO2", "ch4": "CH4", "n2o": "N2O
 // ordered list of consumptions
 const consumptionMap = {"electricity": "Electricity", "regular gasoline": "Regular Gasoline", "premium gasoline": "Premium Gasoline", "bunker fuel": "Bunker Fuel", "diesel": "Diesel", "oil": "Oil", "data": "Data"}
 // list of accepted (mass) units
-const massUnits = ["mg", "g", "kg", "t", "kt", "mt"];
+const massUnits = ["µg", "mg", "g", "kg", "t", "kt", "mt"];
 
 function uuidv4() {
     return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
@@ -160,9 +160,12 @@ function bestMassUnit(value_in_kg) {
     } else if (value_in_kg >= 0.001) {
         value = value_in_kg*1000;
         unit = "g";
-    } else if (value_in_kg < 0.001) {
+    } else if (value_in_kg >= 0.000001) {
         value = value_in_kg*1000000;
         unit = "mg";
+    } else if (value_in_kg < 0.000001) {
+        value = value_in_kg*1000000000;
+        unit = "µg";
     }
 
     return [value, unit]
@@ -359,6 +362,18 @@ function formatTotalConsumption(element, factor=1) {
 
 function convertValue(value, source_unit, target_unit) {
 const conversionRates = {
+    "µg_mg": 0.001,
+    "mg_µg": 1000,
+    "µg_g": 0.000001,
+    "g_µg": 1000000,
+    "µg_kg": 0.000000001,
+    "kg_µg": 1000000000,
+    "µg_t": 0.000000000001,
+    "t_µg": 1000000000000,
+    "µg_kt": 0.000000000000001,
+    "kt_µg": 1000000000000000,
+    "µg_mt": 0.000000000000000001,
+    "mt_µg": 1000000000000000000,
     "mg_g": 0.001,
     "g_mg": 1000,
     "mg_kg": 0.000001,
