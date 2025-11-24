@@ -1,0 +1,84 @@
+{
+  "title": "gpt-5-nano inference",
+  "description": "The gpt-5-nano model is assumed to be a dense architecture with 15 billion active parameters. The methodology uses a fixed batch size of 64 and assumes a throughput of 82.4 tokens per second (TPS). See the <a href='https://ecologits.ai/0.9/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview.",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "GPU energy consumption (1)",
+            "description": "NVIDIA H100 80GB GPU",
+            "consumptions": {
+              "electricity": {
+                "value": "4.907049e-08",
+                "unit": "kWh",
+                "base_unit": "token",
+                "reference_url": "https://ecologits.ai/0.9/methodology/llm_inference/"
+              }
+            }
+          },
+          "quantity": "1",
+          "quantity_unit": "token",
+          "source": {
+            "name": "France electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.0511",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.0573",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Server energy consumption",
+            "description": "(excluding GPUs)",
+            "consumptions": {
+              "electricity": {
+                "value": "7.900991e-09",
+                "unit": "kWh",
+                "base_unit": "token",
+                "reference_url": "https://ecologits.ai/0.9/methodology/llm_inference/"
+              }
+            }
+          },
+          "quantity": "1",
+          "quantity_unit": "token",
+          "source": {
+            "name": "France electricity grid",
+            "type": "electricity",
+            "description": "(2020)",
+            "emissions": {
+              "co2e": {
+                "value": "0.0511",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1"
+              },
+              "co2": {
+                "value": "0.0573",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
