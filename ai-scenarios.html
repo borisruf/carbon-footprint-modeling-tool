@@ -238,6 +238,10 @@ The aim of this project is to create a basis for transparent, knowledge-based de
     <div class="models">
     </div>
 
+    <div id="ecologitsWarning" style="display:none; color:#a00; font-size: 13px; background:#ffecec; padding:10px; border-radius:4px; margin-top:10px;">
+      <b>Warning:</b> Mixing the EcoLogits methodology, which only considers completion tokens, and other scenarios may produce inconsistent or misleading comparisons. Consider using only EcoLogits scenarios or only non-EcoLogits scenarios for a meaningful comparison.
+    </div>
+
 
     <br/>
     <label for="factor">Total number of tokens: <a href="#" id="additionalFieldsLink">(expand)</a></label>
@@ -365,6 +369,7 @@ The aim of this project is to create a basis for transparent, knowledge-based de
       closeButton.setAttribute("class", "closeButton");
       closeButton.onclick =  function() {
         this.parentElement.remove();
+        checkEcologitsSelected();
       };
       closeButton.textContent = "X";
       modelDiv.appendChild(closeButton);
@@ -389,6 +394,64 @@ The aim of this project is to create a basis for transparent, knowledge-based de
       parentDiv.appendChild(modelDiv);
 
       modelDropdown.selectedIndex = 0;
+      // Update meta fields state after adding a model
+      checkEcologitsSelected();
+    }
+
+    // Disable/enable specific meta fields when Ecologits models are present
+    // Also show a warning when Ecologits and non-Ecologits models are mixed
+    function checkEcologitsSelected() {
+      const metaFields = [
+        document.getElementById('tokensPerInstruction'),
+        document.getElementById('maxPromptTokens')
+      ];
+
+      const values = [];
+      const mainSelect = document.getElementById('scenario_ids');
+      if (mainSelect && mainSelect.value) values.push(mainSelect.value);
+
+      const idsInputs = document.querySelectorAll('.models input[name="scenario_ids[]"]');
+      idsInputs.forEach(input => {
+        if (input.value) values.push(input.value);
+      });
+
+      let ecologitsCount = 0;
+      let nonEcologitsCount = 0;
+      values.forEach(v => {
+        if (v.includes('ecologits')) ecologitsCount++;
+        else nonEcologitsCount++;
+      });
+
+      const shouldDisable = ecologitsCount > 0;
+      const mixed = ecologitsCount > 0 && nonEcologitsCount > 0;
+
+      metaFields.forEach(field => {
+        if (!field) return;
+        if (shouldDisable) {
+          if (field.dataset.prevValue === undefined) {
+            field.dataset.prevValue = field.value || '';
+          }
+          field.value = 0;
+          field.disabled = true;
+          field.style.backgroundColor = '#e9e9e9';
+        } else {
+          field.disabled = false;
+          field.style.backgroundColor = '';
+          if (field.dataset.prevValue !== undefined) {
+            field.value = field.dataset.prevValue;
+            delete field.dataset.prevValue;
+          }
+        }
+      });
+
+      const warningDiv = document.getElementById('ecologitsWarning');
+      if (warningDiv) {
+        if (mixed) {
+          warningDiv.style.display = 'block';
+        } else {
+          warningDiv.style.display = 'none';
+        }
+      }
     }
 
     document.getElementById('expandedDescriptionLink').onclick = function(e) {
