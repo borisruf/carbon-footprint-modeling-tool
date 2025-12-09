@@ -1,0 +1,42 @@
+{
+  "title": "Google Search",
+  "description": "Google published energy and carbon emission data in 2009 related to a traditional Google search on their blog. According to Google, a single search produces approximately 0.2 grams of CO2, which is comparable to the emissions from a small load of laundry. The energy consumed per search is roughly 0.0003 kWh, or 1 kJ. This estimate accounts for the energy efficiency of Google's data centers and the minimal energy needed to process user queries.",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "description": {},
+      "list": [
+        {
+          "type": "component",
+          "consumer": {
+            "name": "Google Search",
+            "description": "",
+             "consumptions": {
+              "electricity": {
+                "value": "0.0003",
+                "unit": "kWh",
+                "base_unit": "query",
+                "reference_url": "https://googleblog.blogspot.com/2009/01/powering-google-search.html"
+              }
+            }
+          },
+          "quantity": "1",
+          "quantity_unit": "query",
+          "source": {
+            "name": "Electricity grid",
+            "type": "electricity",
+            "description": "",
+            "emissions": {
+              "co2e": {
+                "value": "0.667",
+                "unit": "kg",
+                "base_unit": "kWh",
+                "reference_url": "https://googleblog.blogspot.com/2009/01/powering-google-search.html"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

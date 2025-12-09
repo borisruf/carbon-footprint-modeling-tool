@@ -1,6 +1,6 @@
 {
   "title": "Meta Llama 3.2 3B inference",
-  "description": "The Llama 3.2 3B model utilizes a dense architecture and has <a href='https://github.com/meta-llama/llama-models/blob/main/README.md' target='_blank'>3 billions parameters</a>.<br/><br/>See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "description": "The Llama 3.2 3B model utilizes a dense architecture and has <a href='https://github.com/meta-llama/llama-models/blob/main/README.md' target='_blank'>3 billions parameters</a>.<br/><br/>See the <a href='https://ecologits.ai/0.8/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
@@ -16,7 +16,7 @@
                 "value": "1.70E-06",
                 "unit": "kWh",
                 "base_unit": "token",
-                "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
+                "reference_url": "https://ecologits.ai/0.8/methodology/llm_inference/"
               }
             }
           },
@@ -52,7 +52,7 @@
                 "value": "8.58E-07",
                 "unit": "kWh",
                 "base_unit": "token",
-                "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
+                "reference_url": "https://ecologits.ai/0.8/methodology/llm_inference/"
               }
             }
           },

@@ -1,6 +1,6 @@
 {
   "title": "Gemini-1.5 Flash-8B inference",
-  "description": "The Gemini-1.5 Flash-8B model, which utilizes a dense architecture, has <a href='https://developers.googleblog.com/en/gemini-15-flash-8b-is-now-generally-available-for-use/' target='_blank'>8 billion parameters</a>.<br/><br/>See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "description": "The Gemini-1.5 Flash-8B model, which utilizes a dense architecture, has <a href='https://developers.googleblog.com/en/gemini-15-flash-8b-is-now-generally-available-for-use/' target='_blank'>8 billion parameters</a>.<br/><br/>See the <a href='https://ecologits.ai/0.8/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
@@ -16,7 +16,7 @@
                 "value": "2.1428E-06",
                 "unit": "kWh",
                 "base_unit": "token",
-                "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
+                "reference_url": "https://ecologits.ai/0.8/methodology/llm_inference/"
               }
             }
           },
@@ -52,7 +52,7 @@
                 "value": "9.97E-07",
                 "unit": "kWh",
                 "base_unit": "token",
-                "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
+                "reference_url": "https://ecologits.ai/0.8/methodology/llm_inference/"
               }
             }
           },

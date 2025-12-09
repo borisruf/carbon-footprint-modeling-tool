@@ -1,6 +1,6 @@
 {
    "title":"gpt-5-nano emission per output token (EcoLogits)",
-   "description":"There is little official information available about the model gpt-5-nano. To estimate emissions, we apply the methodology proposed by the nonprofit organization <a href='https://genai-impact.org' target='_blank'>GenAI Impact</a> which separately considers GPU and server power consumption when modeling AI model emissions. In the first case, they fit linear regression models that model the energy consumption per output token as a function of the number of active parameters. In the second, they estimate server energy consumption by modeling the token generation latency. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.<br/><br/>To account for data center infrastructure such as the cooling equipment, a Power Usage Effectiveness (PUE) factor of <b>1.2x</b> is applied.",
+   "description":"There is little official information available about the model gpt-5-nano. To estimate emissions, we apply the methodology proposed by the nonprofit organization <a href='https://genai-impact.org' target='_blank'>GenAI Impact</a> which separately considers GPU and server power consumption when modeling AI model emissions. In the first case, they fit linear regression models that model the energy consumption per output token as a function of the number of active parameters. In the second, they estimate server energy consumption by modeling the token generation latency. See the <a href='https://ecologits.ai/0.8/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.<br/><br/>To account for data center infrastructure such as the cooling equipment, a Power Usage Effectiveness (PUE) factor of <b>1.2x</b> is applied.",
    "scopes":[
       {
          "level":"Scope 2",
@@ -40,7 +40,7 @@
                         "value":"1.127787e-07",
                         "unit":"kg",
                         "base_unit":"token",
-                        "reference_url":"https://ecologits.ai/latest/methodology/llm_inference/"
+                        "reference_url":"https://ecologits.ai/0.8/methodology/llm_inference/"
                      }
                   }
                }

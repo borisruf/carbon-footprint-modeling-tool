@@ -1,6 +1,6 @@
 {
   "title": "Mistral Small inference",
-  "description": "The Mistral Small model is a dense model with 23 billion active parameters. See the <a href='https://ecologits.ai/latest/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
+  "description": "The Mistral Small model is a dense model with 23 billion active parameters. See the <a href='https://ecologits.ai/0.8/methodology/llm_inference/' target='_blank'>full documentation</a> for a comprehensive overview of the methodology.",
   "scopes": [
     {
       "level": "Scope 2",
@@ -16,7 +16,7 @@
                 "value": "3.4793E-06",
                 "unit": "kWh",
                 "base_unit": "token",
-                "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
+                "reference_url": "https://ecologits.ai/0.8/methodology/llm_inference/"
               }
             }
           },
@@ -52,7 +52,7 @@
                 "value": "1.41E-06",
                 "unit": "kWh",
                 "base_unit": "token",
-                "reference_url": "https://ecologits.ai/latest/methodology/llm_inference/"
+                "reference_url": "https://ecologits.ai/0.8/methodology/llm_inference/"
               }
             }
           },
