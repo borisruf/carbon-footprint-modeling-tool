@@ -39,6 +39,7 @@ or energy sources can be changed by clicking the pencil icon <img src="https://r
 - [Diesel car vs. Electric car in different regions](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=ice-car&ids[]=electric-car&ids[]=electric-car&ids[]=electric-car&source_ids[]=&source_ids[]=&source_ids[]=france&source_ids[]=poland&title=Diesel%20car%20vs.%20Electric%20car%20in%20Germany,%20France%20and%20Poland)
 
 #### AI model inferences:
+##### Text:
 - [OpenAI GPT-3.5](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt3-ruf-mortas-llama2-7b-token&ids[]=gpt3-ruf-mortas-llama2-70b-token&ids[]=gpt3-ruf-mortas-llama3-8b-token&ids[]=gpt-pointon-token&factor=1&title=Carbon%20emission%20of%20GPT-3.5%20per%20token%20(several%20scenarios))
 - [OpenAI GPT-4](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt4-ruf-mortas-llama2-7b-token&ids[]=gpt4-ruf-mortas-llama2-70b-token&ids[]=gpt4-ruf-mortas-llama3-8b-token&ids[]=gpt4-ecologits-token&factor=1&title=Carbon%20emission%20of%20GPT-4%20per%20token%20(several%20scenarios))
 - [OpenAI GPT-4o](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=gpt4o-ruf-mortas-token&ids[]=gpt4o-ecologits-token&ids[]=gpt4o-epochai-token&factor=1&title=Carbon%20emission%20of%20GPT-4o%20per%20token%20(several%20scenarios))
@@ -66,6 +67,13 @@ or energy sources can be changed by clicking the pencil icon <img src="https://r
 - [Anthropic Claude 3.5 Sonnet](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=claude35sonnet-ecologits-token)
 - [Anthropic Claude 3 Haiku](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=claude3haiku-ecologits-token)
 - [DeepSeek-V3](https://borisruf.github.io/carbon-footprint-modeling-tool/index.html?id=deepseekv3-token)
+
+##### Image:
+- [Flux](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=flux-256-image&ids[]=flux-512-image&ids[]=flux-768-image&ids[]=flux-1024-image&title=Image%20generation%20%20with%20Flux%20(various%20resolutions))
+- [Qwen](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids[]=qwen-256-image&ids[]=qwen-512-image&ids[]=qwen-768-image&ids[]=qwen-1024-image&title=Image%20generation%20%20with%20Qwen%20(various%20resolutions))
+- [Stable Diffusion 3.5](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids%5B%5D=stablediffusion35-256-image&ids%5B%5D=stablediffusion35-512-image&ids%5B%5D=stablediffusion35-768-image&ids%5B%5D=stablediffusion35-1024-image&title=Image%20generation%20with%20Stable%20Diffusion%203.5%20(various%20resolutions))
+- [Stable Diffusion 2](https://borisruf.github.io/carbon-footprint-modeling-tool/benchmark.html?ids%5B%5D=stablediffusion2-256-image&ids%5B%5D=stablediffusion2-512-image&ids%5B%5D=stablediffusion2-768-image&ids%5B%5D=stablediffusion2-1024-image&title=Image%20generation%20with%20Stable%20Diffusion%202%20(various%20resolutions))
+
 
 #### Tools:
 - [AI Emissions Scenario Generator](https://borisruf.github.io/carbon-footprint-modeling-tool/ai-scenarios.html)
