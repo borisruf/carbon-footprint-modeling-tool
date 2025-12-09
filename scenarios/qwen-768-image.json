@@ -1,0 +1,47 @@
+{
+  "title": "Qwen-Image generation (768×768)",
+  "description": "Energy consumption for generating one image using <a href='https://huggingface.co/Qwen/Qwen-Image' target='_blank'>Qwen-Image</a>, a 20B-parameter MMDiT diffusion model with 60 layers. This scenario uses 50 steps, 768×768 resolution, fp16 precision, with classifier-free guidance on NVIDIA A100 GPU.<br/><br/>Consumption data were obtained from experiments documented in the research paper \"<a href='https://arxiv.org/abs/2511.17031' target='_blank'>Energy Scaling Laws for Diffusion Models</a>\".",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 1,
+          "quantity_unit": "image",
+          "consumer": {
+            "name": "Qwen-Image",
+            "description": "1 image at 768×768, 50 steps, fp16, with CFG",
+            "consumptions": {
+              "electricity": {
+                "value": 0.001967,
+                "unit": "kWh",
+                "base_unit": "image",
+                "reference_url": "https://arxiv.org/abs/2511.17031"
+              }
+            }
+          },
+          "source": {
+            "name": "USA electricity grid",
+            "description": "(2021)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 0.379,
+                "unit": "kg",
+                "reference_url": "https://ourworldindata.org/grapher/carbon-intensity-electricity"
+              },
+              "co2": {
+                "base_unit": "kWh",
+                "value": 0.3878,
+                "unit": "kg",
+                "reference_url": "https://www.eia.gov/tools/faqs/faq.php?id=74&t=11"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
