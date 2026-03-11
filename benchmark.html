@@ -271,6 +271,9 @@
         // optional parameter to set font family
         let font_parameter = url.searchParams.get("font");
 
+        // optional parameter to set font size (e.g. "14px" or "1.2rem")
+        let font_size_parameter = url.searchParams.get("font_size");
+
         // optional parameter to set bar border width (e.g. "2px")
         let line_width_parameter = url.searchParams.get("line_width");
 
@@ -307,6 +310,10 @@
 
             if (font_parameter) {
                 document.body.style.fontFamily = decodeURIComponent(font_parameter);
+            }
+
+            if (font_size_parameter) {
+                document.body.style.fontSize = decodeURIComponent(font_size_parameter);
             }
 
             document.getElementById('expandedDescriptionLink').onclick = function(e) {
