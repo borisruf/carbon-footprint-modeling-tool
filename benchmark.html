@@ -15,6 +15,7 @@
           margin:0;
           padding:0;
           height:100%;
+          overflow: hidden;
         }
 
         h1 {
@@ -86,8 +87,8 @@
             clear:  right;
             display: flex;
             margin:  auto;
-            width:  max-content;
-            height:  90%;
+            width:  100%;
+            justify-content: center;
         }
         div[name="sample"], div[name="reference"] {
             width:  200px;
@@ -266,6 +267,29 @@
         // optional parameter to override the reference bar title label
         let reference_label_parameter = url.searchParams.get("reference_label");
 
+        // storage for dynamic bar sizing
+        let allBarData = [];
+        let maxBarEmission = 0;
+
+        function resizeBars() {
+            if (!allBarData.length) return;
+
+            const header = document.getElementById('header');
+            const headerH = header ? header.offsetHeight : 0;
+            // account for foot (min-height 100px), emission label (~24px), and padding
+            const fixedH = headerH + 140;
+            const availH = Math.max(40, window.innerHeight - fixedH);
+            const heightFactor = availH / maxBarEmission;
+
+            const n = allBarData.length;
+            const barW = Math.max(60, Math.floor(window.innerWidth / n) - 40);
+
+            for (const { bar, sample, emission } of allBarData) {
+                bar.style.height = Math.max(1, Math.round(emission * heightFactor)) + 'px';
+                sample.style.width = barW + 'px';
+            }
+        }
+
         window.addEventListener('load', function () {
 
             document.getElementById('expandedDescriptionLink').onclick = function(e) {
@@ -356,8 +380,7 @@
                 emissions_of_best_unit.push(emission[best_unit]);
             });
 
-            // compute calibration factor
-            let calibration_factor = window.screen.availHeight/2/Math.max(...emissions_of_best_unit);
+            maxBarEmission = Math.max(...emissions_of_best_unit);
 
             let j = 0;
 
@@ -402,13 +425,12 @@
 
                 let bar = sample.querySelector("div[name='bar']");
 
-                bar.style.height = emissions[best_unit]*calibration_factor + "px";
-
                 let total_emission = sample.querySelector("span[name='total_emission']");
 
                 total_emission.innerHTML = formatTotalEmissions(emissions[best_unit], best_unit);
 
                 arena.appendChild(sample);
+                allBarData.push({ bar, sample, emission: emissions[best_unit] });
                 j++;
             }
 
@@ -441,11 +463,10 @@
                 
                 let reference_factor = (emissions[best_unit]/reference_emissions_of_best_unit).toFixed(2);
 
-                bar.style.height = emissions[best_unit]*calibration_factor + "px";
-
                 sample.querySelector("span[name='reference_factor']").innerHTML = reference_factor + "x"
 
                 arena.appendChild(sample);
+                allBarData.push({ bar, sample, emission: emissions[best_unit] });
 
                 let title = sample.querySelector("a[name='title']");
 
@@ -474,6 +495,9 @@
             if (description_parameter) {
                 document.getElementById("info").appendChild(document.createTextNode(decodeURIComponent(description_parameter)));
             }
+
+            resizeBars();
+            window.addEventListener('resize', resizeBars);
 
         });
 
