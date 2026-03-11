@@ -260,6 +260,12 @@
         // optional parameters to multiply scenarios by each respective factor
         let factor_parameters = url.searchParams.getAll("factors[]");
 
+        // optional parameters to override bar title labels for each scenario
+        let label_parameters = url.searchParams.getAll("labels[]");
+
+        // optional parameter to override the reference bar title label
+        let reference_label_parameter = url.searchParams.get("reference_label");
+
         window.addEventListener('load', function () {
 
             document.getElementById('expandedDescriptionLink').onclick = function(e) {
@@ -361,7 +367,7 @@
                 sample.classList.remove("template");
                 
                 let title = sample.querySelector("a[name='title']");
-                title.innerHTML = scenario.title;
+                title.innerHTML = (label_parameters.length > j && label_parameters[j]) ? decodeURIComponent(label_parameters[j]) : scenario.title;
 
                 let urlParameters = {};
                 if (scenario_id) {
@@ -443,7 +449,7 @@
 
                 let title = sample.querySelector("a[name='title']");
 
-                title.innerHTML = scenario["title"];
+                title.innerHTML = (reference_label_parameter) ? decodeURIComponent(reference_label_parameter) : scenario["title"];
 
                 let urlParameters = {};
                 if (scenario_id) {
@@ -521,6 +527,8 @@
                     <option value="electricity-sweden-2020">Sweden (2020)</option>
                     <option value="electricity-usa-2020">USA (2020)</option>
                 </select>
+                <label>Label <span class="tooltip">?⃝<span class="tooltiptext">Optionally, override the bar title shown in the chart.</span>(optional):</label>
+                <input type="text" name="labels[]">
             </div>
         `;
         container.appendChild(newInputSection);
@@ -628,6 +636,8 @@
                             <option value="electricity-sweden-2020">Sweden (2020)</option>
                             <option value="electricity-usa-2020">USA (2020)</option>
                           </select>
+                        <label for="labels[]">Label <span class="tooltip">?⃝<span class="tooltiptext">Optionally, override the bar title shown in the chart.</span>(optional):</label>
+                        <input type="text" name="labels[]">
                         <!-- Remove button is not included here -->
                     </div>
                 </div>
@@ -653,6 +663,11 @@
                 <div class="form-group">
                     <label>Encoded scenario <span class="tooltip">?⃝<span class="tooltiptext">Alternatively, enter an encoded scenario from a URL generated using the "Share via Link" feature available for each scenario in its footer.</span>:</label>
                     <textarea name="reference_scenario" oninput="toggleReferenceFields(this)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Label <span class="tooltip">?⃝<span class="tooltiptext">Optionally, override the reference bar title shown in the chart.</span>(optional):</label>
+                    <input type="text" name="reference_label">
                 </div>
             </div>
 
