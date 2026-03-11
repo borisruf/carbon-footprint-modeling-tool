@@ -268,6 +268,18 @@
         // optional parameter to override the reference bar title label
         let reference_label_parameter = url.searchParams.get("reference_label");
 
+        // optional parameter to set font family
+        let font_parameter = url.searchParams.get("font");
+
+        // optional parameter to set bar border width (e.g. "2px")
+        let line_width_parameter = url.searchParams.get("line_width");
+
+        // optional parameter to set bar border color (e.g. "black" or "%23333")
+        let line_color_parameter = url.searchParams.get("line_color");
+
+        // optional parameter to set sample bar fill color (e.g. "steelblue")
+        let bar_color_parameter = url.searchParams.get("bar_color");
+
         // storage for dynamic bar sizing
         let allBarData = [];
         let maxBarEmission = 0;
@@ -292,6 +304,10 @@
         }
 
         window.addEventListener('load', function () {
+
+            if (font_parameter) {
+                document.body.style.fontFamily = decodeURIComponent(font_parameter);
+            }
 
             document.getElementById('expandedDescriptionLink').onclick = function(e) {
               e.preventDefault();
@@ -426,6 +442,10 @@
 
                 let bar = sample.querySelector("div[name='bar']");
 
+                if (line_width_parameter) bar.style.borderWidth = decodeURIComponent(line_width_parameter);
+                if (line_color_parameter) bar.style.borderColor = decodeURIComponent(line_color_parameter);
+                if (bar_color_parameter) bar.style.backgroundColor = decodeURIComponent(bar_color_parameter);
+
                 let total_emission = sample.querySelector("span[name='total_emission']");
 
                 total_emission.innerHTML = formatTotalEmissions(emissions[best_unit], best_unit);
@@ -442,6 +462,10 @@
                 sample.classList.remove("template");
 
                 let bar = sample.querySelector("div[name='bar']");
+
+                if (line_width_parameter) bar.style.borderWidth = decodeURIComponent(line_width_parameter);
+                if (line_color_parameter) bar.style.borderColor = decodeURIComponent(line_color_parameter);
+                if (bar_color_parameter) bar.style.backgroundColor = decodeURIComponent(bar_color_parameter);
 
                 let last_scenario = scenarios[scenarios.length-1].scenario;
                 let last_primary_source = primary_sources[scenarios.length-1];
