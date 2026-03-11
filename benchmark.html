@@ -283,7 +283,7 @@
             const heightFactor = availH / maxBarEmission;
 
             const n = allBarData.length;
-            const barW = Math.max(60, Math.floor(window.innerWidth / n) - 40);
+            const barW = Math.min(200, Math.max(60, Math.floor(window.innerWidth / n) - 40));
 
             for (const { bar, sample, emission } of allBarData) {
                 bar.style.height = Math.max(1, Math.round(emission * heightFactor)) + 'px';
