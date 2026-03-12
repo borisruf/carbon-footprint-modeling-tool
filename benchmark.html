@@ -280,6 +280,9 @@
         // optional parameter to set bar border color (e.g. "black" or "%23333")
         let line_color_parameter = url.searchParams.get("line_color");
 
+        // optional parameter to set link color for both new and visited links (e.g. "steelblue" or "%23333")
+        let link_color_parameter = url.searchParams.get("link_color");
+
         // optional parameter to set sample bar fill color (e.g. "steelblue")
         let bar_color_parameter = url.searchParams.get("bar_color");
 
@@ -314,6 +317,13 @@
 
             if (font_size_parameter) {
                 document.body.style.fontSize = decodeURIComponent(font_size_parameter);
+            }
+
+            if (link_color_parameter) {
+                let color = decodeURIComponent(link_color_parameter);
+                let style = document.createElement("style");
+                style.textContent = `a:link, a:visited { color: ${color}; }`;
+                document.head.appendChild(style);
             }
 
             document.getElementById('expandedDescriptionLink').onclick = function(e) {
