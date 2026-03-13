@@ -1,0 +1,30 @@
+{
+  "title": "Training GPT-3",
+  "description": "Estimated CO2 emissions for one full GPT-3 training run.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 1,
+          "quantity_unit": "run",
+          "consumer": {
+            "name": "GPT-3 training",
+            "description": "One full training run"
+          },
+          "source": {
+            "name": "Training emissions estimate",
+            "emissions": {
+              "co2": {
+                "value": 552,
+                "unit": "t",
+                "base_unit": "run"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -628,6 +628,38 @@
     }
   },
   {
+    "id": "training-gpt3",
+    "title": "Training GPT-3",
+    "description": "Estimated CO2 emissions for one full GPT-3 training run.",
+    "emissions": {
+      "co2": 552000
+    }
+  },
+  {
+    "id": "training-gpt4",
+    "title": "Training GPT-4",
+    "description": "Estimated CO2 emissions for one full GPT-4 training run.",
+    "emissions": {
+      "co2": 13700000
+    }
+  },
+  {
+    "id": "training-llama2-70b",
+    "title": "Training Llama 2 70B",
+    "description": "Estimated CO2 emissions for one full Llama 2 70B training run.",
+    "emissions": {
+      "co2": 291000
+    }
+  },
+  {
+    "id": "training-bloom",
+    "title": "Training BLOOM",
+    "description": "Estimated CO2 emissions for one full BLOOM training run.",
+    "emissions": {
+      "co2": 50500
+    }
+  },
+  {
     "id": null,
     "title": "Andouille (per kg)",
     "description": null,
