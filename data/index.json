@@ -630,34 +630,38 @@
   {
     "id": "training-gpt3",
     "title": "Training GPT-3",
-    "description": "Estimated CO2 emissions for one full GPT-3 training run.",
+    "description": "Public estimates often place one full GPT-3 training run at roughly <b>552 tons of CO2</b>. In this scenario, that value is modeled as a single training event and used as a high-level benchmark. It helps compare the climate impact of frontier model training with other activities in the database.",
     "emissions": {
       "co2": 552000
-    }
+    },
+    "url":"https://aienergycalculator.com/ai-energy-consumption-calculator-gpt-llama/"
   },
   {
     "id": "training-gpt4",
     "title": "Training GPT-4",
-    "description": "Estimated CO2 emissions for one full GPT-4 training run.",
+    "description": "Training GPT-4 can be approximated at around <b>13.7 kt of CO2</b> for one full run. This number is an estimate based on the US powergrid as the exact figures are not publicly available. This scenario treats that estimate as one discrete training cycle. It is intended to provide an order-of-magnitude reference for large-scale model development emissions.",
     "emissions": {
       "co2": 13700000
-    }
+    },
+    "url": "https://towardsdatascience.com/the-carbon-footprint-of-gpt-4-d6c676eb21ae/#:~:text=This%20has%20a%20carbon%20footprint%20of%20240.6%20gCO2e%2FKWh,this%20region%20emits%20240.6%20grams%20CO2e%20on%20average."
   },
   {
-    "id": "training-llama2-70b",
-    "title": "Training Llama 2 70B",
-    "description": "Estimated CO2 emissions for one full Llama 2 70B training run.",
+    "id": "training-llama3-70b",
+    "title": "Training Llama 3 70B",
+    "description": "Llama 3 70B training has been reported at approximately <b>291 tons of CO2</b> for a complete run. Here, this amount is represented as a single training event to support direct comparison with other AI and non-AI scenarios. The goal is to make training-phase emissions easier to contextualize.",
     "emissions": {
-      "co2": 291000
-    }
-  },
+      "co2": 1900000
+    },
+    "url":"https://www.voronoiapp.com/technology/The-Carbon-Emissions-of-Training-AI-Models-1447#dataset"
+    },
   {
     "id": "training-bloom",
     "title": "Training BLOOM",
-    "description": "Estimated CO2 emissions for one full BLOOM training run.",
+    "description": "For BLOOM, a commonly cited estimate for one full training run is about <b>50.5 tons of CO2</b>. This scenario uses that figure as a standalone benchmark for the model training phase. It can be used to contrast BLOOM's training footprint with larger and smaller foundation models.",
     "emissions": {
       "co2": 50500
-    }
+    },
+    "url": "https://jmlr.org/papers/volume24/23-0069/23-0069.pdf#:~:text=We%20estimate%20that%20BLOOM%E2%80%99s%20final%20training%20emitted%20approximately,ranging%20from%20equipment%20manufacturing%20to%20energy-based%20operational%20consumption."
   },
   {
     "id": null,
