@@ -1,0 +1,30 @@
+{
+  "title": "Training BLOOM",
+  "description": "Estimated CO2 emissions for one full BLOOM training run.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 1,
+          "quantity_unit": "run",
+          "consumer": {
+            "name": "BLOOM training",
+            "description": "One full training run"
+          },
+          "source": {
+            "name": "Training emissions estimate",
+            "emissions": {
+              "co2": {
+                "value": 50.5,
+                "unit": "t",
+                "base_unit": "run"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

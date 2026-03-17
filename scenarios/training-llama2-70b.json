@@ -1,0 +1,30 @@
+{
+  "title": "Training Llama 2 70B",
+  "description": "Estimated CO2 emissions for one full Llama 2 70B training run.",
+  "scopes": [
+    {
+      "level": "Scope 3",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 1,
+          "quantity_unit": "run",
+          "consumer": {
+            "name": "Llama 2 70B training",
+            "description": "One full training run"
+          },
+          "source": {
+            "name": "Training emissions estimate",
+            "emissions": {
+              "co2": {
+                "value": 291,
+                "unit": "t",
+                "base_unit": "run"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
