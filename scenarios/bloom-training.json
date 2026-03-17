@@ -1,0 +1,87 @@
+{
+  "title": "BLOOM 176B Model Training",
+  "description": "<a href=\"https://en.wikipedia.org/wiki/BLOOM_(language_model)\" target=\"_blank\">BLOOM</a> (BigScience Large Open-science Open-access Multilingual Language Model) is a 176 billion parameter language model trained by the BigScience workshop.<br><br>Using a comprehensive life-cycle assessment methodology (as detailed by <a href=\"https://arxiv.org/abs/2211.02001\" target=\"_blank\">Luccioni et al., 2022</a>), researchers evaluated the complete training process from hardware manufacturing through operational deployment, resulting in <b>50.5 tonnes of CO2e</b> total emissions comprising embodied emissions from hardware manufacturing (11.2 tonnes, 22.2%), dynamic power consumption (24.69 tonnes, 48.9%), and idle infrastructure consumption (14.6 tonnes, 28.9%). Training consumed 433,196 kWh of electricity over 1,082,990 GPU hours using Nvidia A100 80GB GPUs on the Jean Zay cluster in France (57 gCO2e/kWh). Hardware embodied emissions were calculated by amortizing manufacturing footprint over 6-year equipment lifecycle at 85% utilization: 136,209 server-hours (48 nodes × 2,837.68 training hours) at 0.056 kg CO2e/h per server, plus 1,082,990 GPU-hours at 0.003 kg CO2e/h per GPU.",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "list": [
+        {
+          "type": "link",
+          "quantity": 1082990,
+          "scenario_id": "nvidia-a100-gpu"
+        },
+        {
+          "type": "component",
+          "quantity": 256646,
+          "quantity_unit": "kWh",
+          "consumer": {
+            "name": "Infrastructure overhead",
+            "description": "Datacenter cooling, networking, storage, and computing node idle power (46% of total consumption)"
+          },
+          "source": {
+            "name": "France electricity grid",
+            "description": "(2022)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 57,
+                "unit": "g",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "level": "Scope 3",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 136209,
+          "quantity_unit": "h",
+          "consumer": {
+            "name": "Server hardware manufacturing",
+            "description": "HPE Apollo 6500 Gen10 Plus servers (48 nodes × 2,837.68 hours training time)"
+          },
+          "source": {
+            "name": "Embodied carbon",
+            "description": "Manufacturing footprint of 2500 kg CO2e per server, amortized over 6-year lifetime at 85% utilization",
+            "type": "embodied",
+            "emissions": {
+              "co2e": {
+                "base_unit": "h",
+                "value": 0.056,
+                "unit": "kg",
+                "reference_url": "https://arxiv.org/abs/2211.02001"
+              }
+            }
+          }
+        },
+        {
+          "type": "component",
+          "quantity": 1082990,
+          "quantity_unit": "h",
+          "consumer": {
+            "name": "GPU hardware manufacturing",
+            "description": "Nvidia A100 80GB GPUs (384 GPUs on average, 1,082,990 GPU hours total)"
+          },
+          "source": {
+            "name": "Embodied carbon",
+            "description": "Manufacturing footprint of 150 kg CO2e per A100 GPU (lower bound estimate), amortized over 6-year lifetime at 85% utilization",
+            "type": "embodied",
+            "emissions": {
+              "co2e": {
+                "base_unit": "h",
+                "value": 0.003,
+                "unit": "kg",
+                "reference_url": "https://arxiv.org/abs/2211.02001"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

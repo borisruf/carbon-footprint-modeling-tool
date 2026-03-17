@@ -1,0 +1,41 @@
+{
+  "title": "Nvidia A100 GPU (80GB)",
+  "description": "Nvidia A100 80GB GPU operating hours with 400W Thermal Design Power (TDP). This scenario calculates carbon emissions based on cumulative GPU-hours and the carbon intensity of the electricity grid used.",
+  "scopes": [
+    {
+      "level": "Scope 2",
+      "list": [
+        {
+          "type": "component",
+          "quantity": 1,
+          "quantity_unit": "h",
+          "consumer": {
+            "name": "Nvidia A100 80GB GPU",
+            "description": "Single GPU hour at 400W TDP (full capacity power consumption)",
+            "consumptions": {
+              "electricity": {
+                "value": 0.4,
+                "unit": "kWh",
+                "base_unit": "h",
+                "reference_url": "https://www.nvidia.com/en-us/data-center/a100/"
+              }
+            }
+          },
+          "source": {
+            "name": "France electricity grid",
+            "description": "(2022)",
+            "type": "electricity",
+            "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 57,
+                "unit": "g",
+                "reference_url": "https://www.statista.com/statistics/1190067/carbon-intensity-outlook-of-france/"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
