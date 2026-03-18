@@ -1,25 +1,39 @@
 {
-  "title": "Training GPT-3",
-  "description": "Estimated CO2 emissions for one full GPT-3 training run.",
+  "title": "GPT-3 175B Model Training",
+  "description": "<a href=\"https://en.wikipedia.org/wiki/GPT-3\" target=\"_blank\">GPT-3</a> (Generative Pre-trained Transformer 3) is a 175 billion parameter language model trained by OpenAI.<br><br>Using a comprehensive life-cycle assessment methodology (as detailed by <a href=\"https://arxiv.org/html/2505.09598v1#bib.bib12\" target=\"_blank\">Jegham et al., 2025</a>), researchers evaluated the training process from hardware maintenance through operational deployment, resulting in <b>50.5 tonnes of CO2e</b> total emissions comprising embodied emissions from hardware manufacturing (11.2 tonnes, 22.2%), dynamic power consumption (24.69 tonnes, 48.9%), and idle infrastructure consumption (14.6 tonnes, 28.9%). Training consumed 433,196 kWh of electricity over 1,082,990 GPU hours using Nvidia A100 80GB GPUs on the Jean Zay cluster in France (57 gCO2e/kWh). Hardware embodied emissions were calculated by amortizing manufacturing footprint over 6-year equipment lifecycle at 85% utilization: 136,209 server-hours (48 nodes × 2,837.68 training hours) at 0.056 kg CO2e/h per server, plus 1,082,990 GPU-hours at 0.003 kg CO2e/h per GPU.",
   "scopes": [
     {
-      "level": "Scope 3",
+      "level": "Scope 2",
       "list": [
         {
+          "type": "link",
+          "quantity": 3217500,
+          "scenario_id": "nvidia-a100-gpu"
+        },
+        {
           "type": "component",
-          "quantity": 1,
-          "quantity_unit": "run",
+          "quantity": 128700,
+          "quantity_unit": "kWh",
           "consumer": {
-            "name": "GPT-3 training",
-            "description": "One full training run"
+            "name": "Infrastructure overhead",
+            "description": "Total facility energy consumption with a PUE of 1.1 (Datacenter cooling,ligthing and other overhead systems)"
           },
           "source": {
-            "name": "Training emissions estimate",
-            "emissions": {
+              "name": "USA electricity grid",
+              "description": "(2020)",
+              "type": "electricity",
+              "emissions": {
+              "co2e": {
+                "base_unit": "kWh",
+                "value": 0.371,
+                "unit": "kg",
+                "reference_url": "https://carbonfund.org/calculation-methods/"
+                },
               "co2": {
-                "value": 552,
-                "unit": "t",
-                "base_unit": "run"
+                "base_unit": "kWh",
+                "value": 0.3525,
+                "unit": "kg",
+                "reference_url": "https://www.iea.org/data-and-statistics/charts/development-of-co2-emission-intensity-of-electricity-generation-in-selected-countries-2000-2020"
               }
             }
           }

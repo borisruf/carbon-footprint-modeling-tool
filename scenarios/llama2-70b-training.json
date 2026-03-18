@@ -1,28 +1,14 @@
 {
-  "title": "Training Llama 2 70B",
-  "description": "Estimated CO2 emissions for one full Llama 2 70B training run.",
-  "scopes": [
+  "title": "Llama 2 70B Model Training",
+  "description": "<a href=\"https://en.wikipedia.org/wiki/Llama_(language_model)\" target=\"_blank\">LLaMa</a> (Large Language Model Meta AI) is a 70 billion parameter language model trained by the Meta AI company.<br><br>Based on a research preprint paper describing LLaMA 2's foundation and fine-tuning (<a href=\"https://arxiv.org/abs/2307.09288\" target=\"_blank\">Touvron et al., 2023</a>), researchers explained the training process for operational deployment, resulting in <b>291.42 tonnes of CO2e</b> total emissions. Training consumed an estimate of 688,128 kWh of electricity over 1,720,320 GPU hours using Nvidia A100 80GB GPUs powered by the USA electricity grid(379 gCO2e/kWh).",
+    "scopes": [
     {
-      "level": "Scope 3",
+      "level": "Scope 2",
       "list": [
         {
-          "type": "component",
-          "quantity": 1,
-          "quantity_unit": "run",
-          "consumer": {
-            "name": "Llama 2 70B training",
-            "description": "One full training run"
-          },
-          "source": {
-            "name": "Training emissions estimate",
-            "emissions": {
-              "co2": {
-                "value": 291,
-                "unit": "t",
-                "base_unit": "run"
-              }
-            }
-          }
+          "type": "link",
+          "quantity": 1720320,
+          "scenario_id": "nvidia-a100-gpu"
         }
       ]
     }
