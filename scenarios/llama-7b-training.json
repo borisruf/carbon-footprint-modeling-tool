@@ -1,0 +1,16 @@
+{
+  "title": "Llama 7B Model Training",
+  "description": "<a href=\"https://en.wikipedia.org/wiki/Llama_(language_model)\" target=\"_blank\">LLaMa</a> (Large Language Model Meta AI) is a 7 billion parameter language model trained by the Meta AI company.<br><br>Based on a research preprint paper describing LLaMA foundation and fine-tuning (<a href=\"https://arxiv.org/pdf/2302.13971\" target=\"_blank\">Touvron et al., 2023</a>), researchers explained the training process for operational deployment, resulting in <b>14 tonnes of CO2e</b> total emissions. Training consumed an estimate of 36,000 kWh of electricity over 82,432 GPU hours using Nvidia A100 80GB GPUs powered by the USA electricity grid of 2023 (0,385 gCO2e/kWh).",
+    "scopes": [
+    {
+      "level": "Scope 2",
+      "list": [
+        {
+          "type": "link",
+          "quantity": 82432,
+          "scenario_id": "nvidia-a100-gpu"
+        }
+      ]
+    }
+  ]
+}
