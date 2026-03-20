@@ -286,6 +286,15 @@
         // optional parameter to set sample bar fill color (e.g. "steelblue")
         let bar_color_parameter = url.searchParams.get("bar_color");
 
+        // optional parameter to set reference bar border width (e.g. "2px")
+        let reference_line_width_parameter = url.searchParams.get("reference_line_width");
+
+        // optional parameter to set reference bar border color (e.g. "black" or "%23333")
+        let reference_line_color_parameter = url.searchParams.get("reference_line_color");
+
+        // optional parameter to set reference bar fill color (e.g. "steelblue")
+        let reference_bar_color_parameter = url.searchParams.get("reference_bar_color");
+
         // storage for dynamic bar sizing
         let allBarData = [];
         let maxBarEmission = 0;
@@ -480,9 +489,12 @@
 
                 let bar = sample.querySelector("div[name='bar']");
 
-                if (line_width_parameter) bar.style.borderWidth = decodeURIComponent(line_width_parameter);
-                if (line_color_parameter) bar.style.borderColor = decodeURIComponent(line_color_parameter);
-                if (bar_color_parameter) bar.style.backgroundColor = decodeURIComponent(bar_color_parameter);
+                if (reference_line_width_parameter) bar.style.borderWidth = decodeURIComponent(reference_line_width_parameter);
+                else if (line_width_parameter) bar.style.borderWidth = decodeURIComponent(line_width_parameter);
+                if (reference_line_color_parameter) bar.style.borderColor = decodeURIComponent(reference_line_color_parameter);
+                else if (line_color_parameter) bar.style.borderColor = decodeURIComponent(line_color_parameter);
+                if (reference_bar_color_parameter) bar.style.backgroundColor = decodeURIComponent(reference_bar_color_parameter);
+                else if (bar_color_parameter) bar.style.backgroundColor = decodeURIComponent(bar_color_parameter);
 
                 let last_scenario = scenarios[scenarios.length-1].scenario;
                 let last_primary_source = primary_sources[scenarios.length-1];
