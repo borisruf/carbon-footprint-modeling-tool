@@ -482,6 +482,7 @@
             }
 
             // add comparison(s) with baseline energy source(s) if provided
+            let k = 0;
             for (const { scenario_id: scenario_id, base64: base64, scenario: scenario } of reference_scenarios) {
 
                 let sample = document.querySelector(".template[name='reference']").cloneNode(true);
@@ -524,7 +525,7 @@
 
                 let title = sample.querySelector("a[name='title']");
 
-                title.innerHTML = (reference_label_parameter) ? decodeURIComponent(reference_label_parameter) : scenario["title"];
+                title.innerHTML = (label_parameters.length > j + k && label_parameters[j + k]) ? decodeURIComponent(label_parameters[j + k]) : (reference_label_parameter) ? decodeURIComponent(reference_label_parameter) : scenario["title"];
 
                 let urlParameters = {};
                 if (scenario_id) {
@@ -540,6 +541,7 @@
                 }
 
                 title.setAttribute("href", "show.html?" + Object.entries(urlParameters).map(x=>x.join("=")).join("&"));
+                k++;
             }
 
             if (title_parameter) {
